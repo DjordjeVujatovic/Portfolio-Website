@@ -11,11 +11,13 @@ export const getAbout = data => ({
 });
 
 // Thunk
+const endpoint = 'https://personal-website-5164c.firebaseio.com/about.json';
 
-export const fetchAbout = () => dispatch => fetch('https://personal-website-5164c.firebaseio.com/about')
-    .then((response) => {
-      response.json();
-    })
-    .then((result) => {
-      dispatch(getAbout(result));
-    });
+export const fetchAbout = () => (dispatch) => {
+  fetch(endpoint)
+      .then(response => response.json())
+      .then((data) => {
+        dispatch(getAbout(data));
+      })
+      .catch(error => console.log('Error fetching JSON', error));
+};

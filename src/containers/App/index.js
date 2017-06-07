@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import ProjectContainer from '../ProjectContainer';
+import AboutContainer from '../AboutContainer';
 
 class App extends Component {
   render() {
     return (
       <div className="helloWorld">
-        <h2> Happy Coding </h2>
+        <ProjectContainer />
+        <AboutContainer />
       </div>
     );
   }
