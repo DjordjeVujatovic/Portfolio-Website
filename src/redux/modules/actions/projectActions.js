@@ -12,12 +12,10 @@ export const getProjects = data => ({
 
 // Thunk
 
-export const fetchProjects = () => (dispatch) => {
-  return fetch('https://personal-website-5164c.firebaseio.com/projects')
+export const fetchProjects = () => dispatch => fetch('https://personal-website-5164c.firebaseio.com/projects')
     .then((response) => {
       response.json();
     })
     .then((result) => {
       dispatch(getProjects(result));
     });
-};

@@ -12,12 +12,10 @@ export const getAbout = data => ({
 
 // Thunk
 
-export const fetchAbout = () => (dispatch) => {
-  return fetch('https://personal-website-5164c.firebaseio.com/about')
+export const fetchAbout = () => dispatch => fetch('https://personal-website-5164c.firebaseio.com/about')
     .then((response) => {
       response.json();
     })
     .then((result) => {
       dispatch(getAbout(result));
     });
-};
