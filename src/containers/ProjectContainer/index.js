@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { fetchProjects } from '../../redux/modules/actions/projectActions';
 
 class ProjectContainer extends Component {
   componentWillMount() {
-    this.props.fetchProjects(); //eslint-disable-line
+    this.props.fetchProjects();
   }
 
   render() {
@@ -25,6 +26,10 @@ const mapDispatchToProps = dispatch => ({
     dispatch(fetchProjects());
   },
 });
+
+ProjectContainer.propTypes = {
+  fetchProjects: PropTypes.func.isRequired,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectContainer);
 

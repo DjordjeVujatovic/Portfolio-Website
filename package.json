@@ -9,6 +9,7 @@
   "description": "React + Redux starter seed.",
   "dependencies": {
     "autoprefixer": "^6.7.7",
+    "prop-types": "^15.5.10",
     "react": "^15.5.3",
     "react-dom": "^15.5.3",
     "react-redux": "^5.0.3",
