@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const MobileNavBarExpanded = ({ closeExpand }) => (
-  <div>
+  <div className="mobileNavBarExpanded">
     <button onClick={() => closeExpand()}>Close Expand</button>
   </div>
 );

@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const MobileNavBar = ({ expand }) => (
-  <div>
-    <button onClick={() => expand()}>expand</button>
+  <div className="mobileNavBar">
+    <h1>Djordje Vujatovic</h1>
+    <button onClick={() => expand()}>Menu</button>
   </div>
 );
 
