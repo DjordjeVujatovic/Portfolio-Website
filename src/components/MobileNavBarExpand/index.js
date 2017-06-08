@@ -1,9 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const MobileNavBarExpanded = () => (
+const MobileNavBarExpanded = ({ closeExpand }) => (
   <div>
-      Mobile Nav Bar Expanded
-    </div>
-  );
+    <button onClick={() => closeExpand()}>Close Expand</button>
+  </div>
+);
+
+MobileNavBarExpanded.propTypes = {
+  closeExpand: PropTypes.func.isRequired,
+};
 
 export default MobileNavBarExpanded;

@@ -1,9 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const MobileNavBar = () => (
+const MobileNavBar = ({ expand }) => (
   <div>
-      Mobile Nav Bar
-    </div>
-  );
+    <button onClick={() => expand()}>expand</button>
+  </div>
+);
+
+MobileNavBar.propTypes = {
+  expand: PropTypes.func.isRequired,
+};
+
 
 export default MobileNavBar;

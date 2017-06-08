@@ -10,15 +10,18 @@ class NavBarContainer extends Component {
   render() {
     return (
       <div>
-        <MobileNavBar expand={this.props.expand} />
-        <MobileNavBarExpanded closeExpand={this.props.closeExpand} />
+        {this.props.displayState ?
+          <MobileNavBarExpanded closeExpand={this.props.closeExpand} />
+          :
+          <MobileNavBar expand={this.props.expand} />
+        }
       </div>
     );
   }
 }
 
 const mapStateToProps = state => ({
-  mobileNav: state.mobileNav.displayExpand,
+  displayState: state.mobileNav.displayExpand,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -33,6 +36,7 @@ const mapDispatchToProps = dispatch => ({
 NavBarContainer.propTypes = {
   expand: PropTypes.func.isRequired,
   closeExpand: PropTypes.func.isRequired,
+  displayState: PropTypes.bool.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavBarContainer);
