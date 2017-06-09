@@ -3,8 +3,9 @@
   align-items: center;
   justify-content: center;
   background: url('../content/BackgroundImages/backgroundImage.jpg' ) bottom center no-repeat;
-  height: 50vh;
-  min-height: 500px;
+  height: 100vh;
+  min-height: 1000px;
+  width: 100%;
   background-size: cover;
   .headerButtonContainer {
     display: flex;
