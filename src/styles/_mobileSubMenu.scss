@@ -1,0 +1,42 @@
+.mobileSubMenu {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+}
+.subMenuItems {
+  flex-basis: 25%;
+  background-color: $subMenuPastelGreen;
+  color: $coreLightGray;
+  font-size: $fontSizeRegular;
+  font-family: $mainFontFamily;
+  border: none;
+  &:hover {
+    background-color: $subMenuHover;
+  }
+}
+.closeSubMenu {
+  flex-basis: 25%;
+  width: 100%;
+  background-color:$corePastelGreen;
+  border:none;
+  font-size: $fontSizeLarge;
+  text-transform: uppercase;
+  color: $coreLightGray;
+  font-family: $mainFontFamily;
+  &:hover {
+    background-color: $closeMenuHover;
+  }
+}
+.aboutHeader {
+    flex-basis: 15%;
+    width: 100%;
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #e4e7ec;
+    font-size: 20px;
+    font-family: "Roboto", sans;
+  }
+}

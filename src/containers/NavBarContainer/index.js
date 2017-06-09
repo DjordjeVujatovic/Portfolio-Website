@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import MobileNavBar from '../../components/MobileNavBar';
 import MobileNavBarExpanded from '../../components/MobileNavBarExpand';
 import { expand, closeExpand } from '../../redux/modules/actions/mobileNavActions';
+import { expandSubMenu, closeSubMenu } from '../../redux/modules/actions/mobileSubMenuActions';
 
 
 class NavBarContainer extends Component {
@@ -11,7 +12,12 @@ class NavBarContainer extends Component {
     return (
       <div>
         {this.props.displayState ?
-          <MobileNavBarExpanded closeExpand={this.props.closeExpand} />
+          <MobileNavBarExpanded
+            closeExpand={this.props.closeExpand}
+            closeSubMenu={this.props.closeSubMenu}
+            expandSubMenu={this.props.expandSubMenu}
+            subMenuState={this.props.subMenuState}
+          />
           :
           <MobileNavBar expand={this.props.expand} />
         }
@@ -22,6 +28,7 @@ class NavBarContainer extends Component {
 
 const mapStateToProps = state => ({
   displayState: state.mobileNav.displayExpand,
+  subMenuState: state.mobileSubMenu.subMenuExpand,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -31,12 +38,21 @@ const mapDispatchToProps = dispatch => ({
   closeExpand: () => {
     dispatch(closeExpand());
   },
+  expandSubMenu: () => {
+    dispatch(expandSubMenu());
+  },
+  closeSubMenu: () => {
+    dispatch(closeSubMenu());
+  },
 });
 
 NavBarContainer.propTypes = {
   expand: PropTypes.func.isRequired,
   closeExpand: PropTypes.func.isRequired,
   displayState: PropTypes.bool.isRequired,
+  expandSubMenu: PropTypes.func.isRequired,
+  closeSubMenu: PropTypes.func.isRequired,
+  subMenuState: PropTypes.bool.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavBarContainer);

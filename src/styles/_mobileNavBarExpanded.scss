@@ -1,0 +1,30 @@
+.mobileNavBarExpanded {
+  display:flex;
+  flex-direction: column;
+  background-color:$coreDarkBlue;
+  height: 40vh;
+  max-height: 60vh;
+  min-height: 400px;
+  transition: opacity 500ms ease-in;
+}
+.closeButton {
+  flex-basis: 25%;
+  width: 100%;
+  background-color:$corePastelGreen;
+  border:none;
+  font-size: $fontSizeLarge;
+  text-transform: uppercase;
+  color: $coreLightGray;
+  font-family: $mainFontFamily;
+}
+.menuItems {
+  flex-basis: 25%;
+  background-color:transparent;
+  font-size: $fontSizeRegular;
+  font-family: $mainFontFamily;
+  color: $coreLightGray;
+  border: none;
+  &:hover {
+    background-color: #1C2A41;
+  }
+}

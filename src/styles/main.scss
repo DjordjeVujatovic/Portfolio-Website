@@ -1,8 +1,11 @@
 html, body, h1, p {
-  height: auto;
+  height: 100%;
   margin: 0;
   width:100%;
 }
+
 @import 'fonts';
 @import 'variables';
 @import 'mobileNavBar';
+@import 'mobileNavBarExpanded';
+@import 'mobileSubMenu';

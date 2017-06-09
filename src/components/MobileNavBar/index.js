@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const MobileNavBar = ({ expand }) => (
   <div className="mobileNavBar">
-    <h1>Djordje Vujatovic</h1>
-    <button onClick={() => expand()}>Menu</button>
+    <p>Djordje Vujatovic</p>
+    <button className="openButton" onClick={() => expand()}>Menu</button>
   </div>
 );
 

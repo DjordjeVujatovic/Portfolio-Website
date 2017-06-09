@@ -1,5 +1,27 @@
 .mobileNavBar {
   display: flex;
-  background-color: red;
-  transition: 200s;
+  background-color: $coreDarkBlue;
+  align-items: center;
+  height: 75px;
+  width: 100%;
+  p {
+    display: flex;
+    align-items: center;
+    color: $coreLightGray;
+    font-size: $fontSizeRegular;
+    font-family: $mainFontFamily;
+    text-transform: uppercase;
+    align-self:center;
+    padding-left: 20px;
+  }
+}
+.openButton {
+  background-color: transparent;
+  border: none;
+  color: $corePastelGreen;
+  align-self:center;
+  padding-right: 20px;
+  font-size: $fontSizeRegular;
+  font-family: $mainFontFamily;
+
 }
