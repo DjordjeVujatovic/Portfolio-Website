@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { fetchAbout } from '../../redux/modules/actions/aboutActions';
 
 class AboutContainer extends Component {
@@ -9,7 +10,7 @@ class AboutContainer extends Component {
   render() {
     return (
       <div>
-        <p>About Container</p>
+        About Container
       </div>
     );
   }
@@ -24,5 +25,9 @@ const mapDispatchToProps = dispatch => ({
     dispatch(fetchAbout());
   },
 });
+
+AboutContainer.propTypes = {
+  fetchAbout: PropTypes.func.isRequired,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(AboutContainer);

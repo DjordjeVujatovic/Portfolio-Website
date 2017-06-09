@@ -2,7 +2,7 @@
   display: flex;
   background-color: $coreDarkBlue;
   align-items: center;
-  height: 75px;
+  height: 100px;
   width: 100%;
   p {
     display: flex;
@@ -12,7 +12,7 @@
     font-family: $mainFontFamily;
     text-transform: uppercase;
     align-self:center;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 }
 .openButton {
@@ -20,8 +20,11 @@
   border: none;
   color: $corePastelGreen;
   align-self:center;
-  padding-right: 20px;
+  padding-right: 30px;
   font-size: $fontSizeRegular;
   font-family: $mainFontFamily;
-
+  text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+  }
 }

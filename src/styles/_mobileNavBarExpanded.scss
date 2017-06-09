@@ -6,6 +6,8 @@
   max-height: 60vh;
   min-height: 400px;
   transition: opacity 500ms ease-in;
+  position: absolute;
+  width: 100%;
 }
 .closeButton {
   flex-basis: 25%;
@@ -16,6 +18,10 @@
   text-transform: uppercase;
   color: $coreLightGray;
   font-family: $mainFontFamily;
+  &:hover {
+    background-color: $hoverPastelGreen;
+    cursor: pointer;
+  }
 }
 .menuItems {
   flex-basis: 25%;
@@ -26,5 +32,6 @@
   border: none;
   &:hover {
     background-color: #1C2A41;
+    cursor: pointer;
   }
 }

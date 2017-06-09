@@ -12,6 +12,7 @@
   border: none;
   &:hover {
     background-color: $subMenuHover;
+    cursor: pointer;
   }
 }
 .closeSubMenu {
@@ -24,7 +25,8 @@
   color: $coreLightGray;
   font-family: $mainFontFamily;
   &:hover {
-    background-color: $closeMenuHover;
+    background-color: $hoverPastelGreen;
+    cursor: pointer;
   }
 }
 .aboutHeader {

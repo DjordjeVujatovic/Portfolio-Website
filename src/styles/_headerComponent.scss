@@ -1,0 +1,35 @@
+.headerComponent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../content/BackgroundImages/backgroundImage.jpg' ) bottom center no-repeat;
+  height: 50vh;
+  min-height: 500px;
+  background-size: cover;
+  .headerButtonContainer {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 100%;
+      button {
+        width: 200px;
+        height: 75px;
+        align-self: flex-end;
+        border-radius: 50px;
+        border: none;
+        background-color: $corePastelGreen;
+        color: $coreLightGray;
+        font-size: $fontSizeRegular;
+        font-family: $mainFontFamily;
+        &:hover {
+          background-color: $hoverPastelGreen;
+        }
+      }
+    }
+}
+.gitHubButton {
+  margin-right: 10px;
+}
+.linkedInButton {
+  margin-left: 10px;
+}
