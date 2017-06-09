@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import MobileSubMenu from '../MobileSubMenu';
 
 const MobileNavBarExpanded = ({ closeExpand, subMenuState, expandSubMenu, closeSubMenu }) => (
-  <div className="mobileNavBarExpanded">
+  <div onMouseLeave={() => closeExpand()} className="mobileNavBarExpanded">
     {subMenuState ?
       <button className="closeSubMenu" onClick={() => closeSubMenu()}>Close Sub Menu</button>
       :

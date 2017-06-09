@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BooksComponent = () => {
+const BooksComponent = ({ books }) => { //eslint-disable-line
   return (
     <div>
       Books Component

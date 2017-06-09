@@ -2,22 +2,24 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { fetchBooks } from '../../redux/modules/actions/booksActions';
-import BooksComponent from '../../components/AboutComponent';
+import BooksComponent from '../../components/BooksComponent';
 import LoadingComponent from '../../components/LoadingComponent';
 
 class BooksContainer extends Component {
   componentDidMount() {
     this.props.fetchBooks();
   }
+
   render() {
-    const { isLoading } = this.props;
+    const { isLoading, books } = this.props; // eslint-disable-line
+    console.log(books);
     return (
       <div>
         {
           isLoading ?
             <LoadingComponent />
             :
-            <BooksComponent />
+            <BooksComponent books={books} />
         }
       </div>
     );
