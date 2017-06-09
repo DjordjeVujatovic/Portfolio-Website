@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const MobileSubMenu = () => {
+const MobileSubMenu = ({ closeSubMenu }) => {
   return (
-    <div className="mobileSubMenu">
+    <div onMouseLeave={() => closeSubMenu()} className="mobileSubMenu">
       <div className="aboutHeader"><p>Who am I ?</p></div>
       <button className="subMenuItems">About Me</button>
       <button className="subMenuItems">Education</button>
@@ -10,6 +11,10 @@ const MobileSubMenu = () => {
       <button className="subMenuItems">Favorite Books</button>
     </div>
   );
+};
+
+MobileSubMenu.propTypes = {
+  closeSubMenu: PropTypes.func.isRequired,
 };
 
 export default MobileSubMenu;
