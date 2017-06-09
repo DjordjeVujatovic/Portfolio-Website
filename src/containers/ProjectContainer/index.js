@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { fetchProjects } from '../../redux/modules/actions/projectActions';
+import ProjectsComponent from '../../components/ProjectsComponent';
+import LoadingComponent from '../../components/LoadingComponent';
 
 class ProjectContainer extends Component {
   componentWillMount() {
@@ -9,15 +11,21 @@ class ProjectContainer extends Component {
   }
 
   render() {
+    const { isLoading } = this.props;
     return (
       <div>
-        Projects Container
+        {isLoading ?
+          <LoadingComponent />
+          :
+          <ProjectsComponent />
+        }
       </div>
     );
   }
 }
 
 const mapStateToProps = state => ({
+  isLoading: state.projects.isLoading,
   projects: state.projects.data,
 });
 
@@ -29,6 +37,7 @@ const mapDispatchToProps = dispatch => ({
 
 ProjectContainer.propTypes = {
   fetchProjects: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectContainer);
