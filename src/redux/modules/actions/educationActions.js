@@ -13,7 +13,7 @@ export const getEducation = data => ({
 // Thunk
 const endpoint = 'https://personal-website-5164c.firebaseio.com/education.json';
 
-export const fetchAbout = () => (dispatch) => {
+export const fetchEducation = () => (dispatch) => {
   fetch(endpoint)
       .then(response => response.json())
       .then((data) => {

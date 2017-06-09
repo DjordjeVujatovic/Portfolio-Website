@@ -5,7 +5,7 @@ import educationReducer from './modules/reducers/educationReducer';
 import toolsReducer from './modules/reducers/toolsReducer';
 import projectReducer from './modules/reducers/projectReducer';
 import mobileNavReducer from './modules/reducers/mobileNavReducer';
-import mobileSubMenuReducer from '../redux/modules/reducers/subMenuReducer';
+import mobileSubMenuReducer from './modules/reducers/subMenuReducer';
 
 const combinedReducers = combineReducers({
   about: aboutReducer,

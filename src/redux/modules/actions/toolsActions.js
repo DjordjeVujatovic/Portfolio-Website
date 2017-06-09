@@ -13,7 +13,7 @@ export const getTools = data => ({
 // Thunk
 const endpoint = 'https://personal-website-5164c.firebaseio.com/tools.json';
 
-export const fetchAbout = () => (dispatch) => {
+export const fetchTools = () => (dispatch) => {
   fetch(endpoint)
       .then(response => response.json())
       .then((data) => {
