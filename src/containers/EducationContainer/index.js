@@ -10,13 +10,13 @@ class EducationContainer extends Component {
     this.props.fetchEducation();
   }
   render() {
-    const { isLoading } = this.props;
+    const { isLoading, education } = this.props; //eslint-disable-line
     return (
       <div>
         {isLoading ?
           <LoadingComponent />
           :
-          <EducationComponent />
+          <EducationComponent education={education} />
         }
       </div>
     );

@@ -1,0 +1,28 @@
+.educationComponentWrapper {
+  height: $componentHeightSmall;
+  min-height: $componentHeightSmall;
+  display: flex;
+  flex-direction: column;
+  margin-top: $componentMargin;
+}
+.redComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33%;
+  background: $coreMustard;
+}
+.universityComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33%;
+  background: $coreJungleGreen;
+}
+.collegeComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33%;
+  background: #58566C;
+}

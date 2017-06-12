@@ -19,6 +19,10 @@ $subMenuHover: #233451;
 $mobileMenuHover: #1C2A41;
 $hoverJungleGreen: #198C7F;
 
+//Education Component Colors:
+$shadeOne: #E8B74B;
+$shadeTwo: #D1A544;
+
 //Website Core Font-Sizes
 
 $fontSizeSmall: 12px;
@@ -33,6 +37,18 @@ $mainFontFamily: 'Roboto', sans;
 $accentFontFamily: 'Rubic', sans;
 $chalk: 'colored_crayonsregular';
 
-//Margins:
+//Margins
 
 $componentMargin: 2px;
+
+//Standard Component Sizes
+
+$componentHeightSmall: 40vh;
+$componentMinHeightSmall: 400px;
+$componentHeightRegular: 50vh;
+$componentMinHeightRegular: 450px;
+$componentHeightLarge: 75vh;
+$componentMinHeightLarge: 700px;
+$componentMaxHeight: 100vh;
+$componentMinMaxHeight: 900px;
+

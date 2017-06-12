@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
-  min-height: 450px;
+  height: $componentHeightSmall;
+  min-height: $componentMinHeightSmall;
   background-color: $coreJungleGreen;
   color: $coreWhite;
   margin-top: $componentMargin;
