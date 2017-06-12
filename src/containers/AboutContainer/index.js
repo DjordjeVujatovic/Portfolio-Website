@@ -18,7 +18,7 @@ class AboutContainer extends Component {
           isLoading ?
             <LoadingComponent />
             :
-            <AboutComponent />
+            <AboutComponent about={about} />
         }
       </div>
     );

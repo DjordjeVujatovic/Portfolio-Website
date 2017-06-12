@@ -7,7 +7,9 @@
   min-height: 400px;
   transition: opacity 500ms ease-in;
   position: absolute;
+  position: fixed;
   width: 100%;
+
 }
 .closeButton {
   flex-basis: 25%;

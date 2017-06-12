@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ProjectContainer from '../ProjectContainer';
 import AboutContainer from '../AboutContainer';
 import BooksContainer from '../BooksContainer';
+import EducationHero from '../../components/EducationHero';
 import EducationContainer from '../EducationContainer';
 import ToolsContainer from '../ToolsContainer';
 import NavBarContainer from '../NavBarContainer';
@@ -14,6 +15,7 @@ class App extends Component {
         <NavBarContainer />
         <HeaderContainer />
         <AboutContainer />
+        <EducationHero />
         <EducationContainer />
         <ToolsContainer />
         <BooksContainer />

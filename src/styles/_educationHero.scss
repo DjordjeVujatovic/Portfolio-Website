@@ -1,0 +1,9 @@
+.educationHeroBanner {
+  height: 55vh;
+  min-height: 900px;
+  background-color: $coreMustard;
+  background: linear-gradient(to bottom, rgba(255, 201, 82, .20) 0%, rgba(255, 201, 82, .05) 100%), url('../content/BackgroundImages/educationHero.jpg' ) bottom center no-repeat;
+  background-size: cover;
+  min-width: 100px;
+  margin-top: $componentMargin;
+}

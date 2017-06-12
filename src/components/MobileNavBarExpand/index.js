@@ -12,7 +12,7 @@ const MobileNavBarExpanded = ({ closeExpand, subMenuState, expandSubMenu, closeS
     {subMenuState ?
       <MobileSubMenu closeSubMenu={closeSubMenu} />
       :
-      <button onMouseEnter={() => expandSubMenu()} className="menuItems">Who Am I?</button>
+      <button onClick={() => expandSubMenu()} className="menuItems">Who Am I?</button>
     }
     <button className="menuItems">Projects</button>
     <button className="menuItems">Contact Info</button>
