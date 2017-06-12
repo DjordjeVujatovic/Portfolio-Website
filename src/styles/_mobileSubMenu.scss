@@ -5,7 +5,7 @@
 }
 .subMenuItems {
   flex-basis: 25%;
-  background-color: $subMenuPastelGreen;
+  background-color: $subMenuCharcoal;
   color: $coreLightGray;
   font-size: $fontSizeRegular;
   font-family: $mainFontFamily;
@@ -18,14 +18,14 @@
 .closeSubMenu {
   flex-basis: 25%;
   width: 100%;
-  background-color:$corePastelGreen;
+  background-color:$coreJungleGreen;
   border:none;
   font-size: $fontSizeLarge;
   text-transform: uppercase;
   color: $coreLightGray;
   font-family: $mainFontFamily;
   &:hover {
-    background-color: $hoverPastelGreen;
+    background-color: $hoverJungleGreen;
     cursor: pointer;
   }
 }

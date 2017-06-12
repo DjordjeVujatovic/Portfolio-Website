@@ -1,7 +1,7 @@
 .mobileNavBarExpanded {
   display:flex;
   flex-direction: column;
-  background-color:$coreDarkBlue;
+  background-color:$coreCharcoal;
   height: 40vh;
   max-height: 60vh;
   min-height: 400px;
@@ -12,14 +12,14 @@
 .closeButton {
   flex-basis: 25%;
   width: 100%;
-  background-color:$corePastelGreen;
+  background-color:$coreJungleGreen;
   border:none;
   font-size: $fontSizeLarge;
   text-transform: uppercase;
   color: $coreLightGray;
   font-family: $mainFontFamily;
   &:hover {
-    background-color: $hoverPastelGreen;
+    background-color: $hoverJungleGreen;
     cursor: pointer;
   }
 }

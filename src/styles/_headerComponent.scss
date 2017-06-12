@@ -18,12 +18,12 @@
         align-self: flex-end;
         border-radius: 50px;
         border: none;
-        background-color: $corePastelGreen;
+        background-color: $coreJungleGreen;
         color: $coreLightGray;
         font-size: $fontSizeRegular;
         font-family: $mainFontFamily;
         &:hover {
-          background-color: $hoverPastelGreen;
+          background-color: $hoverJungleGreen;
         }
       }
     }

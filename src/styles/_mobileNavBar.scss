@@ -1,6 +1,6 @@
 .mobileNavBar {
   display: flex;
-  background-color: $coreDarkBlue;
+  background-color: $coreCharcoal;
   align-items: center;
   height: 100px;
   width: 100%;
@@ -20,7 +20,7 @@
 .openButton {
   background-color: transparent;
   border: none;
-  color: $corePastelGreen;
+  color: $coreJungleGreen;
   align-self:center;
   padding-right: 30px;
   font-size: $fontSizeRegular;
