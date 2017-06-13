@@ -1,0 +1,23 @@
+@mixin educationComponentClose {
+  display: flex;
+  flex-basis: 33%;
+  justify-content: center;
+  align-items: center;
+}
+@mixin educationComponentOpen {
+  flex-basis: 45%;
+  background-color: red;
+}
+
+@mixin educationButtonClose {
+  width: 100%;
+  height: 25%;
+  border: none;
+}
+
+@mixin educationButtonOpen {
+  height:25%;
+  width:100%;
+  background: transparent;
+  border: none;
+}

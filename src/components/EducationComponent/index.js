@@ -4,12 +4,27 @@ import UniversityComponent from '../EducationComponent/UniversityComponent';
 import CollegeComponent from '../EducationComponent/CollegeComponent';
 import RedComponent from '../EducationComponent/RedComponent';
 
-const EducationComponent = ({ education }) => { //eslint-disable-line
+const EducationComponent = ({ education, redState, universityState, collegeState, expandRedComponent, closeRedComponent, expandCollegeComponent, closeCollegeComponent, expandUniversityComponent, closeUniversityComponent  }) => { //eslint-disable-line
   return (
     <div className="educationComponentWrapper">
-      <RedComponent education={education} />
-      <UniversityComponent education={education} />
-      <CollegeComponent education={education} />
+      <RedComponent
+        education={education}
+        redState={redState}
+        expandRedComponent={expandRedComponent}
+        closeRedComponent={closeRedComponent}
+      />
+      <UniversityComponent
+        education={education}
+        universityState={universityState}
+        expandUniversityComponent={expandUniversityComponent}
+        closeUniversityComponent={closeUniversityComponent}
+      />
+      <CollegeComponent
+        education={education}
+        collegeState={collegeState}
+        expandCollegeComponent={expandCollegeComponent}
+        closeCollegeComponent={closeCollegeComponent}
+      />
     </div>
   );
 };

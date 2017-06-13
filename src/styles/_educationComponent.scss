@@ -1,28 +1,57 @@
 .educationComponentWrapper {
   height: $componentHeightSmall;
   min-height: $componentHeightSmall;
+  max-height: $componentHeightRegular;
   display: flex;
   flex-direction: column;
   margin-top: $componentMargin;
 }
-.redComponent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 33%;
+.redClose {
+  @include educationComponentClose;
   background: $coreMustard;
+  .redButtonClose {
+  @include educationButtonClose;
+  background: $coreMustard;
+  }
 }
-.universityComponent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 33%;
+.redOpen {
+  @include educationComponentOpen;
+  background-color: $shadeOne;
+  .redButtonOpen {
+    @include educationButtonOpen;
+    background-color: $coreMustard;
+  }
+}
+.universityClose {
+  @include educationComponentClose;
   background: $coreJungleGreen;
+  .universityButtonClose {
+    @include educationButtonClose;
+    background: $coreJungleGreen;
+
+  }
 }
-.collegeComponent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 33%;
-  background: #58566C;
+.universityOpen {
+  @include educationComponentOpen;
+  background: $shadeTwo;
+  .universityButtonOpen {
+    @include educationButtonOpen;
+    background: $coreJungleGreen;
+  }
+}
+.collegeClose {
+  @include educationComponentClose;
+  background: $coreCharcoal;
+  .collegeButtonClose {
+    @include educationButtonClose;
+    background: $coreCharcoal;
+  }
+}
+.collegeOpen {
+  @include educationComponentOpen;
+  background: $shadeThree;
+  .collegeButtonOpen {
+    @include educationButtonOpen;
+    background: $coreCharcoal;
+  }
 }

@@ -1,9 +1,13 @@
 import React from 'react';
 
-const RedComponent = ({ education }) => { //eslint-disable-line
+const RedComponent = ({ education, redState, expandRedComponent, closeRedComponent }) => { //eslint-disable-line
   return (
-    <div className="redComponent">
-      Red Component
+    <div className={redState.classState}>
+      {redState.componentExpand ?
+        <button onClick={() => closeRedComponent()} className={redState.buttonClass}>{redState.buttonName}</button>
+        :
+        <button onClick={() => expandRedComponent()} className={redState.buttonClass}>{redState.buttonName}</button>
+      }
     </div>
   );
 };
