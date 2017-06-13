@@ -1,7 +1,6 @@
 .educationComponentWrapper {
-  height: $componentHeightSmall;
-  min-height: $componentHeightSmall;
-  max-height: $componentHeightRegular;
+  height: $componentHeightRegular;
+  min-height:  600px;
   display: flex;
   flex-direction: column;
   margin-top: $componentMargin;
