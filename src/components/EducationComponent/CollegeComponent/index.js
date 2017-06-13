@@ -8,6 +8,13 @@ const CollegeComponent = ({ education, collegeState, expandCollegeComponent, clo
         :
         <button onClick={() => expandCollegeComponent()} className={collegeState.buttonClass}>{collegeState.buttonName}</button>
       }
+      <div className="educationInfo">
+        <span>
+          <p>{education[1].school}</p>
+          <p>{education[1].diploma}</p>
+          <p>{education[1].summary}</p>
+        </span>
+      </div>
     </div>
   );
 };
