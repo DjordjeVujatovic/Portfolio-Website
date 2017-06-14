@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import MobileNavBar from '../../components/MobileNavBar';
-import MobileNavBarExpanded from '../../components/MobileNavBarExpand';
+import MobileNavBar from '../../components/NavBarComponent/MobileNavBar';
+import MobileNavBarExpanded from '../../components/NavBarComponent/MobileNavBarExpand';
 import { expand, closeExpand } from '../../redux/modules/actions/mobileNavActions';
 import { expandSubMenu, closeSubMenu } from '../../redux/modules/actions/mobileSubMenuActions';
 

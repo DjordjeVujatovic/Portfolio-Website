@@ -1,9 +1,16 @@
 import React from 'react';
+import DevToolsComponent from '../../components/ToolsComponent/DevToolsComponent';
+import ExperienceWithComponent from '../../components/ToolsComponent/ExperienceWithComponent';
+import LanguageComponent from '../../components/ToolsComponent/LanguageComponent';
+import TechnologiesComponent from '../../components/ToolsComponent/TechnologiesComponent';
 
 const ToolsComponent = () => {
   return (
-    <div>
-      Tools Component
+    <div className="toolsComponentWrapper">
+      <LanguageComponent />
+      <TechnologiesComponent />
+      <DevToolsComponent />
+      <ExperienceWithComponent />
     </div>
   );
 };
