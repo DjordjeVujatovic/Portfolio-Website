@@ -29,5 +29,13 @@ const EducationComponent = ({ education, redState, universityState, collegeState
   );
 };
 
+EducationComponent.propTypes = {
+  expandRedComponent: PropTypes.func.isRequired,
+  closeRedComponent: PropTypes.func.isRequired,
+  expandCollegeComponent: PropTypes.func.isRequired,
+  closeCollegeComponent: PropTypes.func.isRequired,
+  expandUniversityComponent: PropTypes.func.isRequired,
+  closeUniversityComponent: PropTypes.func.isRequired,
+};
 
 export default EducationComponent;

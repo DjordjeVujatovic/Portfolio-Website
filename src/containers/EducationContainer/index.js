@@ -2,18 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { fetchEducation } from '../../redux/modules/actions/FetchActions/educationActions';
-import {
-  expandRedComponent,
-  closeRedComponent,
-} from '../../redux/modules/actions/EducationComponentActions/redComponentActions';
-import {
-  expandCollegeComponent,
-  closeCollegeComponent,
-} from '../../redux/modules/actions/EducationComponentActions/collegeComponentActions';
-import {
-  expandUniversityComponent,
-  closeUniversityComponent,
-} from '../../redux/modules/actions/EducationComponentActions/universityComponentAction';
+import { expandRedComponent, closeRedComponent } from '../../redux/modules/actions/EducationComponentActions/redComponentActions';
+import { expandCollegeComponent, closeCollegeComponent } from '../../redux/modules/actions/EducationComponentActions/collegeComponentActions';
+import { expandUniversityComponent, closeUniversityComponent } from '../../redux/modules/actions/EducationComponentActions/universityComponentAction';
 import EducationComponent from '../../components/EducationComponent';
 import LoadingComponent from '../../components/LoadingComponent';
 
@@ -23,7 +14,17 @@ class EducationContainer extends Component {
     this.props.fetchEducation();
   }
   render() {
-    const { isLoading, education, redState, universityState, collegeState, expandRedComponent, closeRedComponent, expandCollegeComponent, closeCollegeComponent, expandUniversityComponent, closeUniversityComponent } = this.props; //eslint-disable-line
+    const { isLoading,
+      education, //eslint-disable-line
+      redState, //eslint-disable-line
+      universityState, //eslint-disable-line
+      collegeState, //eslint-disable-line
+      expandRedComponent,
+      closeRedComponent,
+      expandCollegeComponent,
+      closeCollegeComponent,
+      expandUniversityComponent,
+      closeUniversityComponent } = this.props; //eslint-disable-line
     return (
       <div>
         {isLoading ?
@@ -81,6 +82,12 @@ const mapDispatchToProps = dispatch => ({
 
 EducationContainer.propTypes = {
   fetchEducation: PropTypes.func.isRequired,
+  expandRedComponent: PropTypes.func.isRequired,
+  closeRedComponent: PropTypes.func.isRequired,
+  expandCollegeComponent: PropTypes.func.isRequired,
+  closeCollegeComponent: PropTypes.func.isRequired,
+  expandUniversityComponent: PropTypes.func.isRequired,
+  closeUniversityComponent: PropTypes.func.isRequired,
   isLoading: PropTypes.bool.isRequired,
 };
 

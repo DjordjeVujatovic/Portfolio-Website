@@ -1,6 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const RedComponent = ({ education, redState, expandRedComponent, closeRedComponent }) => { //eslint-disable-line
+const RedComponent = ({
+  education,  //eslint-disable-line
+  redState,  //eslint-disable-line
+  expandRedComponent,
+  closeRedComponent,
+ }) => {
   return (
     <div className={redState.classState}>
       {redState.componentExpand ?
@@ -17,6 +23,11 @@ const RedComponent = ({ education, redState, expandRedComponent, closeRedCompone
       </div>
     </div>
   );
+};
+
+RedComponent.propTypes = {
+  expandRedComponent: PropTypes.func.isRequired,
+  closeRedComponent: PropTypes.func.isRequired,
 };
 
 export default RedComponent;

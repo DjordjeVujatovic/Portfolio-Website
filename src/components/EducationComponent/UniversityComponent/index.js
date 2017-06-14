@@ -1,6 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const UniversityComponent = ({ education, universityState, expandUniversityComponent, closeUniversityComponent }) => { //eslint-disable-line
+const UniversityComponent = ({
+  education,  //eslint-disable-line
+  universityState,  //eslint-disable-line
+  expandUniversityComponent,
+  closeUniversityComponent,
+}) => { //eslint-disable-line
   return (
     <div className={universityState.classState}>
       {universityState.componentExpand ?
@@ -17,6 +23,11 @@ const UniversityComponent = ({ education, universityState, expandUniversityCompo
       </div>
     </div>
   );
+};
+
+UniversityComponent.propTypes = {
+  expandUniversityComponent: PropTypes.func.isRequired,
+  closeUniversityComponent: PropTypes.func.isRequired,
 };
 
 export default UniversityComponent;
