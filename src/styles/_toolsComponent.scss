@@ -18,6 +18,61 @@
 }
 .languageComponentOpen {
   @include toolsComponentOpen;
+  .languagesInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: $shadeFour;
+    .componentBanner {
+      flex-basis: 18%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: $coreCoralReef;
+      color: $coreWhite;
+      font-size: $fontSizeSmall;
+      font-family: $mainFontFamily;
+      text-transform: uppercase;
+      box-shadow: 0px 2px 5px 0px black;
+    }
+    .languages {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 63%;
+      width: 100%;
+      span {
+        text-align: center;
+        font-family: $mainFontFamily;
+        font-size: $fontSizeRegular;
+        color: $coreWhite;
+      }
+    }
+    .buttonWrapper {
+      display: flex;
+      justify-content: center;
+      flex-basis: 17%;
+      width: 100%;
+      padding-bottom: 5px;
+      .languageButtonOpen {
+        height: 50px;
+        width: 100px;
+        align-self: flex-end;
+        background: #FF7473;
+        box-shadow: -4px 3px 10px -1px black;
+        border: none;
+        border-radius: 5px;
+        color: $coreWhite;
+        font-family: $mainFontFamily;
+        font-size: $fontSizeSmall;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 .technologiesComponentClose {
   @include toolsComponentClose;

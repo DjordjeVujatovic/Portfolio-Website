@@ -6,15 +6,19 @@ const LanguageComponent = ({ tools, languagesState, expandLanguageComponent, clo
     <div className={languagesState.classState}>
       {languagesState.componentExpand ?
         <div className="languagesInfo">
-          <div className="languageInfoWrapper">
-            <div className="languages">
-              <div className="componentBanner">
-                <p>Languages</p>
-              </div>
+          <div className="componentBanner">
+            <div>
+              <p>Languages</p>
+            </div>
+          </div>
+          <div className="languages">
+            <span>
               <p>{tools[0].languages[0]}</p>
               <p>{tools[0].languages[1]}</p>
               <p>{tools[0].languages[2]}</p>
-            </div>
+            </span>
+          </div>
+          <div className="buttonWrapper">
             <button onClick={() => closeLanguageComponent()} className={languagesState.buttonClass}>{languagesState.buttonName}</button>
           </div>
         </div>

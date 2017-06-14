@@ -46,6 +46,7 @@
   text-transform: uppercase;
   font-family: $mainFontFamily;
   font-size: $fontSizeSmall;
+  box-shadow: 0px 2px 5px 0px black;
 }
 @mixin educationInfo {
   .educationInfo {
