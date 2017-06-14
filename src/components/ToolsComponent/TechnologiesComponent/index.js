@@ -2,7 +2,7 @@ import React from 'react';
 
 const TechnologiesComponent = () => {
   return (
-    <div className="TechnologiesComponent">
+    <div className="technologiesComponent">
       Technologies Component
     </div>
   );

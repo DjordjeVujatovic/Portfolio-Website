@@ -1,4 +1,4 @@
-import { EXPAND, CLOSE_EXPAND } from '../actions/mobileNavActions';
+import { EXPAND, CLOSE_EXPAND } from '../../actions/NavigationActions/mobileNavActions';
 
 const initialState = {
   displayExpand: false,

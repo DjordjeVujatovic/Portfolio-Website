@@ -1,4 +1,4 @@
-import { GET_TOOLS, LOADING_TOOLS, DONE_LOADING_TOOLS } from '../actions/toolsActions';
+import { GET_TOOLS, LOADING_TOOLS, DONE_LOADING_TOOLS } from '../../actions/FetchActions/toolsActions';
 
 const initialState = { isLoading: true };
 

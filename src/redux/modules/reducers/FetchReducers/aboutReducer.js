@@ -1,4 +1,4 @@
-import { GET_ABOUT, LOADING_ABOUT, DONE_LOADING_ABOUT } from '../actions/aboutActions';
+import { GET_ABOUT, LOADING_ABOUT, DONE_LOADING_ABOUT } from '../../actions/FetchActions/aboutActions';
 
 const initialState = { isLoading: true };
 

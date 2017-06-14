@@ -1,14 +1,14 @@
-import { GET_EDUCATION, LOADING_EDUCATION, DONE_LOADING_EDUCATION } from '../actions/educationActions';
+import { GET_BOOKS, LOADING_BOOKS, DONE_LOADING_BOOKS } from '../../actions/FetchActions/booksActions';
 
 const initialState = { isLoading: true };
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case LOADING_EDUCATION:
+    case LOADING_BOOKS:
       return { ...state, isLoading: true };
-    case DONE_LOADING_EDUCATION:
+    case DONE_LOADING_BOOKS:
       return { ...state, isLoading: false };
-    case GET_EDUCATION:
+    case GET_BOOKS:
       return { ...state, data: action.payload };
     default:
       return state;

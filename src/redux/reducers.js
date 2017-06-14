@@ -1,14 +1,14 @@
 import { combineReducers } from 'redux';
-import aboutReducer from './modules/reducers/aboutReducer';
-import booksReducer from './modules/reducers/booksReducer';
-import educationReducer from './modules/reducers/educationReducer';
-import toolsReducer from './modules/reducers/toolsReducer';
-import projectReducer from './modules/reducers/projectReducer';
-import mobileNavReducer from './modules/reducers/mobileNavReducer';
-import mobileSubMenuReducer from './modules/reducers/subMenuReducer';
-import redReducer from './modules/reducers/redReducer';
-import collegeReducer from './modules/reducers/collegeReducer';
-import universityReducer from './modules/reducers/universityReducer';
+import aboutReducer from './modules/reducers/FetchReducers/aboutReducer';
+import booksReducer from './modules/reducers/FetchReducers/booksReducer';
+import educationReducer from './modules/reducers/FetchReducers/educationReducer';
+import toolsReducer from './modules/reducers/FetchReducers/toolsReducer';
+import projectReducer from './modules/reducers/FetchReducers/projectReducer';
+import mobileNavReducer from './modules/reducers/NavigationReducers/mobileNavReducer';
+import mobileSubMenuReducer from './modules/reducers/NavigationReducers/subMenuReducer';
+import redReducer from './modules/reducers/EducationComponentReducers/redReducer';
+import collegeReducer from './modules/reducers/EducationComponentReducers/collegeReducer';
+import universityReducer from './modules/reducers/EducationComponentReducers/universityReducer';
 
 const combinedReducers = combineReducers({
   about: aboutReducer,

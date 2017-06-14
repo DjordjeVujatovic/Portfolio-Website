@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import MobileNavBar from '../../components/NavBarComponent/MobileNavBar';
 import MobileNavBarExpanded from '../../components/NavBarComponent/MobileNavBarExpand';
-import { expand, closeExpand } from '../../redux/modules/actions/mobileNavActions';
-import { expandSubMenu, closeSubMenu } from '../../redux/modules/actions/mobileSubMenuActions';
+import { expand, closeExpand } from '../../redux/modules/actions/NavigationActions/mobileNavActions';
+import { expandSubMenu, closeSubMenu } from '../../redux/modules/actions/NavigationActions/mobileSubMenuActions';
 
 
 class NavBarContainer extends Component {

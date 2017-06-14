@@ -1,7 +1,7 @@
 import {
   EXPAND_UNIVERSITY_COMPONENT,
   CLOSE_UNIVERSITY_COMPONENT,
-} from '../actions/educationExpandActions';
+} from '../../actions/educationActions';
 
 const initialState = {
   componentExpand: false,

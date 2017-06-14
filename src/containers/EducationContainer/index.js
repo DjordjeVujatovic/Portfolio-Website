@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { fetchEducation } from '../../redux/modules/actions/educationActions';
+import { fetchEducation } from '../../redux/modules/actions/FetchActions/educationActions';
 import {
   expandRedComponent,
   closeRedComponent,
@@ -9,7 +9,7 @@ import {
   closeCollegeComponent,
   expandUniversityComponent,
   closeUniversityComponent,
-} from '../../redux/modules/actions/educationExpandActions';
+} from '../../redux/modules/actions/educationActions';
 import EducationComponent from '../../components/EducationComponent';
 import LoadingComponent from '../../components/LoadingComponent';
 
@@ -19,7 +19,6 @@ class EducationContainer extends Component {
   }
   render() {
     const { isLoading, education, redState, universityState, collegeState, expandRedComponent, closeRedComponent, expandCollegeComponent, closeCollegeComponent, expandUniversityComponent, closeUniversityComponent } = this.props; //eslint-disable-line
-    console.log(redState);
     return (
       <div>
         {isLoading ?

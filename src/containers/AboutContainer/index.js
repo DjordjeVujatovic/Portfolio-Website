@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { fetchAbout } from '../../redux/modules/actions/aboutActions';
+import { fetchAbout } from '../../redux/modules/actions/FetchActions/aboutActions';
 import AboutComponent from '../../components/AboutComponent';
 import LoadingComponent from '../../components/LoadingComponent';
 

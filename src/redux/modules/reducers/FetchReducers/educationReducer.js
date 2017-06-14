@@ -1,14 +1,14 @@
-import { GET_PROJECTS, LOADING_PROJECTS, DONE_LOADING_PROJECTS } from '../actions/projectActions';
+import { GET_EDUCATION, LOADING_EDUCATION, DONE_LOADING_EDUCATION } from '../../actions/FetchActions/educationActions';
 
 const initialState = { isLoading: true };
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case LOADING_PROJECTS:
+    case LOADING_EDUCATION:
       return { ...state, isLoading: true };
-    case DONE_LOADING_PROJECTS:
+    case DONE_LOADING_EDUCATION:
       return { ...state, isLoading: false };
-    case GET_PROJECTS:
+    case GET_EDUCATION:
       return { ...state, data: action.payload };
     default:
       return state;

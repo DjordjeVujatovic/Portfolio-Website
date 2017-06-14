@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { fetchTools } from '../../redux/modules/actions/toolsActions';
+import { fetchTools } from '../../redux/modules/actions/FetchActions/toolsActions';
 import ToolsComponent from '../../components/ToolsComponent';
 import LoadingComponent from '../../components/LoadingComponent';
 

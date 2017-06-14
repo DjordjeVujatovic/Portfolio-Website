@@ -1,14 +1,14 @@
-import { GET_BOOKS, LOADING_BOOKS, DONE_LOADING_BOOKS } from '../actions/booksActions';
+import { GET_PROJECTS, LOADING_PROJECTS, DONE_LOADING_PROJECTS } from '../../actions/FetchActions/projectActions';
 
 const initialState = { isLoading: true };
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case LOADING_BOOKS:
+    case LOADING_PROJECTS:
       return { ...state, isLoading: true };
-    case DONE_LOADING_BOOKS:
+    case DONE_LOADING_PROJECTS:
       return { ...state, isLoading: false };
-    case GET_BOOKS:
+    case GET_PROJECTS:
       return { ...state, data: action.payload };
     default:
       return state;

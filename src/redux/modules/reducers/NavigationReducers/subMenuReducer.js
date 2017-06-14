@@ -1,4 +1,4 @@
-import { EXPAND_SUB_MENU, CLOSE_SUB_MENU } from '../actions/mobileSubMenuActions';
+import { EXPAND_SUB_MENU, CLOSE_SUB_MENU } from '../../actions/NavigationActions/mobileSubMenuActions';
 
 const initialState = {
   subMenuExpand: false,

@@ -1,37 +1,38 @@
 // Action
 
-export const GET_EDUCATION = 'GET_EDUCATION';
-export const LOADING_EDUCATION = 'LOADING_EDUCATION';
-export const DONE_LOADING_EDUCATION = 'DONE_LOADING_EDUCATION';
+export const EXPAND_RED_COMPONENT = 'EXPAND_RED_COMPONENT';
+export const CLOSE_RED_COMPONENT = 'CLOSE_RED_COMPONENT';
 
+export const EXPAND_COLLEGE_COMPONENT = 'EXPAND_COLLEGE_COMPONENT';
+export const CLOSE_COLLEGE_COMPONENT = 'CLOSE_COLLEGE_COMPONENT';
 
+export const EXPAND_UNIVERSITY_COMPONENT = 'EXPAND_UNIVERSITY_COMPONENT';
+export const CLOSE_UNIVERSITY_COMPONENT = 'CLOSE_UNIVERSITY_COMPONENT';
 // Action Creator
 
-export const getEducation = data => ({
-  type: GET_EDUCATION,
-  payload: data,
+export const expandRedComponent = () => ({
+  type: EXPAND_RED_COMPONENT,
+  payload: null,
 });
-
-export const loadingEducation = () => ({
-  type: LOADING_EDUCATION,
+export const closeRedComponent = () => ({
+  type: CLOSE_RED_COMPONENT,
   payload: null,
 });
 
-export const doneLoadingEducation = () => ({
-  type: DONE_LOADING_EDUCATION,
+export const expandCollegeComponent = () => ({
+  type: EXPAND_COLLEGE_COMPONENT,
+  payload: null,
+});
+export const closeCollegeComponent = () => ({
+  type: CLOSE_COLLEGE_COMPONENT,
   payload: null,
 });
 
-// Thunk
-const endpoint = 'https://personal-website-5164c.firebaseio.com/education.json';
-
-export const fetchEducation = () => (dispatch) => {
-  dispatch(loadingEducation());
-  fetch(endpoint)
-    .then(response => response.json())
-    .then((data) => {
-      dispatch(getEducation(data));
-      dispatch(doneLoadingEducation());
-    })
-    .catch(error => console.log('Error fetching JSON', error));
-};
+export const expandUniversityComponent = () => ({
+  type: EXPAND_UNIVERSITY_COMPONENT,
+  payload: null,
+});
+export const closeUniversityComponent = () => ({
+  type: CLOSE_UNIVERSITY_COMPONENT,
+  payload: null,
+});

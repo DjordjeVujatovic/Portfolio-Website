@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { fetchProjects } from '../../redux/modules/actions/projectActions';
+import { fetchProjects } from '../../redux/modules/actions/FetchActions/projectActions';
 import ProjectsComponent from '../../components/ProjectsComponent';
 import LoadingComponent from '../../components/LoadingComponent';
 
