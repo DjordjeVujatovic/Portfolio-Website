@@ -12,7 +12,6 @@ class BooksContainer extends Component {
 
   render() {
     const { isLoading, books } = this.props; // eslint-disable-line
-    console.log(books);
     return (
       <div>
         {

@@ -5,7 +5,7 @@ import {
 
 const initialState = {
   componentExpand: false,
-  classState: 'experienceClose',
+  classState: 'experienceComponentClose',
   buttonName: 'Experience With',
   buttonClass: 'experienceButtonClose',
 };
@@ -16,7 +16,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         componentExpand: true,
-        classState: 'experienceOpen',
+        classState: 'experienceComponentOpen',
         buttonClass: 'experienceButtonOpen',
         buttonName: 'Close',
       };
@@ -24,7 +24,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         componentExpand: false,
-        classState: 'experienceClose',
+        classState: 'experienceComponentClose',
         buttonName: 'Experience With',
         buttonClass: 'experienceButtonClose',
       };

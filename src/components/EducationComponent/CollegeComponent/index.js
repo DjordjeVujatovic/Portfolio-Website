@@ -1,12 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CollegeComponent = ({
-  education, //eslint-disable-line
-  collegeState, //eslint-disable-line
-  expandCollegeComponent,
-  closeCollegeComponent,
-}) => {
+const CollegeComponent = ({ education, collegeState, expandCollegeComponent, closeCollegeComponent }) => { //eslint-disable-line
   return (
     <div className={collegeState.classState}>
       {collegeState.componentExpand ?

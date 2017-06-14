@@ -6,3 +6,46 @@
   flex-direction: row;
   margin-top: $componentMargin;
 }
+.languageComponentClose {
+  @include toolsComponentClose;
+  background: $coreCoralReef;
+  .languageButtonClose {
+    @include toolsButtonClose;
+  }
+  .languagesInfo {
+    display: none;
+  }
+}
+.languageComponentOpen {
+  @include toolsComponentOpen;
+}
+.technologiesComponentClose {
+  @include toolsComponentClose;
+  background: $coreJungleGreen;
+  .technologiesButtonClose {
+    @include toolsButtonClose;
+  }
+}
+.technologiesComponentOpen {
+  @include toolsComponentOpen;
+}
+.devToolsComponentClose {
+  @include toolsComponentClose;
+  background: $coreCharcoal;
+  .devToolsButtonClose {
+    @include toolsButtonClose;
+  }
+}
+.devToolsComponentOpen {
+  @include toolsComponentOpen;
+}
+.experienceComponentClose {
+  @include toolsComponentClose;
+  background: $coreMustard;
+  .experienceButtonClose {
+    @include toolsButtonClose;
+  }
+}
+.experienceComponentOpen {
+  @include toolsComponentOpen;
+}

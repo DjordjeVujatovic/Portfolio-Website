@@ -5,7 +5,7 @@ import {
 
 const initialState = {
   componentExpand: false,
-  classState: 'devToolsClose',
+  classState: 'devToolsComponentClose',
   buttonName: 'Development Tools',
   buttonClass: 'devToolsButtonClose',
 };
@@ -16,7 +16,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         componentExpand: true,
-        classState: 'devToolsOpen',
+        classState: 'devToolsComponentOpen',
         buttonClass: 'devToolsButtonOpen',
         buttonName: 'Close',
       };
@@ -24,7 +24,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         componentExpand: false,
-        classState: 'devToolsClose',
+        classState: 'devToolsComponentClose',
         buttonName: 'Development Tools',
         buttonClass: 'devToolsButtonClose',
       };

@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 const DevToolsComponent = ({ tools, devToolsState, expandDevToolsComponent, closeDevToolsComponent }) => { //eslint-disable-line
   return (
     <div className={devToolsState.classState}>
-      DevTools Component
+      {devToolsState.componentExpand ?
+        <button onClick={() => closeDevToolsComponent()} className={devToolsState.buttonClass}>{devToolsState.buttonName}</button>
+        :
+        <button onClick={() => expandDevToolsComponent()} className={devToolsState.buttonClass}>{devToolsState.buttonName}</button>
+      }
     </div>
   );
 };

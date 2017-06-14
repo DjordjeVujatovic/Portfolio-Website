@@ -11,7 +11,7 @@ const initialState = {
   componentExpand: false,
   classState: 'redClose',
   buttonClass: 'redButtonClose',
-  buttonName: 'redAcademy',
+  buttonName: 'Red Academy',
 };
 
 export default (state = initialState, action) => {

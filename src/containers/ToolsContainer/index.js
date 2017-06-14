@@ -24,8 +24,8 @@ class ToolsContainer extends Component {
       closeDevToolsComponent,
       expandExperienceComponent,
       closeExperienceComponent,
-      expandLanguageComponent,
-      closeLanguageComponent,
+      expandLanguagesComponent,
+      closeLanguagesComponent,
       expandTechnologiesComponent,
       closeTechnologiesComponent,
 
@@ -36,7 +36,7 @@ class ToolsContainer extends Component {
           <LoadingComponent />
           :
           <ToolsComponent
-            toolsData={tools}
+            tools={tools}
             devToolsState={devToolsState}
             experienceState={experienceState}
             languagesState={languagesState}
@@ -45,8 +45,8 @@ class ToolsContainer extends Component {
             closeDevToolsComponent={closeDevToolsComponent}
             expandExperienceComponent={expandExperienceComponent}
             closeExperienceComponent={closeExperienceComponent}
-            expandLanguageComponent={expandLanguageComponent}
-            closeLanguageComponent={closeLanguageComponent}
+            expandLanguageComponent={expandLanguagesComponent}
+            closeLanguageComponent={closeLanguagesComponent}
             expandTechnologiesComponent={expandTechnologiesComponent}
             closeTechnologiesComponent={closeTechnologiesComponent}
           />
@@ -102,8 +102,8 @@ ToolsContainer.propTypes = {
   closeDevToolsComponent: PropTypes.func.isRequired,
   expandExperienceComponent: PropTypes.func.isRequired,
   closeExperienceComponent: PropTypes.func.isRequired,
-  expandLanguageComponent: PropTypes.func.isRequired,
-  closeLanguageComponent: PropTypes.func.isRequired,
+  expandLanguagesComponent: PropTypes.func.isRequired,
+  closeLanguagesComponent: PropTypes.func.isRequired,
   expandTechnologiesComponent: PropTypes.func.isRequired,
   closeTechnologiesComponent: PropTypes.func.isRequired,
 };

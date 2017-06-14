@@ -5,20 +5,7 @@ import ExperienceWithComponent from '../../components/ToolsComponent/ExperienceW
 import LanguageComponent from '../../components/ToolsComponent/LanguageComponent';
 import TechnologiesComponent from '../../components/ToolsComponent/TechnologiesComponent';
 
-const ToolsComponent = ({
-  tools, //eslint-disable-line
-  devToolsState, //eslint-disable-line
-  experienceState, //eslint-disable-line
-  languagesState, //eslint-disable-line
-  technologiesState, //eslint-disable-line
-  expandDevToolsComponent,
-  closeDevToolsComponent,
-  expandExperienceComponent,
-  closeExperienceComponent,
-  expandLanguageComponent,
-  closeLanguageComponent,
-  expandTechnologiesComponent,
-  closeTechnologiesComponent }) => {
+const ToolsComponent = ({ tools, devToolsState, experienceState, languagesState,  technologiesState,  expandDevToolsComponent, closeDevToolsComponent, expandExperienceComponent, closeExperienceComponent, expandLanguageComponent, closeLanguageComponent, expandTechnologiesComponent, closeTechnologiesComponent }) => { //eslint-disable-line
   return (
     <div className="toolsComponentWrapper">
       <LanguageComponent

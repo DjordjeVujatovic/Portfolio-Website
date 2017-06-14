@@ -2,12 +2,30 @@
   display: flex;
   flex-basis: 33%;
   justify-content: center;
-  align-items: center;
 }
 @mixin educationComponentOpen {
   display:flex;
   flex-direction: column;
   flex-basis: 45%;
+}
+@mixin toolsComponentClose {
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%;
+}
+@mixin toolsComponentOpen {
+  display: flex;
+  flex-basis: 50%;
+}
+@mixin toolsButtonClose {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  color: $coreWhite;
+  font-size: $fontSizeRegular;
+  font-family: $mainFontFamily;
 }
 @mixin educationButtonClose {
   width: 100%;
