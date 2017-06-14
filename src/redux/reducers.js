@@ -9,6 +9,10 @@ import mobileSubMenuReducer from './modules/reducers/NavigationReducers/subMenuR
 import redReducer from './modules/reducers/EducationComponentReducers/redReducer';
 import collegeReducer from './modules/reducers/EducationComponentReducers/collegeReducer';
 import universityReducer from './modules/reducers/EducationComponentReducers/universityReducer';
+import devToolsReducer from '../redux/modules/reducers/ToolsComponentReducers/devToolsReducer';
+import experienceReducer from '../redux/modules/reducers/ToolsComponentReducers/experienceReducer';
+import languagesReducer from '../redux/modules/reducers/ToolsComponentReducers/languagesReducer';
+import technologiesReducer from '../redux/modules/reducers/ToolsComponentReducers/technologiesReducer';
 
 const combinedReducers = combineReducers({
   about: aboutReducer,
@@ -21,6 +25,10 @@ const combinedReducers = combineReducers({
   redState: redReducer,
   collegeState: collegeReducer,
   universityState: universityReducer,
+  devToolsComponentState: devToolsReducer,
+  experienceComponentState: experienceReducer,
+  languagesComponentState: languagesReducer,
+  technologiesComponentState: technologiesReducer,
 });
 
 export default combinedReducers;
