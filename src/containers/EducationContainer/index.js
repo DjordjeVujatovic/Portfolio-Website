@@ -5,13 +5,18 @@ import { fetchEducation } from '../../redux/modules/actions/FetchActions/educati
 import {
   expandRedComponent,
   closeRedComponent,
+} from '../../redux/modules/actions/EducationComponentActions/redComponentActions';
+import {
   expandCollegeComponent,
   closeCollegeComponent,
+} from '../../redux/modules/actions/EducationComponentActions/collegeComponentActions';
+import {
   expandUniversityComponent,
   closeUniversityComponent,
-} from '../../redux/modules/actions/educationActions';
+} from '../../redux/modules/actions/EducationComponentActions/universityComponentAction';
 import EducationComponent from '../../components/EducationComponent';
 import LoadingComponent from '../../components/LoadingComponent';
+
 
 class EducationContainer extends Component {
   componentDidMount() {

@@ -5,7 +5,7 @@ import {
   CLOSE_COLLEGE_COMPONENT,
   EXPAND_UNIVERSITY_COMPONENT,
   CLOSE_UNIVERSITY_COMPONENT,
-} from '../../actions/educationActions';
+} from '../../actions/EducationComponentActions/redComponentActions';
 
 const initialState = {
   componentExpand: false,

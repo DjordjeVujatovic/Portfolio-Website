@@ -1,7 +1,7 @@
 import {
   EXPAND_COLLEGE_COMPONENT,
   CLOSE_COLLEGE_COMPONENT,
-} from '../../actions/educationActions';
+} from '../../actions/EducationComponentActions/collegeComponentActions';
 
 const initialState = {
   componentExpand: false,
