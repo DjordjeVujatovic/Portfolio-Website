@@ -5,7 +5,25 @@ const ExperienceWithComponent = ({ tools, experienceState, expandExperienceCompo
   return (
     <div className={experienceState.classState}>
       {experienceState.componentExpand ?
-        <button onClick={() => closeExperienceComponent()} className={experienceState.buttonClass}>{experienceState.buttonName}</button>
+        <div className="experienceInfo">
+          <div className="componentBanner">
+            <div>
+              <p>Experience With</p>
+            </div>
+          </div>
+          <div className="experienceWith">
+            <span>
+              <p>{tools[2].experienceWith[0]}</p>
+              <p>{tools[2].experienceWith[1]}</p>
+              <p>{tools[2].experienceWith[2]}</p>
+              <p>{tools[2].experienceWith[3]}</p>
+              <p>{tools[2].experienceWith[4]}</p>
+            </span>
+          </div>
+          <div className="buttonWrapper">
+            <button onClick={() => closeExperienceComponent()} className={experienceState.buttonClass}>{experienceState.buttonName}</button>
+          </div>
+        </div>
         :
         <button onClick={() => expandExperienceComponent()} className={experienceState.buttonClass}>{experienceState.buttonName}</button>
       }

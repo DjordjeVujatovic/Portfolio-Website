@@ -5,7 +5,25 @@ const TechnologiesComponent = ({ tools, technologiesState, expandTechnologiesCom
   return (
     <div className={technologiesState.classState}>
       {technologiesState.componentExpand ?
-        <button onClick={() => closeTechnologiesComponent()} className={technologiesState.buttonClass}>{technologiesState.buttonName}</button>
+        <div className="technologiesInfo">
+          <div className="componentBanner">
+            <div>
+              <p>Technologies</p>
+            </div>
+          </div>
+          <div className="technologies">
+            <span>
+              <p>{tools[1].technologies[0]}</p>
+              <p>{tools[1].technologies[1]}</p>
+              <p>{tools[1].technologies[2]}</p>
+              <p>{tools[1].technologies[3]}</p>
+              <p>{tools[1].technologies[4]}</p>
+            </span>
+          </div>
+          <div className="buttonWrapper">
+            <button onClick={() => closeTechnologiesComponent()} className={technologiesState.buttonClass}>{technologiesState.buttonName}</button>
+          </div>
+        </div>
         :
         <button onClick={() => expandTechnologiesComponent()} className={technologiesState.buttonClass}>{technologiesState.buttonName}</button>
       }

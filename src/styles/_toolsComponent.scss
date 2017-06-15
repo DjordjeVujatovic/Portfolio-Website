@@ -19,57 +19,20 @@
 .languageComponentOpen {
   @include toolsComponentOpen;
   .languagesInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    @include toolsInfoElement;
     background: $shadeFour;
     .componentBanner {
-      flex-basis: 18%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      @include toolsComponentBanner;
       background: $coreCoralReef;
-      color: $coreWhite;
-      font-size: $fontSizeSmall;
-      font-family: $mainFontFamily;
-      text-transform: uppercase;
-      box-shadow: 0px 2px 5px 0px black;
     }
     .languages {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-basis: 63%;
-      width: 100%;
-      span {
-        text-align: center;
-        font-family: $mainFontFamily;
-        font-size: $fontSizeRegular;
-        color: $coreWhite;
-      }
+      @include tools;
     }
     .buttonWrapper {
-      display: flex;
-      justify-content: center;
-      flex-basis: 17%;
-      width: 100%;
-      padding-bottom: 5px;
+      @include toolsButtonWrapper;
       .languageButtonOpen {
-        height: 50px;
-        width: 100px;
-        align-self: flex-end;
-        background: #FF7473;
-        box-shadow: -4px 3px 10px -1px black;
-        border: none;
-        border-radius: 5px;
-        color: $coreWhite;
-        font-family: $mainFontFamily;
-        font-size: $fontSizeSmall;
-        text-transform: uppercase;
+        @include toolsButton;
+        background: $coreCoralReef;
       }
     }
   }
@@ -83,6 +46,24 @@
 }
 .technologiesComponentOpen {
   @include toolsComponentOpen;
+  .technologiesInfo {
+    @include toolsInfoElement;
+    background: $shadeTwo;
+    .componentBanner {
+      @include toolsComponentBanner;
+      background: $coreJungleGreen;
+    }
+    .technologies {
+      @include tools;
+    }
+    .buttonWrapper {
+      @include toolsButtonWrapper;
+      .technologiesButtonOpen {
+        @include toolsButton;
+        background: $coreJungleGreen;
+      }
+    }
+  }
 }
 .devToolsComponentClose {
   @include toolsComponentClose;
@@ -93,6 +74,24 @@
 }
 .devToolsComponentOpen {
   @include toolsComponentOpen;
+  .devToolsInfo {
+    @include toolsInfoElement;
+    background: $shadeThree;
+    .componentBanner {
+      @include toolsComponentBanner;
+      background: $coreCharcoal;
+    }
+    .devTools {
+      @include tools;
+    }
+    .buttonWrapper {
+      @include toolsButtonWrapper;
+      .devToolsButtonOpen {
+        @include toolsButton;
+        background: $coreCharcoal;
+      }
+    }
+  }
 }
 .experienceComponentClose {
   @include toolsComponentClose;
@@ -103,4 +102,22 @@
 }
 .experienceComponentOpen {
   @include toolsComponentOpen;
+  .experienceInfo {
+    @include toolsInfoElement;
+    background: $shadeOne;
+    .componentBanner {
+      @include toolsComponentBanner;
+      background: $coreMustard;
+    }
+    .experienceWith {
+      @include tools;
+    }
+    .buttonWrapper {
+      @include toolsButtonWrapper;
+      .experienceButtonOpen {
+        @include toolsButton;
+        background: $coreMustard;
+      }
+    }
+  }
 }
