@@ -18,9 +18,9 @@ class App extends Component {
         <AboutContainer />
         <EducationHero />
         <EducationContainer />
+        <BooksContainer />
         <ToolsHero />
         <ToolsContainer />
-        <BooksContainer />
         <ProjectContainer />
       </div>
     );

@@ -43,11 +43,11 @@
   color: $coreWhite;
   text-transform: uppercase;
   font-family: $mainFontFamily;
-  font-size: $fontSizeSmall;
+  font-size: $buttonTextSmall;
   box-shadow: 0px 2px 5px 0px black;
   &:hover {
     flex-basis: 30%;
-    font-size: $fontSizeRegular;
+    font-size: $buttonTextLarge;
     cursor: pointer;
   }
   &:focus {
@@ -97,13 +97,13 @@
   border: none;
   text-transform: uppercase;
   color: $coreWhite;
-  font-size: $fontSizeRegular;
+  font-size: $buttonTextSmall;
   font-family: $mainFontFamily;
   box-shadow: 0px 4px 7px 0px black;
   &:hover {
     width: 96%;
     height: 95%;
-    font-size: $fontSizeMedium;
+    font-size: $buttonTextLarge;
     cursor: pointer;
   }
   &:focus {
@@ -129,7 +129,7 @@
   align-items: center;
   text-align: center;
   color: $coreWhite;
-  font-size: $fontSizeRegular;
+  font-size: $buttonTextSmall;
   font-family: $mainFontFamily;
   text-transform: uppercase;
   box-shadow: 0px 2px 5px 0px black;
@@ -163,12 +163,12 @@
   border-radius: 5px;
   color: $coreWhite;
   font-family: $mainFontFamily;
-  font-size: $fontSizeRegular;
+  font-size: $buttonTextSmall;
   text-transform: uppercase;
   &:hover {
     height: 55px;
     width: 96.5%;
-    font-size: $fontSizeMedium;
+    font-size: $buttonTextLarge;
     cursor: pointer;
   }
   &:focus {
