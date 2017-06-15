@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ProjectContainer from '../ProjectContainer';
 import AboutContainer from '../AboutContainer';
 import BooksContainer from '../BooksContainer';
+import BooksHero from '../../components/BooksComponent/BooksHero';
 import EducationHero from '../../components/EducationComponent/EducationHero';
 import EducationContainer from '../EducationContainer';
 import ToolsContainer from '../ToolsContainer';
@@ -18,6 +19,7 @@ class App extends Component {
         <AboutContainer />
         <EducationHero />
         <EducationContainer />
+        <BooksHero />
         <BooksContainer />
         <ToolsHero />
         <ToolsContainer />
