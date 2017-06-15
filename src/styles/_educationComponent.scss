@@ -7,7 +7,7 @@
 }
 .redClose {
   @include educationComponentClose;
-  background: $coreMustard;
+  background: $shadeOne;
   .educationInfo {
     display: none;
   }
@@ -27,7 +27,7 @@
 }
 .universityClose {
   @include educationComponentClose;
-  background: $coreJungleGreen;
+  background: $shadeTwo;
   .educationInfo {
     display: none;
   }
@@ -48,6 +48,7 @@
 }
 .collegeClose {
   @include educationComponentClose;
+  background: $shadeThree;
   .educationInfo {
     display: none;
   }

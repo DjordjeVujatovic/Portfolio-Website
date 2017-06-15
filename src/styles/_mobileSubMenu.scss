@@ -5,7 +5,7 @@
 }
 .subMenuItems {
   flex-basis: 25%;
-  background-color: $subMenuCharcoal;
+  background-color: $shadeTwo;
   color: $coreLightGray;
   font-size: $fontSizeRegular;
   font-family: $mainFontFamily;
@@ -14,19 +14,26 @@
     background-color: $subMenuHover;
     cursor: pointer;
   }
+  &:focus {
+    outline: 0;
+  }
 }
 .closeSubMenu {
   flex-basis: 25%;
   width: 100%;
-  background-color:$coreJungleGreen;
+  background-color:$coreCharcoal;
   border:none;
   font-size: $fontSizeLarge;
   text-transform: uppercase;
   color: $coreLightGray;
   font-family: $mainFontFamily;
+  box-shadow: 0px 2px 5px 0px black;
   &:hover {
-    background-color: $hoverJungleGreen;
+    background-color: $shadeThree;
     cursor: pointer;
+  }
+  &:focus {
+    outline: 0;
   }
 }
 .aboutHeader {

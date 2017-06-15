@@ -13,17 +13,29 @@
     height: 350px;
     width: 100%;
       button {
-        width: 175px;
-        height: 65px;
+        width: 225px;
+        height: 80px;
         align-self: flex-end;
-        border-radius: 50px;
+        border-radius: 6px;
         border: none;
         background-color: $coreJungleGreen;
         color: $coreLightGray;
         font-size: $fontSizeRegular;
         font-family: $mainFontFamily;
+        text-transform: uppercase;
+        box-shadow: -3px 4px 5px -1px black;
         &:hover {
           background-color: $hoverJungleGreen;
+          width: 235px;
+          height: 85px;
+          cursor: pointer;
+        }
+        &:focus {
+          outline:0;
+        }
+        &:active {
+          width: 225px;
+          height: 80px;
         }
       }
     }

@@ -8,9 +8,10 @@
 }
 .languageComponentClose {
   @include toolsComponentClose;
-  background: $coreCoralReef;
+  background: $shadeFour;
   .languageButtonClose {
     @include toolsButtonClose;
+    background: $coreCoralReef;
   }
   .languagesInfo {
     display: none;
@@ -31,7 +32,7 @@
     .buttonWrapper {
       @include toolsButtonWrapper;
       .languageButtonOpen {
-        @include toolsButton;
+        @include toolsButtonOpen;
         background: $coreCoralReef;
       }
     }
@@ -39,9 +40,10 @@
 }
 .technologiesComponentClose {
   @include toolsComponentClose;
-  background: $coreJungleGreen;
+  background: $shadeTwo;
   .technologiesButtonClose {
     @include toolsButtonClose;
+    background: $coreJungleGreen;
   }
 }
 .technologiesComponentOpen {
@@ -59,7 +61,7 @@
     .buttonWrapper {
       @include toolsButtonWrapper;
       .technologiesButtonOpen {
-        @include toolsButton;
+        @include toolsButtonOpen;
         background: $coreJungleGreen;
       }
     }
@@ -67,9 +69,10 @@
 }
 .devToolsComponentClose {
   @include toolsComponentClose;
-  background: $coreCharcoal;
+  background: $shadeThree;
   .devToolsButtonClose {
     @include toolsButtonClose;
+    background: $coreCharcoal;
   }
 }
 .devToolsComponentOpen {
@@ -87,7 +90,7 @@
     .buttonWrapper {
       @include toolsButtonWrapper;
       .devToolsButtonOpen {
-        @include toolsButton;
+        @include toolsButtonOpen;
         background: $coreCharcoal;
       }
     }
@@ -95,9 +98,10 @@
 }
 .experienceComponentClose {
   @include toolsComponentClose;
-  background: $coreMustard;
+  background: $shadeOne;
   .experienceButtonClose {
     @include toolsButtonClose;
+    background: $coreMustard;
   }
 }
 .experienceComponentOpen {
@@ -115,7 +119,7 @@
     .buttonWrapper {
       @include toolsButtonWrapper;
       .experienceButtonOpen {
-        @include toolsButton;
+        @include toolsButtonOpen;
         background: $coreMustard;
       }
     }
