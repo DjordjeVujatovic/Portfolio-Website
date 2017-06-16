@@ -19,6 +19,7 @@ const BooksComponent = ({ books, booksComponentState, booksSectionsState, expand
                 showReading={showReading}
                 showFutureReads={showFutureReads}
                 closeList={closeList}
+                books={books}
               />
             </div>
           </div>

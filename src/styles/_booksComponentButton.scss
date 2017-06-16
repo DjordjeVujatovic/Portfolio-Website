@@ -4,14 +4,14 @@
   align-items: center;
   height: 15vh;
   min-height: 150px;
-  background: $shadeOne;
+  background: $shadeThree;
   margin-top: $componentMargin;
-  transition: 2s;
+  transition: 600ms;
   .booksButtonClose {
     @include educationButtonClose;
     width: 98%;
     height: 89%;
-    background: $coreMustard;
+    background: $coreCharcoal;
   }
 }
 .booksOpen {
@@ -21,14 +21,14 @@
   height: $componentHeightRegular;
   min-height: $componentMinHeightRegular;
   margin-top: $componentMargin;
-  transition: 2s;
+  transition: 600ms;
   .booksOpenWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
     width: 100%;
-    background: $coreMustard;
+    background: $shadeThree;
     .buttonContainer {
       display: flex;
       justify-content: center;
@@ -37,7 +37,7 @@
       .booksButtonOpen {
         height: 100%;
         width:100%;
-        background: transparent;
+        background: $coreCharcoal;
         border: none;
         color: $coreWhite;
         text-transform: uppercase;

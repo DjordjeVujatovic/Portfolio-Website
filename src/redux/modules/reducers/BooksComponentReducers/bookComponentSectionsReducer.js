@@ -8,20 +8,20 @@ import {
 const initialState = {
   favoritesState: {
     showFavorites: false,
-    buttonNameFavorites: 'Open',
-    buttonClassFavorites: 'buttonClose',
+    buttonNameFavorites: 'Favorites',
+    buttonClassFavorites: 'buttonCloseFavorites',
     favoritesClassName: 'favoritesClose',
   },
   readingState: {
     showReading: false,
-    buttonNameReading: 'Open',
-    buttonClassReading: 'buttonClose',
+    buttonNameReading: 'Reading Now',
+    buttonClassReading: 'buttonCloseReading',
     readingClassName: 'readingClose',
   },
   futureReadsState: {
     showFutureReads: false,
-    buttonNameFuture: 'Open',
-    buttonClassFuture: 'buttonClose',
+    buttonNameFuture: 'Going To Read',
+    buttonClassFuture: 'buttonCloseFuture',
     futuresClassName: 'futuresClose',
   },
 };
@@ -35,19 +35,19 @@ export default (state = initialState, action) => {
         favoritesState: {
           showFavorites: true,
           buttonNameFavorites: 'Close',
-          buttonClassFavorites: 'buttonOpen',
+          buttonClassFavorites: 'buttonOpenFavorites',
           favoritesClassName: 'favoritesOpen',
         },
         readingState: {
           showReading: false,
-          buttonNameReading: 'Open',
-          buttonClassReading: 'buttonClose',
+          buttonNameReading: 'Reading Now',
+          buttonClassReading: 'buttonCloseReading',
           readingClassName: 'readingClose',
         },
         futureReadsState: {
           showFutureReads: false,
-          buttonNameFuture: 'Open',
-          buttonClassFuture: 'buttonClose',
+          buttonNameFuture: 'Going To Read',
+          buttonClassFuture: 'buttonCloseFuture',
           futuresClassName: 'futuresClose',
         },
       };
@@ -56,20 +56,20 @@ export default (state = initialState, action) => {
         ...state,
         favoritesState: {
           showFavorites: false,
-          buttonNameFavorites: 'Open',
-          buttonClassFavorites: 'buttonClose',
+          buttonNameFavorites: 'Favorites',
+          buttonClassFavorites: 'buttonCloseFavorites',
           favoritesClassName: 'favoritesClose',
         },
         readingState: {
           showReading: false,
-          buttonNameReading: 'Open',
-          buttonClassReading: 'buttonClose',
+          buttonNameReading: 'Reading Now',
+          buttonClassReading: 'buttonCloseReading',
           readingClassName: 'readingClose',
         },
         futureReadsState: {
           showFutureReads: true,
           buttonNameFuture: 'Close',
-          buttonClassFuture: 'buttonOpen',
+          buttonClassFuture: 'buttonOpenFuture',
           futuresClassName: 'futuresOpen',
         },
       };
@@ -78,20 +78,20 @@ export default (state = initialState, action) => {
         ...state,
         favoritesState: {
           showFavorites: false,
-          buttonNameFavorites: 'Open',
-          buttonClassFavorites: 'buttonClose',
+          buttonNameFavorites: 'Favorites',
+          buttonClassFavorites: 'buttonCloseFavorites',
           favoritesClassName: 'favoritesClose',
         },
         readingState: {
           showReading: true,
           buttonNameReading: 'Close',
-          buttonClassReading: 'buttonOpen',
+          buttonClassReading: 'buttonOpenReading',
           readingClassName: 'readingOpen',
         },
         futureReadsState: {
           showFutureReads: false,
-          buttonNameFuture: 'Open',
-          buttonClassFuture: 'buttonClose',
+          buttonNameFuture: 'Going To Read',
+          buttonClassFuture: 'buttonCloseFuture',
           futuresClassName: 'futuresClose',
         },
       };
@@ -100,20 +100,20 @@ export default (state = initialState, action) => {
         ...state,
         favoritesState: {
           showFavorites: false,
-          buttonNameFavorites: 'Open',
-          buttonClassFavorites: 'buttonClose',
+          buttonNameFavorites: 'Favorites',
+          buttonClassFavorites: 'buttonCloseFavorites',
           favoritesClassName: 'favoritesClose',
         },
         readingState: {
           showReading: false,
-          buttonNameReading: 'Open',
-          buttonClassReading: 'buttonClose',
+          buttonNameReading: 'Reading Now',
+          buttonClassReading: 'buttonCloseReading',
           readingClassName: 'readingClose',
         },
         futureReadsState: {
           showFutureReads: false,
-          buttonNameFuture: 'Open',
-          buttonClassFuture: 'buttonClose',
+          buttonNameFuture: 'Going To Read',
+          buttonClassFuture: 'buttonCloseFuture',
           futuresClassName: 'futuresClose',
         },
       };
