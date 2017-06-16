@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
         ...state,
         componentExpand: true,
         classState: 'booksOpen',
-        buttonClass: 'booksButonOpen',
+        buttonClass: 'booksButtonOpen',
         buttonName: 'Close Book',
       };
     case CLOSE_BOOKS_COMPONENT:

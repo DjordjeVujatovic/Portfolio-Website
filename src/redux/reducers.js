@@ -14,6 +14,7 @@ import experienceReducer from '../redux/modules/reducers/ToolsComponentReducers/
 import languagesReducer from '../redux/modules/reducers/ToolsComponentReducers/languagesReducer';
 import technologiesReducer from '../redux/modules/reducers/ToolsComponentReducers/technologiesReducer';
 import booksComponentReducer from '../redux/modules/reducers/BooksComponentReducers/booksComponentReducer';
+import bookComponentSectionsReducer from '../redux/modules/reducers/BooksComponentReducers/bookComponentSectionsReducer';
 
 const combinedReducers = combineReducers({
   about: aboutReducer,
@@ -31,6 +32,7 @@ const combinedReducers = combineReducers({
   languagesComponentState: languagesReducer,
   technologiesComponentState: technologiesReducer,
   booksComponentState: booksComponentReducer,
+  bookSectionsState: bookComponentSectionsReducer,
 });
 
 export default combinedReducers;

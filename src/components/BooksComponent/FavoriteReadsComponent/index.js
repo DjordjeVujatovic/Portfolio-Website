@@ -3,7 +3,7 @@ import React from 'react';
 const FavoriteReadsComponent = () => {
   return (
     <div>
-      Favorite Reads
+      <p>Open</p>
     </div>
   );
 };

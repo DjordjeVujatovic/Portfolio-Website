@@ -5,6 +5,7 @@ import { fetchBooks } from '../../redux/modules/actions/FetchActions/booksAction
 import BooksComponent from '../../components/BooksComponent';
 import LoadingComponent from '../../components/LoadingComponent';
 import { expandBooksComponent, closeBooksComponent } from '../../redux/modules/actions/BooksComponentActions/booksComponentActions';
+import { showReading, showFavorites, showFutureReads, closeList } from '../../redux/modules/actions/BooksComponentActions/bookComponentSectionsActions';
 
 class BooksContainer extends Component {
   componentDidMount() {
@@ -12,7 +13,7 @@ class BooksContainer extends Component {
   }
 
   render() {
-    const { isLoading, books, booksComponentState, expandBooksComponent, closeBooksComponent } = this.props; // eslint-disable-line
+    const { isLoading, books, booksComponentState, booksSectionsState, expandBooksComponent, closeBooksComponent, showReading, showFavorites, showFutureReads, closeList } = this.props; // eslint-disable-line
     return (
       <div>
         {
@@ -24,6 +25,11 @@ class BooksContainer extends Component {
               booksComponentState={booksComponentState}
               expandBooksComponent={expandBooksComponent}
               closeBooksComponent={closeBooksComponent}
+              booksSectionsState={booksSectionsState}
+              showReading={showReading}
+              showFavorites={showFavorites}
+              showFutureReads={showFutureReads}
+              closeList={closeList}
             />
         }
       </div>
@@ -35,6 +41,7 @@ const mapStateToProps = state => ({
   isLoading: state.books.isLoading,
   books: state.books.data,
   booksComponentState: state.booksComponentState,
+  booksSectionsState: state.bookSectionsState,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -46,6 +53,18 @@ const mapDispatchToProps = dispatch => ({
   },
   closeBooksComponent: () => {
     dispatch(closeBooksComponent());
+  },
+  showReading: () => {
+    dispatch(showReading());
+  },
+  showFavorites: () => {
+    dispatch(showFavorites());
+  },
+  showFutureReads: () => {
+    dispatch(showFutureReads());
+  },
+  closeList: () => {
+    dispatch(closeList());
   },
 });
 

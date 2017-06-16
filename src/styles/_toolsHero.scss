@@ -8,6 +8,7 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, .30) 0%, rgba(0, 0, 0, .10) 100%), url('../content/BackgroundImages/toolsHero.jpg' ) bottom center no-repeat;
   background-size: cover;
   min-width: 100px;
+  margin-top: $componentMargin;
   .toolsTextWrapper {
     p {
       color: $coreWhite;

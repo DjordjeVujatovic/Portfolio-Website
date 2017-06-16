@@ -3,7 +3,7 @@ import React from 'react';
 const PresentReadsComponent = () => {
   return (
     <div>
-      Present Reads Component
+      Open
     </div>
   );
 };
