@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProjectContainer from '../ProjectContainer';
+import ProjectsHero from '../../components/ProjectsComponent/ProjectsHero';
 import AboutContainer from '../AboutContainer';
 import BooksContainer from '../BooksContainer';
 import BooksHero from '../../components/BooksComponent/BooksHero';
@@ -23,6 +24,7 @@ class App extends Component {
         <BooksContainer />
         <ToolsHero />
         <ToolsContainer />
+        <ProjectsHero />
         <ProjectContainer />
       </div>
     );

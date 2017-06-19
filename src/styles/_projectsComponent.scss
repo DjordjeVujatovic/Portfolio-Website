@@ -1,0 +1,76 @@
+.projectsClose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  min-height: 150px;
+  background: $shadeSix;
+  margin-top: $componentMargin;
+  transition: 600ms;
+  .projectsButtonClose {
+    @include educationButtonClose;
+    width: 98%;
+    height: 89%;
+    background: $projectsBlack;
+  }
+}
+.projectsOpen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $componentHeightRegular;
+  min-height: $componentMinHeightRegular;
+  margin-top: $componentMargin;
+  transition: 600ms;
+  .projectsOpenWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: $shadeSix;
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      height: 15%;
+      width: 100%;
+      .projectsButtonOpen {
+        height: 100%;
+        width:100%;
+        background: $projectsBlack;
+        border: none;
+        color: $coreWhite;
+        text-transform: uppercase;
+        font-family: $mainFontFamily;
+        font-size: $buttonTextSmall;
+        box-shadow: 0px 2px 5px 0px black;
+        &:hover {
+          height: 120%;
+          font-size: $buttonTextLarge;
+          cursor: pointer;
+        }
+        &:focus {
+          outline: 0;
+        }
+        &:active {
+          height:100%;
+        }
+      }
+    }
+    .componentsContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75%;
+      width: 95%;
+      .componentsWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 90%;
+        width: 100%;
+      }
+    }
+  }
+}

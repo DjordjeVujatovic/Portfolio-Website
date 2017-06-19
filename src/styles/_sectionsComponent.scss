@@ -82,7 +82,6 @@
     width: 100%;
     .buttonCloseFavorites {
       @include sectionsButtonsClose;
-
     }
     .buttonOpenFavorites {
       @include sectionsButtonsOpen;

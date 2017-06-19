@@ -235,7 +235,7 @@
 @mixin booksComponentOpen {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 @mixin booksComponentContainer {
   width: 100%;
@@ -243,7 +243,7 @@
 }
 @mixin booksComponentBanner {
   height: 20%;
-  background: $coreJungleGreen;
+  background: $coreCharcoal;
 }
 @mixin booksBannerContainer {
   display: flex;
@@ -267,7 +267,7 @@
   color: $coreWhite;
   font-size: $buttonTextSmall;
   font-family: $mainFontFamily;
-  background: $shadeTwo;
+  background: $shadeFive;
 }
 @mixin booksWrapper {
   display: flex;
