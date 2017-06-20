@@ -5,7 +5,8 @@ import { fetchProjects } from '../../redux/modules/actions/FetchActions/projectA
 import ProjectsComponent from '../../components/ProjectsComponent';
 import LoadingComponent from '../../components/LoadingComponent';
 import { expandProjectsComponent, closeProjectsComponent } from '../../redux/modules/actions/ProjectsComponentActions/projectsComponentAction';
-import { nextSlide, previousSlide } from '../../redux/modules/actions/ProjectsComponentActions/projectsSliderComponentActions';
+import { nextSlide, previousSlide } from '../../redux/modules/actions/ProjectsComponentActions/projectsSliderActions';
+import { readMore, closeReadMore } from '../../redux/modules/actions/ProjectsComponentActions/readMoreActions';
 
 class ProjectContainer extends Component {
   componentWillMount() {
@@ -13,7 +14,7 @@ class ProjectContainer extends Component {
   }
 
   render() {
-    const { isLoading, projects, projectsComponentState, projectsSliderState, expandProjectsComponent, closeProjectsComponent, previousSlide, nextSlide } = this.props; // eslint-disable-line
+    const { isLoading, projects, projectsComponentState, slideCount, readMoreState, expandProjectsComponent, closeProjectsComponent, previousSlide, nextSlide, readMore, closeReadMore } = this.props; // eslint-disable-line
     return (
       <div>
         {isLoading ?
@@ -22,11 +23,14 @@ class ProjectContainer extends Component {
           <ProjectsComponent
             projects={projects}
             projectsComponentState={projectsComponentState}
-            projectsSliderState={projectsSliderState}
+            slideCount={slideCount}
+            readMoreState={readMoreState}
             expandProjectsComponent={expandProjectsComponent}
             closeProjectsComponent={closeProjectsComponent}
             nextSlide={nextSlide}
             previousSlide={previousSlide}
+            readMore={readMore}
+            closeReadMore={closeReadMore}
           />
         }
       </div>
@@ -38,7 +42,8 @@ const mapStateToProps = state => ({
   isLoading: state.projects.isLoading,
   projects: state.projects.data,
   projectsComponentState: state.projectsComponentState,
-  projectsSliderState: state.projectsSliderState,
+  slideCount: state.projectState.slideCount,
+  readMoreState: state.projectState.readMore,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -57,6 +62,12 @@ const mapDispatchToProps = dispatch => ({
   previousSlide: () => {
     dispatch(previousSlide());
   },
+  readMore: () => {
+    dispatch(readMore());
+  },
+  closeReadMore: () => {
+    dispatch(closeReadMore());
+  },
 });
 
 ProjectContainer.propTypes = {
@@ -66,6 +77,7 @@ ProjectContainer.propTypes = {
   closeProjectsComponent: PropTypes.func.isRequired,
   nextSlide: PropTypes.func.isRequired,
   previousSlide: PropTypes.func.isRequired,
+  slideCount: PropTypes.number.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectContainer);

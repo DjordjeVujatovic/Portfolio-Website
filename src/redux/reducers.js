@@ -16,7 +16,8 @@ import technologiesReducer from '../redux/modules/reducers/ToolsComponentReducer
 import booksComponentReducer from '../redux/modules/reducers/BooksComponentReducers/booksComponentReducer';
 import bookComponentSectionsReducer from '../redux/modules/reducers/BooksComponentReducers/bookComponentSectionsReducer';
 import projectsComponentReducer from '../redux/modules/reducers/ProjectsComponentReducers/projectsComponentReducer';
-import projectsSliderReducer from '../redux/modules/reducers/ProjectsComponentReducers/projectsSliderComponentReducer';
+import projectsSliderReducer from '../redux/modules/reducers/ProjectsComponentReducers/projectsSliderReducer';
+import readMoreReducer from '../redux/modules/reducers/ProjectsComponentReducers/readMoreReducer';
 
 const combinedReducers = combineReducers({
   about: aboutReducer,
@@ -36,7 +37,7 @@ const combinedReducers = combineReducers({
   booksComponentState: booksComponentReducer,
   bookSectionsState: bookComponentSectionsReducer,
   projectsComponentState: projectsComponentReducer,
-  projectsSliderState: projectsSliderReducer,
+  projectState: projectsSliderReducer,
 });
 
 export default combinedReducers;
