@@ -1,3 +1,4 @@
+
 import { NEXT_SLIDE, PREVIOUS_SLIDE } from '../../actions/ProjectsComponentActions/projectsSliderActions';
 import { READ_MORE, CLOSE_READ_MORE } from '../../actions/ProjectsComponentActions/readMoreActions';
 

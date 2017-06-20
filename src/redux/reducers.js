@@ -17,7 +17,6 @@ import booksComponentReducer from '../redux/modules/reducers/BooksComponentReduc
 import bookComponentSectionsReducer from '../redux/modules/reducers/BooksComponentReducers/bookComponentSectionsReducer';
 import projectsComponentReducer from '../redux/modules/reducers/ProjectsComponentReducers/projectsComponentReducer';
 import projectsSliderReducer from '../redux/modules/reducers/ProjectsComponentReducers/projectsSliderReducer';
-import readMoreReducer from '../redux/modules/reducers/ProjectsComponentReducers/readMoreReducer';
 
 const combinedReducers = combineReducers({
   about: aboutReducer,

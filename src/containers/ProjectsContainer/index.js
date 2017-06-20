@@ -14,7 +14,7 @@ class ProjectContainer extends Component {
   }
 
   render() {
-    const { isLoading, projects, projectsComponentState, slideCount, readMoreState, expandProjectsComponent, closeProjectsComponent, previousSlide, nextSlide, readMore, closeReadMore } = this.props; // eslint-disable-line
+    const { isLoading, projects, projectsComponentState, projectState, slideCount, expandProjectsComponent, closeProjectsComponent, previousSlide, nextSlide, readMore, closeReadMore } = this.props; // eslint-disable-line
     return (
       <div>
         {isLoading ?
@@ -23,8 +23,7 @@ class ProjectContainer extends Component {
           <ProjectsComponent
             projects={projects}
             projectsComponentState={projectsComponentState}
-            slideCount={slideCount}
-            readMoreState={readMoreState}
+            projectState={projectState}
             expandProjectsComponent={expandProjectsComponent}
             closeProjectsComponent={closeProjectsComponent}
             nextSlide={nextSlide}
@@ -42,8 +41,7 @@ const mapStateToProps = state => ({
   isLoading: state.projects.isLoading,
   projects: state.projects.data,
   projectsComponentState: state.projectsComponentState,
-  slideCount: state.projectState.slideCount,
-  readMoreState: state.projectState.readMore,
+  projectState: state.projectState,
 });
 
 const mapDispatchToProps = dispatch => ({

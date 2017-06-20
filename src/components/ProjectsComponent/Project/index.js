@@ -1,14 +1,15 @@
 import React from 'react';
 
-const Project = ({ name, id, slideCount, readMoreState, description, readMore, closeReadMore }) => { //eslint-disable-line
+const Project = ({ name, id, slideCount, readMoreState, projectState, description, readMore, closeReadMore }) => { //eslint-disable-line
   return (
     <div>
       {readMoreState ?
         <div>
           {slideCount === id ?
-            <div>
+            <div className="readMoreContainer">
               <p>{description}</p>
               <button onClick={() => closeReadMore()}>Close</button>
+              <button>gitHub</button>
             </div>
             :
             null
@@ -18,12 +19,12 @@ const Project = ({ name, id, slideCount, readMoreState, description, readMore, c
         <div>
           {
             slideCount === id ?
-              <div>
+              <div className="projectContainerOpen">
                 <p>{name}</p>
-                <button onClick={() => readMore({ id })}>Read More</button>
+                <button onClick={() => readMore()}>Read More</button>
               </div>
               :
-              null
+              <div className="projectContainerClose" />
           }
         </div>
       }
