@@ -3,7 +3,7 @@ import { NEXT_SLIDE, PREVIOUS_SLIDE } from '../../actions/ProjectsComponentActio
 import { READ_MORE, CLOSE_READ_MORE } from '../../actions/ProjectsComponentActions/readMoreActions';
 
 const intialState = {
-  slideCount: 0,
+  slideCount: 1,
   readMore: false,
 };
 
@@ -13,7 +13,7 @@ export default (state = intialState, action) => { //eslint-disable-line
       if (state.slideCount >= 4) {
         return {
           ...state,
-          slideCount: state.slideCount - 4,
+          slideCount: state.slideCount - 3,
           readMore: false,
         };
       } return {
@@ -25,7 +25,7 @@ export default (state = intialState, action) => { //eslint-disable-line
       if (state.slideCount <= 1) {
         return {
           ...state,
-          slideCount: state.slideCount + 4,
+          slideCount: state.slideCount + 3,
           readMore: false,
         };
       } return {

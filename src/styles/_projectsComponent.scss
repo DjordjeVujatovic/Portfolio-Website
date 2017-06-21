@@ -87,41 +87,93 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      .PotLucky {
-        display: none;
-        &:focus {
-          display: flex;
-        }
-      }
-      .R10 {
-        display: none;
-        &:focus {
-          display: flex;
-        }
-      }
-      .SpotShare {
-        display: none;
-        &:focus {
-          display: flex;
-        }
-      }
-      .InstaNews {
-        display: none;
-        &:focus {
-          display: flex;
-        }
-      }
       .previousButtonContainer {
-        flex-basis: 10%;
+        flex-basis: 15%;
+        .previousButton {
+          width: 100%;
+          height: 100%;
+          background: yellow;
+        }
       }
       .nextButtonContainer {
-        flex-basis: 10%;
+        flex-basis: 15%;
+        .nextButton {
+          width: 100%;
+          height: 100%;
+          background: yellow;
+        }
       }
       .projectComponentContainer {
-        flex-basis: 80%;
+        flex-basis: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
+        .readMoreContainer {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          height: 100%;
+          width: 100%;
+          p {
+            height: auto;
+          }
+          .readMoreWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            height: 90%;
+            .toolsUsed {
+              order: 2;
+              flex-basis: 40%;
+              height: 70%;
+            }
+            .description {
+              order: 1;
+              flex-basis: 60%;
+              height: 70%;
+            }
+            .buttonContainer {
+              order: 3;
+              height: 30%;
+            }
+          }
+        }
+        .projectContainer {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          width: 100%;
+          .textContainer {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 80%;
+            .projectName {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-basis: 80%;
+            }
+            .projectSnippet {
+              display: flex;
+              flex-basis: 20%;
+              justify-content: center;
+              align-items: center;
+            }
+            p {
+              height: auto;
+            }
+          }
+          .readMoreButtonContainer {
+            display:flex;
+            justify-content: center;
+            flex-basis: 15%;
+            .readMoreButton {
+              width: 60%;
+              height: 100%;
+              background: green;
+            }
+          }
+        }
       }
     }
   }
