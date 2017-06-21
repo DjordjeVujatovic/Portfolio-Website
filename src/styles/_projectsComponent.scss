@@ -4,14 +4,14 @@
   align-items: center;
   height: 15vh;
   min-height: 150px;
-  background: $shadeSix;
+  background: $shadeTwo;
   margin-top: $componentMargin;
   transition: 600ms;
   .projectsButtonClose {
     @include educationButtonClose;
     width: 98%;
     height: 89%;
-    background: $projectsBlack;
+    background: $coreJungleGreen;
   }
 }
 .projectsOpen {
@@ -37,17 +37,19 @@
       .projectsButtonOpen {
         height: 100%;
         width:100%;
-        background: $projectsBlack;
+        background: $coreJungleGreen;
         border: none;
         color: $coreWhite;
         text-transform: uppercase;
         font-family: $mainFontFamily;
         font-size: $buttonTextSmall;
         box-shadow: 0px 2px 5px 0px black;
+        transition: 400ms;
         &:hover {
           height: 120%;
           font-size: $buttonTextLarge;
           cursor: pointer;
+          transition: 400ms;
         }
         &:focus {
           outline: 0;
@@ -82,25 +84,70 @@
     display: flex;
     width: 100%;
     height: 95%;
-    background: red;
+    min-width: 100%;
+    min-height: 95%;
+    max-height: 600px;
+    max-height: 600px;
+    background: $shadeTwo;
     .projectsSliderWrapper {
       display: flex;
       justify-content: space-between;
       width: 100%;
       .previousButtonContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-basis: 15%;
+        transition: 400ms;
         .previousButton {
-          width: 100%;
-          height: 100%;
-          background: yellow;
+          width: 98%;
+          height: 98%;
+          background: $coreJungleGreen;
+          box-shadow: -1px 1px 6px 1px black;;
+          border-radius: 10px;
+          border: none;
+          transition: 400ms;
+          &:hover {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            transition: 400ms;
+          }
+          &:focus {
+            outline: none;
+          }
+          &:active {
+            width: 98%;
+            height: 98%;
+          }
         }
       }
       .nextButtonContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-basis: 15%;
         .nextButton {
-          width: 100%;
-          height: 100%;
-          background: yellow;
+          width: 98%;
+          height: 98%;
+          background: $coreJungleGreen;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 1px 1px 6px 1px black;
+          transition: 400ms;
+          &:hover {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            transition: 400ms;
+          }
+          &:focus {
+            outline: none;
+          }
+          &:active {
+            width: 98%;
+            height: 98%;
+          }
         }
       }
       .projectComponentContainer {
@@ -108,41 +155,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        .readMoreContainer {
-          justify-content: center;
-          align-items: center;
-          display: flex;
-          height: 100%;
-          width: 100%;
-          p {
-            height: auto;
-          }
-          .readMoreWrapper {
-            display: flex;
-            flex-wrap: wrap;
-            width: 90%;
-            height: 90%;
-            .toolsUsed {
-              order: 2;
-              flex-basis: 40%;
-              height: 70%;
-            }
-            .description {
-              order: 1;
-              flex-basis: 60%;
-              height: 70%;
-            }
-            .buttonContainer {
-              order: 3;
-              height: 30%;
-            }
-          }
-        }
         .projectContainer {
           display: flex;
           flex-direction: column;
-          height: 100%;
-          width: 100%;
+          height: 97%;
+          width: 97%;
+          border-radius: 10px;
+          background: $shadeTwo;
+          box-shadow: 0px 1px 14px 0px black;
           .textContainer {
             display: flex;
             flex-direction: column;
@@ -151,13 +171,33 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              flex-basis: 80%;
+              flex-basis: 70%;
+              p {
+                font-family: $mainFontFamily;
+                font-size: $fontSizeLarge;
+                color: $coreWhite;
+                text-transform: uppercase;
+                text-shadow: -1.5px 2px 1px #000;
+              }
             }
-            .projectSnippet {
+            .projectSnippetContainer {
               display: flex;
               flex-basis: 20%;
               justify-content: center;
               align-items: center;
+              .projectSnippet {
+                text-align: center;
+                width: 100%;
+                max-width: 320px;
+                padding-bottom: 30px;
+                align-self: center;
+                margin: 4%;
+                }
+              p {
+                font-family: $mainFontFamily;
+                font-size: 22px;
+                color: $coreWhite;
+              }
             }
             p {
               height: auto;
@@ -166,11 +206,34 @@
           .readMoreButtonContainer {
             display:flex;
             justify-content: center;
-            flex-basis: 15%;
+            flex-basis: 25%;
             .readMoreButton {
-              width: 60%;
-              height: 100%;
-              background: green;
+              width: 50%;
+              height: 70%;
+              background: $coreJungleGreen;
+              opacity: .95;
+              border: none;
+              border-radius: 15px;
+              transition: 400ms;
+              box-shadow: 0px 3px 3px 0px black;
+              color: white;
+              font-size: $buttonTextSmall;
+              font-family: $mainFontFamily;
+              text-transform: uppercase;
+              &:hover {
+                cursor: pointer;
+                height: 80%;
+                width: 53%;
+                opacity: 1;
+                transition: 400ms;
+              }
+              &:focus {
+                outline: none;
+              }
+              &:active {
+                width: 50%;
+                height: 70%;
+              }
             }
           }
         }
@@ -178,3 +241,151 @@
     }
   }
 }
+
+.readMoreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97%;
+  width: 97%;
+  background: #157368;
+  border-radius: 10px;
+  box-shadow: 0px 1px 14px 0px black;
+  p {
+    height: auto;
+  }
+  .readMoreWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 90%;
+    .topContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 85%;
+      .toolsUsedContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: 2;
+        flex-basis: 45%;
+        height: 70%;
+        font-size: 15px;
+        background: $coreJungleGreen;
+        border-radius: 5px;
+        box-shadow: 0px 1px 14px 0px black;
+        .toolsBanner {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-basis: 20%;
+          font-size: $buttonTextLarge;
+          color: $coreWhite;
+          font-family: $mainFontFamily;
+          text-shadow: -1.5px 2px 1px #000;
+          text-transform: uppercase;
+        }
+        .toolsUsed {
+          text-align: center;
+          font-size: 14px;
+          color: white;
+          font-family: $mainFontFamily;
+          margin: 2%;
+          }
+        }
+      }
+    }
+    .descriptionContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      order: 1;
+      flex-basis: 50%;
+      height: 70%;
+      background: $coreJungleGreen;
+      border-radius: 5px;
+      box-shadow: 0px 1px 14px 0px black;
+      .descriptionBanner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: $buttonTextLarge;
+        color: $coreWhite;
+        font-family: $mainFontFamily;
+        text-shadow: -1.5px 2px 1px #000;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      .description {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 13px;
+        color: white;
+        font-family: $mainFontFamily;
+      }
+    }
+    .buttonContainer {
+      order: 3;
+      width: 100%;
+      height: 15%;
+        .closeReadMoreButton {
+          width: 40%;
+          height: 90%;
+          background: $coreJungleGreen;
+          border: none;
+          border-radius: 6px;
+          transition: 400ms;
+          margin-right: 5px;
+          box-shadow: 0px 3px 3px 0px black;
+          color: white;
+          font-size: $buttonTextSmall;
+          font-family: $mainFontFamily;
+          text-transform: uppercase;
+          &:hover {
+            cursor: pointer;
+            height: 100%;
+            width: 45%;
+            opacity: 1;
+            transition: 400ms;
+          }
+          &:focus {
+            outline: none;
+          }
+          &:active {
+            width: 40%;
+            height: 90%;
+          }
+        }
+        .gitHubButton {
+          width: 40%;
+          height: 90%;
+          background: $coreCharcoal;
+          border: none;
+          border-radius: 6px;
+          transition: 400ms;
+          box-shadow: 0px 3px 3px 0px black;
+          color: white;
+          font-size: $buttonTextSmall;
+          font-family: $mainFontFamily;
+          text-transform: uppercase;
+          &:hover {
+            cursor: pointer;
+            height: 100%;
+            width: 45%;
+            opacity: 1;
+            transition: 400ms;
+          }
+          &:focus {
+            outline: none;
+          }
+          &:active {
+            width: 40%;
+            height: 90%;
+          }
+        }
+      }
+    }

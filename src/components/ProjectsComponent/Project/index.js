@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Project = ({ slideCount, readMoreState, name, id, snippet, githubRepo, description, toolsUsed, readMore, closeReadMore }) => { //eslint-disable-line
+
+const Project = ({ slideCount, readMoreState, name, id, snippet, githubRepo, description, toolsUsed, backgroundImage, readMore, closeReadMore }) => { //eslint-disable-line
+
   if (slideCount !== id) {
     return null;
   }
@@ -11,13 +13,27 @@ const Project = ({ slideCount, readMoreState, name, id, snippet, githubRepo, des
         <div className="readMoreContainer">
           {slideCount === id ?
             <div className="readMoreWrapper">
-              <div className="toolsUsed">
-                {toolsUsed.map(tool => (
-                  <p>{tool}</p>
-                ))}
-              </div>
-              <div className="description">
-                <p>{description}</p>
+              <div className="topContainer">
+                <div className="toolsUsedContainer">
+                  <div className="toolsBanner">
+                    <div>
+                      <p>Tools Used</p>
+                    </div>
+                  </div>
+                  <div className="toolsUsed">
+                    {toolsUsed.map(tool => (
+                      <p>{tool}</p>
+                    ))}
+                  </div>
+                </div>
+                <div className="descriptionContainer">
+                  <div className="descriptionBanner"><div><p>{name} ?</p></div></div>
+                  <div className="description">
+                    <div>
+                      <p>{description}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="buttonContainer">
                 <button className="closeReadMoreButton" onClick={() => closeReadMore()}>Close</button>
@@ -36,8 +52,8 @@ const Project = ({ slideCount, readMoreState, name, id, snippet, githubRepo, des
                 <p>{name}</p>
               </div>
             </div>
-            <div className="projectSnippet">
-              <div>
+            <div className="projectSnippetContainer">
+              <div className="projectSnippet">
                 <p>{snippet}</p>
               </div>
             </div>

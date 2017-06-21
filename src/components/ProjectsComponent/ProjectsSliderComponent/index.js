@@ -28,6 +28,7 @@ const ProjectsSliderComponent = ({ projects, projectState, nextSlide, filter, pr
               filter={filter}
               snippet={project.snippet}
               githubRepo={project.github}
+              backgroundImage={project.image}
             />
           ))}
         <div className="nextButtonContainer">
