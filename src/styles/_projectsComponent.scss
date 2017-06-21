@@ -61,7 +61,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 75%;
+      height: 80%;
       width: 95%;
       .componentsWrapper {
         display: flex;
@@ -74,8 +74,55 @@
     }
   }
 }
-.projectComponent {
+.componentsWrapper {
   display: flex;
   width: 100%;
   height: 100%;
+  .projectsSliderContainer {
+    display: flex;
+    width: 100%;
+    height: 95%;
+    background: red;
+    .projectsSliderWrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .PotLucky {
+        display: none;
+        &:focus {
+          display: flex;
+        }
+      }
+      .R10 {
+        display: none;
+        &:focus {
+          display: flex;
+        }
+      }
+      .SpotShare {
+        display: none;
+        &:focus {
+          display: flex;
+        }
+      }
+      .InstaNews {
+        display: none;
+        &:focus {
+          display: flex;
+        }
+      }
+      .previousButtonContainer {
+        flex-basis: 10%;
+      }
+      .nextButtonContainer {
+        flex-basis: 10%;
+      }
+      .projectComponentContainer {
+        flex-basis: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 }

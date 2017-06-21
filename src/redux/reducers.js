@@ -9,14 +9,14 @@ import mobileSubMenuReducer from './modules/reducers/NavigationReducers/subMenuR
 import redReducer from './modules/reducers/EducationComponentReducers/redReducer';
 import collegeReducer from './modules/reducers/EducationComponentReducers/collegeReducer';
 import universityReducer from './modules/reducers/EducationComponentReducers/universityReducer';
-import devToolsReducer from '../redux/modules/reducers/ToolsComponentReducers/devToolsReducer';
-import experienceReducer from '../redux/modules/reducers/ToolsComponentReducers/experienceReducer';
-import languagesReducer from '../redux/modules/reducers/ToolsComponentReducers/languagesReducer';
-import technologiesReducer from '../redux/modules/reducers/ToolsComponentReducers/technologiesReducer';
-import booksComponentReducer from '../redux/modules/reducers/BooksComponentReducers/booksComponentReducer';
-import bookComponentSectionsReducer from '../redux/modules/reducers/BooksComponentReducers/bookComponentSectionsReducer';
-import projectsComponentReducer from '../redux/modules/reducers/ProjectsComponentReducers/projectsComponentReducer';
-import projectsSliderReducer from '../redux/modules/reducers/ProjectsComponentReducers/projectsSliderReducer';
+import devToolsReducer from './modules/reducers/ToolsComponentReducers/devToolsReducer';
+import experienceReducer from './modules/reducers/ToolsComponentReducers/experienceReducer';
+import languagesReducer from './modules/reducers/ToolsComponentReducers/languagesReducer';
+import technologiesReducer from './modules/reducers/ToolsComponentReducers/technologiesReducer';
+import booksComponentReducer from './modules/reducers/BooksComponentReducers/booksComponentReducer';
+import bookComponentSectionsReducer from './modules/reducers/BooksComponentReducers/bookComponentSectionsReducer';
+import projectsComponentReducer from './modules/reducers/ProjectsComponentReducers/projectsComponentReducer';
+import projectsSliderReducer from './modules/reducers/ProjectsComponentReducers/projectsSliderReducer';
 
 const combinedReducers = combineReducers({
   about: aboutReducer,

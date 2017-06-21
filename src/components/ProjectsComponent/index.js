@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ProjectsSliderComponent from './ProjectsSliderComponent';
 
-const ProjectsComponent = ({ projects, projectsComponentState, projectState, readMoreState, expandProjectsComponent, closeProjectsComponent, nextSlide, previousSlide, readMore, closeReadMore }) => { // eslint-disable-line
+const ProjectsComponent = ({ projects, projectsComponentState, projectState, readMoreState, filter, expandProjectsComponent, closeProjectsComponent, nextSlide, previousSlide, readMore, changeComponentState, closeReadMore }) => { // eslint-disable-line
   return (
     <div className={projectsComponentState.classState}>
       {projectsComponentState.componentExpand ?
@@ -19,6 +19,8 @@ const ProjectsComponent = ({ projects, projectsComponentState, projectState, rea
                 previousSlide={previousSlide}
                 closeReadMore={closeReadMore}
                 readMore={readMore}
+                changeComponentState={changeComponentState}
+                filter={filter}
               />
             </div>
           </div>

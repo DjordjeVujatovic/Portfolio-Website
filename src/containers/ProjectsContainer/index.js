@@ -5,7 +5,7 @@ import { fetchProjects } from '../../redux/modules/actions/FetchActions/projectA
 import ProjectsComponent from '../../components/ProjectsComponent';
 import LoadingComponent from '../../components/LoadingComponent';
 import { expandProjectsComponent, closeProjectsComponent } from '../../redux/modules/actions/ProjectsComponentActions/projectsComponentAction';
-import { nextSlide, previousSlide } from '../../redux/modules/actions/ProjectsComponentActions/projectsSliderActions';
+import { nextSlide, previousSlide, changeComponentState } from '../../redux/modules/actions/ProjectsComponentActions/projectsSliderActions';
 import { readMore, closeReadMore } from '../../redux/modules/actions/ProjectsComponentActions/readMoreActions';
 
 class ProjectContainer extends Component {
@@ -14,7 +14,12 @@ class ProjectContainer extends Component {
   }
 
   render() {
-    const { isLoading, projects, projectsComponentState, projectState, slideCount, expandProjectsComponent, closeProjectsComponent, previousSlide, nextSlide, readMore, closeReadMore } = this.props; // eslint-disable-line
+    const { isLoading, projects, projectsComponentState, projectState, slideCount, expandProjectsComponent, closeProjectsComponent, previousSlide, nextSlide, readMore, changeComponentState, closeReadMore } = this.props; // eslint-disable-line
+    function filter(id, slideCount) {
+      if ((slideCount === id) && readMore) {
+        return true;
+      } return false;
+    }
     return (
       <div>
         {isLoading ?
@@ -30,6 +35,8 @@ class ProjectContainer extends Component {
             previousSlide={previousSlide}
             readMore={readMore}
             closeReadMore={closeReadMore}
+            changeComponentState={changeComponentState}
+            filter={filter}
           />
         }
       </div>
@@ -65,6 +72,9 @@ const mapDispatchToProps = dispatch => ({
   },
   closeReadMore: () => {
     dispatch(closeReadMore());
+  },
+  changeComponentState: () => {
+    dispatch(changeComponentState());
   },
 });
 

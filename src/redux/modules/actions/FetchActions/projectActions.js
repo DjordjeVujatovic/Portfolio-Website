@@ -29,11 +29,11 @@ const endpoint = 'https://personal-website-5164c.firebaseio.com/projects.json';
 export const fetchProjects = () => (dispatch) => {
   dispatch(loadingProjects());
   fetch(endpoint)
-      .then(response => response.json())
-      .then((data) => {
-        dispatch(getProjects(data));
-        dispatch(doneLoadingProjects());
-      })
-      .catch(error => console.log('Error fetching JSON', error));
+    .then(response => response.json())
+    .then((data) => {
+      dispatch(getProjects(data));
+      dispatch(doneLoadingProjects());
+    })
+    .catch(error => console.log('Error fetching JSON', error));
 };
 
