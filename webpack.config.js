@@ -1,6 +1,24 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const styleLoaders = [
+  {
+    loader: 'css-loader',
+    options: {
+      modules: true,
+    },
+  },
+  {
+    loader: 'postcss-loader',
+    options: {
+      plugins: () => [
+        require('postcss-nesting'),
+        require('autoprefixer')({ browsers: 'last 2 versions' }),
+      ],
+    },
+  },
+];
+
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: path.resolve(__dirname, './public/index.html'),
   filename: 'index.html',
