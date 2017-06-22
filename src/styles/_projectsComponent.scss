@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
-  min-height: 150px;
+  height: 20vh;
+  min-height: 200px;
   background: $shadeTwo;
   margin-top: $componentMargin;
   transition: 600ms;
@@ -101,7 +101,7 @@
         transition: 400ms;
         .previousButton {
           width: 98%;
-          height: 98%;
+          height: 95%;
           background: $coreJungleGreen;
           box-shadow: -1px 1px 6px 1px black;;
           border-radius: 10px;
@@ -109,7 +109,7 @@
           transition: 400ms;
           &:hover {
             cursor: pointer;
-            height: 100%;
+            height: 98%;
             width: 100%;
             transition: 400ms;
           }
@@ -118,7 +118,7 @@
           }
           &:active {
             width: 98%;
-            height: 98%;
+            height: 95%;
           }
         }
       }
@@ -129,7 +129,7 @@
         flex-basis: 15%;
         .nextButton {
           width: 98%;
-          height: 98%;
+          height: 95%;
           background: $coreJungleGreen;
           border: none;
           border-radius: 10px;
@@ -137,7 +137,7 @@
           transition: 400ms;
           &:hover {
             cursor: pointer;
-            height: 100%;
+            height: 98%;
             width: 100%;
             transition: 400ms;
           }
@@ -145,8 +145,8 @@
             outline: none;
           }
           &:active {
-            width: 98%;
-            height: 98%;
+            width: 99%;
+            height: 95%;
           }
         }
       }
@@ -158,10 +158,10 @@
         .projectContainer {
           display: flex;
           flex-direction: column;
-          height: 97%;
-          width: 97%;
+          height: 100%;
+          width: 98%;
           border-radius: 10px;
-          background: $shadeTwo;
+          background: #13685E;
           box-shadow: 0px 1px 14px 0px black;
           .textContainer {
             display: flex;
@@ -195,7 +195,7 @@
                 }
               p {
                 font-family: $mainFontFamily;
-                font-size: 22px;
+                font-size: 20px;
                 color: $coreWhite;
               }
             }
@@ -248,7 +248,7 @@
   align-items: center;
   height: 97%;
   width: 97%;
-  background: #157368;
+  background: #13685E;
   border-radius: 10px;
   box-shadow: 0px 1px 14px 0px black;
   p {
@@ -270,8 +270,8 @@
         flex-direction: column;
         justify-content: center;
         order: 2;
-        flex-basis: 45%;
-        height: 70%;
+        flex-basis: 35%;
+        height: 80%;
         font-size: 15px;
         background: $coreJungleGreen;
         border-radius: 5px;
@@ -302,8 +302,8 @@
       flex-direction: column;
       justify-content: center;
       order: 1;
-      flex-basis: 50%;
-      height: 70%;
+      flex-basis: 62%;
+      height: 90%;
       background: $coreJungleGreen;
       border-radius: 5px;
       box-shadow: 0px 1px 14px 0px black;
@@ -326,15 +326,19 @@
         font-size: 13px;
         color: white;
         font-family: $mainFontFamily;
+        margin: 9%;
       }
     }
-    .buttonContainer {
+    .readMoreButtonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       order: 3;
       width: 100%;
       height: 15%;
         .closeReadMoreButton {
-          width: 40%;
-          height: 90%;
+          width: 30%;
+          height: 80%;
           background: $coreJungleGreen;
           border: none;
           border-radius: 6px;
@@ -347,8 +351,8 @@
           text-transform: uppercase;
           &:hover {
             cursor: pointer;
-            height: 100%;
-            width: 45%;
+            height: 90%;
+            width: 35%;
             opacity: 1;
             transition: 400ms;
           }
@@ -356,14 +360,14 @@
             outline: none;
           }
           &:active {
-            width: 40%;
-            height: 90%;
+            width: 30%;
+            height: 80%;
           }
         }
         .gitHubButton {
           width: 40%;
           height: 90%;
-          background: $coreCharcoal;
+          background: #46435C;
           border: none;
           border-radius: 6px;
           transition: 400ms;

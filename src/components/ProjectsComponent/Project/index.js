@@ -35,7 +35,7 @@ const Project = ({ slideCount, readMoreState, name, id, snippet, githubRepo, des
                   </div>
                 </div>
               </div>
-              <div className="buttonContainer">
+              <div className="readMoreButtonContainer">
                 <button className="closeReadMoreButton" onClick={() => closeReadMore()}>Close</button>
                 <button className="gitHubButton">GitHub</button>
               </div>
