@@ -10,11 +10,11 @@ const RedComponent = ({ education, redState, expandRedComponent, closeRedCompone
         <button onClick={() => expandRedComponent()} className={redState.buttonClass}>{redState.buttonName}</button>
       }
       <div className="educationInfo">
-        <span>
+        <div className="educationWrapper">
           <p>{education[2].school}</p>
           <p>{education[2].diploma}</p>
           <p>{education[2].summary}</p>
-        </span>
+        </div>
       </div>
     </div>
   );
