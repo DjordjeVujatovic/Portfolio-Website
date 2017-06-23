@@ -5,6 +5,7 @@
 }
 .subMenuItems {
   flex-basis: 25%;
+  height: 100%;
   background-color: $subMenuCharcoal;
   color: $coreLightGray;
   font-size: $fontSizeRegular;
@@ -38,6 +39,7 @@
 }
 .aboutHeader {
     flex-basis: 15%;
+    height: 14%;
     width: 100%;
   p {
     display: flex;

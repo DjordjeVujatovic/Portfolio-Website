@@ -1,5 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const styleLoaders = [
   {
@@ -18,6 +17,10 @@ const styleLoaders = [
     },
   },
 ];
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: path.resolve(__dirname, './public/index.html'),
@@ -52,6 +55,14 @@ module.exports = {
         },
       },
       {
+        test: /\.css\.scss$/,
+        exclude: [/node_modules/],
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: styleLoaders,
+        }),
+      },
+      {
         test: /\.css$/,
         loader: ['style-loader', 'css-loader', 'sass-loader'],
       },
@@ -79,6 +90,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [HtmlWebpackPluginConfig],
+  plugins: [HtmlWebpackPluginConfig, new ExtractTextPlugin('styles.css')],
 };
 

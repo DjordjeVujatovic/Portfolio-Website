@@ -18,8 +18,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: $componentHeightRegular;
-  min-height: $componentMinHeightRegular;
+  height: 60vh;
+  min-height: 500px;
   margin-top: $componentMargin;
   transition: 600ms;
   .projectsOpenWrapper {
@@ -81,29 +81,26 @@
   width: 100%;
   height: 100%;
   .projectsSliderContainer {
-    display: flex;
-    width: 100%;
     height: 95%;
-    min-width: 100%;
-    min-height: 95%;
-    max-height: 600px;
-    max-height: 600px;
-    background: $shadeTwo;
+    width: 100%;
+    max-width: 800px;
     .projectsSliderWrapper {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       width: 100%;
-      height: 100%;
+      height: 90%;
       .previousButtonContainer {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-basis: 15%;
-        height: 100%;
+        order: 2;
+        flex-basis: 50%;
+        height: 25%;
         transition: 400ms;
         .previousButton {
           width: 98%;
-          height: 95%;
+          height: 80%;
           background: $coreJungleGreen;
           box-shadow: -1px 1px 6px 1px black;;
           border-radius: 10px;
@@ -128,11 +125,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-basis: 15%;
-        height: 100%;
+        order: 3;
+        height: 25%;
+        width: 50%;
         .nextButton {
           width: 98%;
-          height: 95%;
+          height: 80%;
           background: $coreJungleGreen;
           border: none;
           border-radius: 10px;
@@ -154,8 +152,9 @@
         }
       }
       .projectComponentContainer {
-        flex-basis: 70%;
-        height: 100%;
+        flex-basis: 100%;
+        order: 1;
+        height: 85%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -212,7 +211,7 @@
           .readMoreButtonContainer {
             display:flex;
             justify-content: center;
-            height: 20%;
+            height: 25%;
             .readMoreButton {
               width: 50%;
               height: 70%;
@@ -252,7 +251,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 97%;
+  height: 100%;
   width: 97%;
   background: #13685E;
   border-radius: 10px;
@@ -264,13 +263,13 @@
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    height: 90%;
+    height: 95%;
     .topContainer {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      height: 85%;
+      height: 80%;
       .toolsUsedContainer {
         display: flex;
         flex-direction: column;
@@ -341,7 +340,7 @@
       align-items: center;
       order: 3;
       width: 100%;
-      height: 15%;
+      height: 20%;
         .closeReadMoreButton {
           width: 30%;
           height: 80%;
