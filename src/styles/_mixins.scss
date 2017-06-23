@@ -91,10 +91,12 @@
   justify-content: center;
   align-items: center;
   flex-basis: 50%;
+  height: 50%;
 }
 @mixin toolsComponentOpen {
   display: flex;
   flex-basis: 50%;
+  height: 50%;
 }
 @mixin toolsButtonClose {
   width: 95%;
@@ -125,6 +127,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height:100%;
   width: 100%;
 }
 @mixin toolsComponentBanner {
