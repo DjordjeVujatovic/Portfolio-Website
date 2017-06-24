@@ -2,6 +2,19 @@ import React from 'react';
 
 
 const Project = ({ slideCount, readMoreState, name, id, snippet, githubRepo, description, toolsUsed, backgroundImage, readMore, closeReadMore }) => { //eslint-disable-line
+  const backgroundProjectImage = {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%',
+    width: '98%',
+    borderRadius: '10px',
+    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, .40) 0%, rgba(0, 0, 0, .30) 100%), url(${backgroundImage})`,
+    backgroundSize: 'cover',
+  };
+  const backgroundReadMoreImage = {
+    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, .40) 0%, rgba(0, 0, 0, .30) 100%), url(${backgroundImage})`,
+    backgroundSize: 'cover',
+  };
 
   if (slideCount !== id) {
     return null;
@@ -10,7 +23,7 @@ const Project = ({ slideCount, readMoreState, name, id, snippet, githubRepo, des
   return (
     <div className="projectComponentContainer">
       {readMoreState ?
-        <div className="readMoreContainer">
+        <div className="readMoreContainer" style={backgroundReadMoreImage}>
           {slideCount === id ?
             <div className="readMoreWrapper">
               <div className="topContainer">
@@ -45,7 +58,7 @@ const Project = ({ slideCount, readMoreState, name, id, snippet, githubRepo, des
           }
         </div>
         :
-        <div className="projectContainer">
+        <div className="projectContainer" style={backgroundProjectImage}>
           <div className="textContainer">
             <div className="projectName">
               <div>
