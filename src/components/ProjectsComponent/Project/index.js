@@ -2,6 +2,7 @@ import React from 'react';
 
 
 const Project = ({ slideCount, readMoreState, name, id, snippet, githubRepo, description, toolsUsed, backgroundImage, readMore, closeReadMore }) => { //eslint-disable-line
+  console.log(githubRepo);
   const backgroundProjectImage = {
     display: 'flex',
     flexDirection: 'column',
@@ -49,8 +50,10 @@ const Project = ({ slideCount, readMoreState, name, id, snippet, githubRepo, des
                 </div>
               </div>
               <div className="readMoreButtonContainer">
-                <button className="closeReadMoreButton" onClick={() => closeReadMore()}>Close</button>
-                <button className="gitHubButton">GitHub</button>
+                <button className="closeReadMoreButton" onClick={() => closeReadMore()}><i className="fa fa-times fa-2x" aria-hidden="true" /></button>
+                <button className="gitHubButton">
+                  <a href={`${githubRepo}`}><i className="fa fa-github fa-3x" aria-hidden="true" /></a>
+                </button>
               </div>
             </div>
             :

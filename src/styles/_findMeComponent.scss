@@ -26,12 +26,11 @@
       i {
         color: $coreLightGray;
         font-size: 7em;
-        transition: 200ms;
+         transition: 200ms;
         &:hover {
           color: $coreJungleGreen;
           font-size: 8em;
           transition: 200ms;
-          cursor: pointer;
         }
         &:active {
           font-size: 7em;
@@ -49,7 +48,7 @@
     .findMeText {
       width: 90%;
       min-width: 400px;
-      max-width: 600px;
+      max-width: 610px;
       font-size: 16px;
       font-family: $mainFontFamily;
       line-height: 25px;

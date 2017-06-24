@@ -13,17 +13,17 @@ const SectionsComponent = ({ booksSectionsState, books, showReading, showFavorit
       </div>
       <div className="buttonsContainer">
         {booksSectionsState.favoritesState.showFavorites ?
-          <button className={booksSectionsState.favoritesState.buttonClassFavorites} onClick={() => closeList()}>{booksSectionsState.favoritesState.buttonNameFavorites}</button>
+          <button className={booksSectionsState.favoritesState.buttonClassFavorites} onClick={() => closeList()}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
           :
           <button className={booksSectionsState.favoritesState.buttonClassFavorites} onClick={() => showFavorites()}>{booksSectionsState.favoritesState.buttonNameFavorites}</button>
         }
         {booksSectionsState.readingState.showReading ?
-          <button className={booksSectionsState.readingState.buttonClassReading} onClick={() => closeList()}>{booksSectionsState.readingState.buttonNameReading}</button>
+          <button className={booksSectionsState.readingState.buttonClassReading} onClick={() => closeList()}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
           :
           <button className={booksSectionsState.readingState.buttonClassReading} onClick={() => showReading()}>{booksSectionsState.readingState.buttonNameReading}</button>
         }
         {booksSectionsState.futureReadsState.showFutureReads ?
-          <button className={booksSectionsState.futureReadsState.buttonClassFuture} onClick={() => closeList()}>{booksSectionsState.futureReadsState.buttonNameFuture}</button>
+          <button className={booksSectionsState.futureReadsState.buttonClassFuture} onClick={() => closeList()}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
           :
           <button className={booksSectionsState.futureReadsState.buttonClassFuture} onClick={() => showFutureReads()}>{booksSectionsState.futureReadsState.buttonNameFuture}</button>
         }

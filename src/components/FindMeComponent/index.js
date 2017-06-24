@@ -5,8 +5,8 @@ const FindMeComponent = () => {
     <div className="findMeContainer">
       <div className="fontAwesomeContainer">
         <div className="fontAwesomeWrapper">
-          <a href="https://www.linkedin.com/in/djordjevujatovic/"><i className="fa fa-github fa-5x" aria-hidden="true" /></a>
-          <a href="https://github.com/DjordjeVujatovic"><i className="fa fa-linkedin-square fa-5x" aria-hidden="true" /></a>
+          <a href="https://github.com/DjordjeVujatovic"><i className="fa fa-github fa-5x" aria-hidden="true" /></a>
+          <a href="https://www.linkedin.com/in/djordjevujatovic/"><i className="fa fa-linkedin-square fa-5x" aria-hidden="true" /></a>
         </div>
       </div>
       <div className="findMeTextContainer">

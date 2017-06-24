@@ -11,8 +11,12 @@ const HeaderComponent = () => {
             </div>
           </div>
           <div className="headerButtonContainer">
-            <button className="gitHubButton">GitHub</button>
-            <button className="linkedInButton">LinkedIn</button>
+            <button className="gitHubButton">
+              <a href="https://github.com/DjordjeVujatovic"><i className="fa fa-github" aria-hidden="true" /></a>
+            </button>
+            <button className="linkedInButton">
+              <a href="https://www.linkedin.com/in/djordjevujatovic/"><i className="fa fa-linkedin" aria-hidden="true" /></a>
+            </button>
           </div>
         </div>
       </div>

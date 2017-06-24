@@ -360,6 +360,7 @@
       width: 100%;
       height: 20%;
         .closeReadMoreButton {
+          display: flex;
           width: 30%;
           height: 80%;
           background: $coreJungleGreen;
@@ -370,7 +371,6 @@
           margin-right: 5px;
           box-shadow: 0px 3px 3px 0px black;
           color: white;
-          font-size: $buttonTextSmall;
           font-family: $mainFontFamily;
           text-transform: uppercase;
           &:hover {
@@ -387,8 +387,19 @@
             width: 30%;
             height: 80%;
           }
+          .fa {
+            width: 100%;
+            height: 100%;
+            font-size: 2em;
+            &:hover {
+              font-size: 3em;
+              color: $expandMenuGray;
+              transition: 200ms;
+            }
+          }
         }
         .gitHubButton {
+          display: flex;
           width: 40%;
           height: 90%;
           background: #171717;
@@ -414,6 +425,22 @@
           &:active {
             width: 40%;
             height: 90%;
+          }
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            width: 100%;
+            height: 37%;
+            font-size: 1em;
+            transition: 200ms;
+            &:hover {
+              font-size: 1.5em;
+              color: $coreJungleGreen;
+              transition: 200ms;
+            }
           }
         }
       }

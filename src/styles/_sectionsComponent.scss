@@ -23,9 +23,6 @@
         }
         .booksContainer {
           @include booksContainer;
-          .booksWrapper {
-            @include booksWrapper;
-          }
         }
       }
     }
@@ -45,9 +42,6 @@
         }
         .booksContainer {
           @include booksContainer;
-          .booksWrapper {
-            @include booksWrapper;
-          }
         }
       }
     }
@@ -67,9 +61,6 @@
         }
         .booksContainer {
           @include booksContainer;
-          .booksWrapper {
-            @include booksWrapper;
-          }
         }
       }
     }

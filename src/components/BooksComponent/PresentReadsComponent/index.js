@@ -12,11 +12,9 @@ const PresentReadsComponent = ({ booksSectionsState, books }) => { //eslint-disa
           </div>
         </div>
         <div className="booksContainer">
-          <div className="booksWrapper">
-            <div>
-              <p>{books[7].title} - {books[7].author}</p>
-              <p>{books[8].title} - {books[8].author}</p>
-            </div>
+          <div>
+            <p>{books[7].title} - {books[7].author}</p>
+            <p>{books[8].title} - {books[8].author}</p>
           </div>
         </div>
       </div>
