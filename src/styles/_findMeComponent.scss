@@ -1,13 +1,38 @@
 .findMeContainer {
-  height: 40vh;
+  height: 30vh;
+  min-height: 350px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   margin-top: 2.5px;
   background: #171717;
+  .fontAwesomeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    max-height: 150px;
+    height: 50%;
+    .fontAwesomeWrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+      width: 35%;
+      min-width: 225px;
+      max-width: 350px;
+      i {
+        color: $coreLightGray;
+        &:hover {
+          color: $coreJungleGreen;
+        }
+      }
+    }
+  }
   .findMeTextContainer {
-    height: 25%;
+    height: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
