@@ -10,6 +10,8 @@ import ToolsContainer from '../ToolsContainer';
 import ToolsHero from '../../components/ToolsComponent/ToolsHero';
 import NavBarContainer from '../NavBarContainer';
 import HeaderContainer from '../HeaderContainer';
+import FindMeHero from '../../components/FindMeComponent/FindMeHero';
+import FindMeComponent from '../../components/FindMeComponent/';
 
 class App extends Component {
   render() {
@@ -26,6 +28,8 @@ class App extends Component {
         <ToolsContainer />
         <ProjectsHero />
         <ProjectsContainer />
+        <FindMeHero />
+        <FindMeComponent />
       </div>
     );
   }

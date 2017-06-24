@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 25vh;
   min-height: 200px;
   background: $shadeTwo;
   margin-top: $componentMargin;
@@ -28,7 +28,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    background: #171717;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(23, 23, 23, .95) 100%);
     .buttonContainer {
       display: flex;
       justify-content: center;
@@ -105,7 +105,7 @@
           width: 85%;
           height: 80%;
           background: $coreJungleGreen;
-          box-shadow: -3px 4px 0px 1px $shadeTwo;
+          box-shadow: -3px 4px 8px 1px black;
           border-radius: 10px;
           border: none;
           transition: 400ms;
@@ -119,7 +119,7 @@
             height: 85%;
             width: 90%;
             transition: 400ms;
-            box-shadow: -3px 3px 0px 1px $shadeTwo;
+            box-shadow: -3px 3px 0px 1px black;
             opacity: 1;
           }
           &:focus {
@@ -128,7 +128,7 @@
           &:active {
             width: 85%;
             height: 80%;
-            box-shadow: -3px 4px 0px 1px $shadeTwo;
+            box-shadow: -3px 4px 0px 1px black;
             opacity: 0.85;
           }
         }
@@ -146,7 +146,7 @@
           background: $coreJungleGreen;
           border: none;
           border-radius: 10px;
-          box-shadow: -3px 4px 0px 1px $shadeTwo;
+          box-shadow: -3px 4px 8px 1px black;
           transition: 400ms;
           color: white;
           font-size: $buttonTextLarge;
@@ -158,7 +158,7 @@
             height: 85%;
             width: 90%;
             transition: 400ms;
-            box-shadow: -3px 3px 0px 1px $shadeTwo;
+            box-shadow: -3px 3px 0px 1px black;
             opacity: 1;
           }
           &:focus {
@@ -167,7 +167,7 @@
           &:active {
             width: 85%;
             height: 80%;
-            box-shadow: -3px 4px 0px 1px $shadeTwo;
+            box-shadow: -3px 4px 0px 1px black;
             opacity: .85;
           }
         }

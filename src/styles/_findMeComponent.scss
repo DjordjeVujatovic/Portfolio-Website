@@ -1,0 +1,39 @@
+.findMeContainer {
+  height: 40vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2.5px;
+  background: #171717;
+  .findMeTextContainer {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2%;
+    .findMeText {
+      width: 90%;
+      min-width: 400px;
+      max-width: 600px;
+      font-size: 16px;
+      font-family: $mainFontFamily;
+      line-height: 25px;
+      color: white;
+      text-align: center;
+      text-shadow: -1.5px 4px 1px #000;
+      .cornyText {
+        margin-bottom: 15px;
+      }
+      .copyRightText {
+        color: $coreJungleGreen;
+        font-size: $buttonTextSmall;
+        text-transform: uppercase;
+      }
+    }
+    p {
+      height: auto;
+    }
+  }
+}

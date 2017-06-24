@@ -1,0 +1,20 @@
+.findMeHeroBanner {
+  height: $componentHeightRegular;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: $componentMinHeightRegular;
+  background-color: $coreMustard;
+  background: linear-gradient(to bottom, rgba(23, 23, 23, .20) 0%, rgba(23, 23, 23, .10) 100%), url('../content/BackgroundImages/footerCoastline.jpg' ) bottom center no-repeat;
+  background-size: cover;
+  min-width: 100px;
+  margin-top: $componentMargin;
+  .findMeTextWrapper {
+    p {
+      color: $coreWhite;
+      font-size: $fontSizeLarge;
+      font-family: $mainFontFamily;
+      text-transform: uppercase;
+   }
+  }
+}

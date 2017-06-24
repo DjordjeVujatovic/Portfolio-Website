@@ -3,7 +3,7 @@ import FavoriteReadsComponent from '../FavoriteReadsComponent';
 import FutureReadsComponent from '../FutureReadsComponent';
 import PresentReadsComponent from '../PresentReadsComponent';
 
-const SectionsComponent = ({ booksSectionsState,books, showReading, showFavorites, showFutureReads, closeList  }) => {//eslint-disable-line
+const SectionsComponent = ({ booksSectionsState, books, showReading, showFavorites, showFutureReads, closeList }) => {//eslint-disable-line
   return (
     <div className="sectionsComponentContainer">
       <div className="componentsContainer">
