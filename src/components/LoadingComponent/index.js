@@ -4,9 +4,22 @@ const LoadingComponent = () => {
   return (
     <div className="loadingContainer">
       <div className="lds-css ng-scope">
-        <div className="lds-ripple">
-          <div />
-          <div />
+        <div className="lds-ellipsis">
+          <div>
+            <div />
+          </div>
+          <div>
+            <div />
+          </div>
+          <div>
+            <div />
+          </div>
+          <div>
+            <div />
+          </div>
+          <div>
+            <div />
+          </div>
         </div>
       </div>
     </div>
