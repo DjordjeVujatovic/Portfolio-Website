@@ -122,44 +122,44 @@
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
 }
 .lds-ellipsis div > div {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: #f00;
   position: absolute;
   top: 100px;
   left: 32px;
-  -webkit-animation: lds-ellipsis 1.6s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
-  animation: lds-ellipsis 1.6s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+  -webkit-animation: lds-ellipsis 0.5s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+  animation: lds-ellipsis 0.5s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
 }
 .lds-ellipsis div:nth-child(1) div {
-  -webkit-animation: lds-ellipsis2 1.6s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
-  animation: lds-ellipsis2 1.6s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
-  background: #34314c;
+  -webkit-animation: lds-ellipsis2 0.5s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+  animation: lds-ellipsis2 0.5s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+  background: #f0ad4e;
 }
 .lds-ellipsis div:nth-child(2) div {
-  -webkit-animation-delay: -0.8s;
-  animation-delay: -0.8s;
-  background: #FFC952;;
+  -webkit-animation-delay: -0.25s;
+  animation-delay: -0.25s;
+  background: #5cb85c;
 }
 .lds-ellipsis div:nth-child(3) div {
-  -webkit-animation-delay: -0.4s;
-  animation-delay: -0.4s;
-  background: #1B998B;
+  -webkit-animation-delay: -0.125s;
+  animation-delay: -0.125s;
+  background: #5bc0de;
 }
 .lds-ellipsis div:nth-child(4) div {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
-  background: #ff7473;
+  background: #337ab7;
 }
 .lds-ellipsis div:nth-child(5) div {
-  -webkit-animation: lds-ellipsis3 1.6s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
-  animation: lds-ellipsis3 1.6s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
-  background: #34314c;
+  -webkit-animation: lds-ellipsis3 0.5s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+  animation: lds-ellipsis3 0.5s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+  background: #f0ad4e;
 }
 .lds-ellipsis {
   width: 200px !important;
