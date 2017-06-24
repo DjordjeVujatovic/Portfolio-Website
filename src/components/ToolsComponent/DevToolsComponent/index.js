@@ -21,7 +21,7 @@ const DevToolsComponent = ({ tools, devToolsState, expandDevToolsComponent, clos
             </span>
           </div>
           <div className="buttonWrapper">
-            <button onClick={() => closeDevToolsComponent()} className={devToolsState.buttonClass}>{devToolsState.buttonName}</button>
+            <button onClick={() => closeDevToolsComponent()} className={devToolsState.buttonClass}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
           </div>
         </div>
         :

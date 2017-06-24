@@ -8,7 +8,7 @@ const ProjectsSliderComponent = ({ projects, projectState, nextSlide, filter, pr
     <div className="projectsSliderContainer">
       <div className="projectsSliderWrapper">
         <div className="previousButtonContainer">
-          <button className="previousButton" onClick={() => previousSlide(projects.id)}>Previous</button>
+          <button className="previousButton" onClick={() => previousSlide(projects.id)}><i className="fa fa-chevron-left fa-2x" aria-hidden="true" /></button>
         </div>
         {projects
           .map((project, key) => (
@@ -32,7 +32,7 @@ const ProjectsSliderComponent = ({ projects, projectState, nextSlide, filter, pr
             />
           ))}
         <div className="nextButtonContainer">
-          <button className="nextButton" onClick={() => nextSlide(projects.id) && changeComponentState(projects.id)}>Next</button>
+          <button className="nextButton" onClick={() => nextSlide(projects.id) && changeComponentState(projects.id)}><i className="fa fa-chevron-right fa-2x" aria-hidden="true" /></button>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ const ProjectsComponent = ({ projects, projectsComponentState, projectState, rea
       {projectsComponentState.componentExpand ?
         <div className="projectsOpenWrapper">
           <div className="buttonContainer">
-            <button className={projectsComponentState.buttonClass} onClick={() => closeProjectsComponent()}>{projectsComponentState.buttonName}</button>
+            <button className={projectsComponentState.buttonClass} onClick={() => closeProjectsComponent()}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
           </div>
           <div className="componentsContainer">
             <div className="componentsWrapper">

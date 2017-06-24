@@ -21,7 +21,7 @@ const ExperienceWithComponent = ({ tools, experienceState, expandExperienceCompo
             </span>
           </div>
           <div className="buttonWrapper">
-            <button onClick={() => closeExperienceComponent()} className={experienceState.buttonClass}>{experienceState.buttonName}</button>
+            <button onClick={() => closeExperienceComponent()} className={experienceState.buttonClass}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
           </div>
         </div>
         :

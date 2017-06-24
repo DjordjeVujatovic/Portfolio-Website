@@ -9,7 +9,7 @@ const BooksComponent = ({ books, booksComponentState, booksSectionsState, expand
       {booksComponentState.componentExpand ?
         <div className="booksOpenWrapper">
           <div className="buttonContainer">
-            <button className={booksComponentState.buttonClass} onClick={() => closeBooksComponent()}>{booksComponentState.buttonName}</button>
+            <button className={booksComponentState.buttonClass} onClick={() => closeBooksComponent()}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
           </div>
           <div className="componentsContainer">
             <div className="componentsWrapper">

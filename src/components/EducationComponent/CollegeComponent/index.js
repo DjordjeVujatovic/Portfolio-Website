@@ -5,7 +5,7 @@ const CollegeComponent = ({ education, collegeState, expandCollegeComponent, clo
   return (
     <div className={collegeState.classState}>
       {collegeState.componentExpand ?
-        <button onClick={() => closeCollegeComponent()} className={collegeState.buttonClass}>{collegeState.buttonName}</button>
+        <button onClick={() => closeCollegeComponent()} className={collegeState.buttonClass}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
         :
         <button onClick={() => expandCollegeComponent()} className={collegeState.buttonClass}>{collegeState.buttonName}</button>
       }

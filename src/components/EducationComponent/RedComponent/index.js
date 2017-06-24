@@ -5,7 +5,7 @@ const RedComponent = ({ education, redState, expandRedComponent, closeRedCompone
   return (
     <div className={redState.classState}>
       {redState.componentExpand ?
-        <button onClick={() => closeRedComponent()} className={redState.buttonClass}>{redState.buttonName}</button>
+        <button onClick={() => closeRedComponent()} className={redState.buttonClass}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
         :
         <button onClick={() => expandRedComponent()} className={redState.buttonClass}>{redState.buttonName}</button>
       }

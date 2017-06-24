@@ -20,13 +20,21 @@
       justify-content: space-around;
       align-items: center;
       height: 100%;
-      width: 35%;
+      width: 55%;
       min-width: 225px;
       max-width: 350px;
       i {
         color: $coreLightGray;
+        font-size: 7em;
+        transition: 200ms;
         &:hover {
           color: $coreJungleGreen;
+          font-size: 8em;
+          transition: 200ms;
+          cursor: pointer;
+        }
+        &:active {
+          font-size: 7em;
         }
       }
     }

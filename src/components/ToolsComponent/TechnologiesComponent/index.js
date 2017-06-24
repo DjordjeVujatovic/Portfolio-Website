@@ -21,7 +21,7 @@ const TechnologiesComponent = ({ tools, technologiesState, expandTechnologiesCom
             </span>
           </div>
           <div className="buttonWrapper">
-            <button onClick={() => closeTechnologiesComponent()} className={technologiesState.buttonClass}>{technologiesState.buttonName}</button>
+            <button onClick={() => closeTechnologiesComponent()} className={technologiesState.buttonClass}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
           </div>
         </div>
         :

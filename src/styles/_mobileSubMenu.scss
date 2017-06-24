@@ -6,13 +6,13 @@
 .subMenuItems {
   flex-basis: 25%;
   height: 100%;
-  background-color: $subMenuGreen;
+  background-color: #2A2A2A;
   color: $coreLightGray;
   font-size: $fontSizeRegular;
   font-family: $mainFontFamily;
   border: none;
   &:hover {
-    background-color: $darkGray;
+    background-color: $coreJungleGreen;
     cursor: pointer;
   }
   &:focus {

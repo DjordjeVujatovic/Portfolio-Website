@@ -19,7 +19,7 @@ const LanguageComponent = ({ tools, languagesState, expandLanguageComponent, clo
             </span>
           </div>
           <div className="buttonWrapper">
-            <button onClick={() => closeLanguageComponent()} className={languagesState.buttonClass}>{languagesState.buttonName}</button>
+            <button onClick={() => closeLanguageComponent()} className={languagesState.buttonClass}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
           </div>
         </div>
         :

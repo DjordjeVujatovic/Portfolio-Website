@@ -58,6 +58,11 @@
   &:active {
     flex-basis:25%;
   }
+  .fa {
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 0.5px 2px 4px #000;
+  }
 }
 @mixin educationInfo {
   .educationInfo {
@@ -186,6 +191,10 @@
   &:active {
     height: 50px;
     width: 95%;
+  }
+  .fa {
+    font-size: 2em;
+    text-shadow: 0.5px 2px 4px #000;
   }
 }
 
