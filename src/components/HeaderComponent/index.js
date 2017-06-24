@@ -7,7 +7,7 @@ const HeaderComponent = () => {
         <div className="headerWrapper">
           <div className="headerTextWrapper">
             <div>
-              <p>Making the commitment to become a software developer is making a commitment to lifelong learning</p>
+              <p><q>Making the commitment to become a software developer is making a commitment to lifelong learning</q></p>
             </div>
           </div>
           <div className="headerButtonContainer">
