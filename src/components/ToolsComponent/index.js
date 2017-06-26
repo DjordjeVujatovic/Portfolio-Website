@@ -5,33 +5,37 @@ import ExperienceWithComponent from '../../components/ToolsComponent/ExperienceW
 import LanguageComponent from '../../components/ToolsComponent/LanguageComponent';
 import TechnologiesComponent from '../../components/ToolsComponent/TechnologiesComponent';
 
-const ToolsComponent = ({ tools, devToolsState, experienceState, languagesState,  technologiesState,  expandDevToolsComponent, closeDevToolsComponent, expandExperienceComponent, closeExperienceComponent, expandLanguageComponent, closeLanguageComponent, expandTechnologiesComponent, closeTechnologiesComponent }) => { //eslint-disable-line
+const ToolsComponent = ({ tools, devToolsState, experienceState, languagesState, technologiesState, expandDevToolsComponent, closeDevToolsComponent, expandExperienceComponent, closeExperienceComponent, expandLanguageComponent, closeLanguageComponent, expandTechnologiesComponent, closeTechnologiesComponent }) => { //eslint-disable-line
   return (
     <div className="toolsComponentWrapper">
-      <LanguageComponent
-        tools={tools}
-        languagesState={languagesState}
-        expandLanguageComponent={expandLanguageComponent}
-        closeLanguageComponent={closeLanguageComponent}
-      />
-      <TechnologiesComponent
-        tools={tools}
-        technologiesState={technologiesState}
-        expandTechnologiesComponent={expandTechnologiesComponent}
-        closeTechnologiesComponent={closeTechnologiesComponent}
-      />
-      <DevToolsComponent
-        tools={tools}
-        devToolsState={devToolsState}
-        expandDevToolsComponent={expandDevToolsComponent}
-        closeDevToolsComponent={closeDevToolsComponent}
-      />
-      <ExperienceWithComponent
-        tools={tools}
-        experienceState={experienceState}
-        expandExperienceComponent={expandExperienceComponent}
-        closeExperienceComponent={closeExperienceComponent}
-      />
+      <div className="left">
+        <LanguageComponent
+          tools={tools}
+          languagesState={languagesState}
+          expandLanguageComponent={expandLanguageComponent}
+          closeLanguageComponent={closeLanguageComponent}
+        />
+        <TechnologiesComponent
+          tools={tools}
+          technologiesState={technologiesState}
+          expandTechnologiesComponent={expandTechnologiesComponent}
+          closeTechnologiesComponent={closeTechnologiesComponent}
+        />
+      </div>
+      <div className="right">
+        <DevToolsComponent
+          tools={tools}
+          devToolsState={devToolsState}
+          expandDevToolsComponent={expandDevToolsComponent}
+          closeDevToolsComponent={closeDevToolsComponent}
+        />
+        <ExperienceWithComponent
+          tools={tools}
+          experienceState={experienceState}
+          expandExperienceComponent={expandExperienceComponent}
+          closeExperienceComponent={closeExperienceComponent}
+        />
+      </div>
     </div>
   );
 };

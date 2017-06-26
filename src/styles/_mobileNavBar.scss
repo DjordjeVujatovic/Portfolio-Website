@@ -2,7 +2,8 @@
   display: flex;
   background-color: $darkGray;
   align-items: center;
-  height: 100px;
+  height: 15vh;
+  min-height: 100px;
   width: 100%;
   position: fixed;
   opacity: 0.85;

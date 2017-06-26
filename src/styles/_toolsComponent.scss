@@ -5,6 +5,16 @@
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: $componentMargin;
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
 }
 .languageComponentClose {
   @include toolsComponentClose;

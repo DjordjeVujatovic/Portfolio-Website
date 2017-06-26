@@ -4,7 +4,7 @@
   justify-content: center;
   background: linear-gradient(to bottom, rgba(0, 0, 0, .30) 0%, rgba(0, 0, 0, .10) 100%), url('../content/BackgroundImages/backgroundImage.jpg' ) bottom center no-repeat;
   height: 100vh;
-  min-height: 1000px;
+  min-height: 670px;
   width: 100%;
   background-size: cover;
   flex-wrap: wrap;
@@ -13,12 +13,14 @@
     justify-content: center;
     align-items: center;
     height: 50%;
+    width: 100%;
     .headerWrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
       height: 90%;
+      width: 100%;
       .headerTextWrapper {
         display: flex;
         text-align: center;
@@ -26,7 +28,7 @@
         height: 50%;
         width: 75%;
         max-width: 800px;
-        min-width: 450px;
+        min-width: 400px;
         p {
           color: $coreWhite;
           font-family: $mainFontFamily;
@@ -46,7 +48,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 225px;
+        width: 200px;
         height: 80px;
         align-self: flex-end;
         border-radius: 6px;
