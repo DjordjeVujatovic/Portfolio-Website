@@ -290,17 +290,27 @@
   justify-content: center;
   align-items: center;
   color: $coreWhite;
-  font-size: $buttonTextLarge;
+  font-size: $fontSizeSmall;
   font-family: $mainFontFamily;
   background: #171717;
   line-height: 40px;
+  @include tablet {
+    font-size: $buttonTextLarge;
+  }
 }
 
 //Media Queries//
-$desktop: 700;
+$tablet: 800px;
+$desktop: 1100px;
 
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
 @mixin desktop {
   @media (min-width: $desktop) {
     @content;
   }
 }
+

@@ -6,4 +6,10 @@
   background-size: cover;
   min-width: 100px;
   margin-top: $componentMargin;
+  @include tablet {
+    height: 90vh;
+    max-height: 960px;
+    min-height: 675px;
+    background-size: cover;
+  }
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25vh;
+  height: 30vh;
   min-height: 200px;
   background: $shadeThree;
   margin-top: $componentMargin;
@@ -22,6 +22,13 @@
   min-height: 550px;
   margin-top: $componentMargin;
   transition: 600ms;
+  @include tablet {
+    height: 75vh;
+    min-height: 590px;
+  }
+  @include desktop {
+    height: 90vh;
+  }
   .booksOpenWrapper {
     display: flex;
     flex-direction: column;
@@ -69,6 +76,11 @@
       align-items: center;
       height: 75%;
       width: 97%;
+      @include tablet {
+        width: 85%;
+        height: 85%;
+        min-height: 375px;
+      }
       .componentsWrapper {
         display: flex;
         flex-direction: row;

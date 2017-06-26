@@ -7,6 +7,13 @@
   flex-direction: column;
   margin-top: 2.5px;
   background: #171717;
+  @include tablet {
+    height: 20vh;
+    min-height: 250px;
+  }
+  @include desktop {
+    min-height: 310px;
+  }
   .fontAwesomeContainer {
     display: flex;
     justify-content: center;
@@ -45,11 +52,14 @@
     align-items: center;
     text-align: center;
     margin: 4%;
+    @include tablet {
+      margin: 1%;
+    }
     .findMeText {
       width: 90%;
-      min-width: 400px;
+      min-width: 355px;
       max-width: 610px;
-      font-size: 16px;
+      font-size: 15px;
       font-family: $mainFontFamily;
       line-height: 25px;
       color: white;

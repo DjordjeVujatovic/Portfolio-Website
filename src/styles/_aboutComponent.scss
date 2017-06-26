@@ -7,6 +7,9 @@
   background-color: $coreJungleGreen;
   color: $coreWhite;
   margin-top: $componentMargin;
+  @include tablet {
+    height: 60vh;
+  }
 }
 .aboutWrapper {
   display:flex;
@@ -36,5 +39,8 @@
     max-width: 365px;
     min-width: 365px;
     height: auto;
+    @include tablet {
+      max-width: 750px;
+    }
   }
 }

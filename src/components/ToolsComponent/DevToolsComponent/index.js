@@ -8,7 +8,7 @@ const DevToolsComponent = ({ tools, devToolsState, expandDevToolsComponent, clos
         <div className="devToolsInfo">
           <div className="componentBanner">
             <div>
-              <p>Development Tools</p>
+              <p>Development</p>
             </div>
           </div>
           <div className="devTools">

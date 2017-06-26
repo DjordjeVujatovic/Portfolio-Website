@@ -9,6 +9,12 @@
   background-size: cover;
   min-width: 100px;
   margin-top: $componentMargin;
+  @include tablet {
+    min-height: 370px;
+  }
+  @include desktop {
+    height: 70vh;
+  }
   .projectsTextWrapper {
     p {
       color: $coreWhite;

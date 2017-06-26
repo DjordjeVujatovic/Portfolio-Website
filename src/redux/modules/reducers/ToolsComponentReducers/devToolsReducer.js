@@ -6,7 +6,7 @@ import {
 const initialState = {
   componentExpand: false,
   classState: 'devToolsComponentClose',
-  buttonName: 'Development Tools',
+  buttonName: 'Development',
   buttonClass: 'devToolsButtonClose',
 };
 
@@ -25,7 +25,7 @@ export default (state = initialState, action) => {
         ...state,
         componentExpand: false,
         classState: 'devToolsComponentClose',
-        buttonName: 'Development Tools',
+        buttonName: 'Development',
         buttonClass: 'devToolsButtonClose',
       };
     default:
