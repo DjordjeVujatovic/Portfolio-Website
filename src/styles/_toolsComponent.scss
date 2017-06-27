@@ -1,6 +1,6 @@
 .toolsComponentWrapper {
   height: $componentHeightRegular;
-  min-height:  475px;
+  min-height:  500px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -11,16 +11,19 @@
   }
   @include desktop {
     height: 90vh;
+    min-height: 600px;
   }
   .left {
     display: flex;
     flex-direction: column;
     width: 50%;
+    height: 100%;
   }
   .right {
     display: flex;
     flex-direction: column;
     width: 50%;
+    height: 100%;
   }
 }
 .languageComponentClose {

@@ -94,15 +94,28 @@
 //TOOLS COMPONENT MIXINS:
 
 @mixin toolsComponentClose {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 50%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-transition: 400ms;
   transition: 400ms;
+  height: 50%;
 }
 @mixin toolsComponentOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-basis: 65%;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+  -webkit-transition: 400ms;
   transition: 400ms;
 }
 @mixin toolsButtonClose {
@@ -134,13 +147,12 @@
 @mixin toolsInfoElement {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height:100%;
   width: 100%;
 }
 @mixin toolsComponentBanner {
-  flex-basis: 18%;
+  height: 40px;
   width: 100%;
   display: flex;
   justify-content: center;

@@ -281,6 +281,10 @@
                 padding-bottom: 30px;
                 align-self: center;
                 margin: 4%;
+                @include desktop {
+                  max-width: 400px;
+                  margin: 0;
+                }
                 }
               p {
                 font-family: $mainFontFamily;
@@ -376,6 +380,9 @@
           font-family: $mainFontFamily;
           text-shadow: -1.5px 2px 1px #000;
           text-transform: uppercase;
+          @include desktop {
+            font-size: 25px;
+          }
         }
         .toolsUsed {
           text-align: center;
@@ -383,6 +390,9 @@
           color: white;
           font-family: $mainFontFamily;
           margin: 2%;
+          @include desktop {
+            font-size: 20px;
+          }
           }
         }
       }
@@ -418,6 +428,9 @@
         color: white;
         font-family: $mainFontFamily;
         margin: 9%;
+        @include desktop {
+          font-size: 20px;
+        }
       }
     }
     .readMoreButtonContainer {
