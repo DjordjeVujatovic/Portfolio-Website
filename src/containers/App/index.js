@@ -20,7 +20,6 @@ class App extends Component {
         <NavBarContainer />
         <HeaderContainer />
         <AboutContainer />
-        <EducationHero />
         <EducationContainer />
         <BooksHero />
         <BooksContainer />
