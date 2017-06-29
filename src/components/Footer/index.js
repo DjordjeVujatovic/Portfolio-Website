@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroBanner from '../HeroBanner';
 
-const FindMeComponent = () => {
+const Footer = () => {
   return (
     <div>
       <HeroBanner bannerContainer="findMeHeroBanner" textWrapper="findMeTextWrapper" bannerTitle="Find Me" />
@@ -27,4 +27,4 @@ const FindMeComponent = () => {
   );
 };
 
-export default FindMeComponent;
+export default Footer;
