@@ -10,13 +10,13 @@ const MobileNavBar = ({ expand }) => (
     <button className="openButton" onClick={() => expand()}><i className="fa fa-bars fa-2x" aria-hidden="true" /></button>
     <div className="fullScreenNav">
       <div className="fullScreenButtonContainer">
-        <NavLink activeClassName="navLink" to="/">Home</NavLink>
-        <NavLink activeClassName="navLink" to="/about">About</NavLink>
-        <NavLink activeClassName="navLink" to="/education">Education</NavLink>
-        <NavLink activeClassName="navLink" to="/favoritebooks">Favorite Books</NavLink>
-        <NavLink activeClassName="navLink" to="/toolbox">Tool Box</NavLink>
-        <NavLink activeClassName="navLink" to="/projects">Projects</NavLink>
-        <NavLink activeClassName="navLink" to="/findme">Find Me</NavLink>
+        <NavLink activeClassName="navLink" to="/"><button>Home</button></NavLink>
+        <NavLink activeClassName="navLink" to="/about"><button>About</button></NavLink>
+        <NavLink activeClassName="navLink" to="/education"><button>Education</button></NavLink>
+        <NavLink activeClassName="navLink" to="/favoritebooks"><button>Favorite Books</button></NavLink>
+        <NavLink activeClassName="navLink" to="/toolbox"><button>Tool Box</button></NavLink>
+        <NavLink activeClassName="navLink" to="/projects"><button>Projects</button></NavLink>
+        <NavLink activeClassName="navLink" to="/findme"><button>Find Me</button></NavLink>
       </div>
     </div>
   </div>

@@ -33,38 +33,31 @@
         align-items: center;
         align-self: flex;
         height: 100%;
-        width: 80%;
+        width: 90%;
+        max-width: 900px;
         button {
-          width: 200px;
+          width: 125px;
           height: 50px;
           background: transparent;
           border: none;
           font-size: 14px;
-          border-radius: 50px;
+          border-radius: 3px;
           transition: 800ms;
-          margin-right: 5px;
-          a {
-            color: $coreJungleGreen;
-            text-transform: uppercase;
-            font-family: $mainFontFamily;
-            text-decoration: none;
-            height: 100%;
-            width: 100%;
-            &:hover {
-              color: white;
-            }
-          }
+          color: $coreJungleGreen;
+          text-transform: uppercase;
+          font-family: $mainFontFamily;
+          text-decoration: none;
+          margin-right: 2px;
           &:hover {
             cursor: pointer;
             background: $coreJungleGreen;
             transition: 500ms;
-            border-radius: 50px;
+            color: white;
           }
           &:focus {
             outline: 0;
             background: $coreJungleGreen;
             color: white;
-            border-radius: 50px;
             transition: 500ms;
           }
         }

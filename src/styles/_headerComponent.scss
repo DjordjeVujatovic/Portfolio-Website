@@ -60,11 +60,13 @@
         text-transform: uppercase;
         box-shadow: -3px 4px 5px -1px black;
         text-shadow: -1.5px 2px 1px #000;
+        transition: 400ms;
         &:hover {
           background-color: $hoverJungleGreen;
           width: 235px;
           height: 85px;
           cursor: pointer;
+          transition: 400ms;
         }
         &:focus {
           outline:0;
@@ -72,6 +74,7 @@
         &:active {
           width: 225px;
           height: 80px;
+          transition: 400ms;
         }
         a {
           display: flex;
