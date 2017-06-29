@@ -5,19 +5,30 @@ import MobileSubMenu from '../MobileSubMenu';
 
 
 const MobileNavBarExpanded = ({ closeExpand, subMenuState, expandSubMenu, closeSubMenu }) => (
-  <div onMouseLeave={() => closeExpand()} className="mobileNavBarExpanded">
-    {subMenuState ?
-      <button className="closeSubMenu" onClick={() => closeSubMenu()}>Close Sub Menu</button>
-      :
-      <button className="closeButton" onClick={() => closeExpand()}>Close Menu</button>
-    }
-    {subMenuState ?
-      <MobileSubMenu closeSubMenu={closeSubMenu} />
-      :
-      <button onClick={() => expandSubMenu()} className="menuItems">Who Am I?</button>
-    }
-    <button className="menuItems"><NavLink activeClassName="navLink" to="/projects">Projects</NavLink></button>
-    <button className="menuItems"><NavLink to="/findMe">Find Me</NavLink></button>
+  <div onClickCapture={() => closeExpand()} className="mobileNavBarExpanded">
+    <button className="closeButton" onClick={() => closeExpand()}>Close Menu</button>
+    <div className="mobileMenuContainer">
+      <div className="buttonListContainer">
+        <div className="buttonContainer">
+          <NavLink activeClassName="navLink" to="/about"><button className="menuItems">About Me</button></NavLink>
+        </div>
+        <div className="buttonContainer">
+          <NavLink activeClassName="navLink" to="/education"><button className="menuItems">Education</button></NavLink>
+        </div>
+        <div className="buttonContainer">
+          <NavLink activeClassName="navLink" to="/favoriteBooks"><button className="menuItems">Favorite Books</button></NavLink>
+        </div>
+        <div className="buttonContainer">
+          <NavLink activeClassName="navLink" to="/toolBox"><button className="menuItems">Tool Box</button></NavLink>
+        </div>
+        <div className="buttonContainer">
+          <NavLink activeClassName="navLink" to="/projects"><button className="menuItems">Projects</button></NavLink>
+        </div>
+        <div className="buttonContainer">
+          <NavLink activeClassName="navLink" to="/findMe"><button className="menuItems">Find Me</button></NavLink>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
