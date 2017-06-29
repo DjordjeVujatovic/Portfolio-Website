@@ -7,6 +7,7 @@ import LoadingComponent from '../../components/LoadingComponent';
 import { expandProjectsComponent, closeProjectsComponent } from '../../redux/modules/actions/ProjectsComponentActions/projectsComponentAction';
 import { nextSlide, previousSlide, changeComponentState } from '../../redux/modules/actions/ProjectsComponentActions/projectsSliderActions';
 import { readMore, closeReadMore } from '../../redux/modules/actions/ProjectsComponentActions/readMoreActions';
+import HeroBanner from '../../components/HeroBanner';
 
 class ProjectContainer extends Component {
   componentWillMount() {
@@ -25,19 +26,22 @@ class ProjectContainer extends Component {
         {isLoading ?
           <LoadingComponent />
           :
-          <ProjectsComponent
-            projects={projects}
-            projectsComponentState={projectsComponentState}
-            projectState={projectState}
-            expandProjectsComponent={expandProjectsComponent}
-            closeProjectsComponent={closeProjectsComponent}
-            nextSlide={nextSlide}
-            previousSlide={previousSlide}
-            readMore={readMore}
-            closeReadMore={closeReadMore}
-            changeComponentState={changeComponentState}
-            filter={filter}
-          />
+          <div>
+            <HeroBanner bannerContainer="projectsHeroBanner" textWrapper="projectsTextWrapper" bannerTitle="My Projects" />
+            <ProjectsComponent
+              projects={projects}
+              projectsComponentState={projectsComponentState}
+              projectState={projectState}
+              expandProjectsComponent={expandProjectsComponent}
+              closeProjectsComponent={closeProjectsComponent}
+              nextSlide={nextSlide}
+              previousSlide={previousSlide}
+              readMore={readMore}
+              closeReadMore={closeReadMore}
+              changeComponentState={changeComponentState}
+              filter={filter}
+            />
+          </div>
         }
       </div>
     );

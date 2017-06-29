@@ -5,6 +5,7 @@ import MobileNavBar from '../../components/NavBarComponent/MobileNavBar';
 import MobileNavBarExpanded from '../../components/NavBarComponent/MobileNavBarExpand';
 import { expand, closeExpand } from '../../redux/modules/actions/NavigationActions/mobileNavActions';
 import { expandSubMenu, closeSubMenu } from '../../redux/modules/actions/NavigationActions/mobileSubMenuActions';
+import HeaderComponent from '../../components/HeaderComponent';
 
 
 class NavBarContainer extends Component {
@@ -21,6 +22,7 @@ class NavBarContainer extends Component {
           :
           <MobileNavBar expand={this.props.expand} />
         }
+        <HeaderComponent />
       </div>
     );
   }

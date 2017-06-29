@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SectionsComponent from './SectionsComponent';
+import HeroBanner from '../HeroBanner';
 
 
 const BooksComponent = ({ books, booksComponentState, booksSectionsState, expandBooksComponent, closeBooksComponent, showReading, showFavorites, showFutureReads, closeList }) => { //eslint-disable-line

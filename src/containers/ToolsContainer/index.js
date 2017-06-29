@@ -8,6 +8,7 @@ import { expandLanguageComponent, closeLanguageComponent } from '../../redux/mod
 import { expandTechnologiesComponent, closeTechnologiesComponent } from '../../redux/modules/actions/ToolsComponentActions/technologiesComponentAction';
 import ToolsComponent from '../../components/ToolsComponent';
 import LoadingComponent from '../../components/LoadingComponent';
+import HeroBanner from '../../components/HeroBanner';
 
 class ToolsContainer extends Component {
   componentDidMount() {
@@ -35,21 +36,24 @@ class ToolsContainer extends Component {
         {isLoading ?
           <LoadingComponent />
           :
-          <ToolsComponent
-            tools={tools}
-            devToolsState={devToolsState}
-            experienceState={experienceState}
-            languagesState={languagesState}
-            technologiesState={technologiesState}
-            expandDevToolsComponent={expandDevToolsComponent}
-            closeDevToolsComponent={closeDevToolsComponent}
-            expandExperienceComponent={expandExperienceComponent}
-            closeExperienceComponent={closeExperienceComponent}
-            expandLanguageComponent={expandLanguagesComponent}
-            closeLanguageComponent={closeLanguagesComponent}
-            expandTechnologiesComponent={expandTechnologiesComponent}
-            closeTechnologiesComponent={closeTechnologiesComponent}
-          />
+          <div>
+            <HeroBanner bannerContainer="toolsHeroBanner" textWrapper="toolsTextWrapper" bannerTitle="Tool Box" />
+            <ToolsComponent
+              tools={tools}
+              devToolsState={devToolsState}
+              experienceState={experienceState}
+              languagesState={languagesState}
+              technologiesState={technologiesState}
+              expandDevToolsComponent={expandDevToolsComponent}
+              closeDevToolsComponent={closeDevToolsComponent}
+              expandExperienceComponent={expandExperienceComponent}
+              closeExperienceComponent={closeExperienceComponent}
+              expandLanguageComponent={expandLanguagesComponent}
+              closeLanguageComponent={closeLanguagesComponent}
+              expandTechnologiesComponent={expandTechnologiesComponent}
+              closeTechnologiesComponent={closeTechnologiesComponent}
+            />
+          </div>
         }
       </div>
     );

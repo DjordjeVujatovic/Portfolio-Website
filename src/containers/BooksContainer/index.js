@@ -6,6 +6,7 @@ import BooksComponent from '../../components/BooksComponent';
 import LoadingComponent from '../../components/LoadingComponent';
 import { expandBooksComponent, closeBooksComponent } from '../../redux/modules/actions/BooksComponentActions/booksComponentActions';
 import { showReading, showFavorites, showFutureReads, closeList } from '../../redux/modules/actions/BooksComponentActions/bookComponentSectionsActions';
+import HeroBanner from '../../components/HeroBanner';
 
 class BooksContainer extends Component {
   componentDidMount() {
@@ -20,17 +21,20 @@ class BooksContainer extends Component {
           isLoading ?
             <LoadingComponent />
             :
-            <BooksComponent
-              books={books}
-              booksComponentState={booksComponentState}
-              expandBooksComponent={expandBooksComponent}
-              closeBooksComponent={closeBooksComponent}
-              booksSectionsState={booksSectionsState}
-              showReading={showReading}
-              showFavorites={showFavorites}
-              showFutureReads={showFutureReads}
-              closeList={closeList}
-            />
+            <div>
+              <HeroBanner bannerContainer="booksHeroBanner" textWrapper="booksTextWrapper" bannerTitle="I like to books" />
+              <BooksComponent
+                books={books}
+                booksComponentState={booksComponentState}
+                expandBooksComponent={expandBooksComponent}
+                closeBooksComponent={closeBooksComponent}
+                booksSectionsState={booksSectionsState}
+                showReading={showReading}
+                showFavorites={showFavorites}
+                showFutureReads={showFutureReads}
+                closeList={closeList}
+              />
+            </div>
         }
       </div>
     );

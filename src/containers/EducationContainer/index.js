@@ -7,6 +7,7 @@ import { expandCollegeComponent, closeCollegeComponent } from '../../redux/modul
 import { expandUniversityComponent, closeUniversityComponent } from '../../redux/modules/actions/EducationComponentActions/universityComponentAction';
 import EducationComponent from '../../components/EducationComponent';
 import LoadingComponent from '../../components/LoadingComponent';
+import HeroBanner from '../../components/HeroBanner';
 
 
 class EducationContainer extends Component {
@@ -30,18 +31,21 @@ class EducationContainer extends Component {
         {isLoading ?
           <LoadingComponent />
           :
-          <EducationComponent
-            education={education}
-            redState={redState}
-            collegeState={collegeState}
-            universityState={universityState}
-            expandCollegeComponent={expandCollegeComponent}
-            expandRedComponent={expandRedComponent}
-            expandUniversityComponent={expandUniversityComponent}
-            closeCollegeComponent={closeCollegeComponent}
-            closeUniversityComponent={closeUniversityComponent}
-            closeRedComponent={closeRedComponent}
-          />
+          <div>
+            <HeroBanner bannerContainer="educationHeroBanner" textWrapper="" bannerTitle="" />
+            <EducationComponent
+              education={education}
+              redState={redState}
+              collegeState={collegeState}
+              universityState={universityState}
+              expandCollegeComponent={expandCollegeComponent}
+              expandRedComponent={expandRedComponent}
+              expandUniversityComponent={expandUniversityComponent}
+              closeCollegeComponent={closeCollegeComponent}
+              closeUniversityComponent={closeUniversityComponent}
+              closeRedComponent={closeRedComponent}
+            />
+          </div>
         }
       </div>
     );
