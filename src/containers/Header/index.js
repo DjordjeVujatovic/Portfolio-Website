@@ -10,8 +10,9 @@ import HeaderComponent from '../../components/HeaderComponent';
 
 class NavBarContainer extends Component {
   render() {
+    const { componentRef } = this.props; //eslint-disable-line
     return (
-      <div>
+      <div ref={componentRef}>
         {this.props.displayState ?
           <MobileNavBarExpanded
             closeExpand={this.props.closeExpand}

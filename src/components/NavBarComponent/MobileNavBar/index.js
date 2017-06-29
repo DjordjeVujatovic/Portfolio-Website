@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const MobileNavBar = ({ expand }) => (
   <div className="mobileNavBar">
@@ -10,13 +10,13 @@ const MobileNavBar = ({ expand }) => (
     <button className="openButton" onClick={() => expand()}><i className="fa fa-bars fa-2x" aria-hidden="true" /></button>
     <div className="fullScreenNav">
       <div className="fullScreenButtonContainer">
-        <button><Link to="/">Home</Link></button>
-        <button><Link to="/about">About</Link></button>
-        <button><Link to="/education">Education</Link></button>
-        <button><Link to="/favoritebooks">Favorite Books</Link></button>
-        <button><Link to="/toolbox">Tool Box</Link></button>
-        <button><Link to="/projects">Projects</Link></button>
-        <button><Link to="/findme">Find Me</Link></button>
+        <NavLink activeClassName="navLink" to="/">Home</NavLink>
+        <NavLink activeClassName="navLink" to="/about">About</NavLink>
+        <NavLink activeClassName="navLink" to="/education">Education</NavLink>
+        <NavLink activeClassName="navLink" to="/favoritebooks">Favorite Books</NavLink>
+        <NavLink activeClassName="navLink" to="/toolbox">Tool Box</NavLink>
+        <NavLink activeClassName="navLink" to="/projects">Projects</NavLink>
+        <NavLink activeClassName="navLink" to="/findme">Find Me</NavLink>
       </div>
     </div>
   </div>

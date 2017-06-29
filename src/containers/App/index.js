@@ -7,34 +7,47 @@ import EducationContainer from '../EducationContainer';
 import ToolsContainer from '../ToolsContainer';
 import Header from '../Header';
 import Footer from '../../components/Footer/';
-import HeroBanner from '../../components/HeroBanner';
+import Main from '../Main';
 
 class App extends Component {
   render() {
     return (
-      <div className="helloWorld">
-        <Header />
-        <AboutContainer />
-        <EducationContainer />
-        <BooksContainer />
-        <ToolsContainer />
-        <ProjectsContainer />
-        <Footer />
+      <div>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => <Main findComponent="header" />}
+          />
+          <Route
+            path="/about"
+            render={() => <Main findComponent="about" />}
+          />
+          <Route
+            path="/education"
+            render={() => <Main findComponent="education" />}
+          />
+          <Route
+            path="/favoriteBooks"
+            render={() => <Main findComponent="favoriteBooks" />}
+          />
+          <Route
+            path="/toolBox"
+            render={() => <Main findComponent="toolBox" />}
+          />
+          <Route
+            path="/projects"
+            render={() => <Main findComponent="projects" />}
+          />
+          <Route
+            path="/findMe"
+            render={() => <Main findComponent="footer" />}
+          />
+        </Switch>
       </div>
     );
   }
 }
-        /*  <Route exact path="/" component={HeaderContainer} />
-          <Route path="/about" component={AboutContainer} />
-          <EducationHero />
-          <Route path="/education" component={EducationContainer} />
-          <BooksHero />
-          <Route path="/favoritebooks" component={BooksContainer} />
-          <ToolsHero />
-          <Route path="/toolbox" component={ToolsContainer} />
-          <ProjectsHero />
-          <Route path="/projects" component={ProjectsContainer} />
-          <FindMeHero />
-          <Route path="/findme" component={FindMeComponent} /> */
+
 
 export default App;

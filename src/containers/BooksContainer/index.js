@@ -14,14 +14,14 @@ class BooksContainer extends Component {
   }
 
   render() {
-    const { isLoading, books, booksComponentState, booksSectionsState, expandBooksComponent, closeBooksComponent, showReading, showFavorites, showFutureReads, closeList } = this.props; // eslint-disable-line
+    const { isLoading, books, booksComponentState, booksSectionsState, expandBooksComponent, closeBooksComponent, showReading, showFavorites, showFutureReads, closeList, componentRef } = this.props; // eslint-disable-line
     return (
-      <div>
+      <div className="books-container">
         {
           isLoading ?
             <LoadingComponent />
             :
-            <div>
+            <div ref={componentRef}>
               <HeroBanner bannerContainer="booksHeroBanner" textWrapper="booksTextWrapper" bannerTitle="I like to books" />
               <BooksComponent
                 books={books}

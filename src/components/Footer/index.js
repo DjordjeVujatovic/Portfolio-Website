@@ -1,9 +1,9 @@
 import React from 'react';
 import HeroBanner from '../HeroBanner';
 
-const Footer = () => {
+const Footer = ({ componentRef }) => { //eslint-disable-line
   return (
-    <div>
+    <div ref={componentRef}>
       <HeroBanner bannerContainer="findMeHeroBanner" textWrapper="findMeTextWrapper" bannerTitle="Find Me" />
       <div className="findMeContainer">
         <div className="fontAwesomeContainer">

@@ -39,16 +39,24 @@
           height: 50px;
           background: transparent;
           border: none;
-          color: $coreJungleGreen;
-          text-transform: uppercase;
-          font-family: $mainFontFamily;
           font-size: 14px;
           border-radius: 50px;
           transition: 800ms;
           margin-right: 5px;
+          a {
+            color: $coreJungleGreen;
+            text-transform: uppercase;
+            font-family: $mainFontFamily;
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            &:hover {
+              color: white;
+            }
+          }
           &:hover {
             cursor: pointer;
-            background: $coreWhite;
+            background: $coreJungleGreen;
             transition: 500ms;
             border-radius: 50px;
           }

@@ -25,26 +25,29 @@ class EducationContainer extends Component {
       expandCollegeComponent,
       closeCollegeComponent,
       expandUniversityComponent,
-      closeUniversityComponent } = this.props; //eslint-disable-line
+      closeUniversityComponent,
+      componentRef } = this.props; //eslint-disable-line
     return (
       <div>
         {isLoading ?
           <LoadingComponent />
           :
-          <div>
+          <div ref={componentRef}>
             <HeroBanner bannerContainer="educationHeroBanner" textWrapper="" bannerTitle="" />
-            <EducationComponent
-              education={education}
-              redState={redState}
-              collegeState={collegeState}
-              universityState={universityState}
-              expandCollegeComponent={expandCollegeComponent}
-              expandRedComponent={expandRedComponent}
-              expandUniversityComponent={expandUniversityComponent}
-              closeCollegeComponent={closeCollegeComponent}
-              closeUniversityComponent={closeUniversityComponent}
-              closeRedComponent={closeRedComponent}
-            />
+            <div>
+              <EducationComponent
+                education={education}
+                redState={redState}
+                collegeState={collegeState}
+                universityState={universityState}
+                expandCollegeComponent={expandCollegeComponent}
+                expandRedComponent={expandRedComponent}
+                expandUniversityComponent={expandUniversityComponent}
+                closeCollegeComponent={closeCollegeComponent}
+                closeUniversityComponent={closeUniversityComponent}
+                closeRedComponent={closeRedComponent}
+              />
+            </div>
           </div>
         }
       </div>

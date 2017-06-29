@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 import MobileSubMenu from '../MobileSubMenu';
+
 
 const MobileNavBarExpanded = ({ closeExpand, subMenuState, expandSubMenu, closeSubMenu }) => (
   <div onMouseLeave={() => closeExpand()} className="mobileNavBarExpanded">
@@ -14,8 +16,8 @@ const MobileNavBarExpanded = ({ closeExpand, subMenuState, expandSubMenu, closeS
       :
       <button onClick={() => expandSubMenu()} className="menuItems">Who Am I?</button>
     }
-    <button className="menuItems">Projects</button>
-    <button className="menuItems">Contact Info</button>
+    <button className="menuItems"><NavLink activeClassName="navLink" to="/projects">Projects</NavLink></button>
+    <button className="menuItems"><NavLink to="/findMe">Find Me</NavLink></button>
   </div>
 );
 

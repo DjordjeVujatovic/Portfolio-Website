@@ -11,9 +11,9 @@ class AboutContainer extends Component {
   }
   render() {
     const about = this.props.about; //eslint-disable-line
-    const { isLoading } = this.props;
+    const { isLoading, componentRef } = this.props; //eslint-disable-line
     return (
-      <div>
+      <div ref={componentRef}>
         {
           isLoading ?
             <LoadingComponent />

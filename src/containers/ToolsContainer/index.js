@@ -29,10 +29,11 @@ class ToolsContainer extends Component {
       closeLanguagesComponent,
       expandTechnologiesComponent,
       closeTechnologiesComponent,
+      componentRef, //eslint-disable-line
 
           } = this.props;
     return (
-      <div>
+      <div ref={componentRef}>
         {isLoading ?
           <LoadingComponent />
           :

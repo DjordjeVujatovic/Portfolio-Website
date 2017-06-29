@@ -15,14 +15,14 @@ class ProjectContainer extends Component {
   }
 
   render() {
-    const { isLoading, projects, projectsComponentState, projectState, slideCount, expandProjectsComponent, closeProjectsComponent, previousSlide, nextSlide, readMore, changeComponentState, closeReadMore } = this.props; // eslint-disable-line
+    const { isLoading, projects, projectsComponentState, projectState, slideCount, expandProjectsComponent, closeProjectsComponent, previousSlide, nextSlide, readMore, changeComponentState, closeReadMore, componentRef } = this.props; // eslint-disable-line
     function filter(id, slideCount) {
       if ((slideCount === id) && readMore) {
         return true;
       } return false;
     }
     return (
-      <div>
+      <div ref={componentRef}>
         {isLoading ?
           <LoadingComponent />
           :

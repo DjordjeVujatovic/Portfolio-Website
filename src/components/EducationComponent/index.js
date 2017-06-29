@@ -4,9 +4,9 @@ import UniversityComponent from '../EducationComponent/UniversityComponent';
 import CollegeComponent from '../EducationComponent/CollegeComponent';
 import RedComponent from '../EducationComponent/RedComponent';
 
-const EducationComponent = ({ education, redState, universityState, collegeState, expandRedComponent, closeRedComponent, expandCollegeComponent, closeCollegeComponent, expandUniversityComponent, closeUniversityComponent  }) => { //eslint-disable-line
+const EducationComponent = ({ education, redState, universityState, collegeState, expandRedComponent, closeRedComponent, expandCollegeComponent, closeCollegeComponent, expandUniversityComponent, closeUniversityComponent, componentRef  }) => { //eslint-disable-line
   return (
-    <div className="educationComponentWrapper">
+    <div className="educationComponentWrapper" ref={componentRef}>
       <RedComponent
         education={education}
         redState={redState}
