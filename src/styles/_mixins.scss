@@ -2,6 +2,7 @@
 
 @mixin educationComponentClose {
   display: flex;
+  flex-direction: column;
   flex-basis: 33.3333%;
   height: 31%;
   justify-content: center;
@@ -14,7 +15,7 @@
 }
 @mixin educationButtonClose {
   width: 97%;
-  height: 90%;
+  flex-basis: 95%;
   border: none;
   color: $coreWhite;
   text-transform: uppercase;
@@ -77,9 +78,11 @@
     width: 100%;
     .educationWrapper {
       display: flex;
+      height: 85%;
       flex-direction: column;
       justify-content: center;
       align-content: center;
+      align-self: center;
       color: white;
       p {
         font-size: $fontSizeRegular;
@@ -97,6 +100,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
           justify-content: center;
@@ -120,7 +124,7 @@
 }
 @mixin toolsButtonClose {
   width: 95%;
-  height: 94%;
+  flex-basis: 93%;
   background: transparent;
   border: none;
   text-transform: uppercase;
@@ -170,17 +174,16 @@
   align-items: center;
   flex-basis: 63%;
   width: 100%;
-    span {
-      text-align: center;
-      font-family: $mainFontFamily;
-      font-size: $buttonTextLarge;
-      color: $coreWhite;
-    }
+}
+@mixin toolsWrapper {
+  text-align: center;
+  font-family: $mainFontFamily;
+  font-size: $buttonTextLarge;
+  color: $coreWhite;
 }
 @mixin toolsButtonWrapper {
   display: flex;
   justify-content: center;
-  flex-basis: 17%;
   width: 100%;
   padding-bottom: 5px;
 }

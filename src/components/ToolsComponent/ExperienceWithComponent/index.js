@@ -12,13 +12,13 @@ const ExperienceWithComponent = ({ tools, experienceState, expandExperienceCompo
             </div>
           </div>
           <div className="experienceWith">
-            <span>
+            <div className="experienceWithWrapper">
               <p>{tools[2].experienceWith[0]}</p>
               <p>{tools[2].experienceWith[1]}</p>
               <p>{tools[2].experienceWith[2]}</p>
               <p>{tools[2].experienceWith[3]}</p>
               <p>{tools[2].experienceWith[4]}</p>
-            </span>
+            </div>
           </div>
           <div className="buttonWrapper">
             <button onClick={() => closeExperienceComponent()} className={experienceState.buttonClass}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>

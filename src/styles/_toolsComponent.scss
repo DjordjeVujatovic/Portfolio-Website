@@ -48,6 +48,9 @@
     }
     .languages {
       @include tools;
+      .languagesWrapper {
+        @include toolsWrapper;
+      }
     }
     .buttonWrapper {
       @include toolsButtonWrapper;
@@ -77,6 +80,9 @@
     }
     .technologies {
       @include tools;
+      .technologiesWrapper {
+        @include toolsWrapper;
+      }
     }
     .buttonWrapper {
       @include toolsButtonWrapper;
@@ -106,6 +112,9 @@
     }
     .devTools {
       @include tools;
+      .devToolsWrapper {
+        @include toolsWrapper;
+      }
     }
     .buttonWrapper {
       @include toolsButtonWrapper;
@@ -135,6 +144,9 @@
     }
     .experienceWith {
       @include tools;
+      .experienceWithWrapper {
+        @include toolsWrapper;
+      }
     }
     .buttonWrapper {
       @include toolsButtonWrapper;

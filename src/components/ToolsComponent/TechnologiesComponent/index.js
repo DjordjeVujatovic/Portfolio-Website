@@ -12,13 +12,13 @@ const TechnologiesComponent = ({ tools, technologiesState, expandTechnologiesCom
             </div>
           </div>
           <div className="technologies">
-            <span>
+            <div className="technologiesWrapper">
               <p>{tools[1].technologies[0]}</p>
               <p>{tools[1].technologies[1]}</p>
               <p>{tools[1].technologies[2]}</p>
               <p>{tools[1].technologies[3]}</p>
               <p>{tools[1].technologies[4]}</p>
-            </span>
+            </div>
           </div>
           <div className="buttonWrapper">
             <button onClick={() => closeTechnologiesComponent()} className={technologiesState.buttonClass}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>

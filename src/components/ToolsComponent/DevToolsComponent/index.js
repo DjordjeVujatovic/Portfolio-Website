@@ -12,13 +12,13 @@ const DevToolsComponent = ({ tools, devToolsState, expandDevToolsComponent, clos
             </div>
           </div>
           <div className="devTools">
-            <span>
+            <div className="devToolsWrapper">
               <p>{tools[3].developmentTools[0]}</p>
               <p>{tools[3].developmentTools[1]}</p>
               <p>{tools[3].developmentTools[2]}</p>
               <p>{tools[3].developmentTools[3]}</p>
               <p>{tools[3].developmentTools[4]}</p>
-            </span>
+            </div>
           </div>
           <div className="buttonWrapper">
             <button onClick={() => closeDevToolsComponent()} className={devToolsState.buttonClass}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>

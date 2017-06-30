@@ -12,11 +12,11 @@ const LanguageComponent = ({ tools, languagesState, expandLanguageComponent, clo
             </div>
           </div>
           <div className="languages">
-            <span>
+            <div className="languagesWrapper">
               <p>{tools[0].languages[0]}</p>
               <p>{tools[0].languages[1]}</p>
               <p>{tools[0].languages[2]}</p>
-            </span>
+            </div>
           </div>
           <div className="buttonWrapper">
             <button onClick={() => closeLanguageComponent()} className={languagesState.buttonClass}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
