@@ -5,7 +5,6 @@ import educationReducer from './modules/reducers/FetchReducers/educationReducer'
 import toolsReducer from './modules/reducers/FetchReducers/toolsReducer';
 import projectReducer from './modules/reducers/FetchReducers/projectReducer';
 import mobileNavReducer from './modules/reducers/NavigationReducers/mobileNavReducer';
-import mobileSubMenuReducer from './modules/reducers/NavigationReducers/subMenuReducer';
 import redReducer from './modules/reducers/EducationComponentReducers/redReducer';
 import collegeReducer from './modules/reducers/EducationComponentReducers/collegeReducer';
 import universityReducer from './modules/reducers/EducationComponentReducers/universityReducer';
@@ -25,7 +24,6 @@ const combinedReducers = combineReducers({
   tools: toolsReducer,
   projects: projectReducer,
   mobileNav: mobileNavReducer,
-  mobileSubMenu: mobileSubMenuReducer,
   redState: redReducer,
   collegeState: collegeReducer,
   universityState: universityReducer,

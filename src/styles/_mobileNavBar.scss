@@ -50,9 +50,9 @@
           margin-right: 2px;
           &:hover {
             cursor: pointer;
-            background: $coreJungleGreen;
+            background: white;
             transition: 500ms;
-            color: white;
+            color: $coreJungleGreen;
           }
           &:focus {
             outline: 0;

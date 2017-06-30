@@ -2,15 +2,14 @@
   display: flex;
   flex-direction: column;
   background-color: #171717;
-  height: 90%;
-  min-height: 600px;
+  height: 100vh;
   transition: opacity 500ms ease-in;
   position: absolute;
   position: fixed;
   width: 100%;
   opacity: 0.97;
   .mobileMenuContainer {
-    height: 75%;
+    height: 90%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,34 +18,41 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
       height: 100%;
       width: 100%;
       min-height: 400px;
       text-align: center;
       .buttonContainer {
           width: 100%;
-          height: 10%;
+          height: 15%;
           display: flex;
           justify-content: center;
           align-items: center;
           text-decoration: none;
+          text-transform: uppercase;
           &:hover {
             background-color: $coreJungleGreen;
             cursor: pointer;
           }
-          button {
-            height: 27%;
+          .menuItems {
+            height: 100%;
             width: 100%;
             background-color: transparent;
             font-size: $fontSizeRegular;
             font-family: $mainFontFamily;
             color: $coreLightGray;
             border: none;
-        }
-        &:focus {
-          outline: 0;
-        }
+            &:focus {
+              outline: 0;
+            }
+            &hover {
+              cursor: pointer;
+            }
+           }
+           &:focus {
+            outline: 0;
+          }
         }
       }
     }
@@ -69,4 +75,34 @@
     outline: 0;
   }
 }
-
+.navLink {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.socialContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+  width: 70%;
+  max-width: 400px;
+  .socialButton {
+    width: 45%;
+    height: 100%;
+    background:transparent;
+    border: none;
+    a {
+      font-size: 8em;
+      color: white;
+      &:hover {
+        color: $coreJungleGreen;
+      }
+    }
+  }
+}
