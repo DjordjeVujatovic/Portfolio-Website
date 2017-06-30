@@ -1,6 +1,7 @@
 .projectsClose {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 25vh;
   min-height: 200px;
@@ -12,10 +13,30 @@
     height: 20vh;
   }
   .projectsButtonClose {
-    @include educationButtonClose;
     width: 98%;
-    height: 89%;
+    flex-basis: 90%;
+    border: none;
+    color: $coreWhite;
     background: $coreJungleGreen;
+    text-transform: uppercase;
+    font-size: $fontSizeRegular;
+    font-family: $mainFontFamily;
+    box-shadow: 0px 4px 7px 0px black;
+    transition: 300ms;
+    &:hover {
+      width: 98%;
+      height: 93%;
+      cursor: pointer;
+      font-size: $fontSizeMedium;
+      transition: 300ms;
+    }
+    &:focus {
+      outline: 0;
+    }
+    &:active {
+      width: 97%;
+      height: 90%;
+    }
   }
 }
 .projectsOpen {

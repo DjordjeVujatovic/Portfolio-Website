@@ -9,7 +9,7 @@
   transition: 600ms;
   .booksButtonClose {
     @include educationButtonClose;
-    width: 98%;
+    flex-basis: 98%;
     height: 89%;
     background: $coreCharcoal;
   }
