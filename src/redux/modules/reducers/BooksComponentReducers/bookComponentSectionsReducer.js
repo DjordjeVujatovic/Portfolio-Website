@@ -20,7 +20,7 @@ const initialState = {
   },
   futureReadsState: {
     showFutureReads: false,
-    buttonNameFuture: 'Going To Read',
+    buttonNameFuture: 'Future Reads',
     buttonClassFuture: 'buttonCloseFuture',
     futuresClassName: 'futuresClose',
   },
@@ -46,7 +46,7 @@ export default (state = initialState, action) => {
         },
         futureReadsState: {
           showFutureReads: false,
-          buttonNameFuture: 'Going To Read',
+          buttonNameFuture: 'Future Reads',
           buttonClassFuture: 'buttonCloseFuture',
           futuresClassName: 'futuresClose',
         },
@@ -90,7 +90,7 @@ export default (state = initialState, action) => {
         },
         futureReadsState: {
           showFutureReads: false,
-          buttonNameFuture: 'Going To Read',
+          buttonNameFuture: 'Future Reads',
           buttonClassFuture: 'buttonCloseFuture',
           futuresClassName: 'futuresClose',
         },
@@ -112,7 +112,7 @@ export default (state = initialState, action) => {
         },
         futureReadsState: {
           showFutureReads: false,
-          buttonNameFuture: 'Going To Read',
+          buttonNameFuture: 'Future Reads',
           buttonClassFuture: 'buttonCloseFuture',
           futuresClassName: 'futuresClose',
         },

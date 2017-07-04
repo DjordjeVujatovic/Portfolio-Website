@@ -7,11 +7,11 @@
   margin-top: $componentMargin;
   @include tablet {
     height: 85vh;
-    min-height: 570px;
+    min-height: 600px;
   }
   @include desktop {
     height: 90vh;
-    min-height: 600px;
+    min-height: 650px;
   }
   .left {
     display: flex;

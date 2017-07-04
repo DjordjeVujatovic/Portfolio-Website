@@ -21,16 +21,29 @@
     text-transform: uppercase;
     color: $coreLightGray;
     height: auto;
+    @include tablet {
+      font-size: $fontSizeHuge;
+      margin-bottom: 10px;
+    }
   }
   h2 {
     margin: 0;
     color: $coreLightGray;
     text-transform: uppercase;
     height: auto;
+    @include tablet {
+      font-size: 30px;
+    }
   }
   h3 {
     color: $coreCharcoal;
     height: auto;
+    font-family: $mainFontFamilyBold;
+    font-size: 16px;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: $fontSizeMedium;
+    }
   }
   p {
     font-size: $fontSizeRegular;
@@ -41,6 +54,8 @@
     height: auto;
     @include tablet {
       max-width: 750px;
+      min-width: 500px;
+      font-size: $fontSizeLarge;
     }
   }
 }

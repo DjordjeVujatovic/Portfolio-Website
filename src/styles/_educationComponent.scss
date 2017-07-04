@@ -1,12 +1,12 @@
 .educationComponentWrapper {
   height: $componentHeightRegular;
-  min-height:  600px;
+  min-height:  650px;
   display: flex;
   flex-direction: column;
   margin-top: $componentMargin;
   @include tablet {
    height: 90vh;
-   max-height: 715px;
+   max-height: 800px;
   }
 }
 .redClose {

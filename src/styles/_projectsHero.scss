@@ -22,6 +22,12 @@
       font-family: $mainFontFamily;
       text-transform: uppercase;
       text-shadow: -1px 1px 2px #000;
-   }
+      @include tablet {
+        font-size: $fontSizeExtraLarge;
+      }
+      @include desktop {
+        font-size: $fontSizeHuge;
+      }
+    }
   }
 }
