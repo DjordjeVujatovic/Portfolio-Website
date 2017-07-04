@@ -93,3 +93,9 @@ module.exports = {
   plugins: [HtmlWebpackPluginConfig, new ExtractTextPlugin('styles.css')],
 };
 
+if (process.env.NODE_ENV === 'production') {
+  module.exports.devtool = ''; // No sourcemap for production
+  module.exports.output.publicPath = './';
+}
+
+
