@@ -183,6 +183,12 @@
   font-family: $mainFontFamily;
   font-size: $buttonTextLarge;
   color: $coreWhite;
+  @include tablet {
+    font-size: 22px;
+  }
+  @include desktop {
+    font-size: $fontSizeLarge;
+  }
 }
 @mixin toolsButtonWrapper {
   display: flex;

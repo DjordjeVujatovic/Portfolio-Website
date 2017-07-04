@@ -288,6 +288,9 @@
                 color: $coreWhite;
                 text-transform: uppercase;
                 text-shadow: -1.5px 2px 1px #000;
+                @include desktop {
+                  font-size: 40px;
+                }
               }
             }
             .projectSnippetContainer {
@@ -297,24 +300,27 @@
               align-items: center;
               .projectSnippet {
                 text-align: center;
-                width: 100%;
-                max-width: 320px;
+                max-width: 70%;
                 padding-bottom: 30px;
                 align-self: center;
                 margin: 4%;
                 @include desktop {
-                  max-width: 400px;
+                  max-width: 440px;
                   margin: 0;
                 }
-                }
+              }
               p {
                 font-family: $mainFontFamily;
                 font-size: 20px;
                 color: $coreWhite;
+                height: auto;
+                @include tablet {
+                  font-size: $fontSizeMedium;
+                }
+                @include desktop {
+                  font-size: 28px;
+                }
               }
-            }
-            p {
-              height: auto;
             }
           }
           .readMoreButtonContainer {
