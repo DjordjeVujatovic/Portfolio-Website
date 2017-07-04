@@ -28,7 +28,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   inject: 'body',
 });
 
-module.exports = {
+const config = {
   context: path.resolve(__dirname, './src'),
   entry: {
     app: './index.js',
@@ -94,8 +94,9 @@ module.exports = {
 };
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = ''; // No sourcemap for production
+  module.exports.devtool = '';
   module.exports.output.publicPath = './';
 }
 
+module.exports = config;
 
