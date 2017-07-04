@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --inline --history-api-fallback"
+    "start": "webpack-dev-server",
+    "build": "NODE_ENV=production webpack -p --config webpack.config.js"
   },
   "author": "Djordje Vujatovic",
   "description": "React + Redux starter seed.",
