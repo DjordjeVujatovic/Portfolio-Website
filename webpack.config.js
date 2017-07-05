@@ -31,10 +31,10 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 const config = {
   context: path.resolve(__dirname, './src'),
   entry: {
-    app: './index.js',
+    app: ['./index.js', './styles/main.scss'],
   },
   output: {
-    filename: 'app-bundle.js',
+    filename: 'app.bundle.js',
     path: path.resolve(__dirname, './dist'),
     publicPath: '/',
   },
@@ -55,20 +55,14 @@ const config = {
         },
       },
       {
-        test: /\.css\.scss$/,
-        exclude: [/node_modules/],
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: styleLoaders,
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract({
+          loader: 'css-loader?importLoaders=1',
         }),
       },
       {
-        test: /\.css$/,
-        loader: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-      {
-        test: /\.scss$/,
-        loader: ['style-loader', 'css-loader', 'sass-loader'],
+        test: /\.(sass|scss)$/,
+        loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader']),
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
@@ -90,7 +84,7 @@ const config = {
       },
     ],
   },
-  plugins: [HtmlWebpackPluginConfig, new ExtractTextPlugin('styles.css')],
+  plugins: [HtmlWebpackPluginConfig, new ExtractTextPlugin('dist/styles.bundle.css')],
 };
 
 if (process.env.NODE_ENV === 'production') {
