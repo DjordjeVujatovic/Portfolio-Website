@@ -31,7 +31,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 const config = {
   context: path.resolve(__dirname, './src'),
   entry: {
-    app: ['./index.js', './styles/main.scss'],
+    app: ['/', './styles/main.scss'],
   },
   output: {
     filename: 'app.bundle.js',
