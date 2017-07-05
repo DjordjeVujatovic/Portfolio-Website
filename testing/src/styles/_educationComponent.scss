@@ -1,0 +1,72 @@
+.educationComponentWrapper {
+  height: $componentHeightRegular;
+  min-height:  650px;
+  display: flex;
+  flex-direction: column;
+  margin-top: $componentMargin;
+  @include tablet {
+   height: 90vh;
+   max-height: 800px;
+  }
+}
+.redClose {
+  @include educationComponentClose;
+  background: $shadeOne;
+  .educationInfo {
+    display: none;
+  }
+  .redButtonClose {
+  @include educationButtonClose;
+  background: $coreMustard;
+  }
+}
+.redOpen {
+  @include educationComponentOpen;
+  background-color: $shadeOne;
+  @include educationInfo;
+  .redButtonOpen {
+    @include educationButtonOpen;
+    background-color: $coreMustard;
+  }
+}
+.universityClose {
+  @include educationComponentClose;
+  background: $shadeTwo;
+  .educationInfo {
+    display: none;
+  }
+  .universityButtonClose {
+    @include educationButtonClose;
+    background: $coreJungleGreen;
+
+  }
+}
+.universityOpen {
+  @include educationComponentOpen;
+  background: $shadeTwo;
+  @include educationInfo;
+  .universityButtonOpen {
+    @include educationButtonOpen;
+    background: $coreJungleGreen;
+  }
+}
+.collegeClose {
+  @include educationComponentClose;
+  background: $shadeThree;
+  .educationInfo {
+    display: none;
+  }
+  .collegeButtonClose {
+    @include educationButtonClose;
+    background: $coreCharcoal;
+  }
+}
+.collegeOpen {
+  @include educationComponentOpen;
+  background: $shadeThree;
+  @include educationInfo;
+  .collegeButtonOpen {
+    @include educationButtonOpen;
+    background: $coreCharcoal;
+  }
+}

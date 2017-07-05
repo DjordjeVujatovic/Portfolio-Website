@@ -5,7 +5,7 @@ import { fetchProjects } from '../../redux/modules/actions/FetchActions/projectA
 import ProjectsComponent from '../../components/ProjectsComponent';
 import LoadingComponent from '../../components/LoadingComponent';
 import { expandProjectsComponent, closeProjectsComponent } from '../../redux/modules/actions/ProjectsComponentActions/projectsComponentAction';
-import { nextSlide, previousSlide, changeComponentState } from '../../redux/modules/actions/ProjectsComponentActions/projectsSliderActions';
+import { nextSlide, previousSlide } from '../../redux/modules/actions/ProjectsComponentActions/projectsSliderActions';
 import { readMore, closeReadMore } from '../../redux/modules/actions/ProjectsComponentActions/readMoreActions';
 import HeroBanner from '../../components/HeroBanner';
 
@@ -38,7 +38,6 @@ class ProjectContainer extends Component {
               previousSlide={previousSlide}
               readMore={readMore}
               closeReadMore={closeReadMore}
-              changeComponentState={changeComponentState}
               filter={filter}
             />
           </div>
@@ -76,9 +75,6 @@ const mapDispatchToProps = dispatch => ({
   },
   closeReadMore: () => {
     dispatch(closeReadMore());
-  },
-  changeComponentState: () => {
-    dispatch(changeComponentState());
   },
 });
 

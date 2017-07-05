@@ -1,0 +1,2688 @@
+html, body, h1, p {
+  height: 100%;
+  margin: 0;
+  width: 100%; }
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+
+@keyframes lds-ellipsis3 {
+  0%, 25% {
+    left: 32px;
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  50% {
+    left: 32px;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  75% {
+    left: 100px; }
+  100% {
+    left: 168px;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@-webkit-keyframes lds-ellipsis3 {
+  0%, 25% {
+    left: 32px;
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  50% {
+    left: 32px;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  75% {
+    left: 100px; }
+  100% {
+    left: 168px;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  25%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); } }
+
+@-webkit-keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  25%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); } }
+
+@keyframes lds-ellipsis {
+  0% {
+    left: 32px;
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  25% {
+    left: 32px;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    left: 100px; }
+  75% {
+    left: 168px;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    left: 168px;
+    -webkit-transform: scale(0);
+    transform: scale(0); } }
+
+@-webkit-keyframes lds-ellipsis {
+  0% {
+    left: 32px;
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  25% {
+    left: 32px;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    left: 100px; }
+  75% {
+    left: 168px;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    left: 168px;
+    -webkit-transform: scale(0);
+    transform: scale(0); } }
+
+.lds-ellipsis {
+  position: relative; }
+
+.lds-ellipsis > div {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px; }
+
+.lds-ellipsis div > div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f00;
+  position: absolute;
+  top: 100px;
+  left: 32px;
+  -webkit-animation: lds-ellipsis 0.5s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+  animation: lds-ellipsis 0.5s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards; }
+
+.lds-ellipsis div:nth-child(1) div {
+  -webkit-animation: lds-ellipsis2 0.5s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+  animation: lds-ellipsis2 0.5s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+  background: #f0ad4e; }
+
+.lds-ellipsis div:nth-child(2) div {
+  -webkit-animation-delay: -0.25s;
+  animation-delay: -0.25s;
+  background: #5cb85c; }
+
+.lds-ellipsis div:nth-child(3) div {
+  -webkit-animation-delay: -0.125s;
+  animation-delay: -0.125s;
+  background: #5bc0de; }
+
+.lds-ellipsis div:nth-child(4) div {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  background: #337ab7; }
+
+.lds-ellipsis div:nth-child(5) div {
+  -webkit-animation: lds-ellipsis3 0.5s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+  animation: lds-ellipsis3 0.5s cubic-bezier(0, 0.5, 0.5, 1) infinite forwards;
+  background: #f0ad4e; }
+
+.lds-ellipsis {
+  width: 200px !important;
+  height: 200px !important;
+  -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+  transform: translate(-100px, -100px) scale(1) translate(100px, 100px); }
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../content/fonts/rubik-bold-webfont.eot");
+  src: url("../content/fonts/rubik-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/rubik-bold-webfont.woff") format("woff"), url("../content/fonts/rubik-bold-webfont.ttf") format("truetype"), url("../content/fonts/rubik-bold-webfont.svg#rubikbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../content/fonts/rubik-bolditalic-webfont.eot");
+  src: url("../content/fonts/rubik-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/rubik-bolditalic-webfont.woff") format("woff"), url("../content/fonts/rubik-bolditalic-webfont.ttf") format("truetype"), url("../content/fonts/rubik-bolditalic-webfont.svg#rubikbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../content/fonts/rubik-italic-webfont.eot");
+  src: url("../content/fonts/rubik-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/rubik-italic-webfont.woff") format("woff"), url("../content/fonts/rubik-italic-webfont.ttf") format("truetype"), url("../content/fonts/rubik-italic-webfont.svg#rubikitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../content/fonts/rubik-light-webfont.eot");
+  src: url("../content/fonts/rubik-light-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/rubik-light-webfont.woff") format("woff"), url("../content/fonts/rubik-light-webfont.ttf") format("truetype"), url("../content/fonts/rubik-light-webfont.svg#rubiklight") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../content/fonts/rubik-lightitalic-webfont.eot");
+  src: url("../content/fonts/rubik-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/rubik-lightitalic-webfont.woff") format("woff"), url("../content/fonts/rubik-lightitalic-webfont.ttf") format("truetype"), url("../content/fonts/rubik-lightitalic-webfont.svg#rubiklight_italic") format("svg");
+  font-weight: lighter;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../content/fonts/rubik-medium-webfont.eot");
+  src: url("../content/fonts/rubik-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/rubik-medium-webfont.woff") format("woff"), url("../content/fonts/rubik-medium-webfont.ttf") format("truetype"), url("../content/fonts/rubik-medium-webfont.svg#rubikmedium") format("svg");
+  font-weight: medium;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../content/fonts/rubik-mediumitalic-webfont.eot");
+  src: url("../content/fonts/rubik-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/rubik-mediumitalic-webfont.woff") format("woff"), url("../content/fonts/rubik-mediumitalic-webfont.ttf") format("truetype"), url("../content/fonts/rubik-mediumitalic-webfont.svg#rubikmedium_italic") format("svg");
+  font-weight: medium;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../content/fonts/rubik-regular-webfont.eot");
+  src: url("../content/fonts/rubik-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/rubik-regular-webfont.woff") format("woff"), url("../content/fonts/rubik-regular-webfont.ttf") format("truetype"), url("../content/fonts/rubik-regular-webfont.svg#rubikregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("../content/fonts/roboto-bold-webfont.eot");
+  src: url("../content/fonts/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/roboto-bold-webfont.woff") format("woff"), url("../content/fonts/roboto-bold-webfont.ttf") format("truetype"), url("../content/fonts/roboto-bold-webfont.svg#robotobold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../content/fonts/roboto-bolditalic-webfont.eot");
+  src: url("../content/fonts/roboto-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/roboto-bolditalic-webfont.woff") format("woff"), url("../content/fonts/roboto-bolditalic-webfont.ttf") format("truetype"), url("../content/fonts/roboto-bolditalic-webfont.svg#robotobold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../content/fonts/roboto-italic-webfont.eot");
+  src: url("../content/fonts/roboto-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/roboto-italic-webfont.woff") format("woff"), url("../content/fonts/roboto-italic-webfont.ttf") format("truetype"), url("../content/fonts/roboto-italic-webfont.svg#robotoitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../content/fonts/roboto-light-webfont.eot");
+  src: url("../content/fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/roboto-light-webfont.woff") format("woff"), url("../content/fonts/roboto-light-webfont.ttf") format("truetype"), url("../content/fonts/roboto-light-webfont.svg#robotolight") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../content/fonts/roboto-lightitalic-webfont.eot");
+  src: url("../content/fonts/roboto-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/roboto-lightitalic-webfont.woff") format("woff"), url("../content/fonts/roboto-lightitalic-webfont.ttf") format("truetype"), url("../content/fonts/roboto-lightitalic-webfont.svg#robotolight_italic") format("svg");
+  font-weight: lighter;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../content/fonts/roboto-medium-webfont.eot");
+  src: url("../content/fonts/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/roboto-medium-webfont.woff") format("woff"), url("../content/fonts/roboto-medium-webfont.ttf") format("truetype"), url("../content/fonts/roboto-medium-webfont.svg#robotomedium") format("svg");
+  font-weight: medium;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../content/fonts/roboto-mediumitalic-webfont.eot");
+  src: url("../content/fonts/roboto-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/roboto-mediumitalic-webfont.woff") format("woff"), url("../content/fonts/roboto-mediumitalic-webfont.ttf") format("truetype"), url("../content/fonts/roboto-mediumitalic-webfont.svg#robotomedium_italic") format("svg");
+  font-weight: medium;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../content/fonts/roboto-regular-webfont.eot");
+  src: url("../content/fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/roboto-regular-webfont.woff") format("woff"), url("../content/fonts/roboto-regular-webfont.ttf") format("truetype"), url("../content/fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url("../content/fonts/roboto-thin-webfont.eot");
+  src: url("../content/fonts/roboto-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/roboto-thin-webfont.woff2") format("woff2"), url("../content/fonts/roboto-thin-webfont.woff") format("woff"), url("../content/fonts/roboto-thin-webfont.ttf") format("truetype"), url("../content/fonts/roboto-thin-webfont.svg#robotothin") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'colored_crayonsregular';
+  src: url("../content/fonts/colored_crayons-webfont.eot");
+  src: url("../content/fonts/colored_crayons-webfont.eot?#iefix") format("embedded-opentype"), url("../content/fonts/colored_crayons-webfont.woff") format("woff"), url("../content/fonts/colored_crayons-webfont.ttf") format("truetype"), url("../content/fonts/colored_crayons-webfont.svg#colored_crayonsregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.mobileNavBar {
+  display: flex;
+  background-color: #171717;
+  align-items: center;
+  height: 10vh;
+  min-height: 85px;
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 1; }
+  .mobileNavBar p {
+    display: flex;
+    align-items: center;
+    color: #e4e7ec;
+    font-size: 20px;
+    font-family: "Roboto-Light", sarif;
+    text-transform: uppercase;
+    align-self: center;
+    padding-left: 15px; }
+  .mobileNavBar .fullScreenNav {
+    display: none; }
+    @media (min-width: 1100px) {
+      .mobileNavBar .fullScreenNav {
+        display: flex;
+        flex-basis: 80%;
+        align-items: center;
+        justify-content: flex-end;
+        align-items: center;
+        min-width: 910px;
+        height: 100%;
+        margin-right: 2%; }
+        .mobileNavBar .fullScreenNav .fullScreenButtonContainer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          align-self: flex;
+          height: 100%;
+          width: 100%;
+          max-width: 850px;
+          margin-right: 2%; }
+          .mobileNavBar .fullScreenNav .fullScreenButtonContainer button {
+            width: 125px;
+            height: 50px;
+            background: transparent;
+            border: none;
+            font-size: 14px;
+            border-radius: 3px;
+            transition: 800ms;
+            color: #1B998B;
+            text-transform: uppercase;
+            font-family: "Roboto-Light", sarif;
+            text-decoration: none;
+            margin-right: 2px; }
+            .mobileNavBar .fullScreenNav .fullScreenButtonContainer button:hover {
+              cursor: pointer;
+              background: white;
+              transition: 500ms;
+              color: #1B998B; }
+            .mobileNavBar .fullScreenNav .fullScreenButtonContainer button:focus {
+              outline: 0;
+              background: #1B998B;
+              color: white;
+              transition: 500ms; } }
+
+.openButton {
+  background-color: transparent;
+  border: none;
+  color: #1B998B;
+  align-self: center;
+  padding-right: 15px;
+  font-size: 20px;
+  font-family: "Roboto-Light", sarif;
+  text-transform: uppercase; }
+  @media (min-width: 1100px) {
+    .openButton {
+      display: none; } }
+  .openButton:hover {
+    cursor: pointer; }
+  .openButton:focus {
+    outline: 0; }
+  .openButton .fa {
+    font-size: 2em;
+    transition: 200ms; }
+    .openButton .fa:hover {
+      font-size: 2.5em;
+      transition: 200ms; }
+
+.mobileNavBarExpanded {
+  display: flex;
+  flex-direction: column;
+  background-color: #171717;
+  height: 100vh;
+  transition: opacity 500ms ease-in;
+  position: absolute;
+  position: fixed;
+  width: 100%;
+  opacity: 0.97; }
+  .mobileNavBarExpanded .mobileMenuContainer {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+      min-height: 400px;
+      text-align: center; }
+      .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase; }
+        .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer:hover {
+          background-color: #1B998B;
+          cursor: pointer; }
+        .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer .menuItems {
+          height: 100%;
+          width: 100%;
+          background-color: transparent;
+          font-size: 20px;
+          font-family: "Roboto-Light", sarif;
+          color: #e4e7ec;
+          border: none; }
+          .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer .menuItems:focus {
+            outline: 0; }
+          .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer .menuItemshover {
+            cursor: pointer; }
+        .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer:focus {
+          outline: 0; }
+
+.closeButton {
+  height: 10%;
+  width: 100%;
+  background-color: #111111;
+  border: none;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #e4e7ec;
+  font-family: "Roboto-Light", sarif;
+  box-shadow: 0px 2px 5px 0px black; }
+  .closeButton:hover {
+    cursor: pointer;
+    background: #1B998B; }
+  .closeButton:focus {
+    outline: 0; }
+
+.navLink {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none; }
+  .navLink:hover {
+    cursor: pointer; }
+
+.socialContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+  width: 70%;
+  max-width: 400px; }
+  .socialContainer .socialButton {
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    border: none; }
+    .socialContainer .socialButton a {
+      font-size: 8em;
+      color: white; }
+      .socialContainer .socialButton a:hover {
+        color: #1B998B; }
+
+.mobileSubMenu {
+  display: flex;
+  flex-direction: column;
+  height: 40vh; }
+
+.subMenuItems {
+  flex-basis: 25%;
+  height: 100%;
+  background-color: #2A2A2A;
+  color: #e4e7ec;
+  font-size: 20px;
+  font-family: "Roboto-Light", sarif;
+  border: none; }
+  .subMenuItems:hover {
+    background-color: #1B998B;
+    cursor: pointer; }
+  .subMenuItems:focus {
+    outline: 0; }
+
+.closeSubMenu {
+  flex-basis: 25%;
+  width: 100%;
+  background-color: #111111;
+  border: none;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #e4e7ec;
+  font-family: "Roboto-Light", sarif;
+  box-shadow: 0px 2px 5px 0px black; }
+  .closeSubMenu:hover {
+    cursor: pointer; }
+  .closeSubMenu:focus {
+    outline: 0; }
+
+.aboutHeader {
+  flex-basis: 15%;
+  height: 14%;
+  width: 100%; }
+  .aboutHeader p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #e4e7ec;
+    font-size: 20px;
+    font-family: "Roboto", sans; }
+
+.headerComponent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%), url("../content/BackgroundImages/backgroundImage.jpg") bottom center no-repeat;
+  height: 100vh;
+  min-height: 670px;
+  width: 100%;
+  background-size: cover;
+  flex-wrap: wrap; }
+  .headerComponent .headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%; }
+    .headerComponent .headerContainer .headerWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      height: 90%;
+      width: 100%; }
+      .headerComponent .headerContainer .headerWrapper .headerTextWrapper {
+        display: flex;
+        text-align: center;
+        align-items: flex-end;
+        height: 50%;
+        width: 75%;
+        max-width: 800px;
+        min-width: 330px; }
+        @media (min-width: 800px) {
+          .headerComponent .headerContainer .headerWrapper .headerTextWrapper {
+            width: 85%; } }
+        .headerComponent .headerContainer .headerWrapper .headerTextWrapper p {
+          color: white;
+          font-family: "Roboto-Light", sarif;
+          font-size: 24px;
+          text-shadow: -1.5px 2px 1px #000; }
+          @media (min-width: 800px) {
+            .headerComponent .headerContainer .headerWrapper .headerTextWrapper p {
+              font-size: 28px; } }
+          @media (min-width: 1100px) {
+            .headerComponent .headerContainer .headerWrapper .headerTextWrapper p {
+              font-size: 34px; } }
+  .headerComponent .headerButtonContainer {
+    display: flex;
+    justify-content: center;
+    height: 31%;
+    width: 95%;
+    max-width: 450px; }
+    .headerComponent .headerButtonContainer button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 80px;
+      align-self: flex-end;
+      border-radius: 6px;
+      border: none;
+      background-color: #1B998B;
+      color: #e4e7ec;
+      font-size: 20px;
+      font-family: "Roboto-Light", sarif;
+      text-transform: uppercase;
+      box-shadow: -3px 4px 5px -1px black;
+      text-shadow: -1.5px 2px 1px #000;
+      transition: 400ms; }
+      .headerComponent .headerButtonContainer button:hover {
+        background-color: #198C7F;
+        width: 235px;
+        height: 95px;
+        cursor: pointer;
+        transition: 400ms; }
+      .headerComponent .headerButtonContainer button:focus {
+        outline: 0; }
+      .headerComponent .headerButtonContainer button:active {
+        width: 225px;
+        height: 80px;
+        transition: 400ms; }
+      .headerComponent .headerButtonContainer button a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-size: 3em; }
+
+.gitHubButton {
+  margin-right: 10px; }
+
+.linkedInButton {
+  margin-left: 10px; }
+
+.aboutComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  min-height: 400px;
+  background-color: #1B998B;
+  color: white;
+  margin-top: 2.5px; }
+  @media (min-width: 800px) {
+    .aboutComponent {
+      height: 60vh; } }
+
+.aboutWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto-Light", sarif; }
+  .aboutWrapper h1 {
+    text-transform: uppercase;
+    color: #e4e7ec;
+    height: auto; }
+    @media (min-width: 800px) {
+      .aboutWrapper h1 {
+        font-size: 40px;
+        margin-bottom: 10px; } }
+  .aboutWrapper h2 {
+    margin: 0;
+    color: #e4e7ec;
+    text-transform: uppercase;
+    height: auto; }
+    @media (min-width: 800px) {
+      .aboutWrapper h2 {
+        font-size: 30px; } }
+  .aboutWrapper h3 {
+    color: #34314c;
+    height: auto;
+    font-family: "Roboto-Bold", sarif;
+    font-size: 16px;
+    text-transform: uppercase; }
+    @media (min-width: 800px) {
+      .aboutWrapper h3 {
+        font-size: 24px; } }
+  .aboutWrapper p {
+    font-size: 20px;
+    color: #e4e7ec;
+    padding: 5px;
+    max-width: 365px;
+    min-width: 365px;
+    height: auto; }
+    @media (min-width: 800px) {
+      .aboutWrapper p {
+        max-width: 750px;
+        min-width: 500px;
+        font-size: 28px; } }
+
+.educationHeroBanner {
+  height: 50vh;
+  min-height: 450px;
+  background-color: #FFC952;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%), url("../content/BackgroundImages/educationHero.jpg") bottom center no-repeat;
+  background-size: cover;
+  min-width: 100px;
+  margin-top: 2.5px; }
+  @media (min-width: 800px) {
+    .educationHeroBanner {
+      height: 90vh;
+      max-height: 960px;
+      min-height: 675px;
+      background-size: cover; } }
+
+.educationComponentWrapper {
+  height: 50vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5px; }
+  @media (min-width: 800px) {
+    .educationComponentWrapper {
+      height: 90vh;
+      max-height: 800px; } }
+
+.redClose {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33.3333%;
+  height: 31%;
+  justify-content: center;
+  align-items: center;
+  background: #E8B74B; }
+  .redClose .educationInfo {
+    display: none; }
+  .redClose .redButtonClose {
+    width: 97%;
+    flex-basis: 90%;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Roboto-Light", sarif;
+    box-shadow: 0px 4px 7px 0px black;
+    transition: 300ms;
+    background: #FFC952; }
+    @media (min-width: 800px) {
+      .redClose .redButtonClose {
+        font-size: 24px; } }
+    .redClose .redButtonClose:hover {
+      width: 98%;
+      height: 93%;
+      cursor: pointer;
+      font-size: 24px;
+      transition: 300ms; }
+      @media (min-width: 800px) {
+        .redClose .redButtonClose:hover {
+          font-size: 28px; } }
+    .redClose .redButtonClose:focus {
+      outline: 0; }
+    .redClose .redButtonClose:active {
+      width: 97%;
+      height: 90%; }
+
+.redOpen {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  background-color: #E8B74B; }
+  .redOpen .educationInfo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    min-height: 140px;
+    height: 100%;
+    width: 100%; }
+    .redOpen .educationInfo .educationWrapper {
+      display: flex;
+      height: 85%;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-self: center;
+      color: white; }
+      .redOpen .educationInfo .educationWrapper p {
+        font-size: 20px;
+        font-family: "Roboto-Light", sarif;
+        font-weight: medium;
+        height: auto; }
+        @media (min-width: 800px) {
+          .redOpen .educationInfo .educationWrapper p {
+            font-size: 24px; } }
+        @media (min-width: 1100px) {
+          .redOpen .educationInfo .educationWrapper p {
+            font-size: 28px; } }
+  .redOpen .redButtonOpen {
+    flex-basis: 25%;
+    min-height: 55px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto-Light", sarif;
+    font-size: 14px;
+    box-shadow: 0px 2px 5px 0px black;
+    background-color: #FFC952; }
+    .redOpen .redButtonOpen:hover {
+      flex-basis: 30%;
+      font-size: 18px;
+      cursor: pointer; }
+    .redOpen .redButtonOpen:focus {
+      outline: 0; }
+    .redOpen .redButtonOpen:active {
+      flex-basis: 25%; }
+    .redOpen .redButtonOpen .fa {
+      font-size: 2.5em;
+      color: white;
+      text-shadow: 0.5px 2px 4px #000; }
+
+.universityClose {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33.3333%;
+  height: 31%;
+  justify-content: center;
+  align-items: center;
+  background: #177E72; }
+  .universityClose .educationInfo {
+    display: none; }
+  .universityClose .universityButtonClose {
+    width: 97%;
+    flex-basis: 90%;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Roboto-Light", sarif;
+    box-shadow: 0px 4px 7px 0px black;
+    transition: 300ms;
+    background: #1B998B; }
+    @media (min-width: 800px) {
+      .universityClose .universityButtonClose {
+        font-size: 24px; } }
+    .universityClose .universityButtonClose:hover {
+      width: 98%;
+      height: 93%;
+      cursor: pointer;
+      font-size: 24px;
+      transition: 300ms; }
+      @media (min-width: 800px) {
+        .universityClose .universityButtonClose:hover {
+          font-size: 28px; } }
+    .universityClose .universityButtonClose:focus {
+      outline: 0; }
+    .universityClose .universityButtonClose:active {
+      width: 97%;
+      height: 90%; }
+
+.universityOpen {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  background: #177E72; }
+  .universityOpen .educationInfo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    min-height: 140px;
+    height: 100%;
+    width: 100%; }
+    .universityOpen .educationInfo .educationWrapper {
+      display: flex;
+      height: 85%;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-self: center;
+      color: white; }
+      .universityOpen .educationInfo .educationWrapper p {
+        font-size: 20px;
+        font-family: "Roboto-Light", sarif;
+        font-weight: medium;
+        height: auto; }
+        @media (min-width: 800px) {
+          .universityOpen .educationInfo .educationWrapper p {
+            font-size: 24px; } }
+        @media (min-width: 1100px) {
+          .universityOpen .educationInfo .educationWrapper p {
+            font-size: 28px; } }
+  .universityOpen .universityButtonOpen {
+    flex-basis: 25%;
+    min-height: 55px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto-Light", sarif;
+    font-size: 14px;
+    box-shadow: 0px 2px 5px 0px black;
+    background: #1B998B; }
+    .universityOpen .universityButtonOpen:hover {
+      flex-basis: 30%;
+      font-size: 18px;
+      cursor: pointer; }
+    .universityOpen .universityButtonOpen:focus {
+      outline: 0; }
+    .universityOpen .universityButtonOpen:active {
+      flex-basis: 25%; }
+    .universityOpen .universityButtonOpen .fa {
+      font-size: 2.5em;
+      color: white;
+      text-shadow: 0.5px 2px 4px #000; }
+
+.collegeClose {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33.3333%;
+  height: 31%;
+  justify-content: center;
+  align-items: center;
+  background: #3E3C50; }
+  .collegeClose .educationInfo {
+    display: none; }
+  .collegeClose .collegeButtonClose {
+    width: 97%;
+    flex-basis: 90%;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Roboto-Light", sarif;
+    box-shadow: 0px 4px 7px 0px black;
+    transition: 300ms;
+    background: #34314c; }
+    @media (min-width: 800px) {
+      .collegeClose .collegeButtonClose {
+        font-size: 24px; } }
+    .collegeClose .collegeButtonClose:hover {
+      width: 98%;
+      height: 93%;
+      cursor: pointer;
+      font-size: 24px;
+      transition: 300ms; }
+      @media (min-width: 800px) {
+        .collegeClose .collegeButtonClose:hover {
+          font-size: 28px; } }
+    .collegeClose .collegeButtonClose:focus {
+      outline: 0; }
+    .collegeClose .collegeButtonClose:active {
+      width: 97%;
+      height: 90%; }
+
+.collegeOpen {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  background: #3E3C50; }
+  .collegeOpen .educationInfo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    min-height: 140px;
+    height: 100%;
+    width: 100%; }
+    .collegeOpen .educationInfo .educationWrapper {
+      display: flex;
+      height: 85%;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-self: center;
+      color: white; }
+      .collegeOpen .educationInfo .educationWrapper p {
+        font-size: 20px;
+        font-family: "Roboto-Light", sarif;
+        font-weight: medium;
+        height: auto; }
+        @media (min-width: 800px) {
+          .collegeOpen .educationInfo .educationWrapper p {
+            font-size: 24px; } }
+        @media (min-width: 1100px) {
+          .collegeOpen .educationInfo .educationWrapper p {
+            font-size: 28px; } }
+  .collegeOpen .collegeButtonOpen {
+    flex-basis: 25%;
+    min-height: 55px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto-Light", sarif;
+    font-size: 14px;
+    box-shadow: 0px 2px 5px 0px black;
+    background: #34314c; }
+    .collegeOpen .collegeButtonOpen:hover {
+      flex-basis: 30%;
+      font-size: 18px;
+      cursor: pointer; }
+    .collegeOpen .collegeButtonOpen:focus {
+      outline: 0; }
+    .collegeOpen .collegeButtonOpen:active {
+      flex-basis: 25%; }
+    .collegeOpen .collegeButtonOpen .fa {
+      font-size: 2.5em;
+      color: white;
+      text-shadow: 0.5px 2px 4px #000; }
+
+.booksHeroBanner {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+  background-color: #FFC952;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%), url("../content/BackgroundImages/booksHero.jpg") bottom center no-repeat;
+  background-size: cover;
+  min-width: 100px;
+  margin-top: 2.5px; }
+  @media (min-width: 800px) {
+    .booksHeroBanner {
+      min-height: 370px; } }
+  @media (min-width: 1100px) {
+    .booksHeroBanner {
+      height: 60vh; } }
+  .booksHeroBanner .booksTextWrapper p {
+    color: white;
+    font-size: 28px;
+    font-family: "Roboto-Light", sarif;
+    text-transform: uppercase;
+    text-shadow: -1.5px 2px 1px #000; }
+    @media (min-width: 800px) {
+      .booksHeroBanner .booksTextWrapper p {
+        font-size: 34px; } }
+    @media (min-width: 1100px) {
+      .booksHeroBanner .booksTextWrapper p {
+        font-size: 40px; } }
+
+.booksClose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  min-height: 200px;
+  background: #3E3C50;
+  margin-top: 2.5px;
+  transition: 600ms; }
+  .booksClose .booksButtonClose {
+    width: 97%;
+    flex-basis: 90%;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Roboto-Light", sarif;
+    box-shadow: 0px 4px 7px 0px black;
+    transition: 300ms;
+    flex-basis: 98%;
+    height: 89%;
+    background: #34314c; }
+    @media (min-width: 800px) {
+      .booksClose .booksButtonClose {
+        font-size: 24px; } }
+    .booksClose .booksButtonClose:hover {
+      width: 98%;
+      height: 93%;
+      cursor: pointer;
+      font-size: 24px;
+      transition: 300ms; }
+      @media (min-width: 800px) {
+        .booksClose .booksButtonClose:hover {
+          font-size: 28px; } }
+    .booksClose .booksButtonClose:focus {
+      outline: 0; }
+    .booksClose .booksButtonClose:active {
+      width: 97%;
+      height: 90%; }
+
+.booksOpen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  min-height: 550px;
+  margin-top: 2.5px;
+  transition: 600ms; }
+  @media (min-width: 800px) {
+    .booksOpen {
+      height: 75vh;
+      min-height: 590px; } }
+  @media (min-width: 1100px) {
+    .booksOpen {
+      height: 90vh; } }
+  .booksOpen .booksOpenWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(44, 44, 44, 0.66) 30%, rgba(44, 44, 44, 0.6) 100%), url("../content/BackgroundImages/books.jpg") bottom center no-repeat;
+    background-size: cover; }
+    .booksOpen .booksOpenWrapper .buttonContainer {
+      display: flex;
+      justify-content: center;
+      height: 15%;
+      width: 100%; }
+      .booksOpen .booksOpenWrapper .buttonContainer .booksButtonOpen {
+        height: 100%;
+        width: 100%;
+        background: #34314c;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        font-family: "Roboto-Light", sarif;
+        font-size: 14px;
+        box-shadow: 0px 2px 5px 0px black;
+        opacity: .95; }
+        .booksOpen .booksOpenWrapper .buttonContainer .booksButtonOpen:hover {
+          height: 110%;
+          font-size: 18px;
+          cursor: pointer; }
+        .booksOpen .booksOpenWrapper .buttonContainer .booksButtonOpen:focus {
+          outline: 0; }
+        .booksOpen .booksOpenWrapper .buttonContainer .booksButtonOpen:active {
+          height: 100%; }
+        .booksOpen .booksOpenWrapper .buttonContainer .booksButtonOpen .fa {
+          font-size: 4em;
+          text-shadow: 0.5px 2px 4px #000; }
+    .booksOpen .booksOpenWrapper .componentsContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75%;
+      width: 97%; }
+      @media (min-width: 800px) {
+        .booksOpen .booksOpenWrapper .componentsContainer {
+          width: 85%;
+          height: 85%;
+          min-height: 375px; } }
+      .booksOpen .booksOpenWrapper .componentsContainer .componentsWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 90%;
+        width: 100%; }
+
+.sectionsComponentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 105%; }
+  .sectionsComponentContainer .componentsContainer {
+    height: 80%; }
+    .sectionsComponentContainer .componentsContainer .favoritesClose {
+      position: absolute;
+      display: none; }
+    .sectionsComponentContainer .componentsContainer .favoritesOpen {
+      display: flex;
+      width: 100%;
+      height: 90%;
+      opacity: .90; }
+      .sectionsComponentContainer .componentsContainer .favoritesOpen .favoritesComponentContainer {
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 2px 5px 0px black; }
+        .sectionsComponentContainer .componentsContainer .favoritesOpen .favoritesComponentContainer .componentBanner {
+          height: 20%;
+          background: #34314c; }
+          .sectionsComponentContainer .componentsContainer .favoritesOpen .favoritesComponentContainer .componentBanner .bannerContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 95%;
+            box-shadow: 0px 2px 5px 0px black;
+            color: white;
+            font-size: 14px;
+            font-family: "Roboto-Light", sarif;
+            text-transform: uppercase; }
+            @media (min-width: 800px) {
+              .sectionsComponentContainer .componentsContainer .favoritesOpen .favoritesComponentContainer .componentBanner .bannerContainer {
+                font-size: 18px; } }
+            @media (min-width: 1100px) {
+              .sectionsComponentContainer .componentsContainer .favoritesOpen .favoritesComponentContainer .componentBanner .bannerContainer {
+                font-size: 20px; } }
+        .sectionsComponentContainer .componentsContainer .favoritesOpen .favoritesComponentContainer .booksContainer {
+          text-align: center;
+          height: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 12px;
+          font-family: "Roboto-Light", sarif;
+          background: #171717;
+          line-height: 35px; }
+          @media (min-width: 800px) {
+            .sectionsComponentContainer .componentsContainer .favoritesOpen .favoritesComponentContainer .booksContainer {
+              font-size: 20px;
+              line-height: 45px; } }
+          @media (min-width: 1100px) {
+            .sectionsComponentContainer .componentsContainer .favoritesOpen .favoritesComponentContainer .booksContainer {
+              font-size: 24px;
+              line-height: 50px; } }
+    .sectionsComponentContainer .componentsContainer .futuresClose {
+      position: absolute;
+      display: none; }
+    .sectionsComponentContainer .componentsContainer .futuresOpen {
+      display: flex;
+      width: 100%;
+      height: 90%;
+      opacity: .90; }
+      .sectionsComponentContainer .componentsContainer .futuresOpen .futureReadsComponentContainer {
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 2px 5px 0px black; }
+        .sectionsComponentContainer .componentsContainer .futuresOpen .futureReadsComponentContainer .componentBanner {
+          height: 20%;
+          background: #34314c; }
+          .sectionsComponentContainer .componentsContainer .futuresOpen .futureReadsComponentContainer .componentBanner .bannerContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 95%;
+            box-shadow: 0px 2px 5px 0px black;
+            color: white;
+            font-size: 14px;
+            font-family: "Roboto-Light", sarif;
+            text-transform: uppercase; }
+            @media (min-width: 800px) {
+              .sectionsComponentContainer .componentsContainer .futuresOpen .futureReadsComponentContainer .componentBanner .bannerContainer {
+                font-size: 18px; } }
+            @media (min-width: 1100px) {
+              .sectionsComponentContainer .componentsContainer .futuresOpen .futureReadsComponentContainer .componentBanner .bannerContainer {
+                font-size: 20px; } }
+        .sectionsComponentContainer .componentsContainer .futuresOpen .futureReadsComponentContainer .booksContainer {
+          text-align: center;
+          height: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 12px;
+          font-family: "Roboto-Light", sarif;
+          background: #171717;
+          line-height: 35px; }
+          @media (min-width: 800px) {
+            .sectionsComponentContainer .componentsContainer .futuresOpen .futureReadsComponentContainer .booksContainer {
+              font-size: 20px;
+              line-height: 45px; } }
+          @media (min-width: 1100px) {
+            .sectionsComponentContainer .componentsContainer .futuresOpen .futureReadsComponentContainer .booksContainer {
+              font-size: 24px;
+              line-height: 50px; } }
+    .sectionsComponentContainer .componentsContainer .readingClose {
+      position: absolute;
+      display: none; }
+    .sectionsComponentContainer .componentsContainer .readingOpen {
+      display: flex;
+      width: 100%;
+      height: 90%;
+      opacity: .90; }
+      .sectionsComponentContainer .componentsContainer .readingOpen .readingComponentContainer {
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 2px 5px 0px black; }
+        .sectionsComponentContainer .componentsContainer .readingOpen .readingComponentContainer .componentBanner {
+          height: 20%;
+          background: #34314c; }
+          .sectionsComponentContainer .componentsContainer .readingOpen .readingComponentContainer .componentBanner .bannerContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 95%;
+            box-shadow: 0px 2px 5px 0px black;
+            color: white;
+            font-size: 14px;
+            font-family: "Roboto-Light", sarif;
+            text-transform: uppercase; }
+            @media (min-width: 800px) {
+              .sectionsComponentContainer .componentsContainer .readingOpen .readingComponentContainer .componentBanner .bannerContainer {
+                font-size: 18px; } }
+            @media (min-width: 1100px) {
+              .sectionsComponentContainer .componentsContainer .readingOpen .readingComponentContainer .componentBanner .bannerContainer {
+                font-size: 20px; } }
+        .sectionsComponentContainer .componentsContainer .readingOpen .readingComponentContainer .booksContainer {
+          text-align: center;
+          height: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 12px;
+          font-family: "Roboto-Light", sarif;
+          background: #171717;
+          line-height: 35px; }
+          @media (min-width: 800px) {
+            .sectionsComponentContainer .componentsContainer .readingOpen .readingComponentContainer .booksContainer {
+              font-size: 20px;
+              line-height: 45px; } }
+          @media (min-width: 1100px) {
+            .sectionsComponentContainer .componentsContainer .readingOpen .readingComponentContainer .booksContainer {
+              font-size: 24px;
+              line-height: 50px; } }
+  .sectionsComponentContainer .buttonsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    width: 100%; }
+    .sectionsComponentContainer .buttonsContainer .buttonCloseFavorites {
+      width: 30%;
+      height: 65%;
+      transition: 400ms;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0px 4px 7px 0px black;
+      text-transform: uppercase;
+      color: white;
+      font-size: 14px;
+      font-family: "Roboto-Light", sarif;
+      background: #34314c;
+      opacity: .95; }
+      @media (min-width: 800px) {
+        .sectionsComponentContainer .buttonsContainer .buttonCloseFavorites {
+          font-size: 18px; } }
+      .sectionsComponentContainer .buttonsContainer .buttonCloseFavorites:hover {
+        width: 34%;
+        height: 80%;
+        cursor: pointer;
+        font-size: 18px; }
+        @media (min-width: 800px) {
+          .sectionsComponentContainer .buttonsContainer .buttonCloseFavorites:hover {
+            font-size: 24px; } }
+      .sectionsComponentContainer .buttonsContainer .buttonCloseFavorites:focus {
+        outline: 0; }
+      .sectionsComponentContainer .buttonsContainer .buttonCloseFavorites:active {
+        width: 32%;
+        height: 65%; }
+    .sectionsComponentContainer .buttonsContainer .buttonOpenFavorites {
+      width: 35%;
+      height: 85%;
+      transition: 400ms;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0px 4px 7px 0px black;
+      text-transform: uppercase;
+      color: white;
+      font-size: 14px;
+      font-family: "Roboto-Light", sarif;
+      background: #171717;
+      opacity: .95; }
+      .sectionsComponentContainer .buttonsContainer .buttonOpenFavorites:hover {
+        width: 38%;
+        height: 90%;
+        cursor: pointer; }
+      .sectionsComponentContainer .buttonsContainer .buttonOpenFavorites:focus {
+        outline: none; }
+      .sectionsComponentContainer .buttonsContainer .buttonOpenFavorites:active {
+        width: 35%;
+        height: 85%; }
+    .sectionsComponentContainer .buttonsContainer .buttonCloseReading {
+      width: 30%;
+      height: 65%;
+      transition: 400ms;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0px 4px 7px 0px black;
+      text-transform: uppercase;
+      color: white;
+      font-size: 14px;
+      font-family: "Roboto-Light", sarif;
+      background: #34314c;
+      opacity: .95; }
+      @media (min-width: 800px) {
+        .sectionsComponentContainer .buttonsContainer .buttonCloseReading {
+          font-size: 18px; } }
+      .sectionsComponentContainer .buttonsContainer .buttonCloseReading:hover {
+        width: 34%;
+        height: 80%;
+        cursor: pointer;
+        font-size: 18px; }
+        @media (min-width: 800px) {
+          .sectionsComponentContainer .buttonsContainer .buttonCloseReading:hover {
+            font-size: 24px; } }
+      .sectionsComponentContainer .buttonsContainer .buttonCloseReading:focus {
+        outline: 0; }
+      .sectionsComponentContainer .buttonsContainer .buttonCloseReading:active {
+        width: 32%;
+        height: 65%; }
+    .sectionsComponentContainer .buttonsContainer .buttonOpenReading {
+      width: 35%;
+      height: 85%;
+      transition: 400ms;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0px 4px 7px 0px black;
+      text-transform: uppercase;
+      color: white;
+      font-size: 14px;
+      font-family: "Roboto-Light", sarif;
+      background: #171717;
+      opacity: .95; }
+      .sectionsComponentContainer .buttonsContainer .buttonOpenReading:hover {
+        width: 38%;
+        height: 90%;
+        cursor: pointer; }
+      .sectionsComponentContainer .buttonsContainer .buttonOpenReading:focus {
+        outline: none; }
+      .sectionsComponentContainer .buttonsContainer .buttonOpenReading:active {
+        width: 35%;
+        height: 85%; }
+    .sectionsComponentContainer .buttonsContainer .buttonCloseFuture {
+      width: 30%;
+      height: 65%;
+      transition: 400ms;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0px 4px 7px 0px black;
+      text-transform: uppercase;
+      color: white;
+      font-size: 14px;
+      font-family: "Roboto-Light", sarif;
+      background: #34314c;
+      opacity: .95; }
+      @media (min-width: 800px) {
+        .sectionsComponentContainer .buttonsContainer .buttonCloseFuture {
+          font-size: 18px; } }
+      .sectionsComponentContainer .buttonsContainer .buttonCloseFuture:hover {
+        width: 34%;
+        height: 80%;
+        cursor: pointer;
+        font-size: 18px; }
+        @media (min-width: 800px) {
+          .sectionsComponentContainer .buttonsContainer .buttonCloseFuture:hover {
+            font-size: 24px; } }
+      .sectionsComponentContainer .buttonsContainer .buttonCloseFuture:focus {
+        outline: 0; }
+      .sectionsComponentContainer .buttonsContainer .buttonCloseFuture:active {
+        width: 32%;
+        height: 65%; }
+    .sectionsComponentContainer .buttonsContainer .buttonOpenFuture {
+      width: 35%;
+      height: 85%;
+      transition: 400ms;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0px 4px 7px 0px black;
+      text-transform: uppercase;
+      color: white;
+      font-size: 14px;
+      font-family: "Roboto-Light", sarif;
+      background: #171717;
+      opacity: .95; }
+      .sectionsComponentContainer .buttonsContainer .buttonOpenFuture:hover {
+        width: 38%;
+        height: 90%;
+        cursor: pointer; }
+      .sectionsComponentContainer .buttonsContainer .buttonOpenFuture:focus {
+        outline: none; }
+      .sectionsComponentContainer .buttonsContainer .buttonOpenFuture:active {
+        width: 35%;
+        height: 85%; }
+
+.toolsHeroBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  min-height: 450px;
+  background-color: #FFC952;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%), url("../content/BackgroundImages/toolsHero.jpg") bottom center no-repeat;
+  background-size: cover;
+  min-width: 100px;
+  margin-top: 2.5px; }
+  @media (min-width: 800px) {
+    .toolsHeroBanner {
+      height: 85vh;
+      min-height: 575px; } }
+  @media (min-width: 1100px) {
+    .toolsHeroBanner {
+      height: 90vh; } }
+  .toolsHeroBanner .toolsTextWrapper p {
+    color: white;
+    font-size: 28px;
+    font-family: "Roboto-Light", sarif;
+    text-transform: uppercase;
+    text-shadow: -1.5px 2px 1px #000; }
+    @media (min-width: 800px) {
+      .toolsHeroBanner .toolsTextWrapper p {
+        font-size: 34px; } }
+    @media (min-width: 1100px) {
+      .toolsHeroBanner .toolsTextWrapper p {
+        font-size: 40px; } }
+
+.toolsComponentWrapper {
+  height: 50vh;
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 2.5px; }
+  @media (min-width: 800px) {
+    .toolsComponentWrapper {
+      height: 85vh;
+      min-height: 600px; } }
+  @media (min-width: 1100px) {
+    .toolsComponentWrapper {
+      height: 90vh;
+      min-height: 650px; } }
+  .toolsComponentWrapper .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%; }
+  .toolsComponentWrapper .right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%; }
+
+.languageComponentClose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  height: 50%;
+  background: #D15F5F; }
+  .languageComponentClose .languageButtonClose {
+    width: 95%;
+    flex-basis: 93%;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-family: "Roboto-Light", sarif;
+    box-shadow: 0px 4px 7px 0px black;
+    transition: 300ms;
+    background: #FF7473; }
+    @media (min-width: 800px) {
+      .languageComponentClose .languageButtonClose {
+        font-size: 24px; } }
+    .languageComponentClose .languageButtonClose:hover {
+      width: 96%;
+      height: 95%;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 300ms; }
+      @media (min-width: 800px) {
+        .languageComponentClose .languageButtonClose:hover {
+          font-size: 28px; } }
+    .languageComponentClose .languageButtonClose:focus {
+      outline: 0; }
+    .languageComponentClose .languageButtonClose:active {
+      width: 95%;
+      height: 94%; }
+  .languageComponentClose .languagesInfo {
+    display: none; }
+
+.languageComponentOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 65%;
+  flex-basis: 65%;
+  -webkit-transition: 400ms;
+  transition: 400ms; }
+  .languageComponentOpen .languagesInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #D15F5F; }
+    .languageComponentOpen .languagesInfo .componentBanner {
+      height: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      font-family: "Roboto-Light", sarif;
+      text-transform: uppercase;
+      box-shadow: 0px 2px 5px 0px black;
+      background: #FF7473; }
+      @media (min-width: 800px) {
+        .languageComponentOpen .languagesInfo .componentBanner {
+          height: 60px;
+          font-size: 24px; } }
+    .languageComponentOpen .languagesInfo .languages {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 63%;
+      width: 100%; }
+      .languageComponentOpen .languagesInfo .languages .languagesWrapper {
+        text-align: center;
+        font-family: "Roboto-Light", sarif;
+        font-size: 18px;
+        color: white;
+        line-height: 24px; }
+        @media (min-width: 800px) {
+          .languageComponentOpen .languagesInfo .languages .languagesWrapper {
+            font-size: 24px;
+            line-height: 30px; } }
+    .languageComponentOpen .languagesInfo .buttonWrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding-bottom: 5px; }
+      .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen {
+        height: 50px;
+        width: 95%;
+        align-self: flex-end;
+        box-shadow: -4px 3px 10px -1px black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-family: "Roboto-Light", sarif;
+        font-size: 14px;
+        text-transform: uppercase;
+        background: #FF7473; }
+        @media (min-width: 800px) {
+          .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen {
+            height: 75px; } }
+        .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen:hover {
+          height: 55px;
+          width: 96.5%;
+          font-size: 18px;
+          cursor: pointer; }
+          @media (min-width: 800px) {
+            .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen:hover {
+              height: 80px; } }
+        .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen:focus {
+          outline: 0; }
+        .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen:active {
+          height: 50px;
+          width: 95%; }
+          @media (min-width: 800px) {
+            .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen:active {
+              height: 75px; } }
+        .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen .fa {
+          font-size: 2em;
+          text-shadow: 0.5px 2px 4px #000; }
+
+.technologiesComponentClose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  height: 50%;
+  background: #177E72; }
+  .technologiesComponentClose .technologiesButtonClose {
+    width: 95%;
+    flex-basis: 93%;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-family: "Roboto-Light", sarif;
+    box-shadow: 0px 4px 7px 0px black;
+    transition: 300ms;
+    background: #1B998B; }
+    @media (min-width: 800px) {
+      .technologiesComponentClose .technologiesButtonClose {
+        font-size: 24px; } }
+    .technologiesComponentClose .technologiesButtonClose:hover {
+      width: 96%;
+      height: 95%;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 300ms; }
+      @media (min-width: 800px) {
+        .technologiesComponentClose .technologiesButtonClose:hover {
+          font-size: 28px; } }
+    .technologiesComponentClose .technologiesButtonClose:focus {
+      outline: 0; }
+    .technologiesComponentClose .technologiesButtonClose:active {
+      width: 95%;
+      height: 94%; }
+
+.technologiesComponentOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 65%;
+  flex-basis: 65%;
+  -webkit-transition: 400ms;
+  transition: 400ms; }
+  .technologiesComponentOpen .technologiesInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #177E72; }
+    .technologiesComponentOpen .technologiesInfo .componentBanner {
+      height: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      font-family: "Roboto-Light", sarif;
+      text-transform: uppercase;
+      box-shadow: 0px 2px 5px 0px black;
+      background: #1B998B; }
+      @media (min-width: 800px) {
+        .technologiesComponentOpen .technologiesInfo .componentBanner {
+          height: 60px;
+          font-size: 24px; } }
+    .technologiesComponentOpen .technologiesInfo .technologies {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 63%;
+      width: 100%; }
+      .technologiesComponentOpen .technologiesInfo .technologies .technologiesWrapper {
+        text-align: center;
+        font-family: "Roboto-Light", sarif;
+        font-size: 18px;
+        color: white;
+        line-height: 24px; }
+        @media (min-width: 800px) {
+          .technologiesComponentOpen .technologiesInfo .technologies .technologiesWrapper {
+            font-size: 24px;
+            line-height: 30px; } }
+    .technologiesComponentOpen .technologiesInfo .buttonWrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding-bottom: 5px; }
+      .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen {
+        height: 50px;
+        width: 95%;
+        align-self: flex-end;
+        box-shadow: -4px 3px 10px -1px black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-family: "Roboto-Light", sarif;
+        font-size: 14px;
+        text-transform: uppercase;
+        background: #1B998B; }
+        @media (min-width: 800px) {
+          .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen {
+            height: 75px; } }
+        .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen:hover {
+          height: 55px;
+          width: 96.5%;
+          font-size: 18px;
+          cursor: pointer; }
+          @media (min-width: 800px) {
+            .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen:hover {
+              height: 80px; } }
+        .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen:focus {
+          outline: 0; }
+        .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen:active {
+          height: 50px;
+          width: 95%; }
+          @media (min-width: 800px) {
+            .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen:active {
+              height: 75px; } }
+        .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen .fa {
+          font-size: 2em;
+          text-shadow: 0.5px 2px 4px #000; }
+
+.devToolsComponentClose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  height: 50%;
+  background: #3E3C50; }
+  .devToolsComponentClose .devToolsButtonClose {
+    width: 95%;
+    flex-basis: 93%;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-family: "Roboto-Light", sarif;
+    box-shadow: 0px 4px 7px 0px black;
+    transition: 300ms;
+    background: #34314c; }
+    @media (min-width: 800px) {
+      .devToolsComponentClose .devToolsButtonClose {
+        font-size: 24px; } }
+    .devToolsComponentClose .devToolsButtonClose:hover {
+      width: 96%;
+      height: 95%;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 300ms; }
+      @media (min-width: 800px) {
+        .devToolsComponentClose .devToolsButtonClose:hover {
+          font-size: 28px; } }
+    .devToolsComponentClose .devToolsButtonClose:focus {
+      outline: 0; }
+    .devToolsComponentClose .devToolsButtonClose:active {
+      width: 95%;
+      height: 94%; }
+
+.devToolsComponentOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 65%;
+  flex-basis: 65%;
+  -webkit-transition: 400ms;
+  transition: 400ms; }
+  .devToolsComponentOpen .devToolsInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #3E3C50; }
+    .devToolsComponentOpen .devToolsInfo .componentBanner {
+      height: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      font-family: "Roboto-Light", sarif;
+      text-transform: uppercase;
+      box-shadow: 0px 2px 5px 0px black;
+      background: #34314c; }
+      @media (min-width: 800px) {
+        .devToolsComponentOpen .devToolsInfo .componentBanner {
+          height: 60px;
+          font-size: 24px; } }
+    .devToolsComponentOpen .devToolsInfo .devTools {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 63%;
+      width: 100%; }
+      .devToolsComponentOpen .devToolsInfo .devTools .devToolsWrapper {
+        text-align: center;
+        font-family: "Roboto-Light", sarif;
+        font-size: 18px;
+        color: white;
+        line-height: 24px; }
+        @media (min-width: 800px) {
+          .devToolsComponentOpen .devToolsInfo .devTools .devToolsWrapper {
+            font-size: 24px;
+            line-height: 30px; } }
+    .devToolsComponentOpen .devToolsInfo .buttonWrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding-bottom: 5px; }
+      .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen {
+        height: 50px;
+        width: 95%;
+        align-self: flex-end;
+        box-shadow: -4px 3px 10px -1px black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-family: "Roboto-Light", sarif;
+        font-size: 14px;
+        text-transform: uppercase;
+        background: #34314c; }
+        @media (min-width: 800px) {
+          .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen {
+            height: 75px; } }
+        .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen:hover {
+          height: 55px;
+          width: 96.5%;
+          font-size: 18px;
+          cursor: pointer; }
+          @media (min-width: 800px) {
+            .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen:hover {
+              height: 80px; } }
+        .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen:focus {
+          outline: 0; }
+        .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen:active {
+          height: 50px;
+          width: 95%; }
+          @media (min-width: 800px) {
+            .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen:active {
+              height: 75px; } }
+        .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen .fa {
+          font-size: 2em;
+          text-shadow: 0.5px 2px 4px #000; }
+
+.experienceComponentClose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  height: 50%;
+  background: #E8B74B; }
+  .experienceComponentClose .experienceButtonClose {
+    width: 95%;
+    flex-basis: 93%;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-family: "Roboto-Light", sarif;
+    box-shadow: 0px 4px 7px 0px black;
+    transition: 300ms;
+    background: #FFC952; }
+    @media (min-width: 800px) {
+      .experienceComponentClose .experienceButtonClose {
+        font-size: 24px; } }
+    .experienceComponentClose .experienceButtonClose:hover {
+      width: 96%;
+      height: 95%;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 300ms; }
+      @media (min-width: 800px) {
+        .experienceComponentClose .experienceButtonClose:hover {
+          font-size: 28px; } }
+    .experienceComponentClose .experienceButtonClose:focus {
+      outline: 0; }
+    .experienceComponentClose .experienceButtonClose:active {
+      width: 95%;
+      height: 94%; }
+
+.experienceComponentOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 65%;
+  flex-basis: 65%;
+  -webkit-transition: 400ms;
+  transition: 400ms; }
+  .experienceComponentOpen .experienceInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #E8B74B; }
+    .experienceComponentOpen .experienceInfo .componentBanner {
+      height: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      font-family: "Roboto-Light", sarif;
+      text-transform: uppercase;
+      box-shadow: 0px 2px 5px 0px black;
+      background: #FFC952; }
+      @media (min-width: 800px) {
+        .experienceComponentOpen .experienceInfo .componentBanner {
+          height: 60px;
+          font-size: 24px; } }
+    .experienceComponentOpen .experienceInfo .experienceWith {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 63%;
+      width: 100%; }
+      .experienceComponentOpen .experienceInfo .experienceWith .experienceWithWrapper {
+        text-align: center;
+        font-family: "Roboto-Light", sarif;
+        font-size: 18px;
+        color: white;
+        line-height: 24px; }
+        @media (min-width: 800px) {
+          .experienceComponentOpen .experienceInfo .experienceWith .experienceWithWrapper {
+            font-size: 24px;
+            line-height: 30px; } }
+    .experienceComponentOpen .experienceInfo .buttonWrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding-bottom: 5px; }
+      .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen {
+        height: 50px;
+        width: 95%;
+        align-self: flex-end;
+        box-shadow: -4px 3px 10px -1px black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-family: "Roboto-Light", sarif;
+        font-size: 14px;
+        text-transform: uppercase;
+        background: #FFC952; }
+        @media (min-width: 800px) {
+          .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen {
+            height: 75px; } }
+        .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen:hover {
+          height: 55px;
+          width: 96.5%;
+          font-size: 18px;
+          cursor: pointer; }
+          @media (min-width: 800px) {
+            .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen:hover {
+              height: 80px; } }
+        .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen:focus {
+          outline: 0; }
+        .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen:active {
+          height: 50px;
+          width: 95%; }
+          @media (min-width: 800px) {
+            .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen:active {
+              height: 75px; } }
+        .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen .fa {
+          font-size: 2em;
+          text-shadow: 0.5px 2px 4px #000; }
+
+.projectsHeroBanner {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+  background-color: #FFC952;
+  background: linear-gradient(to bottom, rgba(27, 153, 139, 0.3) 0%, rgba(27, 153, 139, 0.1) 100%), url("../content/BackgroundImages/projectsHero.jpg") bottom center no-repeat;
+  background-size: cover;
+  min-width: 100px;
+  margin-top: 2.5px; }
+  @media (min-width: 800px) {
+    .projectsHeroBanner {
+      min-height: 370px; } }
+  @media (min-width: 1100px) {
+    .projectsHeroBanner {
+      height: 70vh; } }
+  .projectsHeroBanner .projectsTextWrapper p {
+    color: white;
+    font-size: 28px;
+    font-family: "Roboto-Light", sarif;
+    text-transform: uppercase;
+    text-shadow: -1px 1px 2px #000; }
+    @media (min-width: 800px) {
+      .projectsHeroBanner .projectsTextWrapper p {
+        font-size: 34px; } }
+    @media (min-width: 1100px) {
+      .projectsHeroBanner .projectsTextWrapper p {
+        font-size: 40px; } }
+
+.projectsClose {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 25vh;
+  min-height: 200px;
+  background: #177E72;
+  margin-top: 2.5px;
+  transition: 600ms; }
+  @media (min-width: 1100px) {
+    .projectsClose {
+      min-height: 155px;
+      height: 20vh; } }
+  .projectsClose .projectsButtonClose {
+    width: 98%;
+    flex-basis: 90%;
+    border: none;
+    color: white;
+    background: #1B998B;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Roboto-Light", sarif;
+    box-shadow: 0px 4px 7px 0px black;
+    transition: 300ms; }
+    @media (min-width: 800px) {
+      .projectsClose .projectsButtonClose {
+        font-size: 28px; } }
+    .projectsClose .projectsButtonClose:hover {
+      width: 98%;
+      height: 93%;
+      cursor: pointer;
+      font-size: 24px;
+      transition: 300ms; }
+      @media (min-width: 800px) {
+        .projectsClose .projectsButtonClose:hover {
+          font-size: 34px; } }
+    .projectsClose .projectsButtonClose:focus {
+      outline: 0; }
+    .projectsClose .projectsButtonClose:active {
+      width: 97%;
+      height: 90%; }
+
+.projectsOpen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  min-height: 500px;
+  margin-top: 2.5px;
+  transition: 400ms; }
+  @media (min-width: 800px) {
+    .projectsOpen {
+      height: 85vh;
+      min-height: 550px;
+      max-height: 600px; } }
+  @media (min-width: 1100px) {
+    .projectsOpen {
+      height: 90vh;
+      min-height: 600px;
+      max-height: 750px; } }
+  .projectsOpen .projectsOpenWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, black 30%, rgba(23, 23, 23, 0.95) 75%); }
+    @media (min-width: 800px) {
+      .projectsOpen .projectsOpenWrapper {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.1) 100%), url("../content/BackgroundImages/projects.jpg") bottom center no-repeat;
+        background-size: cover; } }
+    .projectsOpen .projectsOpenWrapper .buttonContainer {
+      display: flex;
+      justify-content: center;
+      height: 15%;
+      width: 100%; }
+      .projectsOpen .projectsOpenWrapper .buttonContainer .projectsButtonOpen {
+        height: 100%;
+        width: 100%;
+        background: #1B998B;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        font-family: "Roboto-Light", sarif;
+        font-size: 14px;
+        box-shadow: 0px 2px 5px 0px black;
+        transition: 400ms; }
+        .projectsOpen .projectsOpenWrapper .buttonContainer .projectsButtonOpen:hover {
+          height: 120%;
+          font-size: 18px;
+          cursor: pointer;
+          transition: 400ms; }
+        .projectsOpen .projectsOpenWrapper .buttonContainer .projectsButtonOpen:focus {
+          outline: 0; }
+        .projectsOpen .projectsOpenWrapper .buttonContainer .projectsButtonOpen:active {
+          height: 100%; }
+        .projectsOpen .projectsOpenWrapper .buttonContainer .projectsButtonOpen .fa {
+          font-size: 3em;
+          text-shadow: 0.5px 2px 4px #000; }
+    .projectsOpen .projectsOpenWrapper .componentsContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80%;
+      width: 95%; }
+      @media (min-width: 800px) {
+        .projectsOpen .projectsOpenWrapper .componentsContainer {
+          align-items: flex-end;
+          height: 85%; } }
+      .projectsOpen .projectsOpenWrapper .componentsContainer .componentsWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 100%;
+        width: 100%; }
+
+.componentsWrapper {
+  display: flex;
+  width: 100%;
+  height: 100%; }
+  .componentsWrapper .projectsSliderContainer {
+    height: 95%;
+    width: 100%;
+    max-width: 860px; }
+    @media (min-width: 1100px) {
+      .componentsWrapper .projectsSliderContainer {
+        max-width: 1100px; } }
+    .componentsWrapper .projectsSliderContainer .projectsSliderWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      height: 95%; }
+      @media (min-width: 800px) {
+        .componentsWrapper .projectsSliderContainer .projectsSliderWrapper {
+          flex-direction: row;
+          flex-wrap: nowrap; } }
+      .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        order: 2;
+        flex-basis: 49%;
+        height: 20%;
+        transition: 400ms; }
+        @media (min-width: 800px) {
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer {
+            order: 1;
+            flex-basis: 10%;
+            height: 100%; } }
+        .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton {
+          width: 85%;
+          height: 80%;
+          background: #1B998B;
+          box-shadow: -3px 4px 8px 1px black;
+          border-radius: 10px;
+          border: none;
+          transition: 400ms;
+          color: white;
+          font-size: 18px;
+          font-family: "Roboto-Light", sarif;
+          text-transform: uppercase; }
+          @media (min-width: 800px) {
+            .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton {
+              height: 95%;
+              width: 90; } }
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton:hover {
+            cursor: pointer;
+            height: 85%;
+            width: 90%;
+            transition: 400ms;
+            box-shadow: -3px 3px 0px 1px black; }
+            @media (min-width: 800px) {
+              .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton:hover {
+                height: 100%;
+                width: 95%; } }
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton:focus {
+            outline: none; }
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton:active {
+            width: 85%;
+            height: 80%;
+            box-shadow: -3px 4px 0px 1px black; }
+            @media (min-width: 800px) {
+              .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton:active {
+                width: 90%;
+                height: 95%; } }
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton .fa {
+            text-shadow: 0.5px 2px 4px #000; }
+      .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        order: 3;
+        height: 20%;
+        width: 49%; }
+        @media (min-width: 800px) {
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer {
+            order: 3;
+            height: 100%;
+            flex-basis: 10%; } }
+        .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton {
+          width: 85%;
+          height: 80%;
+          background: #1B998B;
+          border: none;
+          border-radius: 10px;
+          box-shadow: -3px 4px 8px 1px black;
+          transition: 400ms;
+          color: white;
+          font-size: 18px;
+          font-family: "Roboto-Light", sarif;
+          text-transform: uppercase; }
+          @media (min-width: 800px) {
+            .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton {
+              height: 95%;
+              width: 90; } }
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton:hover {
+            cursor: pointer;
+            height: 85%;
+            width: 90%;
+            transition: 400ms;
+            box-shadow: -3px 3px 0px 1px black; }
+            @media (min-width: 800px) {
+              .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton:hover {
+                height: 100%;
+                width: 85%; } }
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton:focus {
+            outline: none; }
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton:active {
+            width: 85%;
+            height: 80%;
+            box-shadow: -3px 4px 0px 1px black; }
+            @media (min-width: 800px) {
+              .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton:active {
+                width: 90%;
+                height: 95%; } }
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton .fa {
+            text-shadow: 0.5px 2px 4px #000; }
+      .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer {
+        flex-basis: 100%;
+        order: 1;
+        height: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        @media (min-width: 800px) {
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer {
+            flex-basis: 80%;
+            order: 2;
+            height: 100%; } }
+        .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer {
+          box-shadow: 0px 1px 14px 0px black; }
+          @media (min-width: 800px) {
+            .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer {
+              border-radius: 10px; } }
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            height: 80%; }
+            .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer .projectName {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 35%; }
+              .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer .projectName p {
+                font-family: "Roboto-Light", sarif;
+                font-size: 28px;
+                color: white;
+                text-transform: uppercase;
+                text-shadow: -1.5px 2px 1px #000; }
+                @media (min-width: 800px) {
+                  .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer .projectName p {
+                    font-size: 34px; } }
+                @media (min-width: 1100px) {
+                  .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer .projectName p {
+                    font-size: 40px; } }
+            .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer .projectSnippetContainer {
+              display: flex;
+              height: 50%;
+              justify-content: center;
+              align-items: center; }
+              .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer .projectSnippetContainer .projectSnippet {
+                text-align: center;
+                max-width: 70%;
+                padding-bottom: 30px;
+                align-self: center;
+                margin: 4%; }
+                @media (min-width: 1100px) {
+                  .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer .projectSnippetContainer .projectSnippet {
+                    margin: 0; } }
+              .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer .projectSnippetContainer p {
+                font-family: "Roboto-Light", sarif;
+                font-size: 20px;
+                color: white;
+                height: auto; }
+                @media (min-width: 800px) {
+                  .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer .projectSnippetContainer p {
+                    font-size: 24px; } }
+                @media (min-width: 1100px) {
+                  .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer .projectSnippetContainer p {
+                    font-size: 28px; } }
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .readMoreButtonContainer {
+            display: flex;
+            justify-content: center;
+            height: 25%; }
+            .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .readMoreButtonContainer .readMoreButton {
+              width: 50%;
+              height: 70%;
+              background: #171717;
+              opacity: .75;
+              border: none;
+              border-radius: 15px;
+              transition: 400ms;
+              box-shadow: 0px 3px 3px 0px black;
+              color: white;
+              font-size: 14px;
+              font-family: "Roboto-Light", sarif;
+              text-transform: uppercase; }
+              @media (min-width: 800px) {
+                .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .readMoreButtonContainer .readMoreButton {
+                  font-size: 20px; } }
+              .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .readMoreButtonContainer .readMoreButton:hover {
+                cursor: pointer;
+                height: 80%;
+                width: 53%;
+                opacity: 1;
+                transition: 400ms; }
+              .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .readMoreButtonContainer .readMoreButton:focus {
+                outline: none; }
+              .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .readMoreButtonContainer .readMoreButton:active {
+                width: 50%;
+                height: 70%; }
+
+.readMoreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 97%;
+  background: #13685E;
+  border-radius: 10px;
+  box-shadow: 0px 1px 14px 0px black; }
+  .readMoreContainer p {
+    height: auto; }
+  .readMoreContainer .readMoreWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 95%; }
+    .readMoreContainer .readMoreWrapper .topContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 80%; }
+      .readMoreContainer .readMoreWrapper .topContainer .toolsUsedContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: 2;
+        flex-basis: 35%;
+        height: 90%;
+        font-size: 15px;
+        background: #171717;
+        opacity: .88;
+        border-radius: 5px;
+        box-shadow: 0px 1px 14px 0px black; }
+        .readMoreContainer .readMoreWrapper .topContainer .toolsUsedContainer .toolsBanner {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-basis: 20%;
+          font-size: 18px;
+          color: white;
+          font-family: "Roboto-Light", sarif;
+          text-shadow: -1.5px 2px 1px #000;
+          text-transform: uppercase; }
+          @media (min-width: 800px) {
+            .readMoreContainer .readMoreWrapper .topContainer .toolsUsedContainer .toolsBanner {
+              font-size: 20px; } }
+          @media (min-width: 1100px) {
+            .readMoreContainer .readMoreWrapper .topContainer .toolsUsedContainer .toolsBanner {
+              font-size: 24px; } }
+        .readMoreContainer .readMoreWrapper .topContainer .toolsUsedContainer .toolsUsed {
+          text-align: center;
+          font-size: 14px;
+          color: white;
+          font-family: "Roboto-Light", sarif;
+          margin: 2%; }
+          @media (min-width: 800px) {
+            .readMoreContainer .readMoreWrapper .topContainer .toolsUsedContainer .toolsUsed {
+              font-size: 18px; } }
+          @media (min-width: 1100px) {
+            .readMoreContainer .readMoreWrapper .topContainer .toolsUsedContainer .toolsUsed {
+              font-size: 20px; } }
+  .readMoreContainer .descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 1;
+    flex-basis: 62%;
+    height: 95%;
+    background: #171717;
+    opacity: .88;
+    border-radius: 5px;
+    box-shadow: 0px 1px 14px 0px black; }
+    .readMoreContainer .descriptionContainer .descriptionBanner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 18px;
+      color: white;
+      font-family: "Roboto-Light", sarif;
+      text-shadow: -1.5px 2px 1px #000;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+      @media (min-width: 800px) {
+        .readMoreContainer .descriptionContainer .descriptionBanner {
+          font-size: 24px; } }
+    .readMoreContainer .descriptionContainer .description {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 13px;
+      color: white;
+      font-family: "Roboto-Light", sarif;
+      margin: 9%; }
+      @media (min-width: 800px) {
+        .readMoreContainer .descriptionContainer .description {
+          font-size: 18px; } }
+      @media (min-width: 1100px) {
+        .readMoreContainer .descriptionContainer .description {
+          font-size: 20px; } }
+  .readMoreContainer .readMoreButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 3;
+    width: 100%;
+    height: 20%; }
+    .readMoreContainer .readMoreButtonContainer .closeReadMoreButton {
+      display: flex;
+      width: 30%;
+      height: 80%;
+      background: #1B998B;
+      opacity: .80;
+      border: none;
+      border-radius: 6px;
+      transition: 400ms;
+      margin-right: 5px;
+      box-shadow: 0px 3px 3px 0px black;
+      color: white;
+      font-family: "Roboto-Light", sarif;
+      text-transform: uppercase; }
+      .readMoreContainer .readMoreButtonContainer .closeReadMoreButton:hover {
+        cursor: pointer;
+        height: 90%;
+        width: 35%;
+        opacity: 1;
+        transition: 400ms; }
+      .readMoreContainer .readMoreButtonContainer .closeReadMoreButton:focus {
+        outline: none; }
+      .readMoreContainer .readMoreButtonContainer .closeReadMoreButton:active {
+        width: 30%;
+        height: 80%; }
+      .readMoreContainer .readMoreButtonContainer .closeReadMoreButton .fa {
+        width: 100%;
+        height: 100%;
+        font-size: 2em; }
+        @media (min-width: 800px) {
+          .readMoreContainer .readMoreButtonContainer .closeReadMoreButton .fa {
+            font-size: 3em; } }
+        .readMoreContainer .readMoreButtonContainer .closeReadMoreButton .fa:hover {
+          font-size: 3em;
+          color: #171717;
+          transition: 200ms;
+          font-size: 4em; }
+    .readMoreContainer .readMoreButtonContainer .gitHubButton {
+      display: flex;
+      width: 40%;
+      height: 90%;
+      background: #171717;
+      opacity: 0.82;
+      border: none;
+      border-radius: 6px;
+      transition: 400ms;
+      box-shadow: 0px 3px 3px 0px black;
+      color: white;
+      font-size: 14px;
+      font-family: "Roboto-Light", sarif;
+      text-transform: uppercase; }
+      .readMoreContainer .readMoreButtonContainer .gitHubButton:hover {
+        cursor: pointer;
+        height: 100%;
+        width: 45%;
+        opacity: 1;
+        transition: 400ms; }
+      .readMoreContainer .readMoreButtonContainer .gitHubButton:focus {
+        outline: none; }
+      .readMoreContainer .readMoreButtonContainer .gitHubButton:active {
+        width: 40%;
+        height: 90%; }
+      .readMoreContainer .readMoreButtonContainer .gitHubButton a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        height: 37%;
+        font-size: 1em;
+        transition: 200ms; }
+        @media (min-width: 800px) {
+          .readMoreContainer .readMoreButtonContainer .gitHubButton a {
+            font-size: 1.5em; } }
+        .readMoreContainer .readMoreButtonContainer .gitHubButton a:hover {
+          font-size: 1.5em;
+          color: #1B998B;
+          transition: 200ms; }
+          @media (min-width: 800px) {
+            .readMoreContainer .readMoreButtonContainer .gitHubButton a:hover {
+              font-size: 2em; } }
+
+.findMeHeroBanner {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+  background-color: #FFC952;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%), url("../content/BackgroundImages/footerCoastline.jpg") bottom center no-repeat;
+  background-size: cover;
+  min-width: 100px;
+  margin-top: 2.5px; }
+  @media (min-width: 800px) {
+    .findMeHeroBanner {
+      min-height: 315px; } }
+  .findMeHeroBanner .findMeTextWrapper p {
+    color: white;
+    font-size: 28px;
+    font-family: "Roboto-Light", sarif;
+    text-transform: uppercase;
+    text-shadow: -1.5px 2px 1px #000; }
+    @media (min-width: 800px) {
+      .findMeHeroBanner .findMeTextWrapper p {
+        font-size: 34px; } }
+    @media (min-width: 1100px) {
+      .findMeHeroBanner .findMeTextWrapper p {
+        font-size: 40px; } }
+
+.findMeContainer {
+  height: 30vh;
+  min-height: 350px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2.5px;
+  background: #171717; }
+  @media (min-width: 800px) {
+    .findMeContainer {
+      height: 20vh;
+      min-height: 250px; } }
+  @media (min-width: 1100px) {
+    .findMeContainer {
+      min-height: 310px; } }
+  .findMeContainer .fontAwesomeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    max-height: 150px;
+    height: 50%; }
+    .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+      width: 55%;
+      min-width: 225px;
+      max-width: 350px; }
+      .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper i {
+        color: #e4e7ec;
+        font-size: 7em;
+        transition: 200ms; }
+        .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper i:hover {
+          color: #1B998B;
+          font-size: 8em;
+          transition: 200ms; }
+        .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper i:active {
+          font-size: 7em; }
+  .findMeContainer .findMeTextContainer {
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4%; }
+    @media (min-width: 800px) {
+      .findMeContainer .findMeTextContainer {
+        margin: 1%; } }
+    .findMeContainer .findMeTextContainer .findMeText {
+      width: 90%;
+      min-width: 355px;
+      max-width: 610px;
+      font-size: 15px;
+      font-family: "Roboto-Light", sarif;
+      line-height: 25px;
+      color: white;
+      text-align: center;
+      text-shadow: -1.5px 4px 1px #000; }
+      .findMeContainer .findMeTextContainer .findMeText .cornyText {
+        margin-bottom: 15px; }
+      .findMeContainer .findMeTextContainer .findMeText .copyRightText {
+        color: #1B998B;
+        font-size: 14px;
+        text-transform: uppercase; }
+    .findMeContainer .findMeTextContainer p {
+      height: auto; }

@@ -1,0 +1,384 @@
+//EDUCATION COMPONENT MIXINS:
+
+@mixin educationComponentClose {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33.3333%;
+  height: 31%;
+  justify-content: center;
+  align-items: center;
+}
+@mixin educationComponentOpen {
+  display:flex;
+  flex-direction: column;
+  flex-basis: 45%;
+}
+@mixin educationButtonClose {
+  width: 97%;
+  flex-basis: 90%;
+  border: none;
+  color: $coreWhite;
+  text-transform: uppercase;
+  font-size: $fontSizeRegular;
+  font-family: $mainFontFamily;
+  box-shadow: 0px 4px 7px 0px black;
+  transition: 300ms;
+  @include tablet {
+    font-size: $fontSizeMedium;
+  }
+  &:hover {
+    width: 98%;
+    height: 93%;
+    cursor: pointer;
+    font-size: $fontSizeMedium;
+    transition: 300ms;
+    @include tablet {
+      font-size: $fontSizeLarge;
+    }
+  }
+  &:focus {
+    outline: 0;
+  }
+  &:active {
+    width: 97%;
+    height: 90%;
+  }
+}
+
+@mixin educationButtonOpen {
+  flex-basis:25%;
+  min-height: 55px;
+  width:100%;
+  background: transparent;
+  border: none;
+  color: $coreWhite;
+  text-transform: uppercase;
+  font-family: $mainFontFamily;
+  font-size: $buttonTextSmall;
+  box-shadow: 0px 2px 5px 0px black;
+  &:hover {
+    flex-basis: 30%;
+    font-size: $buttonTextLarge;
+    cursor: pointer;
+  }
+  &:focus {
+    outline: 0;
+  }
+  &:active {
+    flex-basis:25%;
+  }
+  .fa {
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 0.5px 2px 4px #000;
+  }
+}
+@mixin educationInfo {
+  .educationInfo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    min-height: 140px;
+    height: 100%;
+    width: 100%;
+    .educationWrapper {
+      display: flex;
+      height: 85%;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-self: center;
+      color: white;
+      p {
+        font-size: $fontSizeRegular;
+        font-family: $mainFontFamily;
+        font-weight: medium;
+        height: auto;
+        @include tablet {
+          font-size: $fontSizeMedium;
+        }
+        @include desktop {
+          font-size: $fontSizeLarge;
+        }
+      }
+    }
+  }
+}
+
+//TOOLS COMPONENT MIXINS:
+
+@mixin toolsComponentClose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  height: 50%;
+}
+@mixin toolsComponentOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+@mixin toolsButtonClose {
+  width: 95%;
+  flex-basis: 93%;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  color: $coreWhite;
+  font-size: $buttonTextSmall;
+  font-family: $mainFontFamily;
+  box-shadow: 0px 4px 7px 0px black;
+  transition: 300ms;
+  @include tablet {
+    font-size: $fontSizeMedium;
+  }
+  &:hover {
+    width: 96%;
+    height: 95%;
+    font-size: $buttonTextLarge;
+    cursor: pointer;
+    transition: 300ms;
+    @include tablet {
+      font-size: $fontSizeLarge;
+    }
+  }
+  &:focus {
+    outline: 0;
+  }
+  &:active {
+    width: 95%;
+    height: 94%;
+  }
+}
+@mixin toolsInfoElement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@mixin toolsComponentBanner {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $coreWhite;
+  font-size: $buttonTextSmall;
+  font-family: $mainFontFamily;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 5px 0px black;
+  @include tablet {
+    height: 60px;
+    font-size: $fontSizeMedium;
+  }
+}
+@mixin tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 63%;
+  width: 100%;
+}
+@mixin toolsWrapper {
+  text-align: center;
+  font-family: $mainFontFamily;
+  font-size: $buttonTextLarge;
+  color: $coreWhite;
+  line-height: 24px;
+  @include tablet {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@mixin toolsButtonWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 5px;
+}
+@mixin toolsButtonOpen {
+  height: 50px;
+  width: 95%;
+  align-self: flex-end;
+  box-shadow: -4px 3px 10px -1px black;
+  border: none;
+  border-radius: 5px;
+  color: $coreWhite;
+  font-family: $mainFontFamily;
+  font-size: $buttonTextSmall;
+  text-transform: uppercase;
+  @include tablet {
+    height: 75px;
+  }
+  &:hover {
+    height: 55px;
+    width: 96.5%;
+    font-size: $buttonTextLarge;
+    cursor: pointer;
+    @include tablet {
+      height: 80px;
+    }
+  }
+  &:focus {
+    outline: 0;
+  }
+  &:active {
+    height: 50px;
+    width: 95%;
+    @include tablet {
+      height: 75px;
+    }
+  }
+  .fa {
+    font-size: 2em;
+    text-shadow: 0.5px 2px 4px #000;
+  }
+}
+
+//Books Sections Mixin
+@mixin sectionsButtonsOpen {
+  width: 35%;
+  height: 85%;
+  transition: 400ms;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 4px 7px 0px black;
+  text-transform: uppercase;
+  color: $coreWhite;
+  font-size: $buttonTextSmall;
+  font-family: $mainFontFamily;
+  background: #171717;
+  opacity: .95;
+  &:hover {
+    width: 38%;
+    height: 90%;
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    width: 35%;
+    height: 85%;
+  }
+}
+@mixin sectionsButtonsClose {
+  width: 30%;
+  height: 65%;
+  transition: 400ms;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 4px 7px 0px black;
+  text-transform: uppercase;
+  color: $coreWhite;
+  font-size: $buttonTextSmall;
+  font-family: $mainFontFamily;
+  background: $coreCharcoal;
+  opacity: .95;
+  @include tablet {
+    font-size: $buttonTextLarge;
+  }
+  &:hover {
+    width: 34%;
+    height: 80%;
+    cursor: pointer;
+    font-size: $buttonTextLarge;
+    @include tablet {
+      font-size: $fontSizeMedium;
+    }
+  }
+  &:focus {
+    outline: 0;
+  }
+  &:active {
+    width: 32%;
+    height: 65%;
+  }
+}
+@mixin booksComponentOpen {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  opacity: .90;
+}
+@mixin booksComponentContainer {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 2px 5px 0px black;
+}
+@mixin booksComponentBanner {
+  height: 20%;
+  background: $coreCharcoal;
+}
+@mixin booksBannerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 95%;
+  box-shadow: 0px 2px 5px 0px black;
+  color: $coreWhite;
+  font-size: $buttonTextSmall;
+  font-family: $mainFontFamily;
+  text-transform: uppercase;
+  @include tablet {
+    font-size: $buttonTextLarge;
+  }
+  @include desktop {
+    font-size: $fontSizeRegular;
+  }
+}
+@mixin booksContainer {
+  text-align: center;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $coreWhite;
+  font-size: $fontSizeSmall;
+  font-family: $mainFontFamily;
+  background: #171717;
+  line-height: 35px;
+  @include tablet {
+    font-size: $fontSizeRegular;
+    line-height: 45px;
+  }
+  @include desktop {
+    font-size: $fontSizeMedium;
+    line-height: 50px;
+  }
+}
+
+//Media Queries//
+$tablet: 800px;
+$desktop: 1100px;
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+

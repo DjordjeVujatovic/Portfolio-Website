@@ -1,0 +1,34 @@
+.toolsHeroBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $componentHeightRegular;
+  min-height: $componentMinHeightRegular;
+  background-color: $coreMustard;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .30) 0%, rgba(0, 0, 0, .10) 100%), url('../content/BackgroundImages/toolsHero.jpg' ) bottom center no-repeat;
+  background-size: cover;
+  min-width: 100px;
+  margin-top: $componentMargin;
+  @include tablet {
+    height: 85vh;
+    min-height: 575px;
+  }
+  @include desktop {
+    height: 90vh;
+  }
+  .toolsTextWrapper {
+    p {
+      color: $coreWhite;
+      font-size: $fontSizeLarge;
+      font-family: $mainFontFamily;
+      text-transform: uppercase;
+      text-shadow: -1.5px 2px 1px #000;
+      @include tablet {
+        font-size: $fontSizeExtraLarge;
+      }
+      @include desktop {
+        font-size: $fontSizeHuge;
+      }
+    }
+  }
+}

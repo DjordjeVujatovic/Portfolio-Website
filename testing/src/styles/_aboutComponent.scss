@@ -1,0 +1,61 @@
+.aboutComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $componentHeightSmall;
+  min-height: $componentMinHeightSmall;
+  background-color: $coreJungleGreen;
+  color: $coreWhite;
+  margin-top: $componentMargin;
+  @include tablet {
+    height: 60vh;
+  }
+}
+.aboutWrapper {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:center;
+  font-family: $mainFontFamily;
+  h1 {
+    text-transform: uppercase;
+    color: $coreLightGray;
+    height: auto;
+    @include tablet {
+      font-size: $fontSizeHuge;
+      margin-bottom: 10px;
+    }
+  }
+  h2 {
+    margin: 0;
+    color: $coreLightGray;
+    text-transform: uppercase;
+    height: auto;
+    @include tablet {
+      font-size: 30px;
+    }
+  }
+  h3 {
+    color: $coreCharcoal;
+    height: auto;
+    font-family: $mainFontFamilyBold;
+    font-size: 16px;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: $fontSizeMedium;
+    }
+  }
+  p {
+    font-size: $fontSizeRegular;
+    color: $coreLightGray;
+    padding: 5px;
+    max-width: 365px;
+    min-width: 365px;
+    height: auto;
+    @include tablet {
+      max-width: 750px;
+      min-width: 500px;
+      font-size: $fontSizeLarge;
+    }
+  }
+}

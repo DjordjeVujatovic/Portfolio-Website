@@ -1,0 +1,15 @@
+.educationHeroBanner {
+  height: $componentHeightRegular;
+  min-height: $componentMinHeightRegular;
+  background-color: $coreMustard;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .30) 0%, rgba(0, 0, 0, .10) 100%), url('../content/BackgroundImages/educationHero.jpg' ) bottom center no-repeat;
+  background-size: cover;
+  min-width: 100px;
+  margin-top: $componentMargin;
+  @include tablet {
+    height: 90vh;
+    max-height: 960px;
+    min-height: 675px;
+    background-size: cover;
+  }
+}
