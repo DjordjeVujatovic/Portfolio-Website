@@ -527,7 +527,7 @@ html, body, h1, p {
 .headerComponent {
   display: flex;
   align-items: flex-end;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6) 0%), url("../content/BackgroundImages/backgroundImage.jpg") bottom center no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0.5) 0%), url("../content/BackgroundImages/headerHero.jpg") bottom center no-repeat;
   height: 100vh;
   min-height: 570px;
   width: 100%;
@@ -613,6 +613,10 @@ html, body, h1, p {
         height: 95px;
         cursor: pointer;
         transition: 400ms; }
+        @media (min-width: 700px) {
+          .headerComponent .headerButtonContainer button:hover {
+            width: 300px;
+            height: 110px; } }
       .headerComponent .headerButtonContainer button:focus {
         outline: 0; }
       .headerComponent .headerButtonContainer button:active {
@@ -703,10 +707,10 @@ html, body, h1, p {
         font-size: 28px; } }
 
 .educationHeroBanner {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%), url("../content/BackgroundImages/educationHero.jpg") bottom center no-repeat;
   height: 50vh;
   min-height: 450px;
   background-color: #FFC952;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%), url("../content/BackgroundImages/educationHero.jpg") bottom center no-repeat;
   background-size: cover;
   min-width: 100px;
   margin-top: 2.5px; }
