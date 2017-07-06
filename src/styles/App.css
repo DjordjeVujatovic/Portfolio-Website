@@ -2737,7 +2737,7 @@ html, body, h1, p {
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 5%; }
+    margin-top: 5%; }
     .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper {
       display: flex;
       justify-content: space-around;
@@ -2769,7 +2769,7 @@ html, body, h1, p {
             .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper svg:active {
               font-size: 7.5em; } }
   .findMeContainer .findMeTextContainer {
-    margin: 2%; }
+    margin: 4%; }
     .findMeContainer .findMeTextContainer .findMeText {
       min-width: 300px;
       max-width: 610px;
