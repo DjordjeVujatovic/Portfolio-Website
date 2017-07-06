@@ -2718,7 +2718,7 @@ html, body, h1, p {
         font-size: 40px; } }
 
 .findMeContainer {
-  min-height: 250px;
+  min-height: 240px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -2737,9 +2737,7 @@ html, body, h1, p {
     justify-content: center;
     align-items: center;
     width: 90%;
-    max-width: 600px;
-    max-height: 150px;
-    height: 50%; }
+    margin: 5%; }
     .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper {
       display: flex;
       justify-content: space-around;
@@ -2771,17 +2769,8 @@ html, body, h1, p {
             .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper svg:active {
               font-size: 7.5em; } }
   .findMeContainer .findMeTextContainer {
-    height: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 4%; }
-    @media (min-width: 700px) {
-      .findMeContainer .findMeTextContainer {
-        margin: 1%; } }
+    margin: 2%; }
     .findMeContainer .findMeTextContainer .findMeText {
-      width: 90%;
       min-width: 300px;
       max-width: 610px;
       font-size: 12px;

@@ -1,5 +1,5 @@
 .findMeContainer {
-  min-height: 250px;
+  min-height: 240px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -18,9 +18,7 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    max-width: 600px;
-    max-height: 150px;
-    height: 50%;
+    margin: 5%;
     .fontAwesomeWrapper {
       display: flex;
       justify-content: space-around;
@@ -57,17 +55,8 @@
     }
   }
   .findMeTextContainer {
-    height: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 4%;
-    @include tablet {
-      margin: 1%;
-    }
+    margin: 2%;
     .findMeText {
-      width: 90%;
       min-width: 300px;
       max-width: 610px;
       font-size: $fontSizeSmall;
