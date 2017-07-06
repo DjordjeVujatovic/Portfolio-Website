@@ -2714,8 +2714,7 @@ html, body, h1, p {
         font-size: 40px; } }
 
 .findMeContainer {
-  height: 30vh;
-  min-height: 350px;
+  min-height: 250px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -2725,7 +2724,7 @@ html, body, h1, p {
   @media (min-width: 700px) {
     .findMeContainer {
       height: 20vh;
-      min-height: 250px; } }
+      min-height: 275px; } }
   @media (min-width: 1100px) {
     .findMeContainer {
       min-height: 310px; } }
@@ -2742,19 +2741,31 @@ html, body, h1, p {
       justify-content: space-around;
       align-items: center;
       height: 100%;
-      width: 55%;
-      min-width: 225px;
+      width: 75%;
       max-width: 250px; }
+      @media (min-width: 700px) {
+        .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper {
+          width: 70%;
+          max-width: 300px; } }
       .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper svg {
         color: #e4e7ec;
-        font-size: 6em;
+        font-size: 5.5em;
         transition: 200ms; }
+        @media (min-width: 700px) {
+          .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper svg {
+            font-size: 7.5em; } }
         .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper svg:hover {
           color: #1B998B;
-          font-size: 7em;
+          font-size: 6.5em;
           transition: 200ms; }
+          @media (min-width: 700px) {
+            .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper svg:hover {
+              font-size: 8.5em; } }
         .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper svg:active {
-          font-size: 6em; }
+          font-size: 5.5em; }
+          @media (min-width: 700px) {
+            .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper svg:active {
+              font-size: 7.5em; } }
   .findMeContainer .findMeTextContainer {
     height: 35%;
     display: flex;
@@ -2769,17 +2780,23 @@ html, body, h1, p {
       width: 90%;
       min-width: 300px;
       max-width: 610px;
-      font-size: 15px;
+      font-size: 12px;
       font-family: "Roboto-Light", sarif;
       line-height: 25px;
       color: white;
       text-align: center;
       text-shadow: -1.5px 4px 1px #000; }
+      @media (min-width: 700px) {
+        .findMeContainer .findMeTextContainer .findMeText {
+          font-sizE: 16px; } }
       .findMeContainer .findMeTextContainer .findMeText .cornyText {
         margin-bottom: 15px; }
       .findMeContainer .findMeTextContainer .findMeText .copyRightText {
         color: #1B998B;
-        font-size: 14px;
+        font-size: 12px;
         text-transform: uppercase; }
+        @media (min-width: 700px) {
+          .findMeContainer .findMeTextContainer .findMeText .copyRightText {
+            font-size: 16px; } }
     .findMeContainer .findMeTextContainer p {
       height: auto; }

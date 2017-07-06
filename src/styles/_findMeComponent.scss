@@ -1,6 +1,5 @@
 .findMeContainer {
-  height: 30vh;
-  min-height: 350px;
+  min-height: 250px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -9,7 +8,7 @@
   background: #171717;
   @include tablet {
     height: 20vh;
-    min-height: 250px;
+    min-height: 275px;
   }
   @include desktop {
     min-height: 310px;
@@ -27,20 +26,32 @@
       justify-content: space-around;
       align-items: center;
       height: 100%;
-      width: 55%;
-      min-width: 225px;
+      width: 75%;
       max-width: 250px;
+      @include tablet {
+        width: 70%;
+        max-width: 300px;
+      }
       svg {
         color: $coreLightGray;
-        font-size: 6em;
+        font-size: 5.5em;
          transition: 200ms;
+         @include tablet {
+           font-size: 7.5em;
+         }
         &:hover {
           color: $coreJungleGreen;
-          font-size: 7em;
+          font-size: 6.5em;
           transition: 200ms;
+          @include tablet {
+            font-size: 8.5em;
+          }
         }
         &:active {
-          font-size: 6em;
+          font-size: 5.5em;
+          @include tablet {
+            font-size: 7.5em;
+          }
         }
       }
     }
@@ -59,19 +70,25 @@
       width: 90%;
       min-width: 300px;
       max-width: 610px;
-      font-size: 15px;
+      font-size: $fontSizeSmall;
       font-family: $mainFontFamily;
       line-height: 25px;
       color: white;
       text-align: center;
       text-shadow: -1.5px 4px 1px #000;
+      @include tablet {
+        font-sizE: 16px;
+      }
       .cornyText {
         margin-bottom: 15px;
       }
       .copyRightText {
         color: $coreJungleGreen;
-        font-size: $buttonTextSmall;
+        font-size: $fontSizeSmall;
         text-transform: uppercase;
+        @include tablet {
+          font-size: 16px;
+        }
       }
     }
     p {
