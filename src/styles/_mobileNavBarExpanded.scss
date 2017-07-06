@@ -43,6 +43,9 @@
             font-family: $mainFontFamily;
             color: $coreLightGray;
             border: none;
+            @include tablet {
+              font-size: 35px;
+            }
             &:focus {
               outline: 0;
             }
@@ -60,7 +63,7 @@
 .closeButton {
   height: 10%;
   width: 100%;
-  background-color: $darkGray;
+  background-color: $coreJungleGreen;
   border:none;
   font-size: $fontSizeLarge;
   text-transform: uppercase;
@@ -69,7 +72,7 @@
   box-shadow: 0px 2px 5px 0px black;
   &:hover {
     cursor: pointer;
-    background: $coreJungleGreen;
+    height: 15%;
   }
   &:focus {
     outline: 0;
@@ -86,22 +89,46 @@
   }
 }
 .socialContainer {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -ms-flex-align: center;
+  justify-content: center;
   align-items: center;
-  height: 25%;
-  width: 70%;
-  max-width: 400px;
+  height: 15%;
+  width: 100%;
+  background: $coreJungleGreen;
+  @include tablet {
+    height: 20%;
+  }
+
+  .socialWrapper {
+    width: 70%;
+    max-width: 350px;
+    @include tablet {
+      max-width: 550px;
+    }
+  }
   .socialButton {
-    width: 45%;
+    width: 25%;
     height: 100%;
     background:transparent;
+    @include tablet {
+      width: 35%;
+    }
     border: none;
-    a {
-      font-size: 8em;
+    svg {
+      font-size: 5em;
       color: white;
+      @include tablet {
+        font-size: 10em;
+      }
       &:hover {
-        color: $coreJungleGreen;
+        font-size: 5.5em;
+        @include tablet {
+          font-size: 11em;
+        }
       }
     }
   }

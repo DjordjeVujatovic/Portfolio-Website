@@ -407,6 +407,9 @@ html, body, h1, p {
           font-family: "Roboto-Light", sarif;
           color: #e4e7ec;
           border: none; }
+          @media (min-width: 700px) {
+            .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer .menuItems {
+              font-size: 35px; } }
           .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer .menuItems:focus {
             outline: 0; }
           .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer .menuItemshover {
@@ -417,7 +420,7 @@ html, body, h1, p {
 .closeButton {
   height: 10%;
   width: 100%;
-  background-color: #111111;
+  background-color: #1B998B;
   border: none;
   font-size: 28px;
   text-transform: uppercase;
@@ -426,7 +429,7 @@ html, body, h1, p {
   box-shadow: 0px 2px 5px 0px black; }
   .closeButton:hover {
     cursor: pointer;
-    background: #1B998B; }
+    height: 15%; }
   .closeButton:focus {
     outline: 0; }
 
@@ -440,22 +443,44 @@ html, body, h1, p {
     cursor: pointer; }
 
 .socialContainer {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -ms-flex-align: center;
+  justify-content: center;
   align-items: center;
-  height: 25%;
-  width: 70%;
-  max-width: 400px; }
+  height: 15%;
+  width: 100%;
+  background: #1B998B; }
+  @media (min-width: 700px) {
+    .socialContainer {
+      height: 20%; } }
+  .socialContainer .socialWrapper {
+    width: 70%;
+    max-width: 350px; }
+    @media (min-width: 700px) {
+      .socialContainer .socialWrapper {
+        max-width: 550px; } }
   .socialContainer .socialButton {
-    width: 45%;
+    width: 25%;
     height: 100%;
     background: transparent;
     border: none; }
-    .socialContainer .socialButton a {
-      font-size: 8em;
+    @media (min-width: 700px) {
+      .socialContainer .socialButton {
+        width: 35%; } }
+    .socialContainer .socialButton svg {
+      font-size: 5em;
       color: white; }
-      .socialContainer .socialButton a:hover {
-        color: #1B998B; }
+      @media (min-width: 700px) {
+        .socialContainer .socialButton svg {
+          font-size: 10em; } }
+      .socialContainer .socialButton svg:hover {
+        font-size: 5.5em; }
+        @media (min-width: 700px) {
+          .socialContainer .socialButton svg:hover {
+            font-size: 11em; } }
 
 .mobileSubMenu {
   display: flex;
@@ -534,7 +559,7 @@ html, body, h1, p {
         width: 90%;
         max-width: 800px;
         min-width: 300px; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .headerComponent .headerContainer .headerWrapper .headerTextWrapper {
             width: 85%; } }
         .headerComponent .headerContainer .headerWrapper .headerTextWrapper p {
@@ -545,7 +570,7 @@ html, body, h1, p {
           @media (min-width: 320px) and (max-width: 350px) {
             .headerComponent .headerContainer .headerWrapper .headerTextWrapper p {
               font-size: 22px; } }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .headerComponent .headerContainer .headerWrapper .headerTextWrapper p {
               font-size: 28px; } }
           @media (min-width: 1100px) {
@@ -625,7 +650,7 @@ html, body, h1, p {
   background-color: #1B998B;
   color: white;
   margin-top: 2.5px; }
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     .aboutComponent {
       height: 60vh; } }
 
@@ -639,7 +664,7 @@ html, body, h1, p {
     text-transform: uppercase;
     color: #e4e7ec;
     height: auto; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .aboutWrapper h1 {
         font-size: 40px;
         margin-bottom: 10px; } }
@@ -648,7 +673,7 @@ html, body, h1, p {
     color: #e4e7ec;
     text-transform: uppercase;
     height: auto; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .aboutWrapper h2 {
         font-size: 30px; } }
   .aboutWrapper h3 {
@@ -657,7 +682,7 @@ html, body, h1, p {
     font-family: "Roboto-Bold", sarif;
     font-size: 16px;
     text-transform: uppercase; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .aboutWrapper h3 {
         font-size: 24px; } }
   .aboutWrapper p {
@@ -666,7 +691,7 @@ html, body, h1, p {
     max-width: 320px;
     min-width: 300px;
     height: auto; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .aboutWrapper p {
         max-width: 750px;
         min-width: 500px;
@@ -683,7 +708,7 @@ html, body, h1, p {
   @media (min-width: 320px) and (max-width: 350px) {
     .educationHeroBanner {
       min-height: 375px; } }
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     .educationHeroBanner {
       height: 90vh;
       max-height: 960px;
@@ -699,7 +724,7 @@ html, body, h1, p {
   @media (min-width: 320px) and (max-width: 350px) {
     .educationComponentWrapper {
       min-height: 475px; } }
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     .educationComponentWrapper {
       height: 90vh;
       max-height: 800px; } }
@@ -725,7 +750,7 @@ html, body, h1, p {
     box-shadow: 0px 4px 7px 0px black;
     transition: 300ms;
     background: #FFC952; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .redClose .redButtonClose {
         font-size: 24px; } }
     .redClose .redButtonClose:hover {
@@ -734,7 +759,7 @@ html, body, h1, p {
       cursor: pointer;
       font-size: 24px;
       transition: 300ms; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .redClose .redButtonClose:hover {
           font-size: 28px; } }
     .redClose .redButtonClose:focus {
@@ -764,6 +789,12 @@ html, body, h1, p {
       align-self: center;
       color: white;
       margin-bottom: 5%; }
+      @media (min-width: 700px) {
+        .redOpen .educationInfo .educationWrapper {
+          margin-bottom: 0%; } }
+      @media (min-width: 1100px) {
+        .redOpen .educationInfo .educationWrapper {
+          margin-bottom: 0%; } }
       .redOpen .educationInfo .educationWrapper p {
         font-size: 18px;
         font-family: "Roboto-Light", sarif;
@@ -772,7 +803,7 @@ html, body, h1, p {
         @media (min-width: 320px) and (max-width: 350px) {
           .redOpen .educationInfo .educationWrapper p {
             font-size: 16px; } }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .redOpen .educationInfo .educationWrapper p {
             font-size: 24px; } }
         @media (min-width: 1100px) {
@@ -824,7 +855,7 @@ html, body, h1, p {
     box-shadow: 0px 4px 7px 0px black;
     transition: 300ms;
     background: #1B998B; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .universityClose .universityButtonClose {
         font-size: 24px; } }
     .universityClose .universityButtonClose:hover {
@@ -833,7 +864,7 @@ html, body, h1, p {
       cursor: pointer;
       font-size: 24px;
       transition: 300ms; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .universityClose .universityButtonClose:hover {
           font-size: 28px; } }
     .universityClose .universityButtonClose:focus {
@@ -863,6 +894,12 @@ html, body, h1, p {
       align-self: center;
       color: white;
       margin-bottom: 5%; }
+      @media (min-width: 700px) {
+        .universityOpen .educationInfo .educationWrapper {
+          margin-bottom: 0%; } }
+      @media (min-width: 1100px) {
+        .universityOpen .educationInfo .educationWrapper {
+          margin-bottom: 0%; } }
       .universityOpen .educationInfo .educationWrapper p {
         font-size: 18px;
         font-family: "Roboto-Light", sarif;
@@ -871,7 +908,7 @@ html, body, h1, p {
         @media (min-width: 320px) and (max-width: 350px) {
           .universityOpen .educationInfo .educationWrapper p {
             font-size: 16px; } }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .universityOpen .educationInfo .educationWrapper p {
             font-size: 24px; } }
         @media (min-width: 1100px) {
@@ -923,7 +960,7 @@ html, body, h1, p {
     box-shadow: 0px 4px 7px 0px black;
     transition: 300ms;
     background: #34314c; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .collegeClose .collegeButtonClose {
         font-size: 24px; } }
     .collegeClose .collegeButtonClose:hover {
@@ -932,7 +969,7 @@ html, body, h1, p {
       cursor: pointer;
       font-size: 24px;
       transition: 300ms; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .collegeClose .collegeButtonClose:hover {
           font-size: 28px; } }
     .collegeClose .collegeButtonClose:focus {
@@ -962,6 +999,12 @@ html, body, h1, p {
       align-self: center;
       color: white;
       margin-bottom: 5%; }
+      @media (min-width: 700px) {
+        .collegeOpen .educationInfo .educationWrapper {
+          margin-bottom: 0%; } }
+      @media (min-width: 1100px) {
+        .collegeOpen .educationInfo .educationWrapper {
+          margin-bottom: 0%; } }
       .collegeOpen .educationInfo .educationWrapper p {
         font-size: 18px;
         font-family: "Roboto-Light", sarif;
@@ -970,7 +1013,7 @@ html, body, h1, p {
         @media (min-width: 320px) and (max-width: 350px) {
           .collegeOpen .educationInfo .educationWrapper p {
             font-size: 16px; } }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .collegeOpen .educationInfo .educationWrapper p {
             font-size: 24px; } }
         @media (min-width: 1100px) {
@@ -1015,7 +1058,7 @@ html, body, h1, p {
   @media (min-width: 320px) and (max-width: 350px) {
     .booksHeroBanner {
       min-height: 375px; } }
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     .booksHeroBanner {
       min-height: 375px; } }
   @media (min-width: 1100px) {
@@ -1027,7 +1070,7 @@ html, body, h1, p {
     font-family: "Roboto-Light", sarif;
     text-transform: uppercase;
     text-shadow: -1.5px 2px 1px #000; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .booksHeroBanner .booksTextWrapper p {
         font-size: 34px; } }
     @media (min-width: 1100px) {
@@ -1056,7 +1099,7 @@ html, body, h1, p {
     flex-basis: 98%;
     height: 89%;
     background: #34314c; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .booksClose .booksButtonClose {
         font-size: 24px; } }
     .booksClose .booksButtonClose:hover {
@@ -1065,7 +1108,7 @@ html, body, h1, p {
       cursor: pointer;
       font-size: 24px;
       transition: 300ms; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .booksClose .booksButtonClose:hover {
           font-size: 28px; } }
     .booksClose .booksButtonClose:focus {
@@ -1082,7 +1125,7 @@ html, body, h1, p {
   min-height: 550px;
   margin-top: 2.5px;
   transition: 600ms; }
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     .booksOpen {
       height: 75vh;
       min-height: 590px; } }
@@ -1130,7 +1173,7 @@ html, body, h1, p {
       align-items: center;
       height: 75%;
       width: 97%; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .booksOpen .booksOpenWrapper .componentsContainer {
           width: 85%;
           height: 85%;
@@ -1178,7 +1221,7 @@ html, body, h1, p {
             font-size: 14px;
             font-family: "Roboto-Light", sarif;
             text-transform: uppercase; }
-            @media (min-width: 800px) {
+            @media (min-width: 700px) {
               .sectionsComponentContainer .componentsContainer .favoritesOpen .favoritesComponentContainer .componentBanner .bannerContainer {
                 font-size: 18px; } }
             @media (min-width: 1100px) {
@@ -1195,7 +1238,7 @@ html, body, h1, p {
           font-family: "Roboto-Light", sarif;
           background: #171717;
           line-height: 35px; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .sectionsComponentContainer .componentsContainer .favoritesOpen .favoritesComponentContainer .booksContainer {
               font-size: 20px;
               line-height: 45px; } }
@@ -1229,7 +1272,7 @@ html, body, h1, p {
             font-size: 14px;
             font-family: "Roboto-Light", sarif;
             text-transform: uppercase; }
-            @media (min-width: 800px) {
+            @media (min-width: 700px) {
               .sectionsComponentContainer .componentsContainer .futuresOpen .futureReadsComponentContainer .componentBanner .bannerContainer {
                 font-size: 18px; } }
             @media (min-width: 1100px) {
@@ -1246,7 +1289,7 @@ html, body, h1, p {
           font-family: "Roboto-Light", sarif;
           background: #171717;
           line-height: 35px; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .sectionsComponentContainer .componentsContainer .futuresOpen .futureReadsComponentContainer .booksContainer {
               font-size: 20px;
               line-height: 45px; } }
@@ -1280,7 +1323,7 @@ html, body, h1, p {
             font-size: 14px;
             font-family: "Roboto-Light", sarif;
             text-transform: uppercase; }
-            @media (min-width: 800px) {
+            @media (min-width: 700px) {
               .sectionsComponentContainer .componentsContainer .readingOpen .readingComponentContainer .componentBanner .bannerContainer {
                 font-size: 18px; } }
             @media (min-width: 1100px) {
@@ -1297,7 +1340,7 @@ html, body, h1, p {
           font-family: "Roboto-Light", sarif;
           background: #171717;
           line-height: 35px; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .sectionsComponentContainer .componentsContainer .readingOpen .readingComponentContainer .booksContainer {
               font-size: 20px;
               line-height: 45px; } }
@@ -1324,7 +1367,7 @@ html, body, h1, p {
       font-family: "Roboto-Light", sarif;
       background: #34314c;
       opacity: .95; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .sectionsComponentContainer .buttonsContainer .buttonCloseFavorites {
           font-size: 18px; } }
       .sectionsComponentContainer .buttonsContainer .buttonCloseFavorites:hover {
@@ -1332,7 +1375,7 @@ html, body, h1, p {
         height: 80%;
         cursor: pointer;
         font-size: 18px; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .sectionsComponentContainer .buttonsContainer .buttonCloseFavorites:hover {
             font-size: 24px; } }
       .sectionsComponentContainer .buttonsContainer .buttonCloseFavorites:focus {
@@ -1377,7 +1420,7 @@ html, body, h1, p {
       font-family: "Roboto-Light", sarif;
       background: #34314c;
       opacity: .95; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .sectionsComponentContainer .buttonsContainer .buttonCloseReading {
           font-size: 18px; } }
       .sectionsComponentContainer .buttonsContainer .buttonCloseReading:hover {
@@ -1385,7 +1428,7 @@ html, body, h1, p {
         height: 80%;
         cursor: pointer;
         font-size: 18px; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .sectionsComponentContainer .buttonsContainer .buttonCloseReading:hover {
             font-size: 24px; } }
       .sectionsComponentContainer .buttonsContainer .buttonCloseReading:focus {
@@ -1430,7 +1473,7 @@ html, body, h1, p {
       font-family: "Roboto-Light", sarif;
       background: #34314c;
       opacity: .95; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .sectionsComponentContainer .buttonsContainer .buttonCloseFuture {
           font-size: 18px; } }
       .sectionsComponentContainer .buttonsContainer .buttonCloseFuture:hover {
@@ -1438,7 +1481,7 @@ html, body, h1, p {
         height: 80%;
         cursor: pointer;
         font-size: 18px; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .sectionsComponentContainer .buttonsContainer .buttonCloseFuture:hover {
             font-size: 24px; } }
       .sectionsComponentContainer .buttonsContainer .buttonCloseFuture:focus {
@@ -1485,7 +1528,7 @@ html, body, h1, p {
   @media (min-width: 320px) and (max-width: 350px) {
     .toolsHeroBanner {
       min-height: 375px; } }
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     .toolsHeroBanner {
       height: 85vh;
       min-height: 570px; } }
@@ -1498,7 +1541,7 @@ html, body, h1, p {
     font-family: "Roboto-Light", sarif;
     text-transform: uppercase;
     text-shadow: -1.5px 2px 1px #000; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .toolsHeroBanner .toolsTextWrapper p {
         font-size: 34px; } }
     @media (min-width: 1100px) {
@@ -1512,7 +1555,7 @@ html, body, h1, p {
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 2.5px; }
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     .toolsComponentWrapper {
       height: 85vh;
       min-height: 550px; } }
@@ -1560,7 +1603,7 @@ html, body, h1, p {
     box-shadow: 0px 4px 7px 0px black;
     transition: 300ms;
     background: #FF7473; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .languageComponentClose .languageButtonClose {
         font-size: 24px; } }
     .languageComponentClose .languageButtonClose:hover {
@@ -1569,7 +1612,7 @@ html, body, h1, p {
       font-size: 18px;
       cursor: pointer;
       transition: 300ms; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .languageComponentClose .languageButtonClose:hover {
           font-size: 28px; } }
     .languageComponentClose .languageButtonClose:focus {
@@ -1608,7 +1651,7 @@ html, body, h1, p {
       text-transform: uppercase;
       box-shadow: 0px 2px 5px 0px black;
       background: #FF7473; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .languageComponentOpen .languagesInfo .componentBanner {
           height: 60px;
           font-size: 24px; } }
@@ -1624,7 +1667,7 @@ html, body, h1, p {
         font-size: 18px;
         color: white;
         line-height: 24px; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .languageComponentOpen .languagesInfo .languages .languagesWrapper {
             font-size: 24px;
             line-height: 30px; } }
@@ -1645,7 +1688,7 @@ html, body, h1, p {
         font-size: 14px;
         text-transform: uppercase;
         background: #FF7473; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen {
             height: 75px; } }
         .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen:hover {
@@ -1653,7 +1696,7 @@ html, body, h1, p {
           width: 96.5%;
           font-size: 18px;
           cursor: pointer; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen:hover {
               height: 80px; } }
         .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen:focus {
@@ -1661,7 +1704,7 @@ html, body, h1, p {
         .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen:active {
           height: 50px;
           width: 95%; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen:active {
               height: 75px; } }
         .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen svg {
@@ -1697,7 +1740,7 @@ html, body, h1, p {
     box-shadow: 0px 4px 7px 0px black;
     transition: 300ms;
     background: #1B998B; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .technologiesComponentClose .technologiesButtonClose {
         font-size: 24px; } }
     .technologiesComponentClose .technologiesButtonClose:hover {
@@ -1706,7 +1749,7 @@ html, body, h1, p {
       font-size: 18px;
       cursor: pointer;
       transition: 300ms; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .technologiesComponentClose .technologiesButtonClose:hover {
           font-size: 28px; } }
     .technologiesComponentClose .technologiesButtonClose:focus {
@@ -1743,7 +1786,7 @@ html, body, h1, p {
       text-transform: uppercase;
       box-shadow: 0px 2px 5px 0px black;
       background: #1B998B; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .technologiesComponentOpen .technologiesInfo .componentBanner {
           height: 60px;
           font-size: 24px; } }
@@ -1759,7 +1802,7 @@ html, body, h1, p {
         font-size: 18px;
         color: white;
         line-height: 24px; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .technologiesComponentOpen .technologiesInfo .technologies .technologiesWrapper {
             font-size: 24px;
             line-height: 30px; } }
@@ -1780,7 +1823,7 @@ html, body, h1, p {
         font-size: 14px;
         text-transform: uppercase;
         background: #1B998B; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen {
             height: 75px; } }
         .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen:hover {
@@ -1788,7 +1831,7 @@ html, body, h1, p {
           width: 96.5%;
           font-size: 18px;
           cursor: pointer; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen:hover {
               height: 80px; } }
         .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen:focus {
@@ -1796,7 +1839,7 @@ html, body, h1, p {
         .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen:active {
           height: 50px;
           width: 95%; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen:active {
               height: 75px; } }
         .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen svg {
@@ -1832,7 +1875,7 @@ html, body, h1, p {
     box-shadow: 0px 4px 7px 0px black;
     transition: 300ms;
     background: #34314c; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .devToolsComponentClose .devToolsButtonClose {
         font-size: 24px; } }
     .devToolsComponentClose .devToolsButtonClose:hover {
@@ -1841,7 +1884,7 @@ html, body, h1, p {
       font-size: 18px;
       cursor: pointer;
       transition: 300ms; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .devToolsComponentClose .devToolsButtonClose:hover {
           font-size: 28px; } }
     .devToolsComponentClose .devToolsButtonClose:focus {
@@ -1878,7 +1921,7 @@ html, body, h1, p {
       text-transform: uppercase;
       box-shadow: 0px 2px 5px 0px black;
       background: #34314c; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .devToolsComponentOpen .devToolsInfo .componentBanner {
           height: 60px;
           font-size: 24px; } }
@@ -1894,7 +1937,7 @@ html, body, h1, p {
         font-size: 18px;
         color: white;
         line-height: 24px; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .devToolsComponentOpen .devToolsInfo .devTools .devToolsWrapper {
             font-size: 24px;
             line-height: 30px; } }
@@ -1915,7 +1958,7 @@ html, body, h1, p {
         font-size: 14px;
         text-transform: uppercase;
         background: #34314c; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen {
             height: 75px; } }
         .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen:hover {
@@ -1923,7 +1966,7 @@ html, body, h1, p {
           width: 96.5%;
           font-size: 18px;
           cursor: pointer; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen:hover {
               height: 80px; } }
         .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen:focus {
@@ -1931,7 +1974,7 @@ html, body, h1, p {
         .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen:active {
           height: 50px;
           width: 95%; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen:active {
               height: 75px; } }
         .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen svg {
@@ -1967,7 +2010,7 @@ html, body, h1, p {
     box-shadow: 0px 4px 7px 0px black;
     transition: 300ms;
     background: #FFC952; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .experienceComponentClose .experienceButtonClose {
         font-size: 24px; } }
     .experienceComponentClose .experienceButtonClose:hover {
@@ -1976,7 +2019,7 @@ html, body, h1, p {
       font-size: 18px;
       cursor: pointer;
       transition: 300ms; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .experienceComponentClose .experienceButtonClose:hover {
           font-size: 28px; } }
     .experienceComponentClose .experienceButtonClose:focus {
@@ -2013,7 +2056,7 @@ html, body, h1, p {
       text-transform: uppercase;
       box-shadow: 0px 2px 5px 0px black;
       background: #FFC952; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .experienceComponentOpen .experienceInfo .componentBanner {
           height: 60px;
           font-size: 24px; } }
@@ -2029,7 +2072,7 @@ html, body, h1, p {
         font-size: 18px;
         color: white;
         line-height: 24px; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .experienceComponentOpen .experienceInfo .experienceWith .experienceWithWrapper {
             font-size: 24px;
             line-height: 30px; } }
@@ -2050,7 +2093,7 @@ html, body, h1, p {
         font-size: 14px;
         text-transform: uppercase;
         background: #FFC952; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen {
             height: 75px; } }
         .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen:hover {
@@ -2058,7 +2101,7 @@ html, body, h1, p {
           width: 96.5%;
           font-size: 18px;
           cursor: pointer; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen:hover {
               height: 80px; } }
         .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen:focus {
@@ -2066,7 +2109,7 @@ html, body, h1, p {
         .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen:active {
           height: 50px;
           width: 95%; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen:active {
               height: 75px; } }
         .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen svg {
@@ -2087,7 +2130,7 @@ html, body, h1, p {
   @media (min-width: 320px) and (max-width: 350px) {
     .projectsHeroBanner {
       min-height: 375px; } }
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     .projectsHeroBanner {
       min-height: 375px; } }
   @media (min-width: 1100px) {
@@ -2099,7 +2142,7 @@ html, body, h1, p {
     font-family: "Roboto-Light", sarif;
     text-transform: uppercase;
     text-shadow: -1px 1px 2px #000; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .projectsHeroBanner .projectsTextWrapper p {
         font-size: 34px; } }
     @media (min-width: 1100px) {
@@ -2131,7 +2174,7 @@ html, body, h1, p {
     font-family: "Roboto-Light", sarif;
     box-shadow: 0px 4px 7px 0px black;
     transition: 300ms; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .projectsClose .projectsButtonClose {
         font-size: 28px; } }
     .projectsClose .projectsButtonClose:hover {
@@ -2140,7 +2183,7 @@ html, body, h1, p {
       cursor: pointer;
       font-size: 24px;
       transition: 300ms; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .projectsClose .projectsButtonClose:hover {
           font-size: 34px; } }
     .projectsClose .projectsButtonClose:focus {
@@ -2157,7 +2200,7 @@ html, body, h1, p {
   min-height: 500px;
   margin-top: 2.5px;
   transition: 400ms; }
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     .projectsOpen {
       height: 85vh;
       min-height: 550px;
@@ -2174,7 +2217,7 @@ html, body, h1, p {
     height: 100%;
     width: 100%;
     background: linear-gradient(to bottom, black 30%, rgba(23, 23, 23, 0.95) 75%); }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .projectsOpen .projectsOpenWrapper {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.1) 100%), url("../content/BackgroundImages/projects.jpg") bottom center no-repeat;
         background-size: cover; } }
@@ -2212,7 +2255,7 @@ html, body, h1, p {
       align-items: center;
       height: 80%;
       width: 95%; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .projectsOpen .projectsOpenWrapper .componentsContainer {
           align-items: flex-end;
           height: 85%; } }
@@ -2241,7 +2284,7 @@ html, body, h1, p {
       justify-content: space-between;
       width: 100%;
       height: 95%; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .componentsWrapper .projectsSliderContainer .projectsSliderWrapper {
           flex-direction: row;
           flex-wrap: nowrap; } }
@@ -2253,7 +2296,7 @@ html, body, h1, p {
         width: 49%;
         height: 20%;
         transition: 400ms; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer {
             order: 1;
             width: 10%;
@@ -2270,7 +2313,7 @@ html, body, h1, p {
           font-size: 18px;
           font-family: "Roboto-Light", sarif;
           text-transform: uppercase; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton {
               height: 95%;
               width: 90; } }
@@ -2280,7 +2323,7 @@ html, body, h1, p {
             width: 90%;
             transition: 400ms;
             box-shadow: -3px 3px 0px 1px black; }
-            @media (min-width: 800px) {
+            @media (min-width: 700px) {
               .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton:hover {
                 height: 100%;
                 width: 95%; } }
@@ -2290,13 +2333,13 @@ html, body, h1, p {
             width: 85%;
             height: 80%;
             box-shadow: -3px 4px 0px 1px black; }
-            @media (min-width: 800px) {
+            @media (min-width: 700px) {
               .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton:active {
                 width: 90%;
                 height: 95%; } }
           .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton svg {
             text-shadow: 0.5px 2px 4px #000; }
-            @media (min-width: 800px) {
+            @media (min-width: 700px) {
               .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton svg {
                 font-size: 3em; } }
       .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer {
@@ -2306,7 +2349,7 @@ html, body, h1, p {
         order: 3;
         height: 20%;
         width: 49%; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer {
             order: 3;
             height: 100%;
@@ -2323,7 +2366,7 @@ html, body, h1, p {
           font-size: 18px;
           font-family: "Roboto-Light", sarif;
           text-transform: uppercase; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton {
               height: 95%;
               width: 90; } }
@@ -2333,7 +2376,7 @@ html, body, h1, p {
             width: 90%;
             transition: 400ms;
             box-shadow: -3px 3px 0px 1px black; }
-            @media (min-width: 800px) {
+            @media (min-width: 700px) {
               .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton:hover {
                 height: 100%;
                 width: 85%; } }
@@ -2343,13 +2386,13 @@ html, body, h1, p {
             width: 85%;
             height: 80%;
             box-shadow: -3px 4px 0px 1px black; }
-            @media (min-width: 800px) {
+            @media (min-width: 700px) {
               .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton:active {
                 width: 90%;
                 height: 95%; } }
           .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton svg {
             text-shadow: 0.5px 2px 4px #000; }
-            @media (min-width: 800px) {
+            @media (min-width: 700px) {
               .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton svg {
                 font-size: 3em; } }
       .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer {
@@ -2359,14 +2402,14 @@ html, body, h1, p {
         display: flex;
         justify-content: center;
         align-items: center; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer {
             flex-basis: 80%;
             order: 2;
             height: 100%; } }
         .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer {
           box-shadow: 0px 1px 14px 0px black; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer {
               border-radius: 10px; } }
           .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer {
@@ -2386,7 +2429,7 @@ html, body, h1, p {
                 color: white;
                 text-transform: uppercase;
                 text-shadow: -1.5px 2px 1px #000; }
-                @media (min-width: 800px) {
+                @media (min-width: 700px) {
                   .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer .projectName p {
                     font-size: 34px; } }
                 @media (min-width: 1100px) {
@@ -2411,7 +2454,7 @@ html, body, h1, p {
                 font-size: 20px;
                 color: white;
                 height: auto; }
-                @media (min-width: 800px) {
+                @media (min-width: 700px) {
                   .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .textContainer .projectSnippetContainer p {
                     font-size: 24px; } }
                 @media (min-width: 1100px) {
@@ -2434,7 +2477,7 @@ html, body, h1, p {
               font-size: 14px;
               font-family: "Roboto-Light", sarif;
               text-transform: uppercase; }
-              @media (min-width: 800px) {
+              @media (min-width: 700px) {
                 .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .readMoreButtonContainer .readMoreButton {
                   font-size: 20px; } }
               .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .readMoreButtonContainer .readMoreButton:hover {
@@ -2496,7 +2539,7 @@ html, body, h1, p {
           font-family: "Roboto-Light", sarif;
           text-shadow: -1.5px 2px 1px #000;
           text-transform: uppercase; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .readMoreContainer .readMoreWrapper .topContainer .toolsUsedContainer .toolsBanner {
               font-size: 20px; } }
           @media (min-width: 1100px) {
@@ -2508,7 +2551,7 @@ html, body, h1, p {
           color: white;
           font-family: "Roboto-Light", sarif;
           margin: 2%; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .readMoreContainer .readMoreWrapper .topContainer .toolsUsedContainer .toolsUsed {
               font-size: 18px; } }
           @media (min-width: 1100px) {
@@ -2536,7 +2579,7 @@ html, body, h1, p {
       text-shadow: -1.5px 2px 1px #000;
       text-transform: uppercase;
       margin-bottom: 20px; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .readMoreContainer .descriptionContainer .descriptionBanner {
           font-size: 24px; } }
     .readMoreContainer .descriptionContainer .description {
@@ -2547,7 +2590,7 @@ html, body, h1, p {
       color: white;
       font-family: "Roboto-Light", sarif;
       margin: 9%; }
-      @media (min-width: 800px) {
+      @media (min-width: 700px) {
         .readMoreContainer .descriptionContainer .description {
           font-size: 18px; } }
       @media (min-width: 1100px) {
@@ -2588,7 +2631,7 @@ html, body, h1, p {
       .readMoreContainer .readMoreButtonContainer .closeReadMoreButton svg {
         width: 100%;
         font-size: 2em; }
-        @media (min-width: 800px) {
+        @media (min-width: 700px) {
           .readMoreContainer .readMoreButtonContainer .closeReadMoreButton svg {
             font-size: 5em; } }
         .readMoreContainer .readMoreButtonContainer .closeReadMoreButton svg:hover {
@@ -2631,14 +2674,14 @@ html, body, h1, p {
           width: 100%;
           font-size: 2.5em;
           transition: 200ms; }
-          @media (min-width: 800px) {
+          @media (min-width: 700px) {
             .readMoreContainer .readMoreButtonContainer .gitHubButton a svg {
               font-size: 5em; } }
           .readMoreContainer .readMoreButtonContainer .gitHubButton a svg:hover {
             font-size: 3em;
             color: #1B998B;
             transition: 200ms; }
-            @media (min-width: 800px) {
+            @media (min-width: 700px) {
               .readMoreContainer .readMoreButtonContainer .gitHubButton a svg:hover {
                 font-size: 5.5em; } }
 
@@ -2656,7 +2699,7 @@ html, body, h1, p {
   @media (min-width: 320px) and (max-width: 350px) {
     .findMeHeroBanner {
       min-height: 375px; } }
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     .findMeHeroBanner {
       min-height: 315px; } }
   .findMeHeroBanner .findMeTextWrapper p {
@@ -2665,7 +2708,7 @@ html, body, h1, p {
     font-family: "Roboto-Light", sarif;
     text-transform: uppercase;
     text-shadow: -1.5px 2px 1px #000; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .findMeHeroBanner .findMeTextWrapper p {
         font-size: 34px; } }
     @media (min-width: 1100px) {
@@ -2681,7 +2724,7 @@ html, body, h1, p {
   flex-direction: column;
   margin-top: 2.5px;
   background: #171717; }
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     .findMeContainer {
       height: 20vh;
       min-height: 250px; } }
@@ -2721,7 +2764,7 @@ html, body, h1, p {
     align-items: center;
     text-align: center;
     margin: 4%; }
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       .findMeContainer .findMeTextContainer {
         margin: 1%; } }
     .findMeContainer .findMeTextContainer .findMeText {

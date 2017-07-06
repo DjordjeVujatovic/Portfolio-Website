@@ -90,8 +90,11 @@
       align-self: center;
       color: white;
       margin-bottom: 5%;
-      @include smallPhone {
-
+      @include tablet {
+        margin-bottom: 0%;
+      }
+      @include desktop {
+        margin-bottom: 0%;
       }
       p {
         font-size: $buttonTextLarge;
@@ -378,7 +381,7 @@
 
 //Media Queries//
 $smallPhone: 320px;
-$tablet: 800px;
+$tablet: 700px;
 $desktop: 1100px;
 
 

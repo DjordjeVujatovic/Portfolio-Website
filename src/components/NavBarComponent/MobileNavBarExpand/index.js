@@ -26,12 +26,14 @@ const MobileNavBarExpanded = ({ closeExpand, expandSubMenu }) => (
           <NavLink className="navLink" to="/projects"><button className="menuItems">Projects</button></NavLink>
         </div>
         <div className="socialContainer">
-          <button className="socialButton">
-            <a href="https://github.com/DjordjeVujatovic"><FaGithub /></a>
-          </button>
-          <button className="socialButton">
-            <a href="https://www.linkedin.com/in/djordjevujatovic/"><FaLinkedin /></a>
-          </button>
+          <div className="socialWrapper">
+            <button className="socialButton">
+              <a href="https://github.com/DjordjeVujatovic"><FaGithub /></a>
+            </button>
+            <button className="socialButton">
+              <a href="https://www.linkedin.com/in/djordjevujatovic/"><FaLinkedin /></a>
+            </button>
+          </div>
         </div>
       </div>
     </div>
