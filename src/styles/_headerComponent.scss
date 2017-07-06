@@ -20,6 +20,9 @@
       flex-direction: column;
       height: 70%;
       width: 100%;
+      @include tablet {
+        height: 55%;
+      }
       .headerTextWrapper {
         display: flex;
         text-align: center;
@@ -40,7 +43,7 @@
             font-size: 22px;
           }
           @include tablet {
-            font-size: $fontSizeLarge;
+            font-size: 35px;
           }
           @include desktop {
             font-size: $fontSizeExtraLarge;
@@ -57,6 +60,9 @@
     max-width: 450px;
     @include smallPhone {
       width: 90%;
+    }
+    @include tablet {
+      max-width: 600px
     }
       button {
         display: flex;
@@ -75,6 +81,10 @@
         box-shadow: -3px 4px 5px -1px black;
         text-shadow: -1.5px 2px 1px #000;
         transition: 400ms;
+        @include tablet {
+          width: 275px;
+          height: 100px;
+        }
         &:hover {
           background-color: $hoverJungleGreen;
           width: 235px;

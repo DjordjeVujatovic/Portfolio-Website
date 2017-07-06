@@ -546,6 +546,9 @@ html, body, h1, p {
       flex-direction: column;
       height: 70%;
       width: 100%; }
+      @media (min-width: 700px) {
+        .headerComponent .headerContainer .headerWrapper {
+          height: 55%; } }
       .headerComponent .headerContainer .headerWrapper .headerTextWrapper {
         display: flex;
         text-align: center;
@@ -567,7 +570,7 @@ html, body, h1, p {
               font-size: 22px; } }
           @media (min-width: 700px) {
             .headerComponent .headerContainer .headerWrapper .headerTextWrapper p {
-              font-size: 28px; } }
+              font-size: 35px; } }
           @media (min-width: 1100px) {
             .headerComponent .headerContainer .headerWrapper .headerTextWrapper p {
               font-size: 34px; } }
@@ -580,6 +583,9 @@ html, body, h1, p {
     @media (min-width: 320px) and (max-width: 350px) {
       .headerComponent .headerButtonContainer {
         width: 90%; } }
+    @media (min-width: 700px) {
+      .headerComponent .headerButtonContainer {
+        max-width: 600px; } }
     .headerComponent .headerButtonContainer button {
       display: flex;
       justify-content: center;
@@ -597,6 +603,10 @@ html, body, h1, p {
       box-shadow: -3px 4px 5px -1px black;
       text-shadow: -1.5px 2px 1px #000;
       transition: 400ms; }
+      @media (min-width: 700px) {
+        .headerComponent .headerButtonContainer button {
+          width: 275px;
+          height: 100px; } }
       .headerComponent .headerButtonContainer button:hover {
         background-color: #198C7F;
         width: 235px;
