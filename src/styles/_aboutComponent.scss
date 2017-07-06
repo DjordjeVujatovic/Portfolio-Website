@@ -48,9 +48,8 @@
   p {
     font-size: $fontSizeRegular;
     color: $coreLightGray;
-    padding: 5px;
     max-width: 365px;
-    min-width: 365px;
+    min-width: 300px;
     height: auto;
     @include tablet {
       max-width: 750px;

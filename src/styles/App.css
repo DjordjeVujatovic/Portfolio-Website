@@ -534,7 +534,7 @@ html, body, h1, p {
         height: 50%;
         width: 75%;
         max-width: 800px;
-        min-width: 330px; }
+        min-width: 300px; }
         @media (min-width: 800px) {
           .headerComponent .headerContainer .headerWrapper .headerTextWrapper {
             width: 85%; } }
@@ -658,9 +658,8 @@ html, body, h1, p {
   .aboutWrapper p {
     font-size: 20px;
     color: #e4e7ec;
-    padding: 5px;
     max-width: 365px;
-    min-width: 365px;
+    min-width: 300px;
     height: auto; }
     @media (min-width: 800px) {
       .aboutWrapper p {
@@ -2694,7 +2693,7 @@ html, body, h1, p {
         margin: 1%; } }
     .findMeContainer .findMeTextContainer .findMeText {
       width: 90%;
-      min-width: 355px;
+      min-width: 300px;
       max-width: 610px;
       font-size: 15px;
       font-family: "Roboto-Light", sarif;
