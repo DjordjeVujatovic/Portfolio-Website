@@ -3,15 +3,14 @@
 @mixin educationComponentClose {
   display: flex;
   flex-direction: column;
-  flex-basis: 33.3333%;
-  height: 31%;
+  height: 33.3333%;
   justify-content: center;
   align-items: center;
 }
 @mixin educationComponentOpen {
   display:flex;
   flex-direction: column;
-  flex-basis: 45%;
+  height: 45%;
 }
 @mixin educationButtonClose {
   width: 97%;

@@ -732,8 +732,7 @@ html, body, h1, p {
 .redClose {
   display: flex;
   flex-direction: column;
-  flex-basis: 33.3333%;
-  height: 31%;
+  height: 33.3333%;
   justify-content: center;
   align-items: center;
   background: #E8B74B; }
@@ -771,7 +770,7 @@ html, body, h1, p {
 .redOpen {
   display: flex;
   flex-direction: column;
-  flex-basis: 45%;
+  height: 45%;
   background-color: #E8B74B; }
   .redOpen .educationInfo {
     display: flex;
@@ -837,8 +836,7 @@ html, body, h1, p {
 .universityClose {
   display: flex;
   flex-direction: column;
-  flex-basis: 33.3333%;
-  height: 31%;
+  height: 33.3333%;
   justify-content: center;
   align-items: center;
   background: #177E72; }
@@ -876,7 +874,7 @@ html, body, h1, p {
 .universityOpen {
   display: flex;
   flex-direction: column;
-  flex-basis: 45%;
+  height: 45%;
   background: #177E72; }
   .universityOpen .educationInfo {
     display: flex;
@@ -942,8 +940,7 @@ html, body, h1, p {
 .collegeClose {
   display: flex;
   flex-direction: column;
-  flex-basis: 33.3333%;
-  height: 31%;
+  height: 33.3333%;
   justify-content: center;
   align-items: center;
   background: #3E3C50; }
@@ -981,7 +978,7 @@ html, body, h1, p {
 .collegeOpen {
   display: flex;
   flex-direction: column;
-  flex-basis: 45%;
+  height: 45%;
   background: #3E3C50; }
   .collegeOpen .educationInfo {
     display: flex;
