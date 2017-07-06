@@ -584,21 +584,32 @@ html, body, h1, p {
         width: 225px;
         height: 80px;
         transition: 400ms; }
-      .headerComponent .headerButtonContainer button svg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        width: 100%;
-        height: 100%;
-        color: white;
-        font-size: 3em; }
 
 .gitHubButton {
   margin-right: 10px; }
+  .gitHubButton a {
+    width: 100%; }
+    .gitHubButton a svg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-size: 3em;
+      width: 100%; }
 
 .linkedInButton {
   margin-left: 10px; }
+  .linkedInButton a {
+    width: 100%; }
+    .linkedInButton a svg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-size: 3em;
+      width: 100%; }
 
 .aboutComponent {
   display: flex;
