@@ -75,26 +75,32 @@
 }
 @mixin educationInfo {
   .educationInfo {
-    display: flex;
+    display:flex;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    align-content: center;
-    min-height: 140px;
     height: 100%;
     width: 100%;
     .educationWrapper {
       display: flex;
-      height: 85%;
+      height: 70%;
       flex-direction: column;
       justify-content: center;
       align-content: center;
       align-self: center;
       color: white;
+      margin-bottom: 5%;
+      @include smallPhone {
+
+      }
       p {
-        font-size: $fontSizeRegular;
+        font-size: $buttonTextLarge;
         font-family: $mainFontFamily;
         font-weight: medium;
         height: auto;
+        @include smallPhone {
+          font-size: 16px;
+        }
         @include tablet {
           font-size: $fontSizeMedium;
         }
@@ -371,8 +377,16 @@
 }
 
 //Media Queries//
+$smallPhone: 320px;
 $tablet: 800px;
 $desktop: 1100px;
+
+
+@mixin smallPhone {
+  @media (min-width: $smallPhone) and ( max-width: 350px) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media (min-width: $tablet) {

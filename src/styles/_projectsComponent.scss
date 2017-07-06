@@ -155,12 +155,12 @@
         justify-content: flex-end;
         align-items: center;
         order: 2;
-        flex-basis: 49%;
+        width: 49%;
         height: 20%;
         transition: 400ms;
         @include tablet {
           order: 1;
-          flex-basis: 10%;
+          width: 10%;
           height: 100%;
         }
         .previousButton {

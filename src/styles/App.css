@@ -531,7 +531,7 @@ html, body, h1, p {
         text-align: center;
         align-items: flex-end;
         height: 50%;
-        width: 75%;
+        width: 90%;
         max-width: 800px;
         min-width: 300px; }
         @media (min-width: 800px) {
@@ -542,6 +542,9 @@ html, body, h1, p {
           font-family: "Roboto-Light", sarif;
           font-size: 24px;
           text-shadow: -1.5px 2px 1px #000; }
+          @media (min-width: 320px) and (max-width: 350px) {
+            .headerComponent .headerContainer .headerWrapper .headerTextWrapper p {
+              font-size: 22px; } }
           @media (min-width: 800px) {
             .headerComponent .headerContainer .headerWrapper .headerTextWrapper p {
               font-size: 28px; } }
@@ -554,6 +557,9 @@ html, body, h1, p {
     height: 31%;
     width: 95%;
     max-width: 450px; }
+    @media (min-width: 320px) and (max-width: 350px) {
+      .headerComponent .headerButtonContainer {
+        width: 90%; } }
     .headerComponent .headerButtonContainer button {
       display: flex;
       justify-content: center;
@@ -657,7 +663,7 @@ html, body, h1, p {
   .aboutWrapper p {
     font-size: 16px;
     color: #e4e7ec;
-    max-width: 365px;
+    max-width: 320px;
     min-width: 300px;
     height: auto; }
     @media (min-width: 800px) {
@@ -687,6 +693,9 @@ html, body, h1, p {
   display: flex;
   flex-direction: column;
   margin-top: 2.5px; }
+  @media (min-width: 320px) and (max-width: 350px) {
+    .educationComponentWrapper {
+      min-height: 475px; } }
   @media (min-width: 800px) {
     .educationComponentWrapper {
       height: 90vh;
@@ -738,25 +747,28 @@ html, body, h1, p {
   background-color: #E8B74B; }
   .redOpen .educationInfo {
     display: flex;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    align-content: center;
-    min-height: 140px;
     height: 100%;
     width: 100%; }
     .redOpen .educationInfo .educationWrapper {
       display: flex;
-      height: 85%;
+      height: 70%;
       flex-direction: column;
       justify-content: center;
       align-content: center;
       align-self: center;
-      color: white; }
+      color: white;
+      margin-bottom: 5%; }
       .redOpen .educationInfo .educationWrapper p {
-        font-size: 20px;
+        font-size: 18px;
         font-family: "Roboto-Light", sarif;
         font-weight: medium;
         height: auto; }
+        @media (min-width: 320px) and (max-width: 350px) {
+          .redOpen .educationInfo .educationWrapper p {
+            font-size: 16px; } }
         @media (min-width: 800px) {
           .redOpen .educationInfo .educationWrapper p {
             font-size: 24px; } }
@@ -834,25 +846,28 @@ html, body, h1, p {
   background: #177E72; }
   .universityOpen .educationInfo {
     display: flex;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    align-content: center;
-    min-height: 140px;
     height: 100%;
     width: 100%; }
     .universityOpen .educationInfo .educationWrapper {
       display: flex;
-      height: 85%;
+      height: 70%;
       flex-direction: column;
       justify-content: center;
       align-content: center;
       align-self: center;
-      color: white; }
+      color: white;
+      margin-bottom: 5%; }
       .universityOpen .educationInfo .educationWrapper p {
-        font-size: 20px;
+        font-size: 18px;
         font-family: "Roboto-Light", sarif;
         font-weight: medium;
         height: auto; }
+        @media (min-width: 320px) and (max-width: 350px) {
+          .universityOpen .educationInfo .educationWrapper p {
+            font-size: 16px; } }
         @media (min-width: 800px) {
           .universityOpen .educationInfo .educationWrapper p {
             font-size: 24px; } }
@@ -930,25 +945,28 @@ html, body, h1, p {
   background: #3E3C50; }
   .collegeOpen .educationInfo {
     display: flex;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    align-content: center;
-    min-height: 140px;
     height: 100%;
     width: 100%; }
     .collegeOpen .educationInfo .educationWrapper {
       display: flex;
-      height: 85%;
+      height: 70%;
       flex-direction: column;
       justify-content: center;
       align-content: center;
       align-self: center;
-      color: white; }
+      color: white;
+      margin-bottom: 5%; }
       .collegeOpen .educationInfo .educationWrapper p {
-        font-size: 20px;
+        font-size: 18px;
         font-family: "Roboto-Light", sarif;
         font-weight: medium;
         height: auto; }
+        @media (min-width: 320px) and (max-width: 350px) {
+          .collegeOpen .educationInfo .educationWrapper p {
+            font-size: 16px; } }
         @media (min-width: 800px) {
           .collegeOpen .educationInfo .educationWrapper p {
             font-size: 24px; } }
@@ -2220,13 +2238,13 @@ html, body, h1, p {
         justify-content: flex-end;
         align-items: center;
         order: 2;
-        flex-basis: 49%;
+        width: 49%;
         height: 20%;
         transition: 400ms; }
         @media (min-width: 800px) {
           .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer {
             order: 1;
-            flex-basis: 10%;
+            width: 10%;
             height: 100%; } }
         .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton {
           width: 85%;

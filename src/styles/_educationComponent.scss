@@ -4,6 +4,9 @@
   display: flex;
   flex-direction: column;
   margin-top: $componentMargin;
+  @include smallPhone {
+    min-height: 475px;
+  }
   @include tablet {
    height: 90vh;
    max-height: 800px;
