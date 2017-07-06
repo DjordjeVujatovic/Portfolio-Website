@@ -564,6 +564,7 @@ html, body, h1, p {
           color: white;
           font-family: "Roboto-Light", sarif;
           font-size: 24px;
+          font-weight: 700;
           text-shadow: -1.5px 2px 1px #000; }
           @media (min-width: 320px) and (max-width: 350px) {
             .headerComponent .headerContainer .headerWrapper .headerTextWrapper p {
