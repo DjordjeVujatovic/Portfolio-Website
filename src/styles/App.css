@@ -680,6 +680,9 @@ html, body, h1, p {
   background-size: cover;
   min-width: 100px;
   margin-top: 2.5px; }
+  @media (min-width: 320px) and (max-width: 350px) {
+    .educationHeroBanner {
+      min-height: 375px; } }
   @media (min-width: 800px) {
     .educationHeroBanner {
       height: 90vh;
@@ -1009,9 +1012,12 @@ html, body, h1, p {
   background-size: cover;
   min-width: 100px;
   margin-top: 2.5px; }
+  @media (min-width: 320px) and (max-width: 350px) {
+    .booksHeroBanner {
+      min-height: 375px; } }
   @media (min-width: 800px) {
     .booksHeroBanner {
-      min-height: 370px; } }
+      min-height: 375px; } }
   @media (min-width: 1100px) {
     .booksHeroBanner {
       height: 60vh; } }
@@ -1476,6 +1482,9 @@ html, body, h1, p {
   background-size: cover;
   min-width: 100px;
   margin-top: 2.5px; }
+  @media (min-width: 320px) and (max-width: 350px) {
+    .toolsHeroBanner {
+      min-height: 375px; } }
   @media (min-width: 800px) {
     .toolsHeroBanner {
       height: 85vh;
@@ -2075,9 +2084,12 @@ html, body, h1, p {
   background-size: cover;
   min-width: 100px;
   margin-top: 2.5px; }
+  @media (min-width: 320px) and (max-width: 350px) {
+    .projectsHeroBanner {
+      min-height: 375px; } }
   @media (min-width: 800px) {
     .projectsHeroBanner {
-      min-height: 370px; } }
+      min-height: 375px; } }
   @media (min-width: 1100px) {
     .projectsHeroBanner {
       height: 70vh; } }
@@ -2641,6 +2653,9 @@ html, body, h1, p {
   background-size: cover;
   min-width: 100px;
   margin-top: 2.5px; }
+  @media (min-width: 320px) and (max-width: 350px) {
+    .findMeHeroBanner {
+      min-height: 375px; } }
   @media (min-width: 800px) {
     .findMeHeroBanner {
       min-height: 315px; } }

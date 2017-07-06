@@ -9,6 +9,9 @@
   background-size: cover;
   min-width: 100px;
   margin-top: $componentMargin;
+  @include smallPhone {
+    min-height: 375px;
+  }
   @include tablet {
     min-height: 315px;
   }
