@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: column;
   background-color: #171717;
-  height: 100vh;
+  height: 100%;
   transition: opacity 500ms ease-in;
   position: absolute;
   position: fixed;
   width: 100%;
   opacity: 0.97;
+  z-index: 1;
   .mobileMenuContainer {
     height: 90%;
     width: 100%;
@@ -25,14 +26,14 @@
       text-align: center;
       .buttonContainer {
           width: 100%;
-          height: 15%;
+          height: 16%;
           display: flex;
           justify-content: center;
           align-items: center;
           text-decoration: none;
           text-transform: uppercase;
           &:hover {
-            background-color: $coreJungleGreen;
+            background-color: $shadeTwo;
             cursor: pointer;
           }
           .menuItems {
