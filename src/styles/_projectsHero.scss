@@ -22,7 +22,7 @@
     p {
       color: $coreWhite;
       font-size: $fontSizeLarge;
-      font-family: $mainFontFamily;
+      font-family: $headerFontFamily;
       text-transform: uppercase;
       text-shadow: -1px 1px 2px #000;
       @include tablet {
