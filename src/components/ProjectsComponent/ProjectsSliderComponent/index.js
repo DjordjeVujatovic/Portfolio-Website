@@ -1,4 +1,6 @@
 import React from 'react';
+import FaChevronLeft from 'react-icons/lib/fa/chevron-left';
+import FaChevronRight from 'react-icons/lib/fa/chevron-right';
 import PropTypes from 'prop-types';
 import Project from '../Project';
 
@@ -8,7 +10,7 @@ const ProjectsSliderComponent = ({ projects, projectState, nextSlide, filter, pr
     <div className="projectsSliderContainer">
       <div className="projectsSliderWrapper">
         <div className="previousButtonContainer">
-          <button className="previousButton" onClick={() => previousSlide(projects.id)}><i className="fa fa-chevron-left fa-2x" aria-hidden="true" /></button>
+          <button className="previousButton" onClick={() => previousSlide(projects.id)}><FaChevronLeft /></button>
         </div>
         {projects
           .map((project, key) => (
@@ -32,7 +34,7 @@ const ProjectsSliderComponent = ({ projects, projectState, nextSlide, filter, pr
             />
           ))}
         <div className="nextButtonContainer">
-          <button className="nextButton" onClick={() => nextSlide(projects.id) && changeComponentState(projects.id)}><i className="fa fa-chevron-right fa-2x" aria-hidden="true" /></button>
+          <button className="nextButton" onClick={() => nextSlide(projects.id) && changeComponentState(projects.id)}><FaChevronRight /></button>
         </div>
       </div>
     </div>

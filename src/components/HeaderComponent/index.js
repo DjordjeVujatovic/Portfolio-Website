@@ -1,4 +1,6 @@
 import React from 'react';
+import FaGithub from 'react-icons/lib/fa/github';
+import FaLinkedin from 'react-icons/lib/fa/linkedin';
 
 const HeaderComponent = () => {
   return (
@@ -12,10 +14,10 @@ const HeaderComponent = () => {
           </div>
           <div className="headerButtonContainer">
             <button className="gitHubButton">
-              <a href="https://github.com/DjordjeVujatovic"><i className="fa fa-github" aria-hidden="true" /></a>
+              <a href="https://github.com/DjordjeVujatovic"><FaGithub /></a>
             </button>
             <button className="linkedInButton">
-              <a href="https://www.linkedin.com/in/djordjevujatovic/"><i className="fa fa-linkedin" aria-hidden="true" /></a>
+              <a href="https://www.linkedin.com/in/djordjevujatovic/"><FaLinkedin /></a>
             </button>
           </div>
         </div>

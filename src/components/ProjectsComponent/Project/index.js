@@ -1,8 +1,10 @@
 import React from 'react';
+import FaClose from 'react-icons/lib/fa/close';
+import FaGithub from 'react-icons/lib/fa/github';
+import GoBook from 'react-icons/lib/go/book';
 
 
 const Project = ({ slideCount, readMoreState, name, id, snippet, githubRepo, description, toolsUsed, backgroundImage, readMore, closeReadMore }) => { //eslint-disable-line
-  console.log(githubRepo);
   const backgroundProjectImage = {
     display: 'flex',
     flexDirection: 'column',
@@ -50,9 +52,9 @@ const Project = ({ slideCount, readMoreState, name, id, snippet, githubRepo, des
                 </div>
               </div>
               <div className="readMoreButtonContainer">
-                <button className="closeReadMoreButton" onClick={() => closeReadMore()}><i className="fa fa-times fa-2x" aria-hidden="true" /></button>
+                <button className="closeReadMoreButton" onClick={() => closeReadMore()}><FaClose /></button>
                 <button className="gitHubButton">
-                  <a href={`${githubRepo}`}><i className="fa fa-github fa-3x" aria-hidden="true" /></a>
+                  <a href={`${githubRepo}`}><FaGithub /></a>
                 </button>
               </div>
             </div>
@@ -75,7 +77,7 @@ const Project = ({ slideCount, readMoreState, name, id, snippet, githubRepo, des
             </div>
           </div>
           <div className="readMoreButtonContainer">
-            <button className="readMoreButton" onClick={() => readMore({ id })}>Read More</button>
+            <button className="readMoreButton" onClick={() => readMore({ id })}><GoBook /></button>
           </div>
         </div>
       }

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FaClose from 'react-icons/lib/fa/close';
 import SectionsComponent from './SectionsComponent';
 import HeroBanner from '../HeroBanner';
 
@@ -10,7 +11,7 @@ const BooksComponent = ({ books, booksComponentState, booksSectionsState, expand
       {booksComponentState.componentExpand ?
         <div className="booksOpenWrapper">
           <div className="buttonContainer">
-            <button className={booksComponentState.buttonClass} onClick={() => closeBooksComponent()}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
+            <button className={booksComponentState.buttonClass} onClick={() => closeBooksComponent()}><FaClose /></button>
           </div>
           <div className="componentsContainer">
             <div className="componentsWrapper">

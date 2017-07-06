@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import FaBars from 'react-icons/lib/fa/bars';
 
 const MobileNavBar = ({ expand }) => (
   <div className="mobileNavBar">
     <div className="nameContainer">
       <p>Djordje Vujatovic</p>
     </div>
-    <button className="openButton" onClick={() => expand()}><i className="fa fa-bars fa-2x" aria-hidden="true" />Open</button>
+    <button className="openButton" onClick={() => expand()}><FaBars /></button>
     <div className="fullScreenNav">
       <div className="fullScreenButtonContainer">
         <NavLink activeClassName="navLink" to="/"><button>Home</button></NavLink>

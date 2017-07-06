@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FaClose from 'react-icons/lib/fa/close';
 import ProjectsSliderComponent from './ProjectsSliderComponent';
 
 const ProjectsComponent = ({ projects, projectsComponentState, projectState, readMoreState, filter, expandProjectsComponent, closeProjectsComponent, nextSlide, previousSlide, readMore, changeComponentState, closeReadMore }) => { // eslint-disable-line
@@ -8,7 +9,7 @@ const ProjectsComponent = ({ projects, projectsComponentState, projectState, rea
       {projectsComponentState.componentExpand ?
         <div className="projectsOpenWrapper">
           <div className="buttonContainer">
-            <button className={projectsComponentState.buttonClass} onClick={() => closeProjectsComponent()}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
+            <button className={projectsComponentState.buttonClass} onClick={() => closeProjectsComponent()}><FaClose /></button>
           </div>
           <div className="componentsContainer">
             <div className="componentsWrapper">

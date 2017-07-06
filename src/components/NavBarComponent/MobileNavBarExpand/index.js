@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import FaGithub from 'react-icons/lib/fa/github';
+import FaLinkedin from 'react-icons/lib/fa/linkedin';
 
 
 const MobileNavBarExpanded = ({ closeExpand, expandSubMenu }) => (
@@ -25,10 +27,10 @@ const MobileNavBarExpanded = ({ closeExpand, expandSubMenu }) => (
         </div>
         <div className="socialContainer">
           <button className="socialButton">
-            <a href="https://github.com/DjordjeVujatovic"><i className="fa fa-github" aria-hidden="true" /></a>
+            <a href="https://github.com/DjordjeVujatovic"><FaGithub /></a>
           </button>
           <button className="socialButton">
-            <a href="https://www.linkedin.com/in/djordjevujatovic/"><i className="fa fa-linkedin" aria-hidden="true" /></a>
+            <a href="https://www.linkedin.com/in/djordjevujatovic/"><FaLinkedin /></a>
           </button>
         </div>
       </div>

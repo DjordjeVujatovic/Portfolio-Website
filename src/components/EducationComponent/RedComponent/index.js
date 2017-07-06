@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FaClose from 'react-icons/lib/fa/close';
 
 const RedComponent = ({ education, redState, expandRedComponent, closeRedComponent }) => { //eslint-disable-line
   return (
     <div className={redState.classState}>
       {redState.componentExpand ?
-        <button onClick={() => closeRedComponent()} className={redState.buttonClass}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
+        <button onClick={() => closeRedComponent()} className={redState.buttonClass}><FaClose /></button>
         :
         <button onClick={() => expandRedComponent()} className={redState.buttonClass}>{redState.buttonName}</button>
       }

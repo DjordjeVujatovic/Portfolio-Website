@@ -29,18 +29,18 @@
       height: 100%;
       width: 55%;
       min-width: 225px;
-      max-width: 350px;
-      i {
+      max-width: 250px;
+      svg {
         color: $coreLightGray;
-        font-size: 7em;
+        font-size: 6em;
          transition: 200ms;
         &:hover {
           color: $coreJungleGreen;
-          font-size: 8em;
+          font-size: 7em;
           transition: 200ms;
         }
         &:active {
-          font-size: 7em;
+          font-size: 6em;
         }
       }
     }

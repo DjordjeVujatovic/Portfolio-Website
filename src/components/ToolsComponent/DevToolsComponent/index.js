@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FaClose from 'react-icons/lib/fa/close';
 
 const DevToolsComponent = ({ tools, devToolsState, expandDevToolsComponent, closeDevToolsComponent }) => { //eslint-disable-line
   return (
@@ -21,7 +22,7 @@ const DevToolsComponent = ({ tools, devToolsState, expandDevToolsComponent, clos
             </div>
           </div>
           <div className="buttonWrapper">
-            <button onClick={() => closeDevToolsComponent()} className={devToolsState.buttonClass}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
+            <button onClick={() => closeDevToolsComponent()} className={devToolsState.buttonClass}><FaClose /></button>
           </div>
         </div>
         :

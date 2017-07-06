@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FaClose from 'react-icons/lib/fa/close';
 
 const ExperienceWithComponent = ({ tools, experienceState, expandExperienceComponent, closeExperienceComponent }) => { //eslint-disable-line
   return (
@@ -21,7 +22,7 @@ const ExperienceWithComponent = ({ tools, experienceState, expandExperienceCompo
             </div>
           </div>
           <div className="buttonWrapper">
-            <button onClick={() => closeExperienceComponent()} className={experienceState.buttonClass}><i className="fa fa-times fa-3x" aria-hidden="true" /></button>
+            <button onClick={() => closeExperienceComponent()} className={experienceState.buttonClass}><FaClose /></button>
           </div>
         </div>
         :

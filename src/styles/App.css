@@ -356,10 +356,10 @@ html, body, h1, p {
     cursor: pointer; }
   .openButton:focus {
     outline: 0; }
-  .openButton .fa {
+  .openButton svg {
     font-size: 2em;
     transition: 200ms; }
-    .openButton .fa:hover {
+    .openButton svg:hover {
       font-size: 2.5em;
       transition: 200ms; }
 
@@ -584,7 +584,7 @@ html, body, h1, p {
         width: 225px;
         height: 80px;
         transition: 400ms; }
-      .headerComponent .headerButtonContainer button a {
+      .headerComponent .headerButtonContainer button svg {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -774,7 +774,7 @@ html, body, h1, p {
       outline: 0; }
     .redOpen .redButtonOpen:active {
       flex-basis: 25%; }
-    .redOpen .redButtonOpen .fa {
+    .redOpen .redButtonOpen svg {
       font-size: 2.5em;
       color: white;
       text-shadow: 0.5px 2px 4px #000; }
@@ -870,7 +870,7 @@ html, body, h1, p {
       outline: 0; }
     .universityOpen .universityButtonOpen:active {
       flex-basis: 25%; }
-    .universityOpen .universityButtonOpen .fa {
+    .universityOpen .universityButtonOpen svg {
       font-size: 2.5em;
       color: white;
       text-shadow: 0.5px 2px 4px #000; }
@@ -966,7 +966,7 @@ html, body, h1, p {
       outline: 0; }
     .collegeOpen .collegeButtonOpen:active {
       flex-basis: 25%; }
-    .collegeOpen .collegeButtonOpen .fa {
+    .collegeOpen .collegeButtonOpen svg {
       font-size: 2.5em;
       color: white;
       text-shadow: 0.5px 2px 4px #000; }
@@ -1088,7 +1088,7 @@ html, body, h1, p {
           outline: 0; }
         .booksOpen .booksOpenWrapper .buttonContainer .booksButtonOpen:active {
           height: 100%; }
-        .booksOpen .booksOpenWrapper .buttonContainer .booksButtonOpen .fa {
+        .booksOpen .booksOpenWrapper .buttonContainer .booksButtonOpen svg {
           font-size: 4em;
           text-shadow: 0.5px 2px 4px #000; }
     .booksOpen .booksOpenWrapper .componentsContainer {
@@ -1316,7 +1316,7 @@ html, body, h1, p {
       box-shadow: 0px 4px 7px 0px black;
       text-transform: uppercase;
       color: white;
-      font-size: 14px;
+      font-size: 18px;
       font-family: "Roboto-Light", sarif;
       background: #171717;
       opacity: .95; }
@@ -1329,6 +1329,8 @@ html, body, h1, p {
       .sectionsComponentContainer .buttonsContainer .buttonOpenFavorites:active {
         width: 35%;
         height: 85%; }
+      .sectionsComponentContainer .buttonsContainer .buttonOpenFavorites svg {
+        font-size: 2em; }
     .sectionsComponentContainer .buttonsContainer .buttonCloseReading {
       width: 30%;
       height: 65%;
@@ -1367,7 +1369,7 @@ html, body, h1, p {
       box-shadow: 0px 4px 7px 0px black;
       text-transform: uppercase;
       color: white;
-      font-size: 14px;
+      font-size: 18px;
       font-family: "Roboto-Light", sarif;
       background: #171717;
       opacity: .95; }
@@ -1380,6 +1382,8 @@ html, body, h1, p {
       .sectionsComponentContainer .buttonsContainer .buttonOpenReading:active {
         width: 35%;
         height: 85%; }
+      .sectionsComponentContainer .buttonsContainer .buttonOpenReading svg {
+        font-size: 2em; }
     .sectionsComponentContainer .buttonsContainer .buttonCloseFuture {
       width: 30%;
       height: 65%;
@@ -1418,7 +1422,7 @@ html, body, h1, p {
       box-shadow: 0px 4px 7px 0px black;
       text-transform: uppercase;
       color: white;
-      font-size: 14px;
+      font-size: 18px;
       font-family: "Roboto-Light", sarif;
       background: #171717;
       opacity: .95; }
@@ -1431,6 +1435,8 @@ html, body, h1, p {
       .sectionsComponentContainer .buttonsContainer .buttonOpenFuture:active {
         width: 35%;
         height: 85%; }
+      .sectionsComponentContainer .buttonsContainer .buttonOpenFuture svg {
+        font-size: 2em; }
 
 .toolsHeroBanner {
   display: flex;
@@ -1622,7 +1628,7 @@ html, body, h1, p {
           @media (min-width: 800px) {
             .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen:active {
               height: 75px; } }
-        .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen .fa {
+        .languageComponentOpen .languagesInfo .buttonWrapper .languageButtonOpen svg {
           font-size: 2em;
           text-shadow: 0.5px 2px 4px #000; }
 
@@ -1757,7 +1763,7 @@ html, body, h1, p {
           @media (min-width: 800px) {
             .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen:active {
               height: 75px; } }
-        .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen .fa {
+        .technologiesComponentOpen .technologiesInfo .buttonWrapper .technologiesButtonOpen svg {
           font-size: 2em;
           text-shadow: 0.5px 2px 4px #000; }
 
@@ -1892,7 +1898,7 @@ html, body, h1, p {
           @media (min-width: 800px) {
             .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen:active {
               height: 75px; } }
-        .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen .fa {
+        .devToolsComponentOpen .devToolsInfo .buttonWrapper .devToolsButtonOpen svg {
           font-size: 2em;
           text-shadow: 0.5px 2px 4px #000; }
 
@@ -2027,7 +2033,7 @@ html, body, h1, p {
           @media (min-width: 800px) {
             .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen:active {
               height: 75px; } }
-        .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen .fa {
+        .experienceComponentOpen .experienceInfo .buttonWrapper .experienceButtonOpen svg {
           font-size: 2em;
           text-shadow: 0.5px 2px 4px #000; }
 
@@ -2158,7 +2164,7 @@ html, body, h1, p {
           outline: 0; }
         .projectsOpen .projectsOpenWrapper .buttonContainer .projectsButtonOpen:active {
           height: 100%; }
-        .projectsOpen .projectsOpenWrapper .buttonContainer .projectsButtonOpen .fa {
+        .projectsOpen .projectsOpenWrapper .buttonContainer .projectsButtonOpen svg {
           font-size: 3em;
           text-shadow: 0.5px 2px 4px #000; }
     .projectsOpen .projectsOpenWrapper .componentsContainer {
@@ -2249,8 +2255,11 @@ html, body, h1, p {
               .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton:active {
                 width: 90%;
                 height: 95%; } }
-          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton .fa {
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton svg {
             text-shadow: 0.5px 2px 4px #000; }
+            @media (min-width: 800px) {
+              .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .previousButtonContainer .previousButton svg {
+                font-size: 3em; } }
       .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer {
         display: flex;
         justify-content: flex-start;
@@ -2299,8 +2308,11 @@ html, body, h1, p {
               .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton:active {
                 width: 90%;
                 height: 95%; } }
-          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton .fa {
+          .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton svg {
             text-shadow: 0.5px 2px 4px #000; }
+            @media (min-width: 800px) {
+              .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .nextButtonContainer .nextButton svg {
+                font-size: 3em; } }
       .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer {
         flex-basis: 100%;
         order: 1;
@@ -2397,6 +2409,8 @@ html, body, h1, p {
               .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .readMoreButtonContainer .readMoreButton:active {
                 width: 50%;
                 height: 70%; }
+              .componentsWrapper .projectsSliderContainer .projectsSliderWrapper .projectComponentContainer .projectContainer .readMoreButtonContainer .readMoreButton svg {
+                font-size: 2.5em; }
 
 .readMoreContainer {
   display: flex;
@@ -2412,7 +2426,7 @@ html, body, h1, p {
   .readMoreContainer .readMoreWrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 92%;
     height: 95%; }
     .readMoreContainer .readMoreWrapper .topContainer {
       display: flex;
@@ -2426,7 +2440,7 @@ html, body, h1, p {
         justify-content: center;
         order: 2;
         flex-basis: 35%;
-        height: 90%;
+        height: 95%;
         font-size: 15px;
         background: #171717;
         opacity: .88;
@@ -2450,7 +2464,7 @@ html, body, h1, p {
               font-size: 24px; } }
         .readMoreContainer .readMoreWrapper .topContainer .toolsUsedContainer .toolsUsed {
           text-align: center;
-          font-size: 14px;
+          font-size: 12.5px;
           color: white;
           font-family: "Roboto-Light", sarif;
           margin: 2%; }
@@ -2531,18 +2545,16 @@ html, body, h1, p {
       .readMoreContainer .readMoreButtonContainer .closeReadMoreButton:active {
         width: 30%;
         height: 80%; }
-      .readMoreContainer .readMoreButtonContainer .closeReadMoreButton .fa {
+      .readMoreContainer .readMoreButtonContainer .closeReadMoreButton svg {
         width: 100%;
-        height: 100%;
         font-size: 2em; }
         @media (min-width: 800px) {
-          .readMoreContainer .readMoreButtonContainer .closeReadMoreButton .fa {
-            font-size: 3em; } }
-        .readMoreContainer .readMoreButtonContainer .closeReadMoreButton .fa:hover {
-          font-size: 3em;
+          .readMoreContainer .readMoreButtonContainer .closeReadMoreButton svg {
+            font-size: 5em; } }
+        .readMoreContainer .readMoreButtonContainer .closeReadMoreButton svg:hover {
           color: #171717;
           transition: 200ms;
-          font-size: 4em; }
+          font-size: 5.5em; }
     .readMoreContainer .readMoreButtonContainer .gitHubButton {
       display: flex;
       width: 40%;
@@ -2569,25 +2581,26 @@ html, body, h1, p {
         width: 40%;
         height: 90%; }
       .readMoreContainer .readMoreButtonContainer .gitHubButton a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: white;
-        width: 100%;
-        height: 37%;
-        font-size: 1em;
-        transition: 200ms; }
-        @media (min-width: 800px) {
-          .readMoreContainer .readMoreButtonContainer .gitHubButton a {
-            font-size: 1.5em; } }
-        .readMoreContainer .readMoreButtonContainer .gitHubButton a:hover {
-          font-size: 1.5em;
-          color: #1B998B;
+        width: 100%; }
+        .readMoreContainer .readMoreButtonContainer .gitHubButton a svg {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: white;
+          width: 100%;
+          font-size: 2.5em;
           transition: 200ms; }
           @media (min-width: 800px) {
-            .readMoreContainer .readMoreButtonContainer .gitHubButton a:hover {
-              font-size: 2em; } }
+            .readMoreContainer .readMoreButtonContainer .gitHubButton a svg {
+              font-size: 5em; } }
+          .readMoreContainer .readMoreButtonContainer .gitHubButton a svg:hover {
+            font-size: 3em;
+            color: #1B998B;
+            transition: 200ms; }
+            @media (min-width: 800px) {
+              .readMoreContainer .readMoreButtonContainer .gitHubButton a svg:hover {
+                font-size: 5.5em; } }
 
 .findMeHeroBanner {
   height: 50vh;
@@ -2647,17 +2660,17 @@ html, body, h1, p {
       height: 100%;
       width: 55%;
       min-width: 225px;
-      max-width: 350px; }
-      .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper i {
+      max-width: 250px; }
+      .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper svg {
         color: #e4e7ec;
-        font-size: 7em;
+        font-size: 6em;
         transition: 200ms; }
-        .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper i:hover {
+        .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper svg:hover {
           color: #1B998B;
-          font-size: 8em;
+          font-size: 7em;
           transition: 200ms; }
-        .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper i:active {
-          font-size: 7em; }
+        .findMeContainer .fontAwesomeContainer .fontAwesomeWrapper svg:active {
+          font-size: 6em; }
   .findMeContainer .findMeTextContainer {
     height: 35%;
     display: flex;
