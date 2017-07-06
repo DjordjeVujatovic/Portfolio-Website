@@ -38,6 +38,7 @@
           color: $coreWhite;
           font-family: $mainFontFamily;
           font-size: $fontSizeMedium;
+          font-weight: 700;
           text-shadow: -1.5px 2px 1px #000;
           @include smallPhone {
             font-size: 22px;
