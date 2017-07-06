@@ -386,7 +386,7 @@ html, body, h1, p {
       justify-content: space-between;
       height: 100%;
       width: 100%;
-      min-height: 400px;
+      min-height: 300px;
       text-align: center; }
       .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer {
         width: 100%;
@@ -506,11 +506,10 @@ html, body, h1, p {
 
 .headerComponent {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%), url("../content/BackgroundImages/backgroundImage.jpg") bottom center no-repeat;
   height: 100vh;
-  min-height: 670px;
+  min-height: 570px;
   width: 100%;
   background-size: cover;
   flex-wrap: wrap; }
@@ -518,14 +517,14 @@ html, body, h1, p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    height: 80%;
     width: 100%; }
     .headerComponent .headerContainer .headerWrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
-      height: 90%;
+      height: 70%;
       width: 100%; }
       .headerComponent .headerContainer .headerWrapper .headerTextWrapper {
         display: flex;
@@ -684,7 +683,7 @@ html, body, h1, p {
 
 .educationComponentWrapper {
   height: 50vh;
-  min-height: 650px;
+  min-height: 550px;
   display: flex;
   flex-direction: column;
   margin-top: 2.5px; }
@@ -1462,7 +1461,7 @@ html, body, h1, p {
   @media (min-width: 800px) {
     .toolsHeroBanner {
       height: 85vh;
-      min-height: 575px; } }
+      min-height: 570px; } }
   @media (min-width: 1100px) {
     .toolsHeroBanner {
       height: 90vh; } }
@@ -1489,11 +1488,11 @@ html, body, h1, p {
   @media (min-width: 800px) {
     .toolsComponentWrapper {
       height: 85vh;
-      min-height: 600px; } }
+      min-height: 550px; } }
   @media (min-width: 1100px) {
     .toolsComponentWrapper {
       height: 90vh;
-      min-height: 650px; } }
+      min-height: 550px; } }
   .toolsComponentWrapper .left {
     display: flex;
     flex-direction: column;
