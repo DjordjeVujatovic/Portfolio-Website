@@ -655,7 +655,7 @@ html, body, h1, p {
       .aboutWrapper h3 {
         font-size: 24px; } }
   .aboutWrapper p {
-    font-size: 20px;
+    font-size: 16px;
     color: #e4e7ec;
     max-width: 365px;
     min-width: 300px;
@@ -1480,7 +1480,7 @@ html, body, h1, p {
 
 .toolsComponentWrapper {
   height: 50vh;
-  min-height: 500px;
+  min-height: 480px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
