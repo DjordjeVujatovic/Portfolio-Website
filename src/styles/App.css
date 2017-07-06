@@ -2459,6 +2459,7 @@ html, body, h1, p {
           display: flex;
           justify-content: center;
           align-items: center;
+          text-align: center;
           flex-basis: 20%;
           font-size: 18px;
           color: white;
