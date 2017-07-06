@@ -410,7 +410,7 @@ html, body, h1, p {
           border: none; }
           @media (min-width: 700px) {
             .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer .menuItems {
-              font-size: 35px; } }
+              font-size: 30px; } }
           .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer .menuItems:focus {
             outline: 0; }
           .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer .menuItemshover {
@@ -454,9 +454,6 @@ html, body, h1, p {
   height: 15%;
   width: 100%;
   background: #1B998B; }
-  @media (min-width: 700px) {
-    .socialContainer {
-      height: 20%; } }
   .socialContainer .socialWrapper {
     width: 70%;
     max-width: 350px; }
@@ -468,20 +465,17 @@ html, body, h1, p {
     height: 100%;
     background: transparent;
     border: none; }
-    @media (min-width: 700px) {
-      .socialContainer .socialButton {
-        width: 35%; } }
     .socialContainer .socialButton svg {
       font-size: 5em;
       color: white; }
       @media (min-width: 700px) {
         .socialContainer .socialButton svg {
-          font-size: 10em; } }
+          font-size: 7em; } }
       .socialContainer .socialButton svg:hover {
         font-size: 5.5em; }
         @media (min-width: 700px) {
           .socialContainer .socialButton svg:hover {
-            font-size: 11em; } }
+            font-size: 7.5em; } }
 
 .mobileSubMenu {
   display: flex;

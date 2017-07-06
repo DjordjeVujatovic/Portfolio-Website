@@ -45,7 +45,7 @@
             color: $coreLightGray;
             border: none;
             @include tablet {
-              font-size: 35px;
+              font-size: 30px;
             }
             &:focus {
               outline: 0;
@@ -100,10 +100,6 @@
   height: 15%;
   width: 100%;
   background: $coreJungleGreen;
-  @include tablet {
-    height: 20%;
-  }
-
   .socialWrapper {
     width: 70%;
     max-width: 350px;
@@ -115,20 +111,17 @@
     width: 25%;
     height: 100%;
     background:transparent;
-    @include tablet {
-      width: 35%;
-    }
     border: none;
     svg {
       font-size: 5em;
       color: white;
       @include tablet {
-        font-size: 10em;
+        font-size: 7em;
       }
       &:hover {
         font-size: 5.5em;
         @include tablet {
-          font-size: 11em;
+          font-size: 7.5em;
         }
       }
     }
