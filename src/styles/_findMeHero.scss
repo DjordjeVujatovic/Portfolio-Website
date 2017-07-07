@@ -8,7 +8,6 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, .20) 0%, rgba(0, 0, 0, .1) 100%), url('../content/BackgroundImages/footerCoastline.jpg' ) bottom center no-repeat;
   background-size: cover;
   min-width: 100px;
-  background-attachment: fixed;
   margin-top: $componentMargin;
   @include smallPhone {
     min-height: 375px;
