@@ -13,7 +13,7 @@
     align-items: center;
     color: $coreLightGray;
     font-size: $fontSizeRegular;
-    font-family: $headerFontFamily;
+    font-family: $mainFontFamily;
     text-transform: uppercase;
     align-self:center;
     padding-left: 13px;
@@ -48,7 +48,7 @@
           transition: 800ms;
           color: $coreJungleGreen;
           text-transform: uppercase;
-          font-family: $headerFontFamily;
+          font-family: $mainFontFamily;
           text-decoration: none;
           margin-right: 2px;
           &:hover {

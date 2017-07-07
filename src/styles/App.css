@@ -291,7 +291,7 @@ html, body, h1, p {
     align-items: center;
     color: #e4e7ec;
     font-size: 20px;
-    font-family: "Roboto-Medium", sarif;
+    font-family: "Rubik-Light", sarif;
     text-transform: uppercase;
     align-self: center;
     padding-left: 13px; }
@@ -326,7 +326,7 @@ html, body, h1, p {
             transition: 800ms;
             color: #1B998B;
             text-transform: uppercase;
-            font-family: "Roboto-Medium", sarif;
+            font-family: "Rubik-Light", sarif;
             text-decoration: none;
             margin-right: 2px; }
             .mobileNavBar .fullScreenNav .fullScreenButtonContainer button:hover {
@@ -522,7 +522,7 @@ html, body, h1, p {
     width: 100%;
     color: #e4e7ec;
     font-size: 20px;
-    font-family: "Roboto", sans; }
+    font-family: "Rubik-Light", sarif; }
 
 .headerComponent {
   display: flex;
@@ -563,7 +563,7 @@ html, body, h1, p {
             width: 85%; } }
         .headerComponent .headerContainer .headerWrapper .headerTextWrapper p {
           color: white;
-          font-family: "Roboto-Medium", sarif;
+          font-family: "Rubik-Light", sarif;
           font-size: 24px;
           font-weight: 700;
           text-shadow: -1.5px 2px 1px #000; }
@@ -1075,7 +1075,7 @@ html, body, h1, p {
   .booksHeroBanner .booksTextWrapper p {
     color: white;
     font-size: 28px;
-    font-family: "Roboto-Medium", sarif;
+    font-family: "Rubik-Light", sarif;
     text-transform: uppercase;
     text-shadow: -1.5px 2px 1px #000; }
     @media (min-width: 700px) {
@@ -1546,7 +1546,7 @@ html, body, h1, p {
   .toolsHeroBanner .toolsTextWrapper p {
     color: white;
     font-size: 28px;
-    font-family: "Roboto-Medium", sarif;
+    font-family: "Rubik-Light", sarif;
     text-transform: uppercase;
     text-shadow: -1.5px 2px 1px #000; }
     @media (min-width: 700px) {
@@ -2147,7 +2147,7 @@ html, body, h1, p {
   .projectsHeroBanner .projectsTextWrapper p {
     color: white;
     font-size: 28px;
-    font-family: "Roboto-Medium", sarif;
+    font-family: "Rubik-Light", sarif;
     text-transform: uppercase;
     text-shadow: -1px 1px 2px #000; }
     @media (min-width: 700px) {
@@ -2710,11 +2710,12 @@ html, body, h1, p {
       min-height: 375px; } }
   @media (min-width: 700px) {
     .findMeHeroBanner {
-      min-height: 315px; } }
+      min-height: 400px;
+      height: 55vh; } }
   .findMeHeroBanner .findMeTextWrapper p {
     color: white;
     font-size: 28px;
-    font-family: "Roboto-Medium", sarif;
+    font-family: "Rubik-Light", sarif;
     text-transform: uppercase;
     text-shadow: -1.5px 2px 1px #000; }
     @media (min-width: 700px) {

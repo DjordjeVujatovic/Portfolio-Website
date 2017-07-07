@@ -14,13 +14,14 @@
     min-height: 375px;
   }
   @include tablet {
-    min-height: 315px;
+    min-height: 400px;
+    height: 55vh;
   }
   .findMeTextWrapper {
     p {
       color: $coreWhite;
       font-size: $fontSizeLarge;
-      font-family: $headerFontFamily;
+      font-family: $mainFontFamily;
       text-transform: uppercase;
       text-shadow: -1.5px 2px 1px #000;
       @include tablet {
