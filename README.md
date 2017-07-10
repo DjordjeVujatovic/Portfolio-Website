@@ -14,6 +14,7 @@ This website was built to be a portfolio piece for my resume. It is a showcase o
 - FireBase REST api
 - React Router DOM
 - Dev tools (Webpack, ESLint, Babel)
+- Deployed as droplet on an ubuntu server using Digital Ocean
 
 ## Personal Learnings
 The development of this project allowed me to build and design something from start to finish. It was an amazing experience as I would develop the design and functionality of this website on a day-to-day basis, simply by thinking about how I would like it to look and function, and jotting my ideas and UX / UI processes on a whiteboard.
