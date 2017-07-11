@@ -10,10 +10,10 @@ const intialState = {
 export default (state = intialState, action) => { //eslint-disable-line
   switch (action.type) {
     case NEXT_SLIDE:
-      if (state.slideCount >= 4) {
+      if (state.slideCount >= 5) {
         return {
           ...state,
-          slideCount: state.slideCount - 3,
+          slideCount: state.slideCount - 4,
           readMore: false,
         };
       } return {
@@ -25,7 +25,7 @@ export default (state = intialState, action) => { //eslint-disable-line
       if (state.slideCount <= 1) {
         return {
           ...state,
-          slideCount: state.slideCount + 3,
+          slideCount: state.slideCount + 4,
           readMore: false,
         };
       } return {
