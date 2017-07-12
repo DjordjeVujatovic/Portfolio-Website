@@ -700,7 +700,8 @@ html, body, h1, p {
     color: #e4e7ec;
     max-width: 320px;
     min-width: 300px;
-    height: auto; }
+    height: auto;
+    align-self: center; }
     @media (min-width: 700px) {
       .aboutWrapper p {
         max-width: 750px;
