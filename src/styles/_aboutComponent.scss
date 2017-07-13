@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: $componentHeightSmall;
-  min-height: $componentMinHeightSmall;
+  height: 35vh;
+  min-height: 250px;
   background-color: $coreJungleGreen;
   color: $coreWhite;
   margin-top: $componentMargin;
@@ -17,6 +17,7 @@
   justify-content: center;
   text-align:center;
   font-family: $mainFontFamily;
+  margin-top: 4%;
   h1 {
     text-transform: uppercase;
     color: $coreLightGray;
@@ -48,8 +49,8 @@
   p {
     font-size: 16px;
     color: $coreLightGray;
-    max-width: 320px;
-    min-width: 300px;
+    max-width: 420px;
+    min-width: 400px;
     height: auto;
     align-self: center;
     @include tablet {

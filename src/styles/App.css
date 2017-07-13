@@ -652,8 +652,8 @@ html, body, h1, p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
-  min-height: 400px;
+  height: 35vh;
+  min-height: 250px;
   background-color: #1B998B;
   color: white;
   margin-top: 2.5px; }
@@ -666,7 +666,8 @@ html, body, h1, p {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-family: "Rubik-Light", sarif; }
+  font-family: "Rubik-Light", sarif;
+  margin-top: 4%; }
   .aboutWrapper h1 {
     text-transform: uppercase;
     color: #e4e7ec;
@@ -695,8 +696,8 @@ html, body, h1, p {
   .aboutWrapper p {
     font-size: 16px;
     color: #e4e7ec;
-    max-width: 320px;
-    min-width: 300px;
+    max-width: 420px;
+    min-width: 400px;
     height: auto;
     align-self: center; }
     @media (min-width: 700px) {
@@ -1086,8 +1087,8 @@ html, body, h1, p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
-  min-height: 200px;
+  height: 20vh;
+  min-height: 150px;
   background: #1B998B;
   transition: 500ms; }
   .booksClose .booksButtonClose {
