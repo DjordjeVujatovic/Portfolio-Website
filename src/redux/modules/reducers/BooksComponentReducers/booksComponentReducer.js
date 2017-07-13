@@ -6,7 +6,7 @@ import {
 const initialState = {
   componentExpand: false,
   classState: 'booksClose',
-  buttonName: 'Open Book',
+  buttonName: 'Favorite Books',
   buttonClass: 'booksButtonClose',
 };
 
@@ -25,7 +25,7 @@ export default (state = initialState, action) => {
         ...state,
         componentExpand: false,
         classState: 'booksClose',
-        buttonName: 'Open Book',
+        buttonName: 'Favorite Books',
         buttonClass: 'booksButtonClose',
       };
     default:

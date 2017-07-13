@@ -14,7 +14,6 @@ const MobileNavBar = ({ expand }) => (
         <NavLink activeClassName="navLink" to="/"><button>Home</button></NavLink>
         <NavLink activeClassName="navLink" to="/about"><button>About</button></NavLink>
         <NavLink activeClassName="navLink" to="/education"><button>Education</button></NavLink>
-        <NavLink activeClassName="navLink" to="/favoritebooks"><button>Favorite Books</button></NavLink>
         <NavLink activeClassName="navLink" to="/toolbox"><button>Tool Box</button></NavLink>
         <NavLink activeClassName="navLink" to="/projects"><button>Projects</button></NavLink>
         <NavLink activeClassName="navLink" to="/findme"><button>Find Me</button></NavLink>

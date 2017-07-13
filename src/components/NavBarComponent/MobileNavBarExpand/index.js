@@ -17,9 +17,6 @@ const MobileNavBarExpanded = ({ closeExpand, expandSubMenu }) => (
           <NavLink className="navLink" to="/education"><button className="menuItems">Education</button></NavLink>
         </div>
         <div className="buttonContainer">
-          <NavLink className="navLink" to="/favoriteBooks"><button className="menuItems">Favorite Books</button></NavLink>
-        </div>
-        <div className="buttonContainer">
           <NavLink className="navLink" to="/toolBox"><button className="menuItems">Tool Box</button></NavLink>
         </div>
         <div className="buttonContainer">

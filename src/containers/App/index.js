@@ -28,10 +28,6 @@ class App extends Component {
             render={() => <Main findComponent="education" />}
           />
           <Route
-            path="/favoriteBooks"
-            render={() => <Main findComponent="favoriteBooks" />}
-          />
-          <Route
             path="/toolBox"
             render={() => <Main findComponent="toolBox" />}
           />

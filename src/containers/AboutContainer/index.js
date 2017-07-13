@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { fetchAbout } from '../../redux/modules/actions/FetchActions/aboutActions';
 import AboutComponent from '../../components/AboutComponent';
 import LoadingComponent from '../../components/LoadingComponent';
+import BooksContainer from '../BooksContainer';
 
 class AboutContainer extends Component {
   componentDidMount() {
@@ -18,7 +19,10 @@ class AboutContainer extends Component {
           isLoading ?
             <LoadingComponent />
             :
-            <AboutComponent about={about} />
+            <div>
+              <AboutComponent about={about} />
+              <BooksContainer />
+            </div>
         }
       </div>
     );

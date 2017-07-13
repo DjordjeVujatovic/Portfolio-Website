@@ -305,19 +305,17 @@ html, body, h1, p {
         justify-content: flex-end;
         align-items: center;
         min-width: 910px;
-        height: 100%;
-        margin-right: 2%; }
+        height: 100%; }
         .mobileNavBar .fullScreenNav .fullScreenButtonContainer {
           display: flex;
-          justify-content: space-between;
+          justify-content: flex-end;
           align-items: center;
           align-self: flex;
           height: 100%;
           width: 100%;
-          max-width: 850px;
-          margin-right: 2%; }
+          max-width: 850px; }
           .mobileNavBar .fullScreenNav .fullScreenButtonContainer button {
-            width: 125px;
+            width: 100px;
             height: 50px;
             background: transparent;
             border: none;
@@ -328,7 +326,7 @@ html, body, h1, p {
             text-transform: uppercase;
             font-family: "Rubik-Light", sarif;
             text-decoration: none;
-            margin-right: 2px; }
+            margin-right: 10px; }
             .mobileNavBar .fullScreenNav .fullScreenButtonContainer button:hover {
               cursor: pointer;
               background: white;
@@ -391,7 +389,7 @@ html, body, h1, p {
       text-align: center; }
       .mobileNavBarExpanded .mobileMenuContainer .buttonListContainer .buttonContainer {
         width: 100%;
-        height: 16%;
+        height: 22%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -435,7 +433,6 @@ html, body, h1, p {
     outline: 0; }
 
 .navLink {
-  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -1091,9 +1088,8 @@ html, body, h1, p {
   align-items: center;
   height: 30vh;
   min-height: 200px;
-  background: #3E3C50;
-  margin-top: 2.5px;
-  transition: 600ms; }
+  background: #1B998B;
+  transition: 500ms; }
   .booksClose .booksButtonClose {
     width: 97%;
     flex-basis: 90%;

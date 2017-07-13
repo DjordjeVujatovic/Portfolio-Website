@@ -4,9 +4,8 @@
   align-items: center;
   height: 30vh;
   min-height: 200px;
-  background: $shadeThree;
-  margin-top: $componentMargin;
-  transition: 600ms;
+  background: $coreJungleGreen;
+  transition: 500ms;
   .booksButtonClose {
     @include educationButtonClose;
     flex-basis: 98%;

@@ -56,7 +56,6 @@ class Main extends Component {
         <Header componentRef={component => (this.headerContainer = component)} />
         <AboutContainer componentRef={component => (this.aboutContainer = component)} />
         <EducationContainer componentRef={component => (this.educationContainer = component)} />
-        <BooksContainer componentRef={component => (this.booksContainer = component)} />
         <ToolsContainer componentRef={component => (this.toolsContainer = component)} />
         <ProjectsContainer componentRef={component => (this.projectsContainer = component)} />
         <Footer componentRef={component => (this.footerContainer = component)} />

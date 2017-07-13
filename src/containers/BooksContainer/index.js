@@ -22,7 +22,6 @@ class BooksContainer extends Component {
             <LoadingComponent />
             :
             <div ref={componentRef}>
-              <HeroBanner bannerContainer="booksHeroBanner" textWrapper="booksTextWrapper" bannerTitle="I like to read books" />
               <BooksComponent
                 books={books}
                 booksComponentState={booksComponentState}
