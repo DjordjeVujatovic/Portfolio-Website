@@ -1128,7 +1128,6 @@ html, body, h1, p {
   align-items: center;
   height: 60vh;
   min-height: 550px;
-  margin-top: 2.5px;
   transition: 600ms; }
   @media (min-width: 700px) {
     .booksOpen {
