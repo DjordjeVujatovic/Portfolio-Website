@@ -19,7 +19,6 @@
   align-items: center;
   height: 60vh;
   min-height: 550px;
-  margin-top: $componentMargin;
   transition: 600ms;
   @include tablet {
     height: 75vh;
