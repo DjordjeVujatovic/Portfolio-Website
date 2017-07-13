@@ -1,19 +1,19 @@
 {
-  "main.css": "static/css/main.6ed8fb8b.css",
-  "main.css.map": "static/css/main.6ed8fb8b.css.map",
+  "main.css": "static/css/main.dbf32fed.css",
+  "main.css.map": "static/css/main.dbf32fed.css.map",
   "main.js": "static/js/main.ecbf006b.js",
   "main.js.map": "static/js/main.ecbf006b.js.map",
   "static/media/books.jpg": "static/media/books.09940e48.jpg",
-  "static/media/booksHero.jpg": "static/media/booksHero.3d63fdd9.jpg",
+  "static/media/booksHero.jpg": "static/media/booksHero.b3ad43b7.jpg",
   "static/media/colored_crayons-webfont.eot": "static/media/colored_crayons-webfont.53bdcf43.eot",
   "static/media/colored_crayons-webfont.svg": "static/media/colored_crayons-webfont.b602f9a5.svg",
   "static/media/colored_crayons-webfont.ttf": "static/media/colored_crayons-webfont.30ead119.ttf",
   "static/media/colored_crayons-webfont.woff": "static/media/colored_crayons-webfont.a4e796a8.woff",
   "static/media/educationHero.jpg": "static/media/educationHero.b4c770f6.jpg",
-  "static/media/footerCoastline.jpg": "static/media/footerCoastline.dfc0851c.jpg",
-  "static/media/headerHero.jpg": "static/media/headerHero.99f10d64.jpg",
-  "static/media/projects.jpg": "static/media/projects.dc2e7995.jpg",
-  "static/media/projectsHero.jpg": "static/media/projectsHero.145c0424.jpg",
+  "static/media/footerCoastline.jpg": "static/media/footerCoastline.09c9bd6f.jpg",
+  "static/media/headerHero.jpg": "static/media/headerHero.5fe92837.jpg",
+  "static/media/projects.jpg": "static/media/projects.ff0171cb.jpg",
+  "static/media/projectsHero.jpg": "static/media/projectsHero.7b390d5c.jpg",
   "static/media/roboto-bold-webfont.eot": "static/media/roboto-bold-webfont.b9c3439a.eot",
   "static/media/roboto-bold-webfont.svg": "static/media/roboto-bold-webfont.febbe391.svg",
   "static/media/roboto-bold-webfont.ttf": "static/media/roboto-bold-webfont.642be424.ttf",
@@ -83,5 +83,5 @@
   "static/media/rubik-regular-webfont.svg": "static/media/rubik-regular-webfont.fc4a25ec.svg",
   "static/media/rubik-regular-webfont.ttf": "static/media/rubik-regular-webfont.14857281.ttf",
   "static/media/rubik-regular-webfont.woff": "static/media/rubik-regular-webfont.65729494.woff",
-  "static/media/toolsHero.jpg": "static/media/toolsHero.bfe6388d.jpg"
+  "static/media/toolsHero.jpg": "static/media/toolsHero.ae53e4a9.jpg"
 }
