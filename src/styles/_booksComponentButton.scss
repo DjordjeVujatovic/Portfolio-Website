@@ -8,9 +8,10 @@
   transition: 500ms;
   .booksButtonClose {
     @include educationButtonClose;
+    box-shadow: 0px 0px 7px 2px black;
     flex-basis: 98%;
     height: 89%;
-    background: $coreCharcoal;
+    background: $hoverJungleGreen;
   }
 }
 .booksOpen {
@@ -33,7 +34,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(44, 44, 44, 0.66) 30%, rgba(44, 44, 44, 0.60) 100%), url('../content/BackgroundImages/books.jpg') bottom center no-repeat;
+    background: linear-gradient(to bottom, rgba(25,140,127, .2) 45%, rgba(25,140,127, 0.1) 84%), url('../content/BackgroundImages/books.jpg') bottom center no-repeat;
     background-size: cover;
     .buttonContainer {
       display: flex;
@@ -43,13 +44,13 @@
       .booksButtonOpen {
         height: 100%;
         width:100%;
-        background: $coreCharcoal;
+        background: $hoverJungleGreen;
         border: none;
         color: $coreWhite;
         text-transform: uppercase;
         font-family: $mainFontFamily;
         font-size: $buttonTextSmall;
-        box-shadow: 0px 2px 5px 0px black;
+        box-shadow: 2px 1.5px 8px 3px black;
         opacity: .95;
         &:hover {
           height: 110%;

@@ -1101,9 +1101,10 @@ html, body, h1, p {
     font-family: "Rubik-Light", sarif;
     box-shadow: 0px 4px 7px 0px black;
     transition: 300ms;
+    box-shadow: 0px 0px 7px 2px black;
     flex-basis: 98%;
     height: 89%;
-    background: #34314c; }
+    background: #198C7F; }
     @media (min-width: 700px) {
       .booksClose .booksButtonClose {
         font-size: 24px; } }
@@ -1142,7 +1143,7 @@ html, body, h1, p {
     align-items: center;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(44, 44, 44, 0.66) 30%, rgba(44, 44, 44, 0.6) 100%), url("../content/BackgroundImages/books.jpg") bottom center no-repeat;
+    background: linear-gradient(to bottom, rgba(25, 140, 127, 0.2) 45%, rgba(25, 140, 127, 0.1) 84%), url("../content/BackgroundImages/books.jpg") bottom center no-repeat;
     background-size: cover; }
     .booksOpen .booksOpenWrapper .buttonContainer {
       display: flex;
@@ -1152,13 +1153,13 @@ html, body, h1, p {
       .booksOpen .booksOpenWrapper .buttonContainer .booksButtonOpen {
         height: 100%;
         width: 100%;
-        background: #34314c;
+        background: #198C7F;
         border: none;
         color: white;
         text-transform: uppercase;
         font-family: "Rubik-Light", sarif;
         font-size: 14px;
-        box-shadow: 0px 2px 5px 0px black;
+        box-shadow: 2px 1.5px 8px 3px black;
         opacity: .95; }
         .booksOpen .booksOpenWrapper .buttonContainer .booksButtonOpen:hover {
           height: 110%;
@@ -1213,13 +1214,13 @@ html, body, h1, p {
         box-shadow: 0px 2px 5px 0px black; }
         .sectionsComponentContainer .componentsContainer .favoritesOpen .favoritesComponentContainer .componentBanner {
           height: 20%;
-          background: #34314c; }
+          background: #198C7F; }
           .sectionsComponentContainer .componentsContainer .favoritesOpen .favoritesComponentContainer .componentBanner .bannerContainer {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 95%;
+            height: 100%;
             box-shadow: 0px 2px 5px 0px black;
             color: white;
             font-size: 14px;
@@ -1264,13 +1265,13 @@ html, body, h1, p {
         box-shadow: 0px 2px 5px 0px black; }
         .sectionsComponentContainer .componentsContainer .futuresOpen .futureReadsComponentContainer .componentBanner {
           height: 20%;
-          background: #34314c; }
+          background: #198C7F; }
           .sectionsComponentContainer .componentsContainer .futuresOpen .futureReadsComponentContainer .componentBanner .bannerContainer {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 95%;
+            height: 100%;
             box-shadow: 0px 2px 5px 0px black;
             color: white;
             font-size: 14px;
@@ -1315,13 +1316,13 @@ html, body, h1, p {
         box-shadow: 0px 2px 5px 0px black; }
         .sectionsComponentContainer .componentsContainer .readingOpen .readingComponentContainer .componentBanner {
           height: 20%;
-          background: #34314c; }
+          background: #198C7F; }
           .sectionsComponentContainer .componentsContainer .readingOpen .readingComponentContainer .componentBanner .bannerContainer {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 95%;
+            height: 100%;
             box-shadow: 0px 2px 5px 0px black;
             color: white;
             font-size: 14px;
@@ -1369,7 +1370,7 @@ html, body, h1, p {
       color: white;
       font-size: 14px;
       font-family: "Rubik-Light", sarif;
-      background: #34314c;
+      background: #198C7F;
       opacity: .95; }
       @media (min-width: 700px) {
         .sectionsComponentContainer .buttonsContainer .buttonCloseFavorites {
@@ -1422,7 +1423,7 @@ html, body, h1, p {
       color: white;
       font-size: 14px;
       font-family: "Rubik-Light", sarif;
-      background: #34314c;
+      background: #198C7F;
       opacity: .95; }
       @media (min-width: 700px) {
         .sectionsComponentContainer .buttonsContainer .buttonCloseReading {
@@ -1475,7 +1476,7 @@ html, body, h1, p {
       color: white;
       font-size: 14px;
       font-family: "Rubik-Light", sarif;
-      background: #34314c;
+      background: #198C7F;
       opacity: .95; }
       @media (min-width: 700px) {
         .sectionsComponentContainer .buttonsContainer .buttonCloseFuture {
