@@ -661,14 +661,14 @@ html, body, h1, p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 35vh;
+  height: 50vh;
   min-height: 250px;
   background-color: #1B998B;
   color: white;
   margin-top: 2.5px; }
   @media (min-width: 700px) {
     .aboutComponent {
-      height: 60vh; } }
+      height: 70vh; } }
 
 .aboutWrapper {
   display: flex;
