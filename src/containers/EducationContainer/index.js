@@ -33,7 +33,7 @@ class EducationContainer extends Component {
           <LoadingComponent />
           :
           <div ref={componentRef}>
-            <HeroBanner bannerContainer="educationHeroBanner" textWrapper="" bannerTitle="" />
+            <HeroBanner bannerContainer="educationHeroBanner" textWrapper="educationTextWrapper" bannerTitle="Education" />
             <div>
               <EducationComponent
                 education={education}

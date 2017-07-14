@@ -1,9 +1,11 @@
 .educationHeroBanner {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, .30) 0%, rgba(0, 0, 0, .10) 100%), url('../content/BackgroundImages/educationHero.jpg' ) bottom center no-repeat;
   height: $componentHeightRegular;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   min-height: $componentMinHeightRegular;
   background-color: $coreMustard;
-
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .30) 0%, rgba(0, 0, 0, .10) 100%), url('../content/BackgroundImages/educationHero.jpg' ) bottom center no-repeat;
   background-size: cover;
   min-width: 100px;
   margin-top: $componentMargin;
@@ -11,9 +13,24 @@
     min-height: 375px;
   }
   @include tablet {
-    height: 90vh;
-    max-height: 960px;
-    min-height: 675px;
-    background-size: cover;
+    min-height: 375px;
+  }
+  @include desktop {
+    height: $componentMaxHeight;
+  }
+  .educationTextWrapper {
+    p {
+      color: $coreWhite;
+      font-size: $fontSizeLarge;
+      font-family: $mainFontFamily;
+      text-transform: uppercase;
+      text-shadow: -1.5px 2px 1px #000;
+      @include tablet {
+        font-size: $fontSizeExtraLarge;
+      }
+      @include desktop {
+        font-size: $fontSizeHuge;
+      }
+   }
   }
 }

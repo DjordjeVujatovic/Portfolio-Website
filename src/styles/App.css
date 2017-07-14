@@ -713,10 +713,13 @@ html, body, h1, p {
         font-size: 28px; } }
 
 .educationHeroBanner {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%), url("../content/BackgroundImages/educationHero.jpg") bottom center no-repeat;
   height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 450px;
   background-color: #FFC952;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%), url("../content/BackgroundImages/educationHero.jpg") bottom center no-repeat;
   background-size: cover;
   min-width: 100px;
   margin-top: 2.5px; }
@@ -725,14 +728,26 @@ html, body, h1, p {
       min-height: 375px; } }
   @media (min-width: 700px) {
     .educationHeroBanner {
-      height: 90vh;
-      max-height: 960px;
-      min-height: 675px;
-      background-size: cover; } }
+      min-height: 375px; } }
+  @media (min-width: 1100px) {
+    .educationHeroBanner {
+      height: 100vh; } }
+  .educationHeroBanner .educationTextWrapper p {
+    color: white;
+    font-size: 28px;
+    font-family: "Rubik-Light", sarif;
+    text-transform: uppercase;
+    text-shadow: -1.5px 2px 1px #000; }
+    @media (min-width: 700px) {
+      .educationHeroBanner .educationTextWrapper p {
+        font-size: 34px; } }
+    @media (min-width: 1100px) {
+      .educationHeroBanner .educationTextWrapper p {
+        font-size: 40px; } }
 
 .educationComponentWrapper {
   height: 50vh;
-  min-height: 550px;
+  min-height: 750px;
   display: flex;
   flex-direction: column;
   margin-top: 2.5px; }
