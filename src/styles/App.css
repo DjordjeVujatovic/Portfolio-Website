@@ -529,7 +529,8 @@ html, body, h1, p {
   min-height: 570px;
   width: 100%;
   background-size: cover;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background-attachment: fixed; }
   .headerComponent .headerContainer {
     display: flex;
     justify-content: center;
