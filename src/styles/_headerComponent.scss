@@ -7,8 +7,9 @@
   width: 100%;
   background-size: cover;
   flex-wrap: wrap;
-  background-attachment: fixed;
-
+  @include desktop {
+    background-attachment: fixed;
+  }
   .headerContainer {
     display: flex;
     justify-content: center;
