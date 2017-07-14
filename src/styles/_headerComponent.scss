@@ -120,6 +120,9 @@
         color: white;
         font-size: 3em;;
         width: 100%;
+        @include tablet {
+          font-size: 4em;
+        }
       }
   }
 }
@@ -135,6 +138,9 @@
         color: white;
         font-size: 3em;;
         width:100%;
+        @include tablet {
+          font-size: 4em;
+        }
       }
    }
 }

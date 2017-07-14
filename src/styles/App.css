@@ -634,6 +634,9 @@ html, body, h1, p {
       color: white;
       font-size: 3em;
       width: 100%; }
+      @media (min-width: 700px) {
+        .gitHubButton a svg {
+          font-size: 4em; } }
 
 .linkedInButton {
   margin-left: 10px; }
@@ -647,6 +650,9 @@ html, body, h1, p {
       color: white;
       font-size: 3em;
       width: 100%; }
+      @media (min-width: 700px) {
+        .linkedInButton a svg {
+          font-size: 4em; } }
 
 .aboutComponent {
   display: flex;
