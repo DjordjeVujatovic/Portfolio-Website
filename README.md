@@ -1,4 +1,4 @@
-# Personal-Website - www.djordje.ca
+# Personal-Website
 
 <img align="center" src="./src/content/ReadMeImages/screenshot1.png" alt="Image of Personal-Site" width="100%" height="350">
 <img align="center" src="./src/content/ReadMeImages/screenshot2.png" alt="Image of Personal-Site" width="100%" height="350">
